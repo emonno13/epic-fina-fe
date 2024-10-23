@@ -1,0 +1,68 @@
+.credit-offer-letter-success {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 24px 40px;
+  text-align: center;
+
+  @screen md {
+    padding: 80px 0;
+  }
+  > svg {
+    margin-bottom: 16px;
+  }
+  &__title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1b1b1b;
+    font-weight: bold;
+
+    @screen md {
+      font-size: 36px;
+    }
+  }
+  &__description {
+    margin-bottom: 40px;
+    color: #777777;
+    font-size: 12px;
+
+    @screen md {
+      font-size: 14px;
+    }
+  }
+  &-card {
+    padding: 32px 24px;
+    text-align: center;
+    background-color: #ffffff;
+    margin-bottom: 16px;
+
+    @screen md {
+      flex: 1;
+    }
+    &__title {
+      margin-bottom: 24px;
+    }
+  }
+  &__link-item {
+    background: #f2f5f9;
+    height: 34px;
+    width: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  &__links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  &__footer {
+    @screen md {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+    }
+  }
+}

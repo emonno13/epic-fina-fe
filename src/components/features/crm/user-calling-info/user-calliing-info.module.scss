@@ -1,0 +1,219 @@
+.ui-user-calling-detail {
+  background: white;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 800px;
+  border-radius: 6px;
+  transition: all 0.1s linear;
+  box-shadow: 1px 0px 5px 0px rgba(156, 156, 156, 0.75);
+
+  .ui-card-user-calling-detail {
+    width: 100%;
+
+    .ant-card-body {
+      min-height: 350px;
+    }
+  }
+
+
+  &.show {
+    width: 300px;
+    transition: all 0.1s linear;
+    height: 600px;
+  }
+
+  .call-child {
+    overflow: hidden;
+    height: 100%;
+    border-radius: 20px;
+    width: 100%;
+    background: white;
+
+    .call-info {
+      height: calc(100% - 82px);
+      background: rgb(59, 159, 59);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-danger {
+        background: rgb(231, 82, 82);
+      }
+
+      &-sucess {
+        background: rgb(59, 159, 59);
+      }
+
+      p {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+
+    .call-status {
+      text-align: center;
+      font-weight: bold;
+      color: green;
+
+      &.danger {
+        color: red;
+      }
+    }
+
+    .call-content {
+      height: calc(100% - 80px);
+
+      input {
+        width: 100%;
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+        // border: 0;
+        border-radius: 12px;
+        border: 2px solid #ccc;
+      }
+    }
+
+    .call-action {
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      background: #f4f4f4;
+
+      a {
+        flex: 1;
+
+        &:last-child {
+          text-align: right;
+        }
+      }
+
+    }
+
+    .call-header {
+      padding: 10px 20px;
+    }
+
+    .call-btn {
+      height: 60px;
+      width: 60px;
+      border-radius: 30px;
+      border: 0;
+      box-shadow: 5px 5px 5px #ccc;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      opacity: 0.8;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:disabled {
+        opacity: 0.4;
+      }
+
+      &-end {
+        background: red;
+      }
+
+      &-start {
+        background: green;
+      }
+    }
+  }
+}
+.displayable-item-wrapper {
+  display: flex !important;
+}
+
+.survey-tab-list-select {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  .survey-tab-list-select-item {
+    background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 21px;
+    color: #5E5E5E;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    &:not(:last-of-type) {
+      margin-right: 8px;
+    }
+  }
+  .survey-tab-list-select-item-selected {
+    background: #064DD6;
+    border: 1px solid #064DD6;
+    color: #FFFFFF;
+  }
+}
+.survey-tab-list-select-empty {
+  color: #C6C6C6;
+}
+
+.survey-tab-question-group {
+  &__header {
+    display: flex;
+    align-items: center;
+    &__back-icon {
+      margin-right: 8px;
+      cursor: pointer;
+    }
+    &__content {
+      color: #474747;
+      font-size: 14px;
+      line-height: 18px;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  &__divider {
+    margin: 12px 0;
+  }
+  &__send-result {
+    height: 44px;
+    float: right;
+  }
+  // styles for displaying questions
+  //-------------------------------
+  .preview-questions {
+    max-width: 100%;
+  }
+  .preview-text-selection-question__answer {
+    width: 100%;
+    height: 40px;
+    color: #777777;
+    border: 1px solid #C6C6C6;
+    justify-content: flex-start;
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .preview-text-selection-question__answer-selected {
+    color: #064DD6;
+    border: 1px solid #064DD6;
+    background: #fff;
+  }
+  .ant-input-suffix {
+    color: #064DD6;
+  }
+  .ui-question-name {
+    margin-bottom: 12px;
+  }
+  .megadraft-block {
+    padding-bottom: 0 !important;
+    .paragraph {
+      margin-top: 0 !important;
+    }
+  }
+  //-------------------------------
+}

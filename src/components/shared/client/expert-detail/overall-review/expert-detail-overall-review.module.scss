@@ -1,0 +1,120 @@
+@import "styles/_css_variables.scss";
+
+.expert-detail-overall-review {
+  padding: 40px 0;
+  position: relative;
+  .review-modal-button {
+    border: 1px solid #064dd6;
+    border-radius: 8px;
+    color: #064dd6;
+    display: flex;
+    align-items: center;
+    padding: 8px 32px;
+    height: 40px;
+    gap: 8px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    @media only screen and (max-width: $md) {
+      top: auto;
+      right: auto;
+      position: unset;
+      margin: 32px auto 0 auto;
+    }
+  }
+  &__title {
+    font-size: 22px;
+    line-height: 26px;
+    color: #474747;
+    margin-bottom: 16px;
+    @media only screen and (max-width: $md) {
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
+  &__desc {
+    font-size: 16px;
+    line-height: 19px;
+    color: #5e5e5e;
+    margin-bottom: 40px;
+    @media only screen and (max-width: $md) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+
+.expert-detail-overall-review-summary {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: $md) {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .averaged-rate-container {
+    text-align: center;
+    .rate {
+      font-size: 36px;
+      line-height: 42px;
+      color: #474747;
+      margin-bottom: 8px;
+      @media only screen and (max-width: $md) {
+        margin-bottom: 4px;
+      }
+    }
+    .ant-rate {
+      margin-bottom: 8px;
+      @media only screen and (max-width: $md) {
+        margin-bottom: 4px;
+      }
+    }
+    .number-of-rates {
+      font-size: 14px;
+      line-height: 16px;
+      color: #777777;
+      margin-bottom: 0;
+    }
+  }
+  .rate-statistics {
+    flex: 0 0 480px;
+    @media only screen and (max-width: $md) {
+      width: 100%;
+      flex: auto;
+    }
+    .ui-number-of-rate {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      // @media only screen and (max-width: $md) {
+      //   justify-content: space-between;
+      // }
+      &__star,
+      &__count {
+        font-size: 14px;
+        line-height: 16px;
+        color: #777777;
+      }
+      &__star {
+        flex: 0 0 max-content;
+      }
+      &__count {
+        flex: 0 0 40px;
+      }
+      .ant-progress {
+        flex: 0 0 340px;
+        @media only screen and (max-width: $md) {
+          flex: 1;
+        }
+        .ant-progress-inner {
+          height: 12px;
+        }
+        .ant-progress-bg {
+          height: 12px !important;
+          border-radius: 100px 0 0 100px;
+        }
+      }
+    }
+  }
+}

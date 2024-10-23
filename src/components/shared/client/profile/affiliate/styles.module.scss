@@ -1,0 +1,310 @@
+.profile-information-affiliate {
+  // display: flex;
+  // justify-content: center;
+  // justify-content:center;
+
+  &-show {
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      height: 160px;
+      width: 150px;
+      border: 1px solid #e0e1e4;
+      border-radius: 8px;
+      position: relative;
+
+      &-view {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &-icon {
+        position: absolute;
+        right: -10px;
+        bottom: 5%;
+      }
+    }
+  }
+
+  .profile-affiliate-no-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 0;
+
+    &-des {
+      width: 60%;
+      text-align: center;
+      font-size: 16px;
+      color: #7f868d;
+      font-family: "SF Pro Display";
+      margin: 20px 0 28px 0;
+    }
+
+    &-button {
+      background: #064dd6;
+      border-radius: 8px;
+      width: 187px;
+      height: 48px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 16px;
+    }
+  }
+
+  &-partner {
+    border-top: 1px solid #e0e1e4;
+
+    &-item {
+      width: 128px;
+      text-align: center;
+    }
+
+    &-title {
+      color: #4e5a65;
+      font-size: 20px;
+      margin: 30px 0;
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    &-item-title {
+      width: 128px;
+      text-align: center;
+    }
+  }
+
+  .profile-affiliate-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-title {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      border-bottom: 1px solid #E0E1E4;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+
+      h2 {
+        margin: 0;
+        margin-left: 10px;
+      }
+    }
+
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      padding: 25px 27px;
+      background: #f4f5f6;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+
+      &-user {
+        display: flex;
+
+        .item {
+          display: flex;
+          margin: 7px 0;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        .title {
+          font-family: "SF Pro Display";
+          font-weight: 600;
+          font-size: 16px;
+          width: 180px;
+        }
+
+        .value {
+          font-weight: 400;
+          font-family: "SF Pro Display";
+          font-size: 16px;
+        }
+
+        img {
+          margin-right: 34px;
+          border-radius: 4px;
+        }
+      }
+
+      &-button {
+        background: #064dd6;
+        border-radius: 8px;
+        color: #fff;
+        width: 148px;
+        height: 48px;
+        border: 1px solid #064dd6;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    &-contract {
+      &-title {
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        margin: 15px 0;
+      }
+      &-body {
+        max-height: 700px;
+        overflow: auto;
+
+        .react-pdf__Page__canvas {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.profile-info-affiliate-modal {
+  .ant-modal-content {
+    border-radius: 16px;
+  }
+
+  .profile-affiliate-action-button {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    height: 48px;
+  }
+
+  .profile-affiliate-action-next {
+    background: #064dd6;
+    border-radius: 8px;
+    color: #ffffff;
+  }
+
+  .profile-affiliate-action-reject {
+    color: #064dd6;
+  }
+
+  .modal-affiliate-home {
+    text-align: center;
+    padding: 20px 0;
+
+    .profile-affiliate-action-next {
+      margin: 25px 0 14px 0;
+    }
+
+    .profile-affiliate-action-reject {
+      color: #064dd6;
+    }
+  }
+
+  .modal-affiliate-add {
+    padding: 20px 0;
+
+    .info-contract-modal-confirm-title {
+      margin-bottom: 30px;
+    }
+
+    .profile-info-affiliate-modal-button {
+      display: flex;
+      justify-content: center;
+
+      .left {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+    .profile-info-affiliate-modal-button-item {
+      width: 50%;
+    }
+  }
+
+  .modal-affiliate-otp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    .ant-statistic {
+      display: inline-block;
+    }
+
+    .resend-wrapper {
+      margin-top: 13px;
+
+      .resend {
+        color: #ff6c0e;
+      }
+    }
+  }
+
+  .modal-affiliate-succeed-add {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    .info-contract-modal-confirm-title {
+      margin-top: 25px;
+    }
+  }
+
+  .modal-affiliate-create {
+    .modal-affiliate-create-confirm {
+      .profile-info-affiliate-modal-button {
+        margin-top: 25px;
+      }
+    }
+    .kyc-title {
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: #064dd6;
+      margin-bottom: 20px;
+    }
+
+    .ant-form .ant-form-item {
+      flex-direction: row;
+
+      .ant-form-item-control .ant-form-item-control-input-content {
+        .ant-checkbox-group {
+          width: 100%;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .modal-affiliate-reject {
+    text-align: center;
+    padding: 20px 0;
+  }
+}

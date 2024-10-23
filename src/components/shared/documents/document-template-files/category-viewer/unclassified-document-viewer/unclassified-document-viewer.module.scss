@@ -1,0 +1,16 @@
+.unclassified-document {
+  &__title {
+    margin-top: 20px;
+  }
+}
+
+.unclassified {
+  div {
+    flex-flow: wrap;
+    div {
+      &:not(:first-child) {
+        margin-left: 0.625rem;
+      }
+    }
+  }
+}

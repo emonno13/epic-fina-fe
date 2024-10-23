@@ -1,0 +1,10 @@
+.online-notarization {
+  &__m-1200 {
+    max-width: 1150px;
+  }
+  iframe {
+    width: 100%;
+    height: calc(100vh - 123px);
+    border: none;
+  }
+}

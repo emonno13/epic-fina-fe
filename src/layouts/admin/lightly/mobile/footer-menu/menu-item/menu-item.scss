@@ -1,0 +1,25 @@
+@import '@styles/css_variables';
+
+.menu-item {
+  text-align: center;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__icon {
+    width: 28px;
+    height: 28px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  &__label {
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}

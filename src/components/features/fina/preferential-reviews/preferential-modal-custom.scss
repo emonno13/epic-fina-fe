@@ -1,0 +1,42 @@
+@import "styles/_css_variables.scss";
+
+.preferential-modal-custom {
+  .ant-pagination {
+    display: none;
+  }
+
+  .custom-table-preferential-view {
+    .custom-data-row-preferential {
+      background-color: #1890ff33;
+    }
+    .ant-table-thead {
+      tr th {
+        background-color: #1890ffab;
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .footer-custom {
+    padding-top: 30px;
+
+    .logo {
+      width: 50%;
+    }
+  }
+
+  .custom-button-print {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #1890ffab;
+    text-align: center;
+
+    button {
+      width: 150px;
+      margin: 0 auto;
+      background-color: #0095ff;
+      color: #FFFFFF;
+    }
+  }
+}

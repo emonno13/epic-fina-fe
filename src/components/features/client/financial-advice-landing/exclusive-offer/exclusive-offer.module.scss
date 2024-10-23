@@ -1,0 +1,76 @@
+.financial-advice .financial-advice-exclusive-offer {
+    background: #FFFFFF;
+    padding: 40px 0 80px 0;
+
+    @screen md {
+        padding: 80px 0;
+    }
+
+    &-wrapper {
+        background-image: url("/assets/images/bg-exclusive-offer-financial-advice-mobile.png");
+        height: 228px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 342px;
+        margin: 0 auto;
+        text-align: center;
+        color: #FFFFFF;
+        position: relative;
+
+        @screen md {
+            background-image: url("/assets/images/bg-exclusive-offer-financial-advice.png");
+            max-width: 970px;
+            height: 274px;
+        }
+
+        &-header {
+            font-weight: 700;
+            font-size: 16px;
+            color: #FFFFFF;
+            margin-bottom: 0;
+            padding-top: 3px;
+            text-transform: uppercase;
+
+            @screen md {
+                font-size: 24px;
+                padding-top: 10px;
+            }
+        }
+
+        &-title {
+            font-weight: 900;
+            font-size: 22px;
+            color: #FFFFFF;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+            margin-top: 30px;
+            padding: 0 15px;
+            line-height: 30px;
+
+            @screen md {
+                font-size: 36px;
+                line-height: 45px;
+                padding: 0 100px;
+            }
+        }
+
+        &-desc {
+            font-weight: 500;
+            font-size: 16px;
+            color: #FFFFFF;
+            margin-bottom: 0;
+
+            @screen md {
+                font-size: 24px;
+            }
+        }
+
+        .financial-advice-button {
+            position: absolute;
+            bottom: -22px;
+            left: 50%;
+            transform: translateX(-50%);
+            line-height: 50px;
+        }
+    }
+}

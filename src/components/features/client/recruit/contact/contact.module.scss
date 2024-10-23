@@ -1,0 +1,30 @@
+@import '../../../../../styles/css_variables';
+
+.contact{
+  &__container{
+    @media only screen and (max-width: $md) {
+      padding: 40px 10px;
+    }
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+  &__banner{
+    @media only screen and (max-width: $md) {
+      font-size: 28px;
+      padding-left: 30px;
+    }
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    height: 170px;
+    width: 100%;
+    background-image: url("/assets/images/contact-us.png");
+    font-family: SFPD-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: #FFFFFF;
+  }
+}

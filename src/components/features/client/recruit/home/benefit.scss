@@ -1,0 +1,43 @@
+@import '../../../../../styles/css_variables';
+
+.benefit{
+  &__container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 730px;
+    background-image: linear-gradient(rgba(6, 77, 214, 0.95), rgba(6, 77, 214, 0.95)),url("/assets/images/recruit_computer.png");
+  }
+  &__body{
+    @media only screen and (max-width: $md) {
+      margin-top: -30%;
+      padding-bottom: 40px;
+    }
+    padding-bottom: 80px;
+    display: inline-block;
+    justify-content: center;
+  }
+  &__title{
+    @media only screen and (max-width: $md) {
+      font-size: 28px;
+    }
+    font-family: SFPD-Bold;
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+  &__web{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__mobile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    :last-child{
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+@import '@styles/css_variables';
+
+.user-information_form {
+  margin-bottom: 50px;
+
+  &-content {
+    width: 60%;
+    margin: auto;
+    @media only screen and (max-width: $md) {
+      width: 100%;
+      position: relative;
+    }
+
+    &-gender {
+      flex-direction: inherit !important;
+
+      .ant-form-item-label {
+        margin-right: 1.875rem;
+      }
+    }
+
+    .ant-upload,
+    .ant-upload-list-picture-card-container {
+      width: 100% !important;
+      height: 12rem !important;
+
+      @media only screen and (max-width: $md) {
+        width: 100% !important;
+      }
+    }
+    &-avatar {
+      width: 220px;
+      height: 220px;
+      margin: auto auto 30px;
+      position: relative;
+      .ant-upload,
+      .ant-upload-list-picture-card-container {
+        border-radius: 50%;
+        height: 220px !important;
+        @media only screen and (max-width: $md) {
+          width: 100% !important;
+          border-radius: 50%;
+        }
+      }
+
+      .ant-upload-list-picture-card .ant-upload-list-item {
+        border-radius: 50%;
+
+        .ant-upload-list-item-info {
+          border-radius: 50%;
+        }
+      }
+
+      &-upload {
+        position: absolute;
+        right: 0px;
+        bottom: 10px;
+
+        img {
+          width: 70px;
+          height: 70px;
+        }
+      }
+
+      .ant-upload-list-item-thumbnail img {
+        object-fit: cover;
+      }
+    }
+  }
+
+  &-default-image {
+    img {
+      width: 100%;
+    }
+  }
+
+  .control-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 24px;
+
+    .save-btn {
+      margin-bottom: 16px;
+    }
+
+    @screen md {
+      flex-direction: row;
+      .ant-btn {
+        width: calc((100% - 12px) / 2);
+      }
+
+      .save-btn {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

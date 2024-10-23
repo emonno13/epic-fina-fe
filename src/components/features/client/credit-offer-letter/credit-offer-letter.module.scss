@@ -1,0 +1,154 @@
+@import "../../../../styles/css_variables";
+@import "../../../../layouts/admin/lightly/client/lightly-client.module.scss";
+
+.credit-off-letter {
+  // margin-bottom: 160px;
+
+  .line-dashed {
+    background-image: linear-gradient(to right, #ABABAB 33%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 20px 1px;
+    background-repeat: repeat-x;
+    height: 1px;
+  }
+}
+
+.credit-offer-letter-wrapper {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  scroll-behavior: smooth;
+
+  .credit-offer-letter-main {
+    border-left: none;
+  }
+
+  .credit-offer-letter-nav {
+    padding: 24px;
+    box-shadow: 4px 0px 20px RGB(0 0 0 / 15%);
+    z-index: 1;
+
+    @media only screen and (max-width: $md) {
+      height: 66px;
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      z-index: 1;
+    }
+
+    &__sticky {
+      position: sticky;
+      left: 0;
+      top: 24px;
+      @media only screen and (max-width: $md) {
+        top: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: 16px;
+        z-index: 1;
+        background: #fff;
+        box-shadow: 1px 0 0 1px #919191;
+      }
+
+      &__logo {
+
+        @media only screen and (max-width: $md) {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 0px;
+        }
+
+        .ui-top-menu-mobile-handle-menu-button {
+          padding-right: 0;
+        }
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #E2E2E2;
+        margin: 24px -24px;
+      }
+    }
+
+    .client-logo__image {
+
+      img {
+        width: 128px;
+        display: block;
+        height: auto;
+        margin-right: 6px;
+      }
+    }
+  
+    &__menu {
+      border: none;
+      transition: all 0.2s ease-in-out;
+
+      @media only screen and (max-width: $md) {
+        position: absolute;
+        top: 66px;
+        width: 80%;
+        right: 0;
+        z-index: 1;
+        height: 100vh;
+
+        &.hidden {
+          display: none;
+        }
+      }
+  
+      .ant-menu-item {
+        overflow: initial;
+        white-space: initial;
+        height: auto;
+        line-height: 20px;
+        margin-bottom: 22px !important;
+        padding-left: 0;
+        padding-right: 0;
+  
+        .ant-menu-title-content {
+          font-size: 14px;
+          line-height: 20px;
+
+          &:after {
+            display: none;
+          }
+        }
+  
+        &.ant-menu-item-selected {
+          background-color: transparent;
+  
+          .ant-menu-title-content {
+            font-family: SFPD-Bold;
+            color: $main-color;
+          }
+        }
+      }
+    }
+  }
+
+  .render-html__content {
+    color: #000000d9;
+    font-size: 16px;
+    line-height: 1.5715;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+}
+
+.credit-offer-letter-page {
+  overflow: hidden;
+
+  .height100percent {
+    overflow-y: hidden;
+
+    @media only screen and (max-width: $md) {
+      overflow-y: auto;
+    }
+  }
+}
+

@@ -1,0 +1,29 @@
+.personal-insurance-list-not-authen {
+	margin-bottom: 48px;
+	&__content {
+		text-align: center;
+		img {
+			margin-bottom: 8px;
+		}
+		&__desc {
+			margin-bottom: 16px;
+		}
+		button {
+			background: #064dd6;
+			border-radius: 60px;
+			&:hover,
+			&:active,
+			&:focus {
+				background: #064dd6;
+			}
+		}
+	}
+}
+
+.personal-insurance-list-empty {
+	margin-bottom: 48px;
+	text-align: center;
+	img {
+		margin-bottom: 8px;
+	}
+}

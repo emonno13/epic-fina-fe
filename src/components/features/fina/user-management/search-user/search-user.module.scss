@@ -1,0 +1,13 @@
+.transaction-information-count {
+  span {
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.request-access-cell {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}

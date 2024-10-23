@@ -1,10 +1,25 @@
-import { configureStore } from '@reduxjs/toolkit';
-import rootReducer from '@store/slices';
+import { applyMiddleware, createStore, combineReducers } from 'redux';
+import createSagaMiddleware from 'redux-saga';
+import { createWrapper } from 'next-redux-wrapper';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import { RootStateOrAny } from 'react-redux';
+import rootReducer from './reducer';
+import rootSaga from '../sagas/saga';
 
-export const store = configureStore({
-  reducer: rootReducer,
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
-});
+const bindMiddleware = (middleware) => {
+  if (process.env.NODE_ENV !== 'production') {
 
-export type AppState = ReturnType<typeof store.getState>;
-export type AppDispatch = typeof store.dispatch;
+    return composeWithDevTools(applyMiddleware(...middleware));
+  }
+  return applyMiddleware(...middleware);
+};
+
+export const makeStore = (_context) => {
+  const sagaMiddleware = createSagaMiddleware();
+  const store: RootStateOrAny = createStore(combineReducers(rootReducer), bindMiddleware([sagaMiddleware]));
+  store.sagaTask = sagaMiddleware.run(rootSaga);
+
+  return store;
+};
+
+export const wrapper = createWrapper(makeStore, { debug: true });

@@ -1,0 +1,326 @@
+.deals-loans-search {
+  .btn-filter {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    border: 1px solid #c6c6c6;
+    border-radius: 8px;
+  }
+
+  .ui-btns .ant-row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.deals-loans-wrapper {
+  display: flex;
+  gap: 16px;
+  position: relative;
+
+  .deals-loans-filter {
+    width: 300px;
+    background: #ffffff;
+    border-radius: 8px;
+    margin-top: 56px;
+    overflow: hidden;
+    height: max-content;
+
+    .advance_search_panel {
+      padding: 16px !important;
+      box-shadow: none !important;
+
+      .advance_search_form {
+        margin-right: 0;
+      }
+    }
+
+    .title-advanced-filter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+
+      .title {
+        font-weight: 700;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+      }
+    }
+
+    .advance_search_content {
+      display: block;
+
+      .ant-select-selector {
+        border-radius: 8px;
+      }
+
+      label {
+        font-weight: 400;
+        font-size: 14px;
+        color: #5b5b5b;
+      }
+    }
+  }
+
+  .deals-loans-content {
+    width: calc(100% - 316px);
+
+    &.width-full {
+      width: 100%;
+    }
+
+    .tabs-switch-menu > .ant-tabs-nav {
+      position: absolute;
+      left: 0;
+      z-index: 1;
+
+      &:before {
+        border-bottom: none;
+      }
+
+      .ant-tabs-tab {
+        margin-left: 10px;
+        padding: 15px 0;
+      }
+
+      .ant-tabs-tab-btn {
+        width: 26px;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000000;
+        font-size: 16px;
+        border-radius: 100%;
+        transition: 0.2s;
+
+        .anticon {
+          margin-right: 0;
+        }
+      }
+
+      .ant-tabs-tab-active .ant-tabs-tab-btn {
+        background: #064dd6;
+        color: #ffffff;
+      }
+
+      .ant-tabs-ink-bar {
+        display: none;
+      }
+    }
+
+    .item-viewer {
+      color: #5e5e5e;
+    }
+
+    .deal-loan-information {
+      padding: 16px;
+
+      &.active {
+        background-color: #f0f5ff;
+      }
+    }
+
+    .item-profile-info {
+      .ant-divider {
+        margin: 14px 0;
+      }
+    }
+
+    .deal-short-table {
+      padding: 0;
+
+      .info-customer {
+        display: none;
+      }
+    }
+
+    .wrapper-preview-phone {
+      font-size: 12px;
+      color: #5e5e5e;
+    }
+
+    .profile-customer-for-deal {
+      font-weight: 400;
+      font-size: 14px;
+      padding: 8px;
+      margin: -8px;
+      margin-bottom: 5px;
+      border-radius: 8px;
+
+      &:hover {
+        background-color: #f0f5ff;
+      }
+
+      .profile-customer-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+
+      .name {
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 0;
+      }
+
+      .product-name {
+        color: #a0a0a0;
+      }
+    }
+
+    .short-table-profile {
+      .h2j-platform-item-wrapper {
+        margin-bottom: 5px;
+      }
+
+      .profile-customer-wrapper {
+        margin-bottom: 0;
+      }
+
+      .profile-customer-name {
+        width: calc(100% - 35px);
+        padding-left: 10px;
+      }
+    }
+
+    .status-deal {
+      .ant-tag {
+        border-radius: 4px;
+        margin-right: 0;
+      }
+    }
+
+    .deals-loans-table .ant-table-cell {
+      vertical-align: top;
+    }
+
+    .tabs-loan-table .ant-tabs-tab {
+      padding-top: 0;
+    }
+
+    .ui-loan-detail-bank {
+      .ant-avatar {
+        width: 24px !important;
+        height: 24px !important;
+
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    .email-icon-custom a {
+      color: #5e5e5e;
+      font-size: 12px;
+      text-decoration: none !important;
+      gap: 0 !important;
+
+      svg {
+        width: 22px;
+      }
+
+      span {
+        width: calc(100% - 22px);
+        padding-left: 8px;
+      }
+    }
+
+    .info-customer .stringee-phone-call {
+      gap: 8px;
+      align-items: center;
+      justify-content: flex-end;
+      flex-direction: row-reverse;
+    }
+
+    .table-no-data {
+      .ant-tabs-content-holder {
+        padding-top: 55px;
+      }
+
+      .deals-loans-table-left {
+        width: 100%;
+      }
+
+      .deals-loans-table-wrapper {
+        padding-top: 0;
+      }
+    }
+
+    .profile-customer-name {
+      width: calc(100% - 35px);
+      padding-left: 10px;
+    }
+
+    .deals-loans-table-wrapper {
+      display: flex;
+      position: relative;
+      padding-top: 56px;
+    }
+
+    .deals-loans-table-left {
+      width: 300px;
+
+      .ant-pagination {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .ant-spin-container,
+      .ant-spin-nested-loading {
+        position: initial !important;
+      }
+
+      .h-table-form.ant-table-wrapper .ant-table-thead {
+        .deal-short-table {
+          border-top-right-radius: 0;
+          border-top-left-radius: 8px;
+          background: #fff;
+          color: #333;
+          font-weight: 400;
+          padding: 14px;
+        }
+
+        .ant-table-cell-scrollbar {
+          background: #fff;
+          border-top-right-radius: 0;
+        }
+      }
+    }
+
+    .deals-loans-table-right {
+      width: calc(100% - 300px);
+      background-color: #fff;
+      border: 1px solid #f0f0f0;
+      border-left: none;
+      border-top-right-radius: 8px;
+      overflow-x: auto;
+
+      &__header {
+        p {
+          font-size: 14px;
+          margin-bottom: 0;
+        }
+        padding: 14px 0 14px 26px;
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      &__content {
+        padding: 1rem;
+      }
+    }
+
+    .no-sharing {
+      margin: 0 auto;
+    }
+  }
+}

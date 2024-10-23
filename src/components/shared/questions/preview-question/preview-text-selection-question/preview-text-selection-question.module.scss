@@ -1,0 +1,24 @@
+.preview-text-selection-question {
+	&__answer {
+		background: #ffffff;
+		border: 1px solid #064dd6;
+		box-sizing: border-box;
+		border-radius: 8px;
+		width: 400px;
+		height: 65px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 16px;
+		line-height: 21px;
+		color: #064dd6;
+		cursor: pointer;
+		&:not(:last-of-type) {
+			margin-bottom: 24px;
+		}
+	}
+	&__answer-selected {
+		background: #064dd6;
+		color: #ffffff;
+	}
+}

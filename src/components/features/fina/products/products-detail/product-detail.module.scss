@@ -1,0 +1,34 @@
+.product-detail {
+  .product-detail-prioritized {
+    padding: 10px 20px;
+    background: #fff;
+    margin-bottom: 30px;
+  }
+}
+
+.product-details-management {
+  display: flex;
+
+  &_filter {
+    width: 250px;
+    margin-right: 10px;
+
+    .advance_search_panel {
+      border-radius: 8px;
+      margin-bottom: 10px;
+
+      .advance_search_content {
+        display: inline;
+      }
+    }
+  }
+
+  &_content-filter {
+    width: calc(100% - 250px);
+  }
+
+  &_no-content-filter {
+    width: 100%;
+  }
+}
+

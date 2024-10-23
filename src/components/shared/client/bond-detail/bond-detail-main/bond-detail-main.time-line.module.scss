@@ -1,0 +1,21 @@
+@import '@styles/css_variables';
+
+.bond-detail--timeline {
+  padding: 0 16px;
+
+  &__name {
+    font-size: 16px;
+    color: #064dd6;
+    font-family: SFPD-Medium;
+    margin-bottom: 0;
+  }
+
+  &__content {
+    display: flex;
+
+    &--label-item {
+      color: #000000;
+      opacity: 0.6;
+    }
+  }
+}

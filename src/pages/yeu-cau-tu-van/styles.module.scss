@@ -1,0 +1,101 @@
+.request-counselling-page-form {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 16px;
+
+  &-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .ant-input {
+    padding: 12px 15px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+  }
+
+  .as-label {
+    left: 15px;
+    font-size: 12px !important;
+		top: -6px;
+  }
+
+  .ant-select-single.ant-select-lg:not(.ant-select-customize-input) .ant-select-selector {
+    height: 52px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    padding: 0 15px;
+
+    .ant-select-selection-placeholder,
+    .ant-select-selection-item {
+      line-height: 52px;
+    }
+  }
+
+  .ant-radio-group {
+    display: flex;
+    flex-direction: column;
+
+    @screen md {
+      display: inline-block;
+    }
+  }
+
+  .ant-radio-wrapper {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    align-items: center;
+
+    .ant-radio-input {
+      width: 20px;
+      height: 20px;
+    }
+
+    .ant-radio {
+      top: 0;
+    }
+
+    .ant-radio-inner {
+      width: 20px;
+      height: 20px;
+    }
+
+    .ant-radio-inner::after {
+      top: 4px;
+      left: 4px;
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  &-submit {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 13px 24px !important;
+    width: 100% !important;
+    height: 50px !important;
+    background: linear-gradient(247.68deg, #a47e5d 5.84%, #e0bd7a 86.06%) !important;
+    border-radius: 74px !important;
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    line-height: 140% !important;
+    color: #FFFFFF !important;
+    margin-top: 10px !important;
+    border: none !important;
+
+    &:hover,
+    &:focus {
+      color: #FFFFFF !important;
+      background: linear-gradient(247.68deg, #a47e5d 5.84%, #e0bd7a 86.06%) !important;
+    }
+  }
+}

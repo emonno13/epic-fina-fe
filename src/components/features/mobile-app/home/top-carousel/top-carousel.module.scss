@@ -1,0 +1,49 @@
+.top-carousel {
+	padding-top: 16px;
+  padding-bottom: 25px;
+	.slick-dots.slick-dots-bottom {
+		bottom: -12px;
+		margin-bottom: 0;
+
+		li {
+			width: 6px;
+			height: 6px;
+			background: #d0d0d0;
+			border-radius: 8px;
+			&.slick-active {
+				width: 18.75px;
+				height: 6px;
+				background: #226dfe;
+			}
+
+			button {
+				display: none;
+			}
+		}
+	}
+}
+
+.carounsel-wrapper {
+  width: 325px;
+	height: 150px;
+	padding: 40px 18px;
+	border-radius: 6px;
+  margin: auto;
+	h1 {
+		font-weight: 900;
+		font-size: 18px;
+		line-height: 23px;
+		color: #ffffff;
+		margin-bottom: 3px;
+	}
+	button {
+		height: 20px;
+		width: 73px;
+		background: #ff6c0e;
+		border-color: #ff6c0e;
+		border-radius: 4px;
+		color: #ffffff;
+		font-size: 8px;
+		font-weight: bold;
+	}
+}

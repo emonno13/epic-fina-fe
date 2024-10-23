@@ -1,0 +1,212 @@
+@import "../../../../../styles/css_variables";
+
+.bond-list-wrapper {
+  width: 100%;
+  margin-top: 30px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: #303030;
+    margin-bottom: 11px;
+    font-family: SFPD-Bold;
+  }
+
+  &__des {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    color: #064dd6;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .bond-list-wrapper-carousel {
+    margin-left: -12px;
+    margin-right: -12px;
+
+    .slick-arrow {
+      background-color: #9ba8ca !important;
+      width: 30px !important;
+      height: 60px !important;
+      border-radius: 25px;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      background: #f0f4ff;
+      opacity: 0.3;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      span.anticon {
+        color: #fff;
+        font-size: 14px;
+      }
+
+      @media only screen and (max-width: $md) {
+        display: none !important;
+      }
+    }
+
+    .slick-next {
+      right: -48px !important;
+    }
+
+    .slick-prev {
+      left: -48px !important;
+      z-index: 1;
+    }
+
+    &__item {
+      padding: 0 12px;
+    }
+  }
+
+  .bond-list-wrapper-carousel .client-bond-list-main-list-item-grid-view {
+    box-sizing: border-box;
+
+    &__header {
+      height: 36px;
+      border-radius: 8px 8px 0px 0px;
+      background-color: #005992;
+      background-size: cover;
+      background-position: 0;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+
+      &__image {
+        height: 100%;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      &__title {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #ffffff;
+      }
+    }
+
+    &__content {
+      padding: 8px 15px;
+      border-radius: 0px 0px 8px 8px;
+      border-bottom: 1px solid #dfe3ec;
+      border-left: 1px solid #dfe3ec;
+      border-right: 1px solid #dfe3ec;
+      height: calc(100% - 48px);
+
+      &__title {
+        font-family: SFPD-Medium;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.3px;
+        color: #222;
+        height: 34px;
+        margin-bottom: 9px;
+        box-sizing: border-box;
+      }
+
+      &__service {
+        margin-bottom: 10px;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        border-radius: 6px;
+        padding: 18px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__divider {
+          height: 67px;
+          background: #ababab;
+        }
+
+        &__divider-break {
+          background: #e2e2e2;
+          width: 1px;
+        }
+
+        &__item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 100%;
+
+          &__label,
+          &__unit {
+            font-family: SFPD-Regular;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            color: #76809a;
+          }
+
+          &__value {
+            font-family: SFPD-Medium;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            letter-spacing: 0.3px;
+            color: #000;
+            margin: 5px 0;
+            font-weight: 700;
+          }
+        }
+      }
+
+      &__request-button {
+        font-family: SFPD-Regular;
+        margin-bottom: 8px;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500;
+
+        button {
+          height: 40px;
+          width: 100%;
+          background: #f0f4ff;
+          border-radius: 6px;
+          border: none;
+          color: #0a3eca;
+
+          &:focus,
+          &:active,
+          &:hover {
+            background: #f0f4ff;
+            border: none;
+          }
+        }
+      }
+
+      &__detail-button {
+        font-family: SFPD-Regular;
+        width: 100%;
+        color: #76809a !important;
+        padding: 0 !important;
+        height: auto !important;
+        font-size: 12px !important;
+        line-height: 16px !important;
+
+        &:focus,
+        &:active,
+        &:hover {
+          color: #919191;
+        }
+      }
+    }
+  }
+}

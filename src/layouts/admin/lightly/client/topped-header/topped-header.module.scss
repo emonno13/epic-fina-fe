@@ -1,0 +1,76 @@
+@import "../../../../../styles/css_variables";
+
+.client-topped-header {
+  background: #111;
+  @media only screen and (max-width: $md) {
+    display: none;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    height: 28px;
+  }
+}
+
+.client-language-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__flag {
+    width: 20px;
+    margin-right: 4px;
+    svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__txt {
+    color: #fff;
+    font-family: SFPD-Light;
+    font-size: 13px;
+  }
+}
+
+.client-topped-header-contact-info {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+
+    &__icon {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+    }
+
+    &__zalo-icon {
+      width: 16px;
+      height: 16px;
+    }
+
+    &__phone-icon {
+      width: 16px;
+      height: 16px;
+    }
+
+    &__mail-icon {
+      width: 14px;
+      height: 14px;
+    }
+
+    &__txt {
+      font-family: SFPD-Regular;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.3px;
+      color: #fff;
+      display: block;
+    }
+  }
+}

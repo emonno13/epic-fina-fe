@@ -1,0 +1,56 @@
+ @import '../../../../../../styles/css_variables';
+
+.job-item{
+  @mixin text($font_family, $web, $mobile, $color: #777777){
+    @media only screen and (max-width: $md) {
+      font-size: $mobile;
+    }
+    font-family: $font_family;
+    font-size: $web;
+    color: $color;
+    margin-left: 5px;
+  }
+  &__list-container{
+    padding: 25px 22px 0px 22px;
+    background: #FBFBFB;
+  }
+  &__body{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #E2E2E2;
+    align-items: center;
+  }
+  &__row{
+    display: flex;
+    margin-left: 25px;
+  }
+  &__title{
+    @include text(SFPD-Medium,18px, 16px, #303030);
+    font-weight: 500;
+  }
+  &__text{
+    @include text(SFPD-Light,13px, 12px);
+    font-weight: 400;
+    font-style: normal;
+  }
+  &__date{
+    @include text(SFPD-Regular, 13px, 12px,#303030)
+  }
+  &__button{
+    padding: 6px 22px 6px 22px;
+    border: none;
+    border-radius: 4px;
+    background: #FF6C0E;
+    font-style: normal;
+    font-weight: 500;
+    @include text(SFPD-Medium,10px, 10px, #FFFFFF);
+  }
+  &__grid-container{
+    border: 0.5px solid #E2E2E2;
+    box-sizing: border-box;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 16px;
+  }
+}

@@ -1,0 +1,59 @@
+@import "../../../styles/css_variables";
+
+body, html {
+  height: 100vh
+}
+
+.ui-lightly-admin-layout {
+  height: calc(100vh - 115px) !important; // = $layout-header-height + ui-lightly-content.pading*2
+  position: relative;
+
+  .ui-lightly-admin {
+    padding-top: $layout-header-height;
+    z-index: 0;
+    background-color: #ffffff !important;
+
+    .ui-lightly-content {
+      background-color: #f7f8fb;
+      .ui-lightly-pcontent {
+        padding: 30px 20px;
+        .ant-drawer-header {
+          background-color: #f7f8fb;
+        }
+        .advance_search_panel {
+          padding: 20px;
+          background-color: #ffffff;
+          box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+          border: 1px solid #d9d9d9;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+
+  .ui-lightly-site-layout {
+    //overflow: hidden;
+    z-index: 1;
+    width: calc(100%) !important;
+    height: calc(100vh - 55px) !important;
+
+    @media only screen and (max-width: $md) {
+      margin-left: 0!important;
+    }
+  }
+
+  .notification-wrapper {
+    .ant-drawer-content-wrapper {
+      height: calc(100vh - 55px);
+      top: 55px;
+      width: 450px !important;
+      @media only screen and (max-width: $md) {
+        width: 80% !important;
+      }
+      .ant-drawer-body {
+        padding: 0;
+      }
+    }
+  }
+
+}

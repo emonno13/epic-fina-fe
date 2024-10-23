@@ -1,0 +1,68 @@
+@import '../../../../../../styles/css_variables';
+
+.job-detail-item{
+  &__container{
+    @media only screen and (max-width: $md) {
+      margin-right: 0px;
+    }
+    margin-right: 20px;
+    background: #FFFFFF;
+    padding: 40px;
+    width: 60%;
+  }
+  &__title{
+    @media only screen and (max-width: $md) {
+      font-size: 20px;
+    }
+    font-family: SFPD-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #303030;
+  }
+  &__item{
+    @media only screen and (max-width: $md) {
+      margin: 24px 0 32px 0;
+    }
+    margin: 32px 0 48px 0;
+  }
+ &__button{
+   height: 40px;
+   width: 200px;
+   border-radius: 6px;
+   background: #FF6C0E;
+   font-family: SFPD-Bold;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   color: #FFFFFF;
+ }
+  &__share{
+    font-family: SFPD-Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #777777;
+    margin-right: 4px;
+  }
+  &__row{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E2E2E2;
+    padding-bottom: 40px;
+
+  }
+  &__share-container{
+    @media only screen and (max-width: $md) {
+      margin: 8px 0 0 0;
+    }
+    display: flex;
+    margin: 15px 0 0 24px;
+
+  }
+  &__icon{
+    margin: 0 2px 0 2px;
+  }
+
+}

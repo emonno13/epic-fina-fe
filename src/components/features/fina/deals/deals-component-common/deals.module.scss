@@ -1,0 +1,154 @@
+@import '@styles/css_variables';
+
+.deals-custom {
+  .ant-form-item-control-input {
+    .ant-radio-button-wrapper {
+      margin: 0 5px;
+      border-radius: 4px;
+      height: 26px;
+      padding: 0 15px;
+    }
+  }
+
+  .groupBtn {
+    float: right;
+
+    .ant-btn {
+      margin: 0 15px;
+    }
+  }
+
+  span.ant-input-group-addon:first-child {
+    @media only screen and (max-width: $md) {
+      display: none;
+    }
+  }
+}
+
+.wrapper-icon-email {
+  display: flex;
+
+  .icon-email {
+    margin-left: 8px;
+    background: #0a3eca;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    transition: all 0.1s linear;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+
+    &:hover {
+      transition: all 0.1s linear;
+      opacity: 0.8;
+    }
+  }
+}
+
+.wrapper-statistics-progress {
+  color: #555555;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 15px;
+
+  .time-remain {
+    font-size: 14px;
+    line-height: 22px;
+    color: #555555;
+    display: flex;
+
+    .recall-records {
+      margin-left: 15px;
+    }
+  }
+
+  .data-statistics-progress {
+    display: flex;
+
+    .progress-made {
+      padding-right: 30px;
+
+      .progress-wp-number {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+
+        .quantity-done {
+          color: #e0b636;
+        }
+
+        .total-progress {
+          color: #808191;
+        }
+      }
+    }
+
+    .percent-complete {
+      .quantity-percent-complete {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        color: #219653;
+      }
+    }
+  }
+}
+
+.resizable-fragment + div {
+  height: auto !important;
+}
+
+.wrapper-preview-user-table {
+  display: flex;
+
+  .wrapper-preview-user__avatar {
+    width: 20%;
+    margin: auto;
+    text-align: center;
+
+    .ant-avatar-group {
+      display: block;
+
+      .ant-avatar-circle {
+        display: flex;
+      }
+
+      .ant-avatar:not(:first-child) {
+        margin-left: 0px;
+        margin-top: -20px;
+      }
+    }
+  }
+
+  .wrapper-preview-user__comment {
+    width: 80%;
+  }
+}
+
+.no-comment {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.preview-comopany {
+  width: 100%;
+  .preview-comopany-origin {
+    display: flex;
+  }
+  .preview-comopany-origin-title {
+    width: 20%;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.85);
+  }
+  .ui-email-panel {
+    display: flex;
+    margin-top: 10px;
+  }
+  .preview-comopany-phone {
+    display: flex;
+  }
+}

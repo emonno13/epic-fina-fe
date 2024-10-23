@@ -1,0 +1,36 @@
+.tag-item{
+  &__container{
+    width: 100%;
+    border-radius: 4px;
+    padding: 16px 22px 16px 22px;
+    background: #FBFBFB;
+    border: 1px solid #e2e2e2;
+  }
+  &__tag{
+    padding: 6px 12px 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #4CAF50;
+    background: #F9FFF9;
+    color: #4CAF50;
+    font-size: 14px;
+    font-family: SFPD-Regular;
+    font-style: normal;
+    font-weight: 400;
+    margin: 5px;
+  }
+  &__delete{
+    display: inline-block;
+    margin-left: 12px;
+    cursor: pointer;
+  }
+  &__clear{
+    white-space:nowrap;
+    font-family: SFPD-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #064DD6;
+    margin-left: 14px;
+  }
+}

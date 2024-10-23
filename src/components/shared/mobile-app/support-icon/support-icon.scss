@@ -1,0 +1,16 @@
+.mobile-support {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 0;
+	color: #fff;
+	height: 100%;
+	> span {
+		line-height: 12px;
+	}
+	&:hover,
+	&:active,
+	&:focus {
+		color: #fff;
+	}
+}

@@ -1,0 +1,15 @@
+$control_bg: #fafbfc;
+$content_bg: #ffffff; // #fafbfc;
+@import "../../../styles/css_variables";
+#__next {
+  .header-height {
+    height: var(--frontend-layout-header-height) !important;
+  }
+  ._ui-page {
+    background: var(--f-main-color);
+  }
+}
+
+body {
+  background: var(--f-main-color) !important;
+}

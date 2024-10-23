@@ -1,0 +1,65 @@
+.ui-call-panel {
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  z-index: 3;
+
+  .height-display-none {
+    height: 50px;
+    min-width: 100px !important;
+    border-radius: 8px;
+
+    .call-handle {
+      width: 100px;
+      padding: 0;
+      border-radius: 8px;
+
+      .call-handle__customer-call.connect {
+        color: #0068ff;
+      }
+    }
+  }
+
+  .height-show {
+    height: 680px;
+    min-width: 150px;
+  }
+
+  .ui-calling-detail {
+    margin-bottom: 10px;
+    margin-right: 30px;
+    display: flex;
+    background-color: white;
+    transition: all 0.1s linear;
+
+    &.display-none {
+      display: none;
+    }
+
+    &.show {
+      transition: all 0.1s linear;
+      padding: 5px
+    }
+
+    .survey-question-admin .preview-questions .ui-question-name {
+      margin-bottom: 0;
+    }
+
+    .preview-text-selection-question .preview-text-selection-question__answer {
+      font-size: 12px;
+      width: 100%;
+      margin-bottom: 5px;
+      height: fit-content;
+    }
+  }
+}
+
+.ui-stringee-call-panel.show {
+  .ui-calling-detail {
+    height: fit-content;
+  }
+  .info-panel {
+    padding: 0 !important;
+  }
+}
+

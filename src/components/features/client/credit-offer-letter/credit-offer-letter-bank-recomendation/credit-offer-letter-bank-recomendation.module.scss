@@ -1,0 +1,22 @@
+.credit-offer-letter-bank-recomend-list {
+  display: flex;
+  gap: 16px;
+}
+
+.credit-offer-letter-loan-item {
+  $loan-width-mobile: 290px;
+  $loan-width: 328px;
+
+  margin: 0;
+  min-width: $loan-width-mobile;
+  width: $loan-width-mobile;
+
+  @screen md {
+    min-width: $loan-width;
+    width: $loan-width;
+  }
+
+  .home-loan-list-item__content {
+    height: auto;
+  }
+}

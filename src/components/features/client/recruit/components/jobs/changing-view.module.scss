@@ -1,0 +1,43 @@
+@import '../../../../../../styles/css_variables';
+
+.changing-view{
+  @mixin text($fontFamily, $web, $mobile, $color: #1B1B1B){
+    @media only screen and (max-width: $md) {
+      font-size: $mobile;
+    }
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $web;
+    color: $color;
+  }
+  &__container{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__row{
+    display: flex;
+  }
+  &__title{
+    @include text(SFPD-Medium, 24px, 20px)
+  }
+  &__blue{
+    @include text(SFPD-Medium, 24px, 20px, #064DD6)
+  }
+  &__view{
+    @media only screen and (max-width: $md) {
+      display: none;
+
+    }
+    @include text(SFPD-Regular, 14px, 0px, #919191);
+    margin-right: 20px;
+  }
+  &__fill path{
+    fill: #064DD6;
+  }
+  &__hide{
+    @media only screen and (max-width: $md) {
+      display: none
+    }
+  }
+}

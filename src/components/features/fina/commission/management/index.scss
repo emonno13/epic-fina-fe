@@ -1,0 +1,45 @@
+.commission-summary {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  border: 1px solid #cecece;
+  align-items: center;
+  background: #FFF;
+
+  &__item {
+    width: 50%;
+    text-align: center;
+    padding: 1rem;
+
+    &:not(:last-child) {
+      border-right: 1px solid #cecece;
+    }
+  }
+
+  &__title {
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    &--for-control {
+      color: green;
+    }
+
+    &--not-for-control {
+      color: mediumvioletred;
+    }
+
+    &--cancelled {
+      color: red;
+    }
+
+    &--paid {
+      color: #000;
+    }
+  }
+
+  &__amount {
+    padding: 0;
+    margin: 0;
+  }
+}

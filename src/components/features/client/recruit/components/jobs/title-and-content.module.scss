@@ -1,0 +1,40 @@
+@import '../../../../../../styles/css_variables';
+
+.title-and-content{
+  &__row{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__label{
+    font-family: SFPD-Medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #474747;
+
+  }
+  &__label-container{
+    @media only screen and (max-width: $md) {
+      margin-right: 0;
+    }
+    width: 130px;
+    margin-right: 5%;
+  }
+  &__content-container{
+    @media only screen and (max-width: $md) {
+      max-width: 55%;
+    }
+    flex: auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__content{
+    font-family: SFPD-Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #5E5E5E;
+  }
+}

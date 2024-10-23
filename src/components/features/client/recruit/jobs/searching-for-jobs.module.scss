@@ -1,0 +1,32 @@
+@import '../../../../../styles/css_variables';
+
+.searching-for-jobs{
+  &__container{
+    @media only screen and (max-width: $md) {
+      padding: 48px 0 48px 0 ;
+    }
+    text-align: center;
+    padding: 110px 0 110px 0 ;
+    background-image: url("/assets/images/recruit_job.png");
+    background-repeat: round;
+  }
+  &__title{
+    @media only screen and (max-width: $md) {
+      font-size: 28px;
+    }
+    font-family:SFPD-Bold;
+    font-weight: 700;
+    font-size: 36px;
+    color: #FFFFFF;
+
+  }
+  &__search{
+    @media only screen and (max-width: $md) {
+      padding: 0 20px 0 20px ;
+    }
+    padding: 0 40px 0 20px ;
+    border-radius: 12px;
+    max-width: 1224px;
+    margin: 0 auto;
+  }
+}

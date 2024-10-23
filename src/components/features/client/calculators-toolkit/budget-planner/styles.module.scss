@@ -1,0 +1,390 @@
+.budget-planner-wrapper {
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+.budget-planner {
+  background: #FFFFFF;
+  border-radius: 16px;
+  font-size: 12px;
+  background-image: url("/assets/images/bg-water-mark-calc.png");
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat;
+
+  @screen md {
+    padding: 24px;
+    border: 1px solid #AEAEB2;
+  }
+
+  &-tabs {
+    margin: 0 -24px;
+
+    .ant-tabs-nav-wrap .ant-tabs-nav-list {
+      width: 100%;
+      background: #F5F5F5;
+      border-radius: 4px;
+      margin: 0;
+      padding: 8px;
+      gap: 16px;
+
+      @screen md {
+        margin: 0 24px;
+        gap: 32px;
+      }
+    }
+
+    .ant-tabs-nav:before {
+      border-bottom: none;
+    }
+
+    .ant-tabs-ink-bar {
+      display: none;
+    }
+
+    .ant-tabs-tab-active {
+      background: #064DD6;
+      border-radius: 4px;
+    }
+
+    .ant-tabs-tab {
+      width: 50%;
+      font-size: 16px;
+      justify-content: center;
+      font-weight: 700;
+      padding: 8px 16px;
+      margin: 0;
+
+      &:hover {
+        background: #064DD6;
+        border-radius: 4px;
+
+        .ant-tabs-tab-btn {
+          color: #FFFFFF;
+        }
+      }
+
+      & .ant-tabs-tab-btn {
+        color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+      }
+
+      &.ant-tabs-tab-active .ant-tabs-tab-btn {
+        color: #FFFFFF;
+      }
+    }
+
+    .ant-collapse .ant-collapse-item {
+      border-bottom: none;
+      margin-bottom: 10px;
+
+      .ant-collapse-header {
+        background-color: #F8FAFF;
+        font-size: 16px;
+        font-weight: 700;
+        color: #064DD6;
+
+        .anticon {
+          font-size: 16px;
+        }
+      }
+
+      .ant-collapse-content-box {
+        padding: 10px 0;
+        padding-bottom: 0;
+      }
+
+      .ant-list {
+        padding: 0 16px;
+      }
+    }
+
+    .ant-list {
+      .ant-list-header {
+        padding-top: 0;
+        padding-bottom: 10px;
+        display: none;
+        font-weight: bold;
+        color: #064DD6;
+
+        @screen md {
+          display: flex;
+        }
+      }
+
+      ::-moz-selection {
+        color: #fff;
+        background: #0068ff;
+      }
+
+      ::selection {
+        color: #fff;
+        background: #0068ff;
+      }
+
+      .label-header,
+      .label-list {
+        width: 40%;
+      }
+
+      .amount-header,
+      .amount-list {
+        width: 35%;
+        padding-left: 15px;
+      }
+
+      .annual-header,
+      .annual-list,
+      .annual-footer {
+        width: 25%;
+        font-weight: 700;
+        padding-left: 15px;
+      }
+
+      .annual-header,
+      .annual-list {
+        display: none;
+
+        @screen md {
+          display: inline-block
+        }
+      }
+
+      .ant-list-footer {
+        display: flex;
+        font-weight: bold;
+        color: #064DD6;
+        padding-top: 10px;
+        padding-bottom: 0;
+
+        .label-footer {
+          width: 40%;
+          text-align: left;
+
+          @screen md {
+            width: 75%;
+            text-align: right;
+            padding-right: 15px;
+          }
+        }
+
+        .annual-footer {
+          width: 60%;
+
+          @screen md {
+            width: 25%;
+          }
+        }
+      }
+
+      .ant-list-item {
+        padding: 5px 0;
+        border-bottom: none;
+        display: block;
+
+        @screen md {
+          display: flex
+        }
+
+        &:first-child {
+          padding-top: 10px;
+        }
+
+        &:last-child {
+          padding-bottom: 10px;
+        }
+      }
+
+      .ant-input-group-compact {
+        width: 100%;
+
+        @screen md {
+          width: 200px;
+        }
+      }
+
+      .ant-input-number {
+        width: calc(100% - 75px);
+        font-size: 12px;
+        padding: 0 10px;
+        overflow: hidden;
+        min-height: 32px;
+
+        .ant-input-number-handler-wrap {
+          width: 100%;
+          padding: 0 11px;
+          opacity: 1;
+
+          &:first-child {
+            @screen md {
+              display: none;
+              width: 22px;
+              padding: 0;
+            }
+          }
+        }
+      }
+
+      .ant-input-number-input {
+        padding: 0;
+      }
+
+      .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+        font-size: 12px;
+        width: 75px;
+        padding: 0 8px;
+      }
+    }
+
+    .unit {
+      font-weight: 400;
+      color: #000000;
+    }
+  }
+
+  &-view-summary {
+    .ant-list {
+      padding: 0 16px;
+
+      .ant-list-header {
+        display: flex;
+      }
+
+      .ant-list-item {
+        display: flex;
+      }
+
+      .label-header,
+      .label-list {
+        width: 50%;
+      }
+
+      .amount-header,
+      .amount-list {
+        display: none;
+
+        @screen md {
+          width: 25%;
+          display: inline-block;
+        }
+      }
+
+      .annual-header,
+      .annual-list,
+      .annual-footer {
+        width: 50%;
+        display: inline-block;
+
+        @screen md {
+          width: 25%;
+        }
+      }
+
+      .annual-list {
+        font-weight: 400;
+      }
+
+      .ant-list-item {
+        padding: 10px 0;
+      }
+
+      .ant-list-footer {
+
+        .label-list,
+        .amount-list,
+        .annual-list {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .calculators-toolkit-actions {
+    margin-top: 24px;
+    padding: 0 24px;
+    justify-content: center;
+
+    @screen md {
+      justify-content: space-between;
+    }
+
+    .open-all {
+      background: #064DD6;
+      border: 1px solid #064DD6;
+    }
+
+    .close-all {
+      background: #002E87;
+      border: 1px solid #002E87;
+    }
+  }
+}
+
+@media print {
+  .budget-planner-wrapper {
+    .budget-planner {
+      padding: 24px;
+      border: 1px solid #AEAEB2;
+
+      .calculators-toolkit-header,
+      .calculators-toolkit-actions {
+        display: none;
+      }
+
+      .calculators-toolkit-item-title {
+        margin-top: 0;
+      }
+
+      &-tabs {
+        .ant-list {
+          .ant-list-header {
+            display: flex;
+          }
+
+          .annual-header,
+          .annual-list {
+            display: inline-block
+          }
+
+          .ant-list-footer {
+            display: flex;
+            font-weight: bold;
+            color: #064DD6;
+            padding-top: 10px;
+            padding-bottom: 0;
+
+            .label-footer {
+              width: 75%;
+              text-align: right;
+              padding-right: 15px;
+            }
+
+            .annual-footer {
+              width: 25%;
+            }
+          }
+
+          .ant-list-item {
+            display: flex
+          }
+
+          .ant-input-group-compact {
+            width: 200px;
+          }
+
+          .ant-input-number {
+            .ant-input-number-handler-wrap {
+              &:first-child {
+                display: none;
+                width: 22px;
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

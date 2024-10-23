@@ -1,0 +1,13 @@
+.deal-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.view-loan-information-detail-note {
+  .ant-list-items {
+    height: 200px;
+    overflow-y: auto;
+  }
+}

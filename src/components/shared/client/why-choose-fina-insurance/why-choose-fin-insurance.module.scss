@@ -1,0 +1,54 @@
+@import "../../../../styles/css_variables";
+
+.client-why-choose-fina-insurance {
+  border-top: 1px solid #dfe3ec;
+  background: linear-gradient(180deg, #fff, #f2f5f9);
+  padding-top: 60px;
+  padding-bottom: 45px;
+
+  @media only screen and (max-width: $md) {
+    padding: 30px 20px;
+  }
+
+  &__title {
+    font-family: SFPD-Bold;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.3px;
+    margin-bottom: 38px;
+    color: #111;
+
+    @media only screen and (max-width: $md) {
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 21px;
+    }
+  }
+}
+
+.client-why-choose-fina-insurance-content-item {
+  padding: 43px 29px 34px;
+  background: #fff;
+  border: 1px solid #dfe3ec;
+  box-sizing: border-box;
+  border-radius: 8px;
+  &__icon {
+    margin-bottom: 27px;
+    text-align: center;
+  }
+  &__title {
+    font-family: SFPD-SemiBold;
+    font-size: 17px;
+    line-height: 120%;
+    margin-bottom: 12px;
+    letter-spacing: 0.3px;
+    color: #111;
+  }
+  &__desc {
+    font-family: SFPD-Regular;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #555;
+  }
+}

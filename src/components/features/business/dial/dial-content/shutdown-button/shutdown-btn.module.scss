@@ -1,0 +1,31 @@
+.control-btn {
+  position: relative;
+
+  .shutdown-btn {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+    cursor: pointer;
+    margin: 0 auto;
+  
+    &:hover {
+      background-color: rgb(193, 9, 9);
+    }
+  }
+  
+  .hidden-btn {
+    cursor: pointer;
+    color: #011232;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+  }
+}

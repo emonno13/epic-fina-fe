@@ -1,0 +1,9 @@
+@import "../../../../styles/css_variables";
+
+.trasaction-table {
+  @media only screen and (max-width: $md) {
+    .ant-table-content {
+      overflow: scroll;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.financial-advice-receive-information {
+  background-color: #F4F8FF;
+  padding: 104px 0;
+  &__left {
+    display: flex;
+    align-items: center;
+    .financial-advice-introduce-receive-information {
+      &__hot {
+        text-align: center;
+        & > strong:first-child {
+          color: #FF6C0E;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 38px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        & > strong:last-child {
+          color: #064DD6;
+          font-weight: 700;
+          font-size: 26px;
+          line-height: 40px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        & > p {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 140%;
+          color: #303030;
+        }
+      }
+      &__description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #5E5E5E;
+      }
+    }
+  }
+  .financial-advice-form-receive-information {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 36px;
+    filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.1));
+    &__header {
+      margin-bottom: 22px;
+      & > h3 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 140%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #303030;
+        margin-bottom: 0;
+        & > span {
+          color: #064DD6;
+        }
+      }
+      & > span {
+        font-style: normal;
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: #5E5E5E;
+      }
+    }
+    &__form-detail {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      .ant-form-item-label {
+        line-height: 1;
+      }
+
+      .ant-select-single .ant-select-selector {
+        height: 48px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      label {
+        font-weight: 500;
+        font-size: 14px;
+        // line-height: 17px;
+        color: #5E5E5E;
+      }
+      .ant-form-item-control-input-content {
+        height: 48px;
+        & > input, & > select {
+          height: 100%;
+        }
+      }
+      &__submit {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 13px 24px;
+        width: 100%;
+        height: 51px;
+        background: linear-gradient(247.68deg, #FFAE64 5.84%, #FF6C0E 86.06%), linear-gradient(247.68deg, #19A1EE 5.84%, #064DD6 86.06%);
+        border-radius: 74px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin-top: 10px;
+        border: none;
+
+        &:hover {
+          border: none;
+        }
+      }
+      .ant-row .ant-form-item {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

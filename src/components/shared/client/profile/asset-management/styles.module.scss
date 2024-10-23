@@ -1,0 +1,353 @@
+.profile-asset-management {
+  font-family: 'SF Pro Display';
+
+  &-statistics {
+    margin-top: 45px;
+    border-radius: 8px;
+
+    @screen md {
+      height: 160px;
+      background: linear-gradient(76.32deg, #0A3ECA -4.89%, #4B7CFF 89.94%);
+    }
+
+    &-left {
+      padding: 20px 0;
+      color: #FFFFFF;
+      background: linear-gradient(76.32deg, #0A3ECA -4.89%, #4B7CFF 89.94%);
+      border-radius: 8px;
+      margin-bottom: 8px;
+
+      @screen md {
+        padding: 35px 0;
+        background: none;
+        margin-bottom: 0;
+      }
+    }
+
+    .ant-col:last-child .profile-asset-management-statistics-item {
+      border-right: none;
+    }
+
+    &-item {
+      text-align: center;
+      border-right: 1px solid #3E7DE6;
+    }
+
+    &-value {
+      font-weight: 700;
+      font-size: 16px;
+
+      @screen md {
+        font-size: 20px;
+      }
+
+      .increase {
+        color: #52C41A;
+      }
+
+      .reduce {
+        color: #F5222D;
+
+        svg {
+          transform: rotate(180deg);
+        }
+
+        path {
+          fill: #F5222D;
+        }
+      }
+    }
+
+    &-right {
+      background-image: url("/assets/images/bg-mask-asset-management.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 180px;
+      border-radius: 8px;
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+
+      @screen md {
+        margin-top: -20px;
+      }
+    }
+
+    &-chart {
+      width: 175px;
+      margin-left: -5px;
+    }
+
+    &-legends {
+      width: calc(100% - 175px);
+
+      @screen md {
+        margin-left: -5px;
+      }
+    }
+
+    &-legends-title {
+      font-weight: 600;
+      font-size: 16px;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+
+      @screen md {
+        margin-bottom: 16px;
+      }
+    }
+
+    &-legends-content {
+      color: #FFFFFF;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 14px;
+      flex-direction: column;
+
+      @screen md {
+        flex-direction: row;
+      }
+
+      .legend-color {
+        border-radius: 1px;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 8px;
+
+        @screen md {
+          margin-right: 4px;
+        }
+      }
+
+      .legend-value {
+        font-weight: 700;
+        font-size: 12px;
+      }
+
+      .legend-label {
+        min-width: 85px;
+        display: inline-block;
+      }
+    }
+
+    &-legend {
+      margin-bottom: 4px;
+
+      @screen md {
+        width: 50%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &-no-product {
+    margin: 16px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    background: #FFF9F3;
+    border-radius: 4px;
+    padding: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FF6C0E;
+    align-items: center;
+  }
+
+  .profile-asset-no-data {
+    font-weight: 400;
+    font-size: 16px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7F868D;
+  }
+
+  &-overview-product {
+    margin: 24px 0;
+
+    .overview-asset-product {
+      cursor: pointer;
+      padding: 16px;
+      border: 1px solid #b8cbea;
+      background-image: url("/assets/images/bg-fund-program.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 10px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      overflow: hidden;
+
+      &-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4px;
+
+        &-code {
+          font-weight: 700;
+        }
+      }
+
+      .asset-program {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-weight: 700;
+        margin-bottom: 5px;
+
+        &:last-child {
+          margin-bottom: 10px;
+        }
+      }
+
+      .tick {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 30px solid #064DD6;
+        border-left: 30px solid transparent;
+        top: 0;
+        right: 0;
+
+        svg {
+          top: -30px;
+          right: 2px;
+          width: 16px;
+          position: absolute;
+          fill: #FFFFFF;
+        }
+      }
+
+      .ant-btn-primary {
+        background: #064DD6;
+        border: none;
+        color: #FFFFFF;
+        font-weight: 600;
+        border-radius: 4px;
+        min-height: 36px;
+      }
+    }
+  }
+
+  .percent-icon {
+    display: flex;
+    align-items: center;
+  }
+
+  .total-profit {
+    font-weight: 600;
+  }
+
+  .asset-table-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-right: 10px;
+
+    svg {
+      cursor: pointer;
+    }
+
+    a,
+    .clickable-opacity {
+      line-height: 14px;
+    }
+  }
+
+  .asset-table-org {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    img {
+      width: 24px;
+      height: 24px;
+      object-fit: cover;
+    }
+  }
+}
+
+.detail-asset-modal {
+  font-family: 'SF Pro Display';
+
+  .ant-modal-header {
+    border-radius: 16px 16px 0 0;
+    padding: 24px;
+
+    .ant-modal-title {
+      font-weight: 600;
+      font-size: 24px;
+    }
+  }
+
+  .ant-modal-body {
+    padding: 16px 24px;
+  }
+
+  &-header {
+    background: #F3F7FF;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+      }
+
+      h4 {
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+    }
+
+    &-right {
+      color: #064DD6;
+    }
+
+    &-product-name {
+      color: #4E5A65;
+    }
+  }
+
+  &-content {
+    margin-top: 25px;
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    &-label {
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .total-profit {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .percent-icon {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+
+.connect-fina{
+  @mixin hover{
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 0 80px 0;
+  }
+  &__body{
+    width: 290px;
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title{
+    font-family: SFPD-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    color: #1B1B1B;
+
+  }
+  &__zalo{
+    @include hover;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+  }
+  &__icon{
+    @include hover;
+  }
+}

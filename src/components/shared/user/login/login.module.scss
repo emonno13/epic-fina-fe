@@ -1,0 +1,47 @@
+@import '@styles/css_variables';
+
+.login-page-wrapper {
+  .login-page {
+    &__logo {
+      text-align: center;
+      img {
+        margin: auto;
+      }
+    }
+
+    .remember-me-and-forgot-password {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 32px;
+
+      .ant-checkbox-wrapper,
+      .login-form-forgot {
+        @screen md {
+          font-size: 16px !important;
+        }
+      }
+    }
+
+    .pre-login-divider {
+      color: #aaafb3;
+      margin: 32px 0;
+
+      &::before,
+      &::after {
+        border-top-color: #aaafb3 !important;
+      }
+
+      @screen md {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .pre-login-frame__right-side {
+    padding-bottom: 15px;
+
+    @screen md {
+      padding-bottom: 0;
+    }
+  }
+}

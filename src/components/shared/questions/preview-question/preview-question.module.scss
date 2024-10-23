@@ -1,0 +1,17 @@
+.ui-question-name {
+	margin-bottom: 36px;
+	&.require {
+		&::before {
+			content: "*";
+			color: red;
+			margin-right: 4px;
+		}
+	}
+	.megadraft {
+		display: inline-block;
+	}
+	&__require {
+		font-style: italic;
+		color: red;
+	}
+}

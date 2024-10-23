@@ -1,0 +1,90 @@
+.loans-introduce .reason-choose-fina {
+    padding: 80px 0;
+    background-color: #064DD6;
+    background-image: url(/assets/images/bg-reason-choose-fina.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+
+    &-subheader {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 38px;
+        color: #FFFFFF;
+
+        @screen md {
+            font-size: 32px;
+        }
+    }
+
+    &-header {
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 130%;
+        color: #FFFFFF;
+        margin-bottom: 32px;
+
+        @screen md {
+            font-size: 56px;
+            margin-bottom: 56px;
+        }
+    }
+
+    .more-information-btn {
+        padding: 13px 50px;
+        height: 48px;
+        background: linear-gradient(247.68deg, #FFAE64 5.84%, #FF6C0E 86.06%), linear-gradient(247.68deg, #19A1EE 5.84%, #064DD6 86.06%);
+        border-radius: 70px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 48px;
+        color: #FFFFFF;
+        border: none;
+        margin-bottom: 60px;
+
+        @screen md {
+            padding: 13px 70px;
+            margin-bottom: 0;
+        }
+    }
+
+    &-content {
+        &-item {
+            text-align: center;
+            background: #FFFFFF;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 16px;
+            padding: 24px 22px;
+            height: 100%;
+
+            .reason-icon {
+                display: inline-flex;
+                width: 48px;
+                height: 48px;
+                background: #E7F0FC;
+                border-radius: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+
+            h4 {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                color: #303030;
+                margin-top: 12px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                text-align: center;
+                color: #777777;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@import '../../../../../../styles/css_variables';
+
+.benefit-item {
+  @mixin text($fontFamily, $web, $mobile, $color: #FFFFFF){
+    @media only screen and (max-width: $md) {
+      font-size: $mobile;
+    }
+    font-family: $fontFamily;
+    font-size: $web;
+    color: $color;
+  }
+  @media only screen and (max-width: $md) {
+    overflow-x: scroll;
+  }
+  &__item {
+    @media only screen and (max-width: $md) {
+      width: 42%;
+      padding: 5px 15px 15px 15px;
+      height: 85px;
+    }
+
+    margin: 20px;
+    position: relative;
+    transition: all 0.1s;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 105px;
+    width: 300px;
+    padding: 5px 30px 25px 30px;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    &__icon {@media only screen and (max-width: $md) {
+      padding: 0 10px 0 10px;
+      top: -15px;
+
+    }
+      background-color: rgba(6, 77, 214, 0.95);
+      position: absolute;
+      top: -25px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 25px 0 25px;
+    }
+    &__title {
+      @include text(SFPD-Bold, 18px, 14px);
+      @media only screen and (max-width: $md) {
+        line-height: 16px;
+      }
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    &:hover {
+      border: 3px solid #FFFFFF;
+    }
+  }
+}

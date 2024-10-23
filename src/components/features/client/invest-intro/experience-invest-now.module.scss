@@ -1,0 +1,115 @@
+@import '@styles/css_variables';
+
+.experience-invest-now {
+  .container {
+    max-width: 1110px;
+    padding-bottom: 97px;
+    position: relative;
+    @screen lg {
+      padding-bottom: 177px;
+    }
+    .line {
+      border-bottom: 4px solid #cbe3fc;
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      bottom: 0;
+      @screen md {
+        left: 20px;
+        right: 20px;
+      }
+    }
+  }
+
+  &-header {
+    background-image: url('/assets/images/bg-invest-now.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px 15px;
+
+    @screen md {
+      padding: 45px 0;
+      height: 234px;
+    }
+
+    .container {
+      padding: 0;
+      border-bottom: none;
+    }
+
+    h2 {
+      font-family: 'SF Pro Display Bold';
+      color: #ffffff;
+      font-size: 24px;
+      line-height: 44px;
+      margin-bottom: 0;
+
+      @screen md {
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+
+    h1 {
+      font-family: 'SF Pro Display Bold';
+      color: #ffffff;
+      font-size: 40px;
+      line-height: 44px;
+      margin-bottom: 0;
+
+      @screen md {
+        font-size: 64px;
+        line-height: 70px;
+      }
+    }
+  }
+
+  &-content {
+    padding-top: 30px;
+    padding-bottom: 45px;
+    position: relative;
+    @screen md {
+      padding: 30px 0 32px 0;
+    }
+
+    &-left {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+
+      &-desc {
+        margin-bottom: 25px;
+      }
+    }
+
+    .invest-btn {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      height: 48px;
+      padding: 2px 36px;
+      margin-left: auto;
+      margin-right: auto;
+      @screen md {
+        margin-left: initial;
+        margin-right: initial;
+      }
+    }
+
+    &-right {
+      @screen md {
+        position: absolute;
+        top: -180px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .content-item {
+    color: #000;
+  }
+}

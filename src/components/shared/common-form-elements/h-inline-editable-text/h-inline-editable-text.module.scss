@@ -1,0 +1,27 @@
+.h-editor {
+	padding: 5px 10px;
+}
+.editable {
+	border-bottom: 1px dashed #999999;
+	&:hover {
+		background-color: transparent;
+	}
+}
+[contenteditable] {
+	outline: 0px solid transparent;
+}
+.color-palette {
+	.ant-popover-inner-content {
+		padding: 8px !important;
+	}
+	.color-palette-item {
+		width: 24px;
+		height: 24px;
+		border-radius: 24px;
+		cursor: pointer;
+		border: solid 1px #f2f2f2;
+		&:not(:last-of-type) {
+			margin-bottom: 8px;
+		}
+	}
+}

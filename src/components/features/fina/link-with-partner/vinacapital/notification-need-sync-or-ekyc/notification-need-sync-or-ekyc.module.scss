@@ -1,0 +1,24 @@
+@import '@styles/css_variables';
+.notification-need-sync-or-ekyc {
+  &__msg {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    margin-right: 0;
+    margin-left: 0;
+
+    @screen md {
+      margin-left: 20%;
+      margin-right: 20%;
+      margin-bottom: 24px;
+    }
+  }
+  &__group-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+}

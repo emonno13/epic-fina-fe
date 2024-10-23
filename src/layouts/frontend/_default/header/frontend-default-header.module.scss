@@ -1,0 +1,50 @@
+$control_bg: #fafbfc;
+$content_bg: #ffffff; // #fafbfc;
+@import "../../../../styles/css_variables";
+._page-default-header {
+  height: var(--top-header-height) !important;
+  line-height: var(--top-header-height) !important;
+  background: var(--top-header-bg-color);
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  ._ui-pdh-left {
+    opacity: 0.8;
+    flex-grow: 1;
+    height: 100%;
+  }
+  ._ui-pdh-right {
+    height: 100%;
+  }
+  .my-inline-list {
+    height: 100%;
+  }
+}
+
+.my-inline-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  li {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 0 5px;
+    &:first-child {
+      &:before {
+        height: 0
+      }
+    }
+    &:before {
+      content: "";
+      width: 1px;
+      height: 35%;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.history-timeline {
+	max-width: 950px;
+	margin: 0 auto;
+
+	&__content {
+		width: 45%;
+		border-radius: 5px;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		box-shadow: 4px 6px 18px -6px;
+
+		&-item {
+			padding: 0.5rem;
+			text-align: left;
+		}
+	}
+}

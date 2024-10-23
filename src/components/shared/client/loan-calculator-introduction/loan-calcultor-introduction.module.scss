@@ -1,0 +1,105 @@
+@import "../../../../styles/css_variables";
+
+.client-loan-calculator-introduction {
+  border-top: 1px solid #dfe3ec;
+  background: linear-gradient(180deg, #fff, #f2f5f9);
+  padding-top: 60px;
+  padding-bottom: 45px;
+
+  @media only screen and (max-width: $md) {
+    padding: 30px 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 292px;
+
+    @media only screen and (max-width: $md) {
+      display: block;
+      height: auto;
+    }
+
+    &__content {
+      width: 412px;
+      max-width: 100%;
+      &__title {
+        font-size: 28px;
+        line-height: 34px;
+        font-family: SFPD-Bold;
+        letter-spacing: 0.3px;
+        color: #111;
+        margin-bottom: 10px;
+        @media only screen and (max-width: $md) {
+          font-size: 24px;
+          line-height: 28px;
+          margin-bottom: 10px;
+        }
+      }
+      &__desc {
+        font-family: SFPD-Regular;
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 29px;
+        letter-spacing: 0.3px;
+        color: #555;
+        @media only screen and (max-width: $md) {
+          font-size: 13px;
+          line-height: 19px;
+        }
+      }
+    }
+
+    &__cover {
+      width: 410px;
+      max-width: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+      @media only screen and (max-width: $md) {
+        position: unset;
+        padding: 0 16px;
+        box-sizing: border-box;
+        margin-bottom: 34px;
+      }
+
+      i {
+        background-image: url("/assets/images/client_loan_calculator_introduction_image.png");
+        width: 100%;
+        padding-top: 70.61%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        display: block;
+      }
+    }
+  }
+}
+
+.client-loan-calculator-introduction-content {
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+    &__icon {
+      margin-right: 9px;
+      color: #fc7513;
+    }
+    &__label {
+      font-size: 20px;
+      line-height: 100%;
+      letter-spacing: 0.3px;
+      color: #002d71;
+      font-family: SFPD-Regular;
+    }
+  }
+}

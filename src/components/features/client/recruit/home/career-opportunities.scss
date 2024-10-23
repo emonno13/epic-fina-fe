@@ -1,0 +1,40 @@
+@import '../../../../../styles/css_variables';
+
+.career-opportunities{
+  &__container {
+    width: 100%;
+    padding:40px 20px 80px 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  &__title{
+    font-size: 36px;
+    font-family: SFPD-Bold;
+    font-weight: 700;
+  }
+  &__body{
+    display: inline-block;
+    justify-content: center;
+  }
+  &__item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__moreContainer{
+    display: flex;
+    justify-content: center;
+  }
+  &__more{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: SFPD-Bold;
+    font-weight: 700;
+    color: #919191
+  }
+}

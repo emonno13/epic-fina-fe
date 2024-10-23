@@ -1,0 +1,220 @@
+.profile-information-deal {
+  .profile-tabs-list {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &-detail-container {
+    .profile-information-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .status-deal {
+        .status-deal_item {
+          margin-bottom: 0;
+        }
+        .ant-tag {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .title-step {
+      font-weight: 400;
+      font-size: 14px;
+      color: #000000;
+    }
+
+    .time-updatedAt {
+      font-weight: 400;
+      font-size: 10px;
+      color: #7F868D;
+    }
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      background: #F3F7FF;
+      border-radius: 8px;
+      padding: 16px 12px 12px 16px;
+      margin-bottom: 16px;
+
+      &-left {
+        display: flex;
+        gap: 16px;
+
+        img {
+          border-radius: 4px;
+          object-fit: contain;
+          padding: 4px;
+        }
+
+        .deal-detail-list-item-org-code {
+          font-weight: 600;
+          font-size: 16px;
+          color: #000000;
+        }
+
+        .deal-detail-list-item-org-name {
+          font-weight: 400;
+          font-size: 16px;
+          color: #4E5A65;
+        }
+      }
+    }
+
+    .deal-detail-list-item {
+      cursor: pointer;
+    }
+  }
+
+  .profile-tabs {
+    background-color: white;
+    border: none;
+    color: #4e5a65;
+    font-size: 16px;
+    margin-bottom: 16px;
+    margin-right: 45px;
+  }
+
+  .profile-tabs-active {
+    color: #064dd6;
+    border-bottom: 3px solid #064dd6;
+    padding: 9px;
+  }
+
+  .deal-loan-profile-search {
+    .ant-form {
+      display: flex;
+      justify-content: space-between;
+
+      .deal-loan-profile-advanced-search {
+        width: 63%;
+        // padding-right: 20px;
+      }
+
+      .ant-form-item {
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+
+  &-detail {
+    .title {
+      color: #064dd6;
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .detail-section {
+      padding: 17px;
+      border: 1px solid #cbe3fc;
+      border-radius: 8px;
+      height: 100%;
+    }
+
+    .info {
+      margin-bottom: 24px;
+      display: flex;
+
+      &-title {
+        font-weight: 600;
+        width: 150px;
+      }
+
+      &-value {
+        font-weight: 400;
+      }
+    }
+    .deal-detail-list {
+      &-item {
+        background: #ffffff;
+        border: 1px solid #99c4fa;
+        border-radius: 8px;
+        display: flex;
+        padding: 15px;
+        justify-content: space-between;
+
+        img {
+          margin-right: 7px;
+          border-radius: 4px;
+          border: none;
+          object-fit: contain;
+          padding: 4px;
+        }
+
+        &-org-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+        }
+
+        &-org {
+          width: 100%;
+          &-code {
+            font-weight: 600;
+            font-size: 20px;
+
+            .status-deal {
+              .ant-tag {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.view-loan-detail-modal {
+  .ant-modal-header {
+    border-radius: 16px 16px 0 0;
+    padding: 24px 24px;
+
+    .ant-modal-title {
+      font-weight: 600;
+      font-size: 24px;
+    }
+  }
+
+  .detail-section {
+    border: none;
+
+    .info {
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+  }
+
+  .ant-steps {
+    overflow-x: auto;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    cursor: pointer;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #D9D9D9;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #858585;
+  }
+}

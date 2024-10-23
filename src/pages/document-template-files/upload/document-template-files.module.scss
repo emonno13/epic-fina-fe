@@ -1,0 +1,64 @@
+@import '@styles/css_variables';
+
+.document-template-files {
+  max-width: 970px;
+  width: 100%;
+  margin: 80px auto;
+  padding: 0 12px;
+
+  @media screen and (max-width: 768px) {
+    margin: 20px auto;
+  }
+
+  .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    padding: 10px 10px;
+
+    @screen md {
+      padding: 12px 16px;
+    }
+  }
+
+  .ant-collapse
+    > .ant-collapse-item
+    > .ant-collapse-header
+    .ant-collapse-arrow {
+    margin-right: 0;
+
+    @screen md {
+      margin-right: 12px;
+    }
+  }
+
+  .ui-label-title .label-content {
+    padding: 0 6px;
+    font-size: 14px;
+  }
+
+  .ant-btn-round {
+    padding: 4px 10px;
+  }
+}
+
+.gallery-wrap {
+  .submit-button {
+    width: 100%;
+  }
+  .options {
+    min-height: 400;
+    max-height: 500;
+    overflow: auto;
+  }
+  .title {
+    font-weight: bold;
+    margin-bottom: 10;
+    padding: 0;
+  }
+}
+
+.gallery-file-document-wrapper {
+  display: flex;
+  justify-content: center;
+  .gallery-file-document {
+    width: fit-content;
+  }
+}

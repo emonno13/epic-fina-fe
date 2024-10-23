@@ -1,0 +1,56 @@
+@import "../../../styles/css_variables";
+
+.user-header-avatar {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  span.anticon {
+    color: #5e5e5e;
+  }
+}
+
+.user-header-avatar-main {
+  margin-right: 8px;
+}
+
+.user-header-avatar-name {
+  @media only screen and (max-width: $md) {
+    display: none;
+  }
+
+  font-size: 13px;
+  line-height: 16px;
+  color: #1b1b1b;
+  margin-right: 8px;
+}
+
+.user-header-avatar-overlay {
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+
+  &-item {
+    cursor: pointer;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+
+    &:hover {
+      background: #f0f4ff;
+      transition: all 0.2s;
+      color: #064dd6;
+    }
+
+    span.anticon {
+      margin-right: 8px;
+      font-size: 16px;
+    }
+
+    &-label {
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+}

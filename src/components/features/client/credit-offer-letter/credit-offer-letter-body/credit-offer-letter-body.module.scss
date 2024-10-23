@@ -1,0 +1,18 @@
+.credit-offer-letter-body {
+  position: relative;
+  font-size: 12px;
+
+  @screen md {
+    font-size: 16px;
+  }
+}
+
+.credit-offer-letter-body-affix-navigation {
+  position: absolute;
+  left: -280px;
+}
+
+.credit-offer-letter-body-divider {
+  border-top: 1px solid #e2e2e2;
+  margin: 56px 0 0;
+}

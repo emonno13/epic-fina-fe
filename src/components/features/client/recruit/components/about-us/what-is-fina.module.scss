@@ -1,0 +1,54 @@
+@import "../../../../../../styles/css_variables";
+
+.what-is-fina {
+  padding: 90px 0;
+  background: url("/assets/images/recruit-about-us-banner.png") round;
+
+  @media only screen and (max-width: $md) {
+    padding: 30px 35px 40px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      width: 100%;
+      font-size: 36px;
+      line-height: 43px;
+      font-family: SFPD-Bold;
+      letter-spacing: 0.3px;
+      margin-bottom: 35px;
+      color: #fff;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    p {
+      @media only screen and (max-width: $md) {
+        font-size: 16px;
+      }
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 29px;
+      font-family: SFPD-Light;
+      letter-spacing: 0.3px;
+      width: 700px;
+      max-width: 100%;
+      color: #fff;
+    }
+  }
+  &__button{
+    width: 240px;
+    height: 40px;
+    color: #FFFFFF;
+    border: none;
+    background: #FF6C0E;
+    border-radius: 6px;
+  }
+}

@@ -1,0 +1,507 @@
+.calculators-toolkit {
+  padding-bottom: 40px;
+
+  &-banner {
+    padding: 40px 0;
+    background-image: url("/assets/images/bg-calc-toolkit.png");
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    font-size: 16px;
+  }
+
+  &-title {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+
+    @screen md {
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+
+  &-description {
+    margin-bottom: 0;
+    font-size: 14px;
+
+    @screen md {
+      max-width: 40%;
+      font-size: 16px;
+    }
+  }
+
+  &-content {
+    &-title {
+      margin-top: 24px;
+      margin-bottom: 30px;
+    }
+
+    &-introduce {
+      padding-top: 30px;
+      font-size: 16px;
+      color: #000000;
+
+      &-header {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        color: #000000;
+
+        @screen md {
+          font-size: 40px;
+          line-height: 48px;
+        }
+      }
+
+      .introduce-title {
+        color: #064DD6;
+        font-weight: 700;
+        margin-top: 20px;
+      }
+
+      .introduce-bg {
+        max-width: 100%;
+      }
+
+      .introduce-description {
+        max-width: 500px;
+        font-style: italic;
+      }
+
+      .buy-calc-toolkit {
+        height: 50px;
+        background: #064DD6;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 14px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        @screen md {
+          width: 50%;
+        }
+      }
+
+      &-faq {
+        background-color: transparent;
+
+        &.ant-collapse .ant-collapse-item,
+        &.ant-collapse .ant-collapse-item:last-child {
+          margin-bottom: 18px;
+          background: #F4F8FF;
+          border: 1px solid #064DD6;
+          border-radius: 4px;
+
+          & .ant-collapse-header {
+            font-weight: 700;
+
+            .anticon.ant-collapse-arrow {
+              font-size: 16px;
+            }
+          }
+
+          & .ant-collapse-content .ant-collapse-content-box {
+            padding-top: 0;
+          }
+
+          ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    &-value {
+      padding-top: 60px;
+    }
+  }
+
+  &-item {
+    border: 1px solid #064DD6;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 145px;
+    background-color: #FFFFFF;
+    transition: 0.3s;
+
+    h2 {
+      width: 100%;
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 0;
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #064DD6;
+      color: #FFFFFF;
+      transition: 0.3s;
+    }
+
+    span {
+      transition: 0.3s;
+    }
+
+    &:hover {
+      background-color: #064DD6;
+
+      h2 {
+        background-color: #407BFF;
+      }
+
+      span {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.calculators-toolkit-item-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #064DD6;
+  margin-top: 30px;
+}
+
+.calculators-toolkit-actions {
+  margin-top: 16px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+
+  @screen md {
+    margin-top: 0;
+    justify-content: initial;
+  }
+
+  &-left,
+  &-right {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .ant-btn {
+    min-width: 95px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+   .anticon + span, & > span + .anticon {
+      margin-left: 0;
+    }
+
+    &.btn-reset {
+      background: #064DD6;
+      border: 1px solid #064DD6;
+    }
+
+    &.btn-print, &.btn-info {
+      border: 1px solid #000000;
+      color: #000000;
+    }
+  }
+}
+
+.calculators-toolkit-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+
+  &-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    .clickable-opacity {
+      height: 30px;
+    }
+  }
+
+  &-logo {
+    width: 110px;
+  }
+}
+
+.calculators-toolkit-line {
+  height: 1px;
+  border-top: 1px dashed #DCDDDF;
+  margin-bottom: 16px;
+}
+
+.copy-right-fina {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #000000;
+  text-align: right;
+}
+
+.bank-loan-calculator-modal {
+  width: 780px !important;
+
+  .ant-modal-title {
+    color: #064DD6;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  .ant-modal-content {
+    border-radius: 16px;
+  }
+
+  .ant-modal-header {
+    border-radius: 16px 16px 0 0;
+  }
+
+  &.bank-loan-calculator-modal-no-padding {
+    .ant-modal-body {
+      padding: 0;
+    }
+
+    .ant-modal-content {
+      overflow: hidden;
+    }
+
+    .ant-modal-close {
+      display: none;
+    }
+
+    .form-create-tasks {
+      display: flex;
+
+      &-title {
+        font-weight: 700;
+        color: #064DD6;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+
+        @screen md {
+          font-size: 20px;
+        }
+
+        .anticon-close {
+          font-size: 16px;
+          color: #33363F;
+          cursor: pointer;
+        }
+      }
+
+      &-left {
+        background-image: url("/assets/images/bg-modal-calc-toolkit.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        @screen md {
+          width: 50%;
+        }
+      }
+
+      &-right {
+        padding: 16px;
+        position: relative;
+        z-index: 1;
+
+        &:after {
+          content : "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-image: url("/assets/images/bg-modal-calc-toolkit.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+          width: 100%;
+          height: 100%;
+          opacity : 0.2;
+          z-index: -1;
+        }
+
+        @screen md {
+          width: 50%;
+          padding: 24px;
+
+          &:after {
+            content: none;
+          }
+        }
+
+        hr {
+          margin: 16px -24px;
+          border: none;
+          border-bottom: 1px solid rgba(217, 217, 217, 0.8);
+
+          @screen md {
+            border-bottom: 1px solid rgba(217, 217, 217, 0.2);
+          }
+        }
+
+        .ant-input {
+          height: 40px;
+
+          @screen md {
+            height: 50px;
+          }
+        }
+
+        .ant-form-item-label {
+          font-weight: 600;
+          font-size: 14px;
+
+          .ant-form-item-required::after {
+            display: inline-block;
+            margin-right: 4px;
+            color: #ff4d4f;
+            font-size: 14px;
+            font-family: SimSun, sans-serif;
+            line-height: 1;
+            content: '*';
+          }
+
+          .ant-form-item-required::before {
+            content: none;
+          }
+        }
+
+        .form-create-tasks-btn-submit {
+          height: 50px;
+          background: #064DD6;
+          border-radius: 4px;
+          font-weight: 600;
+          font-size: 14px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+        }
+
+        .hform-btn-panel {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.form-contact-information-calc {
+  .ant-modal-header .ant-modal-title {
+    font-size: 20px;
+    color: #064DD6;
+    font-weight: 600;
+  }
+
+  .ant-modal-content {
+    border-radius: 8px;
+  }
+
+  &-title {
+    padding: 12px 24px;
+    border: 1px solid #064DD6;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: linear-gradient(0deg, #064DD6 -12.73%, #00217b 80%);
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 -24px;
+    margin-bottom: 40px;
+  }
+
+  .ant-input {
+    min-height: 50px;
+  }
+
+  .ant-checkbox-wrapper {
+    width: 100%;
+  }
+
+  .ant-btn-primary {
+    padding: 7px 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .group-checkbox-calc > .ant-form-item-label label {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.modal-error-embedded {
+  .ant-modal-body {
+    padding: 16px;
+
+    @screen md {
+      padding: 24px;
+    }
+  }
+
+  &-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+
+  &-content {
+    align-items: center;
+
+    @screen md {
+      display: flex;
+    }
+
+    img {
+      width: 100%;
+
+      @screen md {
+        width: 50%;
+      }
+    }
+
+    &-right {
+      width: 100%;
+
+      @screen md {
+        width: 50%;
+      }
+
+      &-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 5px;
+        font-weight: 500;
+
+        @screen md {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import "../../../../styles/css_variables";
+
+.installation-instruction {
+  padding: 3rem 0;
+  @media only screen and (max-width: $md) {
+    padding: 3rem 20px;
+  }
+  &-content {
+    &-title {
+      font-size: 2.5rem;
+      font-family: SFPD-Bold;
+    }
+    &-step {
+      margin-bottom: 32px;
+      &__label {
+        font-size: 18px;
+        font-family: SFPD-Regular;
+        margin-bottom: 16px;
+        span {
+          font-family: SFPD-Bold;
+        }
+      }
+      &__image {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+  }
+}

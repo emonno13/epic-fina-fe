@@ -1,0 +1,594 @@
+.backButton {
+  margin-top: 10px;
+  color: white;
+  background-color: #fc7513;
+  height: 36px;
+  border-radius: 5px;
+  border: 0;
+}
+.customLabelEffect {
+  transform: translate3d(0, 5px, 0) scale3d(0.75, 0.75, 1) translateZ(1px) !important;
+  padding: 0 19px !important;
+  z-index: 1 !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  letter-spacing: 0.3px !important;
+  color: rgb(0, 45, 113) !important;
+  font-family: SFPD-Regular !important;
+}
+
+.backButton:hover {
+  background-color: #db6612;
+  color: white;
+}
+
+.loan-estimate-wrapper-button-detail {
+  padding: 0 30px;
+  text-align: right;
+}
+
+.pdfButton {
+  background-color: #064DD6;
+  color: white;
+  height: 36px;
+  border-radius: 5px;
+  border: 0;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #042c9b;
+    color: white;
+  }
+}
+.formPdf {
+  padding: 20px;
+  input {
+    width: 100%;
+    display: block;
+    height: 40px;
+    border: 1px solid #ccc;
+  }
+}
+.Fn_LoanEstimate_Wrapper {
+  background: #ffffff;
+  border: 1px solid #c9d1e9;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 100px;
+
+  position: relative;
+  .Fn_LoanEstimate_PDF {
+    float: right;
+    top: 10px;
+  }
+  .Fn_LoanEstimate_Infor {
+    padding-bottom: 16px;
+    box-sizing: border-box;
+    .Fn_LoanEstimate_Infor_Groups {
+      .Fn_LoanEstimate_Infor_Group_Up {
+        display: flex;
+        background: #E9F0FF;
+        padding: 20px 30px;
+        gap: 30px;
+
+        .Fn_LoanEstimate_Infor_Logo {
+          display: flex;
+          flex-direction: column;
+          width: 200px;
+
+          & > h2 {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: #000000;
+            font-family: SFPD-Regular;
+          }
+
+          .description-phone,
+          .description-web {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #000000;
+            font-family: SFPD-Regular;
+          }
+
+          .description-phone span {
+            color: #FF6C0E;
+          }
+          // & > img {
+          //   position: relative;
+          //   width: 158px;
+          //   height: 41px;
+          //   left: -60px;
+          //   top: -3px;
+          //   margin-bottom: 13px;
+          // }
+          // & > span {
+          //   font-family: SFPD-Regular;
+          //   font-style: normal;
+          //   font-weight: normal;
+          //   font-size: 14px;
+          //   line-height: 120%;
+          //   /* identical to box height, or 17px */
+
+          //   letter-spacing: 0.3px;
+
+          //   color: #999999;
+          // }
+        }
+
+        .Fn_LoanEstimate_Infor_Group_Wrapper {
+          display: flex;
+          justify-content: space-between;
+          width: calc(100% - 200px);
+          padding-left: 20px;
+          border-left: 1px solid rgba(174, 174, 178, 0.2);
+          // gap: 50px;
+        }
+        .Fn_LoanEstimate_Infor_Group {
+          display: flex;
+          flex-direction: column;
+          .Fn_LoanEstimate_cpName {
+            & > h2 {
+              font-family: SFPD-Bold;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 120%;
+              letter-spacing: 0.3px;
+              color: #0a3eca;
+              margin-bottom: 20px;
+            }
+            & > span {
+              font-family: SFPD-Medium;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 120%;
+              /* identical to box height, or 17px */
+
+              letter-spacing: 0.3px;
+
+              color: #333333;
+            }
+          }
+
+          .Fn_LoanEstimate_Infor_Detail:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .Fn_LoanEstimate_Infor_Detail {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin-bottom: 18px;
+      min-height: 35px;
+
+      & > span {
+        font-family: SFPD-Regular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 120%;
+        letter-spacing: 0.3px;
+        color: rgba(0, 0, 0, 0.6);
+        margin-bottom: 2px;
+      }
+      & > h2 {
+        font-family: SFPD-Bold;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+        height: 16px;
+        letter-spacing: 0.3px;
+        color: #064DD6;
+        margin: 0;
+      }
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   width: 1px;
+      //   background: #d0d0d0;
+      //   height: 28px;
+      //   left: -15px;
+      //   top: 2px;
+      // }
+    }
+  }
+  .Fn_LoanEstimate_Table {
+    .Fn_LoanEstimate_Table_Header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // margin-top: 34px;
+      // margin-bottom: 32px;
+      .Fn_LoanEstimate_Table_Header_Quote {
+        & > h3 {
+          font-family: SFPD-Bold;
+          font-style: normal;
+          font-weight: 600;
+          color: #FFFFFF;
+          font-size: 28px;
+          line-height: 110%;
+          letter-spacing: 0.3px;
+        }
+      }
+      .Fn_LoanEstimate_Table_Header_StartDate {
+        text-align: right;
+
+        & > span {
+          font-family: SFPD-Regular;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          color: #FFFFFF;
+          line-height: 140%;
+          letter-spacing: 0.3px;
+        }
+      }
+    }
+  }
+
+  .Fn_LoanEstimate_Table_Header_Wrapper {
+    padding: 20px 30px;
+    background: linear-gradient(360deg, rgba(6, 77, 214, 0.75) 0%, #064DD6 97.31%);
+  }
+
+  .Fn_LoanEstimate_Table_OverView {
+    // padding: 22px 0 40px 0;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 24px;
+
+    .Fn_LoanEstimate_Table_OverView_Group {
+      & > span {
+        font-family: SFPD-Regular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 5px;
+      }
+      & > h2 {
+        font-family: SFPD-Bold;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+        letter-spacing: 0.3px;
+        color: rgba(255, 255, 255, 1);
+        margin-top: 3px;
+      }
+    }
+  }
+  .Fn_LoanEstimate_Mobile_Infor {
+    display: none;
+    box-sizing: border-box;
+    padding: 5px 15px 19px 15px;
+    .Fn_LoanEstimate_Mobile_Infor_Group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+      box-sizing: border-box;
+      border-bottom: 1px solid #dadada;
+      &:last-child {
+        border: none;
+      }
+      & > span {
+        font-family: SFPD-Regular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+        letter-spacing: 0.3px;
+
+        color: #333333;
+      }
+      & > h3 {
+        font-family: SFPD-Regular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+        text-align: right;
+        letter-spacing: 0.3px;
+
+        color: #002d71;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .Fn_LoanEstimate_Table_Detail {
+    table {
+      width: 100%;
+      border: 1px solid #c9d1e9;
+      .year {
+        width: 100px;
+        padding: 0;
+        text-align: center;
+      }
+      .startingBalance {
+        width: 19%;
+      }
+      .interest {
+        width: 19%;
+      }
+      .total {
+        width: 19%;
+      }
+      .principal {
+        width: 19%;
+      }
+      .asset {
+        width: 19%;
+      }
+      th {
+        border: 1px solid #c9d1e9;
+        border-collapse: collapse;
+        box-sizing: border-box;
+        padding: 10px 0 10px 25px;
+        text-align: start;
+        background: #f2f5f9;
+        width: 20px;
+        span {
+          font-family: SFPD-Bold;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 120%;
+          /* or 20px */
+
+          letter-spacing: 0.3px;
+
+          color: #002d71;
+        }
+      }
+      .yearTd {
+        text-align: center;
+        padding: 10px 0 0 0;
+      }
+      td {
+        border-right: 1px solid #c9d1e9;
+        border-left: 1px solid #c9d1e9;
+        border-collapse: collapse;
+        box-sizing: border-box;
+        padding: 10px 0 0px 25px;
+        span {
+          font-family: SFPD-Regular;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 35px;
+          /* or 233% */
+
+          letter-spacing: 0.3px;
+
+          color: #111111;
+        }
+      }
+    }
+  }
+  .Fn_LoanEstimate_SubCode {
+    margin-top: 30px;
+    padding-left: 24px;
+    & > span {
+      font-family: SFPD-Regular;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 140%;
+      /* identical to box height, or 20px */
+
+      letter-spacing: 0.3px;
+
+      color: #777777;
+    }
+  }
+  .Fn_LoanEstimate_introl {
+    margin-top: 16px;
+    margin-bottom: 20px;
+    padding-left: 24px;
+    & > h2 {
+      font-family: SFPD-Medium;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 140%;
+      /* or 20px */
+
+      letter-spacing: 0.3px;
+
+      color: #333333;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.backButtonWrap {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  .backButton {
+    font-family: SFPD-Medium;
+  }
+  .backButtonIcon {
+    color: #0a3eca;
+    font-size: 16px;
+    margin-right: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .backButtonWrap {
+    position: unset;
+    margin-top: 16px;
+    margin-left: 16px;
+  }
+  .Fn_LoanEstimate_Wrapper {
+    padding: 0;
+    .Fn_LoanEstimate_Infor {
+      display: none;
+    }
+    .Fn_LoanEstimate_Table {
+      .Fn_LoanEstimate_Table_Header {
+        display: none;
+      }
+      .Fn_LoanEstimate_Table_OverView {
+        display: none;
+      }
+      .Fn_LoanEstimate_Mobile_Infor {
+        display: block;
+        .Fn_LoanEstimate_Mobile_Infor_Group {
+        }
+      }
+      .Fn_LoanEstimate_SubCode {
+        box-sizing: border-box;
+        padding: 0 15px;
+      }
+      .Fn_LoanEstimate_introl {
+        box-sizing: border-box;
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+.custom-antd-table {
+  margin-top: 16px;
+
+  .ant-table-container {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .ant-table.ant-table-bordered .ant-table-container {
+    border: 1px solid #CED5EA;
+  }
+  .ant-table-container table > thead > tr:first-child th:first-child {
+    border-top-left-radius: 0px;
+  }
+  .ant-table-container table > thead > tr:first-child th:last-child {
+    border-top-right-radius: 0px;
+    border-left: 0px;
+  }
+  .ant-table.ant-table-bordered thead > tr > th {
+    border-left: 1px solid #CED5EA;
+    &:first-child {
+      border-left: 0px;
+    }
+  }
+  .ant-table-thead > tr > th {
+    border-collapse: collapse;
+    border-bottom: 1px solid #CED5EA;
+    background: #f2f5f9;
+    font-family: SFPD-Bold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.3px;
+    color: #064DD6;
+    padding: 10px 20px;
+  }
+  .ant-table.ant-table-bordered tbody > tr > td {
+    font-family: SFPD-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    color: #111;
+    border: 1px solid #CED5EA;
+    // border-bottom: 0px;
+    padding: 5px 20px 5px 20px;
+    &:first-child {
+      border-left: 0px;
+    }
+  }
+  .ant-table-body {
+    max-height: 500px !important;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      //box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #76809a;
+    }
+  }
+  tbody.ant-table-tbody > tr:first-child > td > div {
+    display: none;
+  }
+}
+
+.loan-estimate-form {
+  background: #fff;
+  padding: 20px;
+  &::before {
+    background: linear-gradient(90deg, #0a3eca 22.84%, #fff 135.74%);
+    border-radius: 0 0 22px 22px;
+    width: 80%;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: block;
+  }
+  &__title {
+    color: rgba(0, 0, 0, 0.65);
+  }
+  .ant-form {
+    .ant-form-item {
+      margin-bottom: 8px;
+    }
+    .hform-btn-panel {
+      margin: 20px 0;
+      .ant-form-item-label {
+        display: none;
+      }
+      button {
+        width: 100%;
+        margin: 0;
+        background: #0a3eca;
+        border-radius: 6px;
+        font-family: SFPD-Medium;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.3px;
+        color: #fff;
+        width: 100%;
+        height: 36px;
+      }
+    }
+    .ant-input {
+      width: 100%;
+      font-size: 15px;
+      line-height: 18px;
+      height: 46px;
+      padding-left: 13px;
+      padding-right: 13px;
+      border: 1px solid #dfe3ec;
+      outline: none;
+      box-sizing: border-box;
+      border-radius: 6px;
+      letter-spacing: 0.3px;
+      font-family: SFPD-Medium;
+      color: #222;
+    }
+  }
+}

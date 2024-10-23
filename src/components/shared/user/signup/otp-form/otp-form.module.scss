@@ -1,0 +1,40 @@
+@import '@styles/css_variables';
+
+.signup-otp.pre-login__login-form {
+  margin-top: calc(100vh / 20) !important;
+
+  .sub-title {
+    margin-bottom: 24px;
+  }
+  .sub-title p {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .sub-title .count-down {
+    display: flex;
+    justify-content: center;
+  }
+  .pre-login_username {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .sub-title .count-down a {
+    margin-left: 3px;
+    min-width: 50px;
+  }
+  .resend-wrapper a {
+    color: #ff6c0e;
+    font-weight: bold;
+  }
+  .resend-wrapper {
+    font-size: 14px;
+
+    @screen md {
+      font-size: 16px;
+    }
+  }
+  .w-full {
+    margin-top: 10px;
+    margin-bottom: 32px;
+  }
+}

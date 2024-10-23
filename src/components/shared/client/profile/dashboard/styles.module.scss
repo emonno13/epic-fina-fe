@@ -1,0 +1,199 @@
+.profile-dashboard {
+  font-family: 'SF Pro Display';
+
+  .profile-information-title {
+    border-bottom: none;
+    margin-bottom: 0;
+
+    @screen md {
+      border-bottom: 1px solid #E0E1E4;
+      margin-bottom: 20px;
+    }
+  }
+
+  &-statistics {
+    margin-bottom: 35px;
+
+    @screen md {
+      display: flex;
+      gap: 16px;
+    }
+
+    &-left {
+      min-height: 275px;
+      background-image: url("/assets/images/bg-mask-dashboard.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 8px;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+
+      @screen md {
+        width: 362px;
+        margin-bottom: 0;
+      }
+
+      &-content {
+        padding: 24px 24px 0 24px;
+
+        h2 {
+          font-weight: 700;
+          font-size: 20px;
+          color: #FFFFFF;
+          font-family: 'SF Pro Display';
+          margin-bottom: 0;
+          line-height: 32px;
+
+          span {
+            font-size: 32px;
+            display: block;
+          }
+        }
+
+        &-desc {
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    &-right {
+      @screen md {
+        width: calc(100% - 378px);
+      }
+
+      .ant-row {
+        height: 100%;
+      }
+    }
+
+    &-item {
+      background: #FFFFFF;
+      border: 1px solid #99C4FA;
+      border-radius: 8px;
+      padding: 14px 8px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      @screen md {
+        padding: 24px;
+        gap: 14px;
+      }
+
+      &-icon {
+        svg {
+          height: 26px;
+          width: 26px;
+          display: inline-block;
+
+          @screen md {
+            height: 50px;
+            width: 44px;
+          }
+        }
+      }
+
+      &-content {
+        &-label {
+          font-weight: 500;
+          font-size: 14px;
+
+          @screen md {
+            font-size: 16px;
+            margin-bottom: 5px;
+          }
+        }
+
+        &-value {
+          font-weight: 600;
+          font-size: 18px;
+
+          @screen md {
+            font-size: 24px;
+          }
+
+          sub {
+            bottom: 0;
+            font-size: 14px;
+
+            @screen md {
+              font-size: 16px;
+            }
+          }
+
+          sup {
+            font-size: 14px;
+
+            @screen md {
+              font-size: 16px;
+            }
+          }
+
+          .profit {
+            color: #2A9F47;
+
+            svg {
+              width: 6px;
+              display: inline-block;
+
+              @screen md {
+                width: 9px;
+              }
+            }
+
+            &.profit-down {
+              color: #F5222D;
+
+              svg {
+                transform: rotate(180deg);
+
+                path {
+                  fill: #F5222D;
+                }
+              }
+            }
+          }
+
+          .transaction {
+            display: flex;
+            gap: 20px;
+
+            sub {
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-menus {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+
+    @screen md {
+      margin-bottom: 200px;
+    }
+
+    &-item {
+      min-height: 110px;
+      background: #E8EFFF;
+      box-shadow: 0px 0px 5px rgba(156, 171, 210, 0.1);
+      border-radius: 8px;
+      transition: 0.3s;
+      cursor: pointer;
+      color: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      &:hover {
+        box-shadow: 0px 4px 5px rgba(156, 171, 210, 0.5);
+        color: #064DD6;
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.financial-advice .financial-advice-find-solution {
+    background: #FFFFFF;
+    padding: 80px 0;
+
+    &-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #1B1B1B;
+        margin-bottom: 55px;
+
+        b {
+            display: none;
+
+            @screen md {
+                display: inline-block;
+            }
+        }
+
+        span {
+            color: #064DD6;
+            display: block;
+
+            @screen md {
+                display: inline-block;
+            }
+        }
+
+        @screen md {
+            font-size: 32px;
+            line-height: 38px;
+            margin-bottom: 80px;
+        }
+    }
+
+    &-item {
+        border: 1px solid #E2E2E2;
+        border-radius: 16px;
+        padding: 40px;
+        text-align: center;
+        height: 100%;
+        min-height: 320px;
+        position: relative;
+
+        &-title {
+            font-weight: 700;
+            font-size: 24px;
+            color: #064DD6;
+            margin-bottom: 25px;
+        }
+
+        &-desc {
+            font-weight: 400;
+            font-size: 18px;
+            color: #474747;
+            margin-bottom: 5px;
+        }
+
+        &-link {
+            color: #ABABAB;
+            display: inline-block;
+            font-weight: 500;
+            font-size: 16px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            bottom: 30px;
+
+            .anticon {
+                color: #FF6C0E;
+            }
+        }
+    }
+}

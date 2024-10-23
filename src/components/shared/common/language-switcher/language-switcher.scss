@@ -1,0 +1,15 @@
+@import '@styles/css_variables';
+
+.fn-language-switcher {
+  &__name {
+    @media only screen and (max-width: $md) {
+      display: none;
+    }
+  }
+
+  &--dropdown {
+    .fn-language-switcher__name {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,270 @@
+@import '@styles/css_variables';
+
+.financial-advice-team-of-experts {
+  position: relative;
+  padding-bottom: 80px;
+
+  &-wrapper {
+    background-color: #f4f8ff;
+    padding-bottom: 215px;
+    padding-top: 80px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1b1b1b;
+    text-align: center;
+    margin-bottom: 26px;
+
+    @screen md {
+      margin-bottom: 56px;
+      font-size: 32px;
+    }
+  }
+
+  .financial-advice__manager {
+    margin-bottom: 24px;
+
+    &__wrapper {
+      height: 100%;
+      position: relative;
+    }
+
+    &__label {
+      font-weight: 700;
+      color: #ff6c0e;
+      font-size: 16px;
+      margin-bottom: 8px;
+
+      @screen md {
+        font-size: 24px;
+      }
+    }
+
+    &__name {
+      font-size: 28px;
+      font-weight: 900;
+      // text-transform: uppercase;
+      color: #064dd6;
+      margin-bottom: 16px;
+      line-height: 34px;
+
+      @screen md {
+        font-size: 56px;
+        line-height: 77px;
+        font-weight: 900;
+      }
+    }
+
+    &__title {
+      color: #ff6c0e;
+      font-size: 14px;
+      line-height: 140%;
+      font-weight: 500;
+
+      @screen md {
+        font-size: 20px;
+      }
+    }
+
+    .manager-image {
+      max-width: 100%;
+
+      &.desktop {
+        max-height: 553px;
+      }
+    }
+
+    &__info {
+      margin-top: 24px;
+      min-height: 250px;
+
+      @screen md {
+        min-height: auto;
+      }
+    }
+
+    &__info-item {
+      color: #474747;
+      font-size: 12px;
+      line-height: 140%;
+      position: relative;
+      padding-left: 15px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #474747;
+        transform: translateY(-50%);
+      }
+
+      @screen md {
+        font-size: 14px;
+      }
+
+      &.advice-team-outstanding-staff-item__body__info__item {
+        font-size: 14px;
+
+        @screen md {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  &__link {
+    width: 100%;
+  }
+
+  &__see-more {
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px 0;
+    background: linear-gradient(247.68deg, #ffae64 5.84%, #ff6c0e 86.06%),
+      linear-gradient(247.68deg, #19a1ee 5.84%, #064dd6 86.06%);
+    border-radius: 74px;
+    width: 243px;
+    text-align: center;
+    margin: 15px auto;
+
+    @screen md {
+      margin: 0;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .advice-team-outstanding-staff {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+
+    @screen md {
+      gap: 30px;
+    }
+
+    &-item {
+      height: 100%;
+      background-color: #f4f8ff;
+
+      &__image {
+        width: 100%;
+        overflow: hidden;
+
+        @screen md {
+          height: 320px;
+        }
+
+        img {
+          transition: all 0.2s linear;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+
+          max-width: 100%;
+        }
+      }
+
+      &__body {
+        padding: 8px;
+        padding-bottom: 15px;
+
+        @screen md {
+          padding: 12px;
+          padding-bottom: 25px;
+        }
+
+        &__label {
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 17px;
+          color: #ff6c0e;
+          margin-bottom: 8px;
+          min-height: 34px;
+
+          @screen md {
+            font-size: 14px;
+            min-height: auto;
+          }
+        }
+
+        &__name {
+          font-weight: 900;
+          font-size: 16px;
+          line-height: 24px;
+          color: #064dd6;
+          margin-bottom: 16px;
+
+          @screen md {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .advice-team-outstanding-staff-item__body__info__item {
+      font-size: 14px !important;
+      padding-left: 15px !important;
+
+      &::before {
+        left: 0;
+      }
+    }
+  }
+
+  .ant-carousel {
+    padding-bottom: 20px;
+
+    .slick-next {
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: 100%;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      right: -20%;
+      transition: 0.3s;
+
+      svg {
+        fill: #c6c6c6;
+      }
+
+      &:hover {
+        background-color: #064dd6;
+
+        svg {
+          fill: #ffffff;
+        }
+      }
+    }
+
+    .slick-dots {
+      bottom: -10px;
+
+      li {
+        button {
+          height: 8px;
+          width: 8px;
+          background: #c6c6c6;
+          border-radius: 8px;
+        }
+
+        &.slick-active button {
+          width: 16px;
+          background: #064dd6;
+        }
+      }
+    }
+  }
+}

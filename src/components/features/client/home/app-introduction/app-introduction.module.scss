@@ -1,0 +1,132 @@
+@import "../../../../../styles/css_variables";
+
+.app-introduction {
+  background: url("/assets/images/app-introduction-spiral-bg.png") no-repeat top right 8rem,
+    linear-gradient(180deg, #054dd7 0%, #063ead 100%);
+  padding: 40px 20px;
+
+  @media only screen and (max-width: $lg) {
+    background: url("/assets/images/app-introduction-spiral-bg.png") no-repeat right 50% bottom -20%,
+      linear-gradient(180deg, #054dd7 0%, #063ead 100%);
+    padding-bottom: 0;
+  }
+
+  &-container {
+    position: relative;
+    .app-introduction-phone-image {
+      position: absolute;
+      bottom: -40px;
+      height: 500px;
+      right: -19%;
+      z-index: 0;
+      width: 715px;
+      @media only screen and (max-width: $lg) {
+        position: unset;
+        transform: translateX(-34%);
+        width: 100%;
+        height: auto;
+      }
+      @media only screen and (max-width: $md) {
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+  &-title {
+    font-size: 31.25px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: SFPD-Bold;
+    margin-bottom: 8px;
+    @media only screen and (max-width: $lg) {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 16px;
+    }
+  }
+  &-desc {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: SFPD-Light;
+    max-width: 669px;
+    @media only screen and (max-width: $lg) {
+      margin-bottom: 24px;
+    }
+  }
+  &-content {
+    @media only screen and (max-width: $lg) {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 50px;
+    }
+  }
+  &-download {
+    font-size: 16px;
+    line-height: 24px;
+    color: #f2f2f2;
+    margin-bottom: 8px;
+    font-family: SFPD-Medium;
+  }
+  &-links {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 50px;
+
+    @media only screen and (max-width: $lg) {
+      margin-bottom: 0;
+      gap: 14px;
+    }
+
+    &__download { 
+      width: 150px;
+      cursor: pointer;
+    }
+  }
+  .ant-row {
+    max-width: 862px;
+  }
+  .app-introduction-stat-panel {
+    background: #326cdd;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    padding: 24px 30px 20px 30px;
+    height: 100%;
+    @media only screen and (max-width: $lg) {
+      padding: 24px 20px 20px 20px;
+    }
+    &-data {
+      position: relative;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-family: SFPD-Bold;
+      width: fit-content;
+      margin: 0 auto;
+      margin-bottom: 16px;
+      &::after {
+        position: absolute;
+        bottom: -8px;
+        content: "";
+        height: 2px;
+        width: 58px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+      }
+    }
+    &-description {
+      text-align: left;
+      font-size: 18px;
+      line-height: 30px;
+      text-transform: capitalize;
+      color: #ffffff;
+      font-family: SFPD-Light;
+      margin-bottom: 0;
+    }
+  }
+}

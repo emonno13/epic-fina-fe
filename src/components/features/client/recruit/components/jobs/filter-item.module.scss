@@ -1,0 +1,33 @@
+@import '../../../../../../styles/css_variables';
+
+.filter-item{
+  &__container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__label{
+    font-family: SFPD-Medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #064DD6;
+  }
+  &__content{
+    min-width: 130px;
+    width: calc(100% - 40px);
+    color: #777777;
+    display: inline-block;
+  }
+  &__count{
+    @media only screen and (max-width: $md) {
+      width: auto;
+    }
+    width: 40px;
+    display: inline-block;
+    text-align: right;
+  }
+}

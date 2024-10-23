@@ -1,0 +1,84 @@
+@import "../../../styles/css_variables";
+
+.fina-agent-container{
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.client-fina-agent-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__verticalMenu{
+    @media only screen and (max-width: $md) {
+      display: inline;
+    }
+    display: none;
+  }
+  &__horizontalMenu{
+    @media only screen and (max-width: $md) {
+      display: none;
+    }
+    flex: auto;
+  }
+  &-logos {
+    display: flex;
+    align-items: center;
+    .logo-wrapper {
+      display: flex;
+
+      &.fina {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        padding: 4px 0;
+      }
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    flex: 1;
+    justify-content: flex-end;
+
+    &__register-btn {
+      background: #064dd6;
+      border-radius: 4px;
+      font-size: 16px;
+      line-height: 40px !important;
+      text-transform: uppercase;
+      font-weight: bold;
+      height: 40px;
+      color: #fff;
+      font-family: Lato-Medium;
+      &:hover {
+        background: #064dd6;
+        color: #fff;
+      }
+      @media only screen and (max-width: $md) {
+        padding: 4px 8px;
+        font-size: 12px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+
+.client-fina-agent-header-menu {
+  flex: 1;
+
+  ul.ant-menu-horizontal {
+    justify-content: flex-end;
+    border: 0;
+
+    li.ant-menu-item a {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1b1b1b;
+    }
+  }
+}

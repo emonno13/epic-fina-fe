@@ -1,0 +1,339 @@
+.bank-loan-calculator-wrapper {
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+.bank-loan-calculator {
+  background: #FFFFFF;
+  border-radius: 16px;
+  font-size: 12px;
+  background-image: url("/assets/images/bg-water-mark-calc.png");
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat;
+
+  @screen md {
+    padding: 24px;
+    border: 1px solid #AEAEB2;
+  }
+
+  .mb-24 {
+    margin-bottom: 24px;
+  }
+
+  &-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+
+    &-label {
+      width: calc(100% - 200px);
+      font-size: 12px;
+    }
+
+    .ant-input-group-compact {
+      width: 200px;
+    }
+
+    .ant-input-number {
+      width: calc(100% - 75px);
+      font-size: 12px;
+      padding: 0 10px;
+      height: 28px;
+      overflow: hidden;
+
+      .ant-input-number-handler-wrap {
+        width: 100%;
+        padding: 0 11px;
+        opacity: 1;
+
+        &:first-child {
+          @screen md {
+            display: none;
+            width: 22px;
+            padding: 0;
+          }
+        }
+      }
+
+      .ant-input-number-input {
+        padding: 0;
+        height: 28px;
+      }
+    }
+
+    .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+      font-size: 12px;
+      height: 28px;
+      width: 75px;
+      padding: 0 8px;
+
+      .ant-select-selection-item {
+        line-height: 28px;
+      }
+    }
+  }
+
+  .icon-remove {
+    width: 12px;
+    height: 12px;
+  }
+
+  .income-portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .bank-loan-calculator-item {
+      width: calc(100% - 15px);
+    }
+  }
+
+  .result-wrapper-desktop {
+    margin-top: 24px;
+    display: none;
+
+    @screen md {
+      display: block;
+    }
+  }
+
+  .result-wrapper-mobile {
+    display: block;
+
+    @screen md {
+      display: none;
+    }
+  }
+
+  &-result {
+    font-weight: 700;
+    font-size: 16px;
+    background-color: rgba(6, 77, 214, 0.1);
+    padding: 14px 20px;
+    margin: 0 -20px;
+
+    @screen md {
+      padding: 14px 24px;
+      margin: -16px 0 -14px -24px;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 14px;
+      color: #064DD6;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    p {
+      font-weight: 500;
+      display: flex;
+      font-size: 13px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+  }
+
+  &-actions {
+    margin-top: 16px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    @screen md {
+      margin-top: 0;
+      justify-content: initial;
+    }
+
+    .ant-btn {
+      min-width: 95px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+     .anticon + span, & > span + .anticon {
+        margin-left: 0;
+      }
+    }
+
+    .btn-reset {
+      background: #064DD6;
+      border: 1px solid #064DD6;
+    }
+
+    .btn-print {
+      border: 1px solid #000000;
+      color: #000000;
+    }
+  }
+
+  .ant-radio-group {
+    .ant-radio-wrapper {
+      margin-bottom: 10px;
+      font-size: 12px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .btn-add-portfolio {
+    background: #064DD6;
+    border-radius: 4px;
+    height: 28px;
+    font-weight: 700;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .loan-info {
+    .loan-info-calculator-item {
+      margin-bottom: 10px;
+
+      .ant-input-number {
+        width: 100%;
+      }
+
+      .ant-input-number-input {
+        text-align: right;
+      }
+    }
+  }
+
+  &-chart {
+    padding-top: 10px;
+  }
+
+  .content-show-total {
+    display: flex;
+    margin-right: 15px;
+
+    .lable-total {
+      width: calc(100% - 165px);
+    }
+
+    .value-tatal {
+      width: 165px;
+    }
+  }
+
+  &-chart-wrapper {
+    display: none;
+
+    @screen md {
+      display: block;
+    }
+
+    &.show-chart {
+      display: block;
+    }
+  }
+
+  .btn-show-chart {
+    background: #F8FAFF;
+    border: 1px solid #064DD6;
+    border-radius: 8px;
+    padding: 10px 16px;
+    padding-bottom: 8px;
+    height: auto;
+    width: 100%;
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #064DD6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    path {
+      fill: #064DD6;
+    }
+
+    @screen md {
+      display: none;
+    }
+  }
+}
+
+.bank-loan-calculator-option {
+  font-size: 12px;
+  min-height: auto;
+  padding: 4px 12px;
+}
+
+@media print {
+  .bank-loan-calculator-wrapper {
+    .bank-loan-calculator {
+      padding: 24px;
+      border: 1px solid #AEAEB2;
+
+      .calculators-toolkit-header,
+      .bank-loan-calculator-actions {
+        display: none;
+      }
+
+      .calculators-toolkit-item-title {
+        margin-top: 0;
+      }
+
+      .ant-col {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      &-item {
+        .ant-input-number {
+          .ant-input-number-handler-wrap {
+            &:first-child {
+              display: none;
+              width: 22px;
+              padding: 0;
+            }
+          }
+        }
+      }
+
+      .result-wrapper-desktop {
+        display: block;
+      }
+
+      .result-wrapper-mobile {
+        display: none;
+      }
+
+      &-result {
+        padding: 14px 24px;
+        margin: -16px 0 -14px -24px;
+      }
+
+      &-chart-wrapper {
+        display: block;
+      }
+
+      .btn-show-chart {
+        display: none;
+      }
+    }
+  }
+
+  @page {
+    size: A4 portrait;
+  }
+}

@@ -1,0 +1,14 @@
+.mobile-login {
+	.ant-drawer-header {
+		border: 0;
+		padding: 0;
+		width: 100%;
+		.ant-drawer-close {
+			color: #fff;
+			position: fixed;
+			top: 30px;
+			left: 24px;
+			transform: translate(-50%, -50%);
+		}
+	}
+}

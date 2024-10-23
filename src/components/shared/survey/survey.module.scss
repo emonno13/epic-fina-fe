@@ -1,0 +1,444 @@
+@import "../../../styles/css_variables";
+
+.survey-progress {
+	margin-bottom: 48px;
+	.ant-progress-inner {
+		margin-top: -10px;
+		border-radius: 0 !important;
+	}
+	.ant-progress-bg {
+		height: 16px !important;
+		border-radius: 0 100px 100px 0;
+	}
+}
+
+.survey-questions-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 1100px;
+	margin: 0 auto;
+
+	&-navigation {
+		width: 100%;
+		color: #064dd6;
+		border-bottom: 1px solid #064dd6;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0 20px 0;
+		margin-bottom: 50px;
+
+		@media only screen and (max-width: $md) {
+			margin-bottom: 50px;
+			padding: 10px 0 20px 0;
+			margin-top: 0;
+
+			.survey-questions-form .preview-questions {
+				max-width: 250px;
+			}
+		}
+	}
+	.preview-questions {
+		.ant-picker {
+			height: 65px;
+
+			@media only screen and (max-width: $md) {
+				height: 45px;
+			}
+		}
+	}
+
+	@media only screen and (max-width: $md) {
+		width: auto;
+		padding: 0 16px;
+		flex-direction: column;
+		gap: 24px;
+
+		.preview-questions {
+			min-height: auto;
+		}
+		.ui-question-name {
+			margin-bottom: 12px;
+		}
+		.preview-questions__container {
+			margin-bottom: 16px;
+		}
+	}
+	.megadraft {
+		font-size: 32px;
+		line-height: 42px;
+		align-items: center;
+		color: #1b1b1b;
+
+		span {
+			font-size: 32px;
+			line-height: 42px;
+			align-items: center;
+			color: #1b1b1b;
+		}
+
+		@media only screen and (max-width: $md) {
+			font-size: 20px;
+			line-height: normal;
+
+			span {
+				font-size: 20px;
+				line-height: 20px;
+			}
+		}
+	}
+	.preview-open-ended-question {
+		text-align: center;
+		.ant-input-number {
+			width: 100%;
+		}
+		.h-input-number-container {
+			@media only screen and (max-width: $md) {
+				width: 100%;
+			}
+		}
+		input {
+			width: 496px;
+			height: 64px;
+			font-size: 24px;
+			@media only screen and (max-width: $md) {
+				height: 40px;
+				font-size: 16px;
+				width: 300px;
+			}
+		}
+		.ant-input-suffix {
+			font-size: 20px;
+
+			@media only screen and (max-width: $md) {
+				font-size: 14px;
+			}
+		}
+	}
+	.preview-selection-question-next-to {
+		width: 400px;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 80px;
+		grid-row-gap: 32px;
+		margin: 0 auto;
+	}
+	.preview-text-selection-question {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+
+		@media only screen and (max-width: $md) {
+			max-width: 320px;
+
+			.preview-text-selection-question__answer {
+				max-width: 300px;
+				height: fit-content;
+				padding: 10px 10px;
+				text-align: center;
+			}
+		}
+	}
+	&__footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		button {
+			height: 53px;
+			width: 275px;
+			font-size: 16px;
+			line-height: 21px;
+			text-transform: uppercase;
+			font-weight: bold;
+
+			@media only screen and (max-width: $md) {
+				height: 40px;
+				width: 200px;
+			}
+			&:not(:last-of-type) {
+				margin-bottom: 16px;
+			}
+			&.ant-btn-primary {
+				background: #064dd6;
+			}
+		}
+	}
+}
+
+.survey-result {
+	padding-top: 51px;
+	width: 1016px;
+	margin: 0 auto;
+	@media only screen and (max-width: $md) {
+		width: auto;
+		padding-bottom: 24px;
+	}
+	&__title {
+		text-align: center;
+		font-size: 28px;
+		line-height: 36px;
+		text-transform: uppercase;
+		color: #1b1b1b;
+		margin-bottom: 43px;
+		@media only screen and (max-width: $md) {
+			font-size: 24px;
+			line-height: normal;
+			margin-bottom: 24px;
+		}
+	}
+	&__footer {
+		float: right;
+		&__change {
+			color: #919191;
+			cursor: pointer;
+			font-size: 16px;
+			line-height: 21px;
+			text-transform: uppercase;
+			margin-right: 48px;
+			@media only screen and (max-width: $md) {
+				margin-right: 32px;
+			}
+		}
+		button {
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 21px;
+			background: #064dd6;
+			text-transform: uppercase;
+			width: 250px;
+			height: 53px;
+			@media only screen and (max-width: $md) {
+				height: 40px;
+				width: 160px;
+			}
+		}
+	}
+	.survey-result-content {
+		margin-bottom: 80px;
+		@media only screen and (max-width: $md) {
+			margin-bottom: 24px;
+		}
+		.survey-result-content-single {
+			background: #ffffff;
+			border: 1px solid #c6c6c6;
+			box-sizing: border-box;
+			border-radius: 8px;
+			padding: 14px 16px;
+			margin-bottom: 24px;
+			&__title {
+				display: flex;
+				justify-content: space-between;
+				.megadraft {
+					font-size: 18px;
+					line-height: 23px;
+					color: #474747;
+					.paragraph {
+						margin: 0 !important;
+					}
+					.megadraft-block {
+						padding-bottom: 9px !important;
+					}
+				}
+				&__icon {
+					font-size: 20px;
+					margin-left: 14px;
+					color: #064dd6;
+				}
+			}
+			&__result {
+				color: #777777;
+				font-size: 16px;
+				line-height: 21px;
+				&__selection__item {
+					display: flex;
+					align-items: center;
+					img {
+						margin-right: 8px;
+						border-radius: 4px;
+					}
+					:not(:last-of-type) {
+						margin-bottom: 8px;
+					}
+				}
+			}
+		}
+		.survey-result-content-single-not-answered {
+			background: #eeeeee;
+		}
+	}
+}
+
+.survey-success {
+	text-align: center;
+	width: 700px;
+	margin: 0 auto;
+	padding: 48px 0;
+	&__title {
+		font-size: 32px;
+		line-height: 42px;
+		color: #1b1b1b;
+		margin-bottom: 16px;
+
+		@media only screen and (max-width: $md) {
+			font-size: 28px;
+			line-height: normal;
+			max-width: 360px;
+			margin: 0 auto 16px auto;
+		}
+	}
+	&__desc {
+		font-size: 16px;
+		line-height: 160%;
+		color: #5e5e5e;
+		margin-bottom: 40px;
+		span {
+			font-weight: bold;
+		}
+	}
+	&__description {
+		font-size: 20px;
+		line-height: 26px;
+		color: #474747;
+		margin-bottom: 32px;
+	}
+	.survey-success-form {
+		background: #ffffff;
+		border-radius: 8px;
+		filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.25));
+		padding: 24px;
+		width: 470px;
+		margin: 0 auto;
+
+		@media only screen and (max-width: $md) {
+			width: 100%;
+		}
+		&__submit-btn {
+			background: #ff6c0e;
+			height: 40px;
+			font-size: 16px;
+			line-height: 24px;
+			color: #ffffff;
+			text-transform: uppercase;
+			border-color: #ff6c0e;
+		}
+	}
+	&__info-submited {
+		&__check-icon {
+			font-size: 64px;
+			margin-bottom: 16px;
+			color: var(--primary-color);
+		}
+		&__description {
+			font-size: 24px;
+		}
+	}
+}
+
+.survey-success-footer {
+	&__title {
+		font-size: 16px;
+		line-height: 160%;
+	}
+	&__image {
+		margin-bottom: 16px;
+	}
+	&__home-link {
+		font-style: italic;
+		text-decoration: underline;
+	}
+}
+
+.survey-navigation {
+	border-radius: 8px;
+	border: 1px solid #c6c6c6;
+	height: fit-content;
+	background-color: #fff;
+	&__header {
+		padding: 17px 24px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid #c6c6c6;
+		span {
+			color: #1b1b1b;
+			margin-right: 35px;
+			font-size: 14px;
+			line-height: 18px;
+		}
+		img {
+			cursor: pointer;
+		}
+	}
+	&__button {
+		background: #ffffff;
+		border: 1px solid #c6c6c6;
+		box-sizing: border-box;
+		border-radius: 4px;
+		height: 32px;
+		width: 32px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #ababab;
+		cursor: pointer;
+	}
+	&__button-selected {
+		border: 2px solid #064dd6;
+	}
+	&__button-isAnswered {
+		color: #ffffff;
+		background: #064dd6;
+		border-color: #064dd6;
+	}
+	.survey-navigation-grid-view {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 24px;
+		max-width: 288px;
+		box-sizing: border-box;
+		.survey-navigation__button {
+			&:not(:nth-child(5n)) {
+				margin-right: 20px;
+				margin-bottom: 16px;
+			}
+		}
+	}
+	.survey-navigation-list-view {
+		padding: 8px 24px;
+		&__list-item {
+			display: flex;
+			padding: 8px 0;
+			.survey-navigation__button {
+				margin-right: 12px;
+			}
+			.megadraft {
+				.paragraph {
+					margin: 0 !important;
+					max-width: 200px;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+				}
+			}
+		}
+	}
+}
+
+.survey-login-modal {
+	.pre-login-frame {
+		height: auto;
+	}
+}
+
+.survey-success-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	justify-content: space-around;
+
+	@media only screen and (max-width: $md) {
+		padding: 0 16px;
+	}
+}

@@ -1,0 +1,13 @@
+.menu-content-insurance-header {
+	display: flex;
+	justify-content: space-between;
+	color: #919191;
+	margin-bottom: 16px;
+	&__title {
+		font-weight: bold;
+		color: #1b1b1b;
+	}
+	&__show-all-products {
+		color: #064dd6;
+	}
+}

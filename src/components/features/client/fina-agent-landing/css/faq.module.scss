@@ -1,0 +1,120 @@
+@import "../../../../../styles/css_variables";
+
+.faq-collapse {
+  &-item {
+    min-width: 450px;
+    width: 70%;
+    @media only screen and (max-width: $xl) {
+      width: 100%;
+    }
+    @media only screen and (max-width: $md) {
+      min-width: auto;
+      width: 100%;
+    }
+    &:not(:last-of-type) {
+      margin-bottom: 16px;
+    }
+    .ant-collapse {
+      border: 1px solid #9F9F9F;
+      border-radius: 8px !important;
+      &-item {
+        border: none;
+        background: #ffffff;
+        border-radius: 8px !important;
+      }
+      &-header {
+        border: none;
+        font-size: 16px;
+        line-height: 21px !important;
+        color: #474747 !important;
+        padding: 20px 60px 20px 20px !important;
+        border-radius: 8px !important;
+        @media only screen and (max-width: $md) {
+          font-size: 14px !important;
+          line-height: 18px !important;
+        }
+        svg {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 30px;
+        }
+      }
+      &-content {
+        border-radius: 8px !important;
+        border: none;
+        &-box {
+          padding: 0 20px 20px 20px;
+        }
+      }
+      .ant-collapse-item-active {
+        border: 1px solid #064DD6;
+        border-radius: 8px;
+        .ant-collapse-header {
+          padding: 20px 60px 10px 20px !important;
+          color: #064DD6 !important;
+          font-weight: bold !important;
+        }
+
+      }
+    }
+    &-content {
+      p {
+        font-family: Lato-Regular;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #4F4F4F;
+        @media only screen and (max-width: $md) {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
+
+
+.faq{
+  text-align: left;
+  padding: 80px 0px 160px 0;
+  justify-content: space-between;
+  max-width: 1250px;
+  margin: 0 auto;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .faq-collapse-content {
+      max-width: 450px
+    }
+  }
+  
+  @media only screen and (max-width: $md) {
+    padding: 40px 20px;
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &-image{
+    width:  50%;
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: $xl) {
+      margin-top: 60px;
+    }
+    @media only screen and (max-width: $md) {
+      margin-top: 40px;
+
+      svg {
+        width: 172px;
+        height: 172px;
+      }
+    }
+  }
+}

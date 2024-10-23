@@ -1,0 +1,66 @@
+@import '@styles/css_variables';
+
+.bond-detail--company {
+  margin-top: 16px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .ant-collapse {
+    border: none;
+
+    & > .ant-collapse-item > .ant-collapse-header {
+      background: #ffffff;
+      border-radius: 0 0 10px 10px;
+      padding: 12px;
+    }
+
+    & > .ant-collapse-item {
+      border: none;
+    }
+
+    .ant-collapse-item .ant-collapse-content-box {
+      padding: 2px;
+    }
+
+    .ant-collapse-arrow {
+      transition: transform 0.3s;
+    }
+
+    .ant-collapse-item-active .ant-collapse-arrow {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
+  &--name {
+    font-size: 16px;
+    color: #000000;
+    padding: 12px;
+    font-weight: 700;
+    font-family: SFPD-Medium;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  &--logo {
+    display: flex;
+    gap: 30px;
+    margin: 16px 0;
+
+    &--name {
+      font-size: 36px;
+      font-family: SFPD-SemiBold;
+      line-height: 1;
+    }
+  }
+
+  .ant-typography {
+    margin: 8px 14px;
+    font-size: 12px;
+    text-align: justify;
+
+    @screen md {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@import '@styles/css_variables';
+
+.ui-edit-loan-detail {
+  display: flex;
+  .ui-side-bar {
+    width: 300px;
+    border-right: 1px solid #f0f0f0;
+
+    @media only screen and (max-width: $md) {
+      display: none;
+    }
+  }
+
+  .ui-loan-detail-content {
+    flex-grow: 1;
+
+    @media only screen and (max-width: $md) {
+      width: 100%;
+    }
+
+    .ant-tabs.m-l-20 {
+      @media only screen and (max-width: $md) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.ant-modal {
+  @media only screen and (max-width: $md) {
+    width: 100% !important;
+  }
+}
+
+.deal-detail-with-bank {
+  &__group-button {
+    display: flex;
+    @media only screen and (max-width: $md) {
+      flex-direction: column;
+    }
+    button {
+      @media only screen and (max-width: $md) {
+        margin: 0.5rem 0;
+        width: 100%;
+      }
+    }
+
+    .ant-dropdown-button {
+      @media only screen and (max-width: $md) {
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      button:last-child {
+        @media only screen and (max-width: $md) {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+.ui-view-progress {
+  margin: 20px 0;
+
+  &__label {
+    color: #064dd6;
+    font-weight: 700;
+  }
+
+  .ant-collapse-header,
+  .ant-collapse-content,
+  .ant-table {
+    background-color: #f4f8ff;
+  }
+
+  .ant-collapse-content {
+    border-top: none !important;
+  }
+
+  .h-table-form {
+    .ant-tag {
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+  }
+}

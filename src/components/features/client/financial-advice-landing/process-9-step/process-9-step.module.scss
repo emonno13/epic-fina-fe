@@ -1,0 +1,102 @@
+.financial-advice .financial-advice-process-9-step {
+    background: #FFFFFF;
+    // padding: 80px 0;
+    padding: 160px 0 80px;
+
+    &-wrapper {
+        border: 2px dashed #FF6C0E;
+        border-radius: 24px;
+        position: relative;
+        min-height: 500px;
+        padding: 24px;
+
+        @screen md {
+            padding: 80px 50px;
+        }
+    }
+
+    &-title {
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #1B1B1B;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0 10px;
+        background-color: #FFFFFF;
+        line-height: 35px;
+        position: absolute;
+        left: 50%;
+        // -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -125px);
+        width: 100%;
+        span {
+            color: #064DD6;
+        }
+
+        @screen md {
+            font-size: 36px;
+            line-height: 45px;
+        }
+    }
+
+    &-list {
+        margin-top: 50px;
+    }
+
+    .process-item {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        @screen md {
+            gap: 16px;
+        }
+
+        &-step {
+            font-weight: 700;
+            font-size: 64px;
+            color: #FF6C0E;
+
+            @screen md {
+                font-size: 90px;
+            }
+        }
+
+        svg {
+            min-width: 25px;
+        }
+
+        &-content {
+            color: #1B1B1B;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 140%;
+            display: inline-block;
+            max-width: 100%;
+
+
+            @screen md {
+                max-width: 205px;
+                font-size: 20px;
+            }
+        }
+
+        &.process-item-3,
+        &.process-item-6,
+        &.process-item-9 {
+            svg {
+                display: none;
+             }
+        }
+
+        svg {
+            display: none;
+
+            @screen md {
+                display: inline-block;
+            }
+        }
+    }
+}

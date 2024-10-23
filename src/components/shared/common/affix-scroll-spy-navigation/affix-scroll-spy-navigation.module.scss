@@ -1,0 +1,18 @@
+.affix-scroll-spy-navigation {
+  background: #ffffff;
+  border-radius: 8px;
+  filter: drop-shadow(0px 0px 16px rgba(0, 0, 0, 0.2));
+
+  a {
+    font-size: 12px;
+    line-height: 160%;
+    color: #777777;
+    font-family: SFPD-Light;
+    &.active {
+      font-size: 13px;
+      line-height: 160%;
+      color: #1b1b1b;
+      font-family: SFPD-Bold;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.h-slug {
+  .ant-input-suffix {
+    background-color: #F0F4F7;
+    margin: -6.5px -11px -6.5px 0;
+    padding: 0 8px;
+    border-left: 1px solid #DFE3E7;
+  }
+  .ant-input-prefix {
+    background-color: #F0F4F7;
+    margin: -6.5px 0 -6.5px -11px;
+    padding: 0 8px;
+    border-right: 1px solid #DFE3E7;
+  }
+  input {
+    padding-left: 8px !important;
+  }
+}

@@ -1,0 +1,44 @@
+@import '../../../../../../styles/css_variables';
+
+.recruitment-process-item{
+  &__container{
+    margin: 40px 60px 40px 60px;
+    text-align: center;
+  }
+  &__position{
+    background-color: #FFFFFF;
+    border: 1px solid #064DD6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    color: #064DD6;
+    font-family: SFPD-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    margin: -5px auto 35px;
+  }
+  &__title{
+    font-family: SFPD-Medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #474747;
+  }
+  &__content{
+    margin-top: 12px;
+    width: 190px;
+    font-family: SFPD-Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #5E5E5E;
+  }
+}

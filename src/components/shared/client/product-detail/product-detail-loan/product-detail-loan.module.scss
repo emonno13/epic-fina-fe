@@ -1,0 +1,279 @@
+@import "../../../../../styles/css_variables";
+
+.client-product-detail-loan {
+	padding-top: 32px;
+	@media only screen and (max-width: $md) {
+		padding: 32px 16px;
+	}
+}
+
+.client-product-detail-loan-content {
+	margin-bottom: 40px;
+	&__org-image {
+		height: 40px;
+		border-radius: 8px 8px 0 0;
+		padding: 0 14px;
+		background-size: cover;
+		background-position: 0;
+		background-repeat: no-repeat;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		background-color: #005992;
+	}
+	&__see-more {
+		font-family: SFPD-Regular;
+		font-size: 12px;
+		line-height: 14px;
+		letter-spacing: 0.3px;
+		text-transform: uppercase;
+		display: block;
+		margin-right: 6px;
+		color: #fff;
+		display: flex;
+		.anticon {
+			padding-left: 4px;
+			padding-top: 1px;
+		}
+	}
+
+	&__info-wrapper {
+		padding: 20px 30px;
+		display: flex;
+		background: #fff;
+		border: 1px solid #dfe3ec;
+		box-sizing: border-box;
+		border-radius: 0 0 8px 8px;
+		gap: 24px;
+
+		@media only screen and (max-width: $md) {
+			flex-direction: column;
+			padding: 0;
+		}
+	}
+
+	&__info {
+		flex-grow: 1;
+		@media only screen and (max-width: $md) {
+			padding: 20px 30px;
+		}
+		&__name {
+			font-family: SFPD-Bold;
+			font-size: 26px;
+			line-height: 31px;
+			letter-spacing: 0.3px;
+			margin-bottom: 5px;
+			color: #002d71;
+		}
+		&__desc {
+			font-size: 13px;
+			line-height: 16px;
+			font-family: SFPD-Regular;
+			margin-bottom: 10px;
+			letter-spacing: 0.3px;
+			color: #222c4f;
+		}
+		&__advantage-outstading {
+			margin-bottom: 10px;
+			display: flex;
+			font-family: SFPD-Medium;
+			font-size: 16px;
+			letter-spacing: 0.3px;
+			color: #fc7513;
+			.anticon {
+				font-size: 15px;
+				margin-right: 12px;
+				margin-top: 4px;
+			}
+		}
+		&__advantage {
+			display: flex;
+			font-family: SFPD-Regular;
+			font-size: 14px;
+			line-height: 25px;
+			letter-spacing: 0.3px;
+			color: #333;
+			.anticon {
+				font-size: 15px;
+				margin-right: 12px;
+				margin-top: 4px;
+				color: #43a85a;
+			}
+		}
+	}
+}
+
+.client-product-detail-loan-document-template-list {
+	&__title {
+		font-family: SFPD-Bold;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 21px;
+		color: #002d71;
+		margin-bottom: 8px;
+	}
+	&__item {
+		display: flex;
+		padding: 12px 0;
+		border-top: 1px solid #efeff7;
+		&__name {
+			font-family: SFPD-Regular;
+			font-size: 16px;
+			line-height: 19px;
+			letter-spacing: 0.3px;
+			color: #222;
+		}
+	}
+	&__detail-item {
+		font-family: SFPD-Regular;
+		font-size: 15px;
+		line-height: 26px;
+		letter-spacing: 0.3px;
+		color: #002d71;
+		list-style: none;
+		padding-inline-start: 0px;
+		li::before {
+			content: "\2022";
+			color: #c8ccd7;
+			font-weight: 700;
+			display: inline-block;
+			width: 1em;
+			margin-left: -1em;
+		}
+	}
+}
+
+.product-detail-loan-register-form {
+	background: #fff;
+	border: 2px solid #0a3eca;
+	box-sizing: border-box;
+	border-radius: 6px;
+	padding: 15px 22px;
+	flex: 0 0 340px;
+	height: fit-content;
+
+	&__title {
+		margin-bottom: 20px;
+		font-family: SFPD-Bold;
+		font-size: 24px;
+		line-height: 110%;
+		letter-spacing: 0.3px;
+		color: #111;
+	}
+}
+
+.product-detail-loann-register-form-title-header {
+	margin-bottom: 11px;
+	display: flex;
+	align-items: center;
+	&__icon {
+		width: 24px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 13px;
+		letter-spacing: 0.3px;
+		font-family: SFPD-Medium;
+		color: #fff;
+		border-radius: 50%;
+		background: #0a3eca;
+		margin-right: 8px;
+	}
+	&__label {
+		font-family: SFPD-Medium;
+		font-size: 18px;
+		line-height: 21px;
+		letter-spacing: 0.3px;
+		color: #111;
+	}
+}
+
+.product-detail-loan-register-form-info {
+	margin-bottom: 20px;
+	&__content {
+		padding-left: 32px;
+		&__label {
+			margin-bottom: 6px;
+			display: flex;
+			justify-content: space-between;
+			font-family: SFPD-Medium;
+			font-size: 14px;
+			line-height: 17px;
+			letter-spacing: 0.3px;
+			color: #555;
+		}
+		&__name {
+			font-size: 15px;
+			font-family: SFPD-Medium;
+			letter-spacing: 0.3px;
+			color: #222;
+		}
+	}
+}
+
+.product-detail-loan-register-form-main {
+	&__content > form {
+		> .ant-row:first-of-type {
+			padding-left: 32px;
+		}
+		.hform-btn-panel {
+			.ant-form-item-label {
+				display: none;
+			}
+			button {
+				width: 100%;
+				margin: 0;
+				background: #0a3eca;
+				border-radius: 6px;
+			}
+		}
+	}
+}
+
+.product-detail-loan-group-btn {
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 17px 20px;
+	border-top: 1px solid #dfe3ec;
+	background: #fff;
+	flex-direction: column;
+	button {
+		border-radius: 6px;
+		width: 100%;
+		height: 50px;
+		font-family: SFPD-Regular;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 21px;
+		text-align: center;
+		letter-spacing: 0.3px;
+		color: #fff;
+		border: none;
+		&:hover,
+		&:active,
+		&:focus {
+			color: #fff;
+			border: none;
+		}
+	}
+	&__register-loan {
+		background: #0a3eca;
+		margin-bottom: 15px;
+		&:hover,
+		&:active,
+		&:focus {
+			background: #0a3eca;
+		}
+	}
+	&__calculate-loan {
+		background: #fc7513;
+		&:hover,
+		&:active,
+		&:focus {
+			background: #fc7513;
+		}
+	}
+}

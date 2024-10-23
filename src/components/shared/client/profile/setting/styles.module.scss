@@ -1,0 +1,179 @@
+.profile-setting {
+  &-change-password {
+    .profile-change-password {
+      @screen md {
+        padding: 0 65px;
+      }
+
+      &-warning {
+        margin-top: 16px;
+        display: flex;
+        align-items: baseline;
+        gap: 5px;
+        background: #FFF9F3;
+        border-radius: 4px;
+        padding: 12px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FF6C0E;
+
+        @screen md {
+          margin-top: 35px;
+          align-items: center;
+        }
+      }
+
+      &-content {
+        margin-top: 30px;
+      }
+
+      &-notes {
+        margin-bottom: 24px;
+
+        @screen md {
+          margin-bottom: 0;
+        }
+
+        &-title {
+          font-weight: 500;
+          font-size: 16px;
+          color: #000000;
+          margin-bottom: 16px;
+        }
+      }
+
+      &-note {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #000000;
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        margin-bottom: 5px;
+
+        svg {
+          width: 16px;
+          height: 16px;
+          position: relative;
+          top: 2px;
+        }
+
+        span {
+          display: inline-block;
+          width: calc(100% - 26px);
+        }
+      }
+
+      .fina-form__input-control--password {
+        font-size: 14px;
+        padding: 12px 12px;
+      }
+
+      .btn-change-password-profile {
+        background: #064DD6;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 15px;
+        height: 48px;
+        line-height: 40px;
+        min-width: 185px;
+      }
+    }
+  }
+
+	&-notification {
+		&-item {
+			border: 1px solid #E0E1E4;
+			border-radius: 8px;
+			padding: 18px 22px 0;
+
+			&:first-child {
+				margin-bottom: 16px;
+			}
+
+			.profile-title {
+				border-bottom: 1px solid #E0E1E4;
+				margin: 0 -22px 16px;
+				padding: 0 22px 12px 22px;
+			}
+
+			label {
+				margin-bottom: 0;
+			}
+
+			.ant-form-item {
+				margin-bottom: 10px;
+        flex-flow: initial;
+        justify-content: space-between;
+
+        @screen md {
+          margin-bottom: 16px;
+        }
+
+				.ant-form-item-control {
+					text-align: right;
+				}
+
+        .ant-form-item-label,
+        .ant-form-item-control {
+          flex: initial;
+        }
+			}
+		}
+
+    .btn-setting-notification {
+      background: #064DD6;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 15px;
+      height: 48px;
+      line-height: 40px;
+      margin-top: 16px;
+    }
+	}
+
+  &-language {
+    &-desc {
+      font-weight: 400;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .ant-radio-wrapper {
+      font-size: 16px;
+      align-items: center;
+      line-height: initial;
+    }
+
+    .ant-radio {
+      top: 0;
+    }
+
+    .ant-radio-wrapper:first-child {
+      margin-right: 100px;
+    }
+
+    .ant-radio-checked .ant-radio-inner {
+      border-width: 2px;
+      border-color: #064DD6;
+    }
+
+    .ant-radio-inner {
+      width: 22px;
+      height: 22px;
+      border-color: #AAAFB3;
+
+      &::after {
+        width: 12px;
+        height: 12px;
+        background-color: #064DD6;
+      }
+    }
+
+    span.ant-radio + * {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+}

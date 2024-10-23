@@ -1,0 +1,25 @@
+.credit-offer-letter-footer {
+  margin: 80px 0;
+
+  .extra {
+    margin: 80px 0 24px;
+    font-style: italic;
+    font-size: 10px;
+    line-height: 140%;
+
+    @screen md {
+      font-size: 12px;
+    }
+
+    span {
+      color: #f44336;
+    }
+  }
+
+  .ant-btn {
+    border-radius: 6px;
+    height: 40px;
+    width: 122px;
+    font-size: 13px;
+  }
+}

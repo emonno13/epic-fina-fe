@@ -1,0 +1,71 @@
+.ui-stringee-call-panel {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+
+  .ui-calling-detail {
+    margin-bottom: 30px;
+    display: flex;
+    background-color: white;
+    padding: 15px;
+    transition: all 0.1s linear;
+
+    &.display-none {
+      display: none;
+    }
+
+    &.show {
+      min-width: 200px;
+      transition: all 0.1s linear;
+      padding: 5px;
+      border: 1px solid #CCCCCC;
+      border-radius: 40px;
+    }
+
+    .accept-call {
+      background: #0a3eca;
+    }
+
+    .reject-call {
+      background: #f5222d;
+      transform: rotate(90deg);
+    }
+
+    .call-icon {
+      cursor: pointer;
+      border-radius: 50%;
+      border: none;
+      height: 45px;
+      width: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .icon-phone {
+        font-size: 28px;
+        color: white;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .info-panel {
+      flex-grow: 1;
+      padding-right: 20px;
+      padding-left: 20px;
+
+      .info-header {
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      .calling-to-name {
+        font-size: 16px;
+        color: green;
+      }
+    }
+  }
+
+}

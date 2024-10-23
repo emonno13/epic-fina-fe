@@ -1,0 +1,69 @@
+.profile-information-transaction {
+  .profile-tabs-list {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .profile-tabs {
+    background-color: white;
+    border: none;
+    color: #4e5a65;
+    font-size: 16px;
+    margin-bottom: 16px;
+    margin-right: 45px;
+  }
+
+  .profile-tabs-active {
+    color: #064dd6;
+    border-bottom: 3px solid #064dd6;
+    padding: 9px;
+  }
+}
+
+.profile-modal-transaction-detail {
+  .ant-modal-content {
+    border-radius: 16px;
+  }
+  
+  .profile-description-item-transaction {
+    .site-description-item-title {
+      color: #064dd6;
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 14px;
+    }
+
+    .site-description-item-content {
+      border: 1px solid #cbe3fc;
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .site-description-item-profile-p-content {
+      text-align: left;
+    }
+
+    .payment-confirmation-fund-content-qr-code-desc {
+      display: flex;
+      flex-direction: column;
+      margin-left: 25px;
+      height: 100%;
+      justify-content: flex-end;
+
+      span {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .ant-modal-close-x {
+    svg path {
+      stroke: #aaafb3;
+    }
+  }
+}

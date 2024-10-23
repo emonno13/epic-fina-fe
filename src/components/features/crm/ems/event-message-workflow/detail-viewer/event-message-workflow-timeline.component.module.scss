@@ -1,0 +1,70 @@
+.hiddenTag {
+  .ant-select-selection-overflow-item{
+    display: none;
+  }
+}
+.hiddenOptionsAfterSelected{
+  .ant-select-item-option-selected{
+    display: none;
+  }
+}
+
+.timeline{
+  position: relative;
+}
+
+.card-timeline {
+  position: relative;
+}
+
+.active {
+  background-color: #ffffff;
+}
+.processing {
+  background: linear-gradient(to bottom right, #ffffb8, #fadb14);
+}
+.done {
+  background: linear-gradient(to bottom right, #fcffe6, #a0d911);
+}
+.error {
+  background:  linear-gradient(to bottom right, #fff2e8, #ff4d4f);
+}
+
+.inactive {
+  background: linear-gradient(to bottom right, #ffffff, #b4aeae);
+}
+
+.message-workflow {
+	max-width: 950px;
+	margin: 0 auto;
+
+	&-timeline {
+		width: 45%;
+		border-radius: 5px;
+		padding-top: 1.7rem;
+		padding-bottom: 1rem;
+		box-shadow: 4px 6px 18px -6px;
+
+		&__item {
+            margin-top: 5px;
+			text-align: left;
+            position: relative;
+
+          &_switch{
+            margin-top: 20px;
+            position: absolute !important;
+            top: 5px;
+            left: 45px;
+            z-index: 99;
+          };
+		}
+	}
+  &_buttonDelete{
+    margin-top: 20px;
+    position: absolute !important;
+    top: -20px;
+    left: 5px;
+    z-index: 99;
+  }
+  
+}

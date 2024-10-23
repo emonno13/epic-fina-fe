@@ -1,0 +1,123 @@
+@import "../../../../../styles/css_variables";
+
+.loan-by-product-container {
+  .banks {
+    display: flex;
+
+    .ant-carousel {
+      width: 100%;
+    }
+
+    .loan-package-wrapper-carousel {
+      margin-left: -12px;
+    margin-right: -12px;
+
+    .slick-arrow {
+      background-color: #9ba8ca !important;
+      width: 30px !important;
+      height: 60px !important;
+      border-radius: 25px;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      background: #f0f4ff;
+      opacity: 0.3;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      span.anticon {
+        color: #fff;
+        font-size: 14px;
+      }
+
+      @media only screen and (max-width: $md) {
+        display: none !important;
+      }
+    }
+
+    .slick-next {
+      right: -48px !important;
+    }
+
+    .slick-prev {
+      left: -48px !important;
+      z-index: 1;
+    }
+
+    &__item {
+      padding: 0 12px;
+    }
+    }
+
+    .bank {
+      max-width: 34%;
+      min-width: 340px;
+
+      &__title {
+        padding-left: 12px;
+        height: 40px;
+        border-radius: 8px 8px 0 0;
+        color: #fff;
+        border: 1px solid #dfe3ec;
+        border-bottom: none;
+      }
+
+      &__image {
+        height: 100%;
+        margin-right: 5px;
+      }
+
+      &__description {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 0 0 8px 8px;
+        border: 1px solid #dfe3ec;
+      }
+
+      .description-content {
+        width: 50%;
+
+        &__title {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          text-align: center;
+          color: #1b1b1b;
+          margin-top: 16px;
+        }
+
+        &__value {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 28px;
+          text-align: center;
+          color: #064dd6;
+          margin: 12px 0 8px 0;
+        }
+
+        &__label {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 15px;
+          text-align: center;
+          color: #919191;
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    @media only screen and (max-width: $md) {
+      flex-direction: column;
+      align-items: center;
+
+      .bank {
+        margin-bottom: 24px
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "../../../../../styles/css_variables";
+
+.category-viewer {
+  &__title {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: $md) {
+  .wrap-document-group{
+    margin: 0 !important;
+  }
+}

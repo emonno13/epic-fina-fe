@@ -1,0 +1,21 @@
+.mobile-profile-header {
+  margin: 0 -1rem;
+	background: #0a3eca;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 58px;
+	padding-bottom: 24px;
+	&__avatar {
+		margin-bottom: 20px;
+	}
+	&__name {
+		font-size: 22px;
+		line-height: 16px;
+		margin-bottom: 9px;
+	}
+	&__user-type {
+		font-size: 13px;
+		line-height: 16px;
+		opacity: 0.7;
+	}
+}

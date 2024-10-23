@@ -1,0 +1,214 @@
+.calculating-tax-by-salary-wrapper {
+  max-width: 700px;
+  margin: 50px auto;
+
+  .calculating-tax-by-salary {
+    background: #ffffff;
+    border-radius: 16px;
+    font-size: 12px;
+    background-image: url("/assets/images/bg-water-mark-calc.png");
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+
+    @screen md {
+      padding: 24px;
+      border: 1px solid #AEAEB2;
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 20px;
+      color: #064dd6;
+      margin-top: 20px;
+    }
+
+    .content-input {
+      margin-bottom: 24px;
+
+      @screen md {
+        width: 50%;
+      }
+
+      &__title-convert {
+        font-size: 16px;
+        background-color: #064dd6;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        padding: 8px;
+        align-items: center;
+        font-weight: 700;
+      }
+    }
+
+    .render-input-content {
+      margin-top: 18px;
+      display: flex;
+      width: 100%;
+      align-items: center;
+
+      .input-lable {
+        width: 175px;
+
+        &.ant-input-number {
+          font-size: 12px;
+          padding: 0 10px;
+          height: 30px;
+          overflow: hidden;
+
+          .ant-input-number-handler-wrap {
+            width: 100%;
+            padding: 0 11px;
+            opacity: 1;
+
+            &:first-child {
+              @screen md {
+                width: 22px;
+                padding: 0;
+              }
+            }
+          }
+
+          .ant-input-number-input {
+            padding: 0;
+            height: 30px;
+          }
+        }
+      }
+
+      .render-input-lable {
+        width: calc(100% - 175px);
+        font-size: 13px;
+      }
+    }
+
+    .edit-heder-line {
+      height: 1px;
+      border-top: 1px dashed #dcdddf;
+      margin-bottom: 16px;
+    }
+
+    .calculating-tax-by-salary-content {
+      width: 100%;
+      margin-top: 30px;
+      margin-bottom: 24px;
+
+      @screen md {
+        display: flex;
+        gap: 20px;
+      }
+    }
+
+    .title-view-detail {
+      font-size: 16px;
+      background-color: #064dd6;
+      color: white;
+      border-radius: 5px;
+      padding-left: 10px;
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      font-weight: 700;
+    }
+
+    .title-view-show-detail {
+      color: #666;
+      font-weight: 700;
+    }
+
+    .show-description-tax-tncn {
+      margin-left: 15px;
+    }
+  }
+}
+
+.title-description-calculating-tax-by-salary {
+  font-size: 16px;
+  background-color: #064dd6;
+  color: white;
+  height: 40px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  margin: 20px -24px;
+  padding: 0 24px;
+}
+
+.content-view-show-detail {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 5px;
+
+  &.content-view-show-detail-header {
+    font-weight: 700;
+  }
+
+  .lable-show-detail {
+    width: 60%;
+    display: flex;
+  }
+
+  .value-show-detail {
+    width: 40%;
+  }
+
+  .lable-show-detail-by-index {
+    width: 60%;
+    display: flex;
+  }
+
+  .value-show-detailby-index {
+    width: 30%;
+  }
+
+  .index-show-detial {
+    width: 10%;
+  }
+}
+
+@media print {
+  .calculating-tax-by-salary-wrapper {
+    .calculating-tax-by-salary {
+      padding: 24px;
+      border: 1px solid #aeaeb2;
+
+      .content-input {
+        width: 50%;
+      }
+
+      .calculating-tax-by-salary-content {
+        display: flex;
+        gap: 20px;
+      }
+
+      .render-input-content {
+        .input-lable {
+          &.ant-input-number {
+            .ant-input-number-handler-wrap {
+              &:first-child {
+                width: 22px;
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .calculators-toolkit-header,
+    .bank-loan-calculator-actions {
+      display: none;
+    }
+
+    .calculating-tax-by-salary-title {
+      margin-top: 0;
+    }
+  }
+
+  @page {
+    size: A4 portrait;
+  }
+}

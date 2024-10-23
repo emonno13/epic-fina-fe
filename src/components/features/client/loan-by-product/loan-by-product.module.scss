@@ -1,0 +1,120 @@
+@import "../../../../styles/css_variables";
+
+.loan-by-product-container {
+  .item-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .warp-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .warp-content {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    &__title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: capitalize;
+      color: #000000;
+
+      @media only screen and (max-width: $md) {
+        margin-left: 18px;
+      }
+    }
+  }
+
+  .banner {
+    background-image: url("/assets/images/banner-bds.png");
+    width: 100%;
+    background-repeat: round;
+    color: #fff;
+    padding: 78px 0;
+    margin-bottom: 63px;
+
+    &__title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 45px;
+      margin-bottom: 33px;
+    }
+
+    &__des {
+      display: flex;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 8px;
+    }
+
+    &__label {
+      margin-left: 4px;
+      text-align: left;      
+    }
+
+    @media only screen and (max-width: $md) {
+      text-align: center;
+      background-image: none;
+      background-color: #fff;
+      padding: 32px 0;
+      margin-bottom: 0;
+
+      &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        color: #064DD6;
+      }
+
+      &__des {
+        margin-left: 18px;
+        color: #FF6C0E;
+      }
+    }
+  }
+
+  .describe {
+    &__title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+    }
+
+    &__value {
+      font-size: 16px;
+      line-height: 19px;
+      color: #5e5e5e;
+    }
+
+    @media only screen and (max-width: $md) {
+      margin-left: 18px;
+    }
+  }
+
+  .privacy {
+    margin-bottom: 80px;
+
+    &__des {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #5e5e5e;
+
+      @media only screen and (max-width: $md) {
+        margin-left: 18px;
+      }
+    }
+
+    &__label {
+      margin-left: 4px;
+    }
+  }
+}

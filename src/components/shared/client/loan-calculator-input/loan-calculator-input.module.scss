@@ -1,0 +1,24 @@
+.loan-calculator-input-wrapper {
+  h3 {
+    font-family: SFPD-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #222222;
+  }
+  &__input {
+    height: 40px;
+    border: 1px solid #dfe3ec;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+  input {
+    font-family: SFPD-Regular;
+  }
+  .ant-input-suffix {
+    font-family: SFPD-Regular;
+    margin: auto;
+  }
+}

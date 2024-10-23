@@ -1,0 +1,45 @@
+@import './css_variables';
+
+@media only screen and (min-width: $md) {
+  .common-responsive {
+    &__mobile {
+      display: none;
+
+      &-created-at {
+        display: none;
+      }
+
+      &-group {
+      }
+
+      &-action {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $md) {
+  .common-responsive {
+    position: relative;
+
+    &__mobile {
+      display: block;
+
+      &-created-at {
+        display: block;
+      }
+
+      &-group {
+        display: block;
+      }
+
+      &-action {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,778 @@
+@import "../../../../styles/css_variables";
+
+.client-home-why-choose-us {
+  background: #fff;
+  margin-bottom: 56px;
+
+  @media only screen and (max-width: $md) {
+    padding: 0 20px;
+  }
+
+  &__title {
+    font-family: SFPD-Bold;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.3px;
+    color: #111;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+
+    @media only screen and (max-width: $md) {
+      height: 77px;
+      font-size: 24px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 40px 16px 34px 16px;
+
+    @media only screen and (max-width: $md) {
+      margin: 0;
+      padding: 19px 0;
+    }
+
+    &__icon {
+      @media only screen and (max-width: $md) {
+        min-width: 60px;
+        margin-right: 23px;
+      }
+
+      min-width: 80px;
+      margin-right: 28px;
+
+      svg {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__title {
+      font-family: SFPD-Medium;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 120%;
+      letter-spacing: 0.3px;
+      color: #002d71;
+      margin-bottom: 13px;
+
+      @media only screen and (max-width: $md) {
+        font-size: 18px;
+      }
+    }
+
+    &__description {
+      @media only screen and (max-width: $md) {
+        font-size: 13px;
+      }
+
+      margin-top: 6px;
+      font-family: SFPD-Regular;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.3px;
+      color: #555;
+    }
+  }
+}
+
+.client-home-partners-wrapper {
+  background: #ffffff;
+}
+
+.client-home-partners {
+  background: #ffffff;
+  padding: 24px 0 120px 0;
+
+  @media only screen and (max-width: $md) {
+    padding: 24px 0 40px 0;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: SFPD-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.3px;
+    color: #777;
+    margin: 42px 0 38px;
+    text-align: center;
+  }
+
+  &__webimages {
+    width: 1100;
+
+    @media only screen and (max-width: $md) {
+      display: none;
+    }
+  }
+
+  &__mobileimages {
+    width: 400;
+
+    @media only screen and (max-width: $md) {
+      display: block;
+    }
+
+    display: none;
+  }
+}
+
+.client-home-procedure-wrapper {
+  background: #f0f4ff;
+}
+
+.client-home-procedure {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0;
+
+  @media only screen and (max-width: $md) {
+    padding: 67px 0;
+    flex-direction: column;
+  }
+
+  &__image {
+    margin-right: 24px;
+
+    @media only screen and (max-width: $md) {
+      margin-right: 0;
+      margin-bottom: 106px;
+      padding: 0 55px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    @media only screen and (max-width: $md) {
+      padding: 0 32px;
+    }
+
+    &__title {
+      font-family: SFPD-Bold;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 43px;
+      color: #303030;
+      margin-bottom: 36px;
+    }
+
+    &__list {
+      margin-bottom: 48px;
+
+      &__item {
+        display: flex;
+        margin-bottom: 24px;
+
+        &__index {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          background: #ffffff;
+          border-radius: 40px;
+          font-weight: bold;
+          font-size: 30px;
+          line-height: 36px;
+          color: #064dd6;
+          margin-right: 16px;
+        }
+
+        &__content {
+          &__title {
+            font-family: SFPD-Medium;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: #303030;
+            margin-bottom: 8px;
+          }
+
+          &__description {
+            font-family: SFPD-Regular;
+            font-size: 16px;
+            line-height: 19px;
+            color: #474747;
+            max-width: 439px;
+          }
+        }
+      }
+    }
+
+    button {
+      font-family: SFPD-Bold;
+      background: #064dd6;
+      border-radius: 81px;
+      width: 163px;
+      height: 41px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+}
+
+.client-home-here-to-help-wrapper {
+  background: #fff;
+}
+
+.client-home-here-to-help {
+  background: #ffffff;
+  padding: 80px 0;
+
+  @media only screen and (max-width: $md) {
+    padding: 80px 16px;
+  }
+
+  &__title {
+    font-family: SFPD-Bold;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #303030;
+    margin-bottom: 36px;
+  }
+
+  &__desc {
+    font-family: SFPD-Regular;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #474747;
+    margin-bottom: 44px;
+  }
+
+  &__contact {
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+          margin-bottom: 24px;
+        }
+
+        &__desc {
+          font-family: SFPD-Medium;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 24px;
+          text-align: center;
+          color: #303030;
+        }
+      }
+
+      &__divider {
+        background: #c6c6c6;
+        height: 109px !important;
+        width: 2px !important;
+      }
+    }
+  }
+}
+
+.client-home-reviews {
+  padding: 80px 0;
+  background: #fff;
+
+  @media only screen and (max-width: $md) {
+    padding: 80px 16px 40px 16px;
+  }
+
+  &__title {
+    @media only screen and (max-width: $md) {
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 38px;
+    }
+
+    font-family: SFPD-Bold;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 47px;
+    text-align: center;
+    color: #303030;
+    margin-bottom: 77px;
+  }
+
+  &__list-item {
+    background: #f0f4ff;
+    border-radius: 0px 0px 80px 0px;
+    padding: 40px 32px;
+
+    &__rate {
+      margin-bottom: 16px;
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+
+      &__avatar {
+        margin-right: 16px;
+      }
+
+      &__content {
+        font-size: 16px;
+        line-height: 19px;
+
+        &__name {
+          font-family: SFPD-Bold;
+          color: #303030;
+          font-weight: bold;
+          margin-bottom: 4px;
+        }
+
+        &__desc {
+          font-family: SFPD-Regular;
+          color: #474747;
+        }
+      }
+    }
+
+    &__content {
+      font-family: SFPD-Regular;
+      font-size: 16px;
+      line-height: 19px;
+      height: 84px;
+      color: #474747;
+      margin-bottom: 24px;
+    }
+
+    &__review-date {
+      font-family: SFPD-Regular;
+      font-size: 16px;
+      line-height: 19px;
+      color: #474747;
+    }
+  }
+
+  &__footer {
+    margin-top: 44px;
+    text-align: center;
+  }
+
+  &__all-reviews-btn {
+    font-family: SFPD-Bold;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 9.5px 18px;
+    color: #064dd6;
+    border: 2px solid #064dd6;
+    border-radius: 50px;
+    height: auto;
+  }
+}
+
+.client-home-refer-customer {
+  padding: 30px 0;
+  background: linear-gradient(0deg, #0a3eca -12.73%, #00217b 80%);
+
+  @media only screen and (max-width: $md) {
+    padding: 33px 16px;
+  }
+
+  &__button {
+    font-family: SFPD-Regular;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    height: 64px !important;
+    width: 100%;
+    color: #fff !important;
+    border: none !important;
+    font-size: 18px !important;
+    line-height: 23px !important;
+
+    &__icon {
+      margin-right: 16px;
+      width: 24px;
+
+      svg {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__want-loan-button {
+    background: #ff6c0e !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: #ff6c0e !important;
+      border: none !important;
+    }
+  }
+
+  &__introduce-button {
+    background: #fff !important;
+    color: #064dd6 !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: #fff !important;
+      color: #064dd6 !important;
+    }
+  }
+}
+
+.client-home-featured-products {
+  padding: 40px 108px;
+  background: #fff;
+
+  @media only screen and (max-width: $md) {
+    padding: 40px 16px 40px 16px;
+  }
+}
+
+.client-home-under-banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 108px;
+  background: #2967dc;
+
+  @media only screen and (max-width: $md) {
+    flex-direction: column;
+    padding: 16px 0 14px 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  span {
+    @media only screen and (max-width: $md) {
+      text-align: center;
+    }
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+  }
+}
+
+.client-home-banner {
+  &-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .slick-arrow {
+    background: rgba(255, 255, 255, 0.8) !important;
+    width: 30px !important;
+    height: 60px !important;
+    border-radius: 25px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    span.anticon {
+      color: #76809a;
+      font-size: 16px;
+    }
+
+    @media only screen and (max-width: $md) {
+      display: none !important;
+    }
+  }
+
+  .slick-next {
+    right: 67px !important;
+  }
+
+  .slick-prev {
+    left: 67px !important;
+    z-index: 1;
+  }
+
+  .slick-dots {
+    li {
+      width: 8px !important;
+      height: 8px !important;
+      opacity: 0.5;
+      margin: 0 5px !important;
+
+      button {
+        height: 100% !important;
+        border-radius: 8px !important;
+      }
+
+      &.slick-active {
+        width: 25px !important;
+      }
+    }
+  }
+}
+
+.client-home-news {
+  padding: 60px 0;
+  background: #F3F7FF;
+
+  .client-home-news-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #303030;
+    margin-bottom: 10px;
+
+    .client-home-news-title-right {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #011566;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      path {
+        fill: #fc7513;
+      }
+    }
+  }
+
+  .client-home-news-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #5E5E5E;
+    margin-bottom: 20px;
+
+    @screen md {
+      margin-bottom: 40px;
+    }
+  }
+
+  .featured-news {
+		background: transparent;
+    padding: 16px 0;
+
+    .featured-news__title {
+      display: none;
+    }
+	}
+
+  @media only screen and (max-width: $md) {
+    padding: 20px;
+  }
+}
+
+.client-home-mission {
+  background-color: #f2f5f9;
+
+  &__wrapper {
+    padding: 112px 50px 5px 0;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 480px;
+
+    @media only screen and (max-width: $md) {
+      padding: 26px 0 0 35px;
+    }
+  }
+
+  &__content {
+    max-width: 582px;
+
+    &__info {
+      font-family: SFPD-Light;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 26px;
+      line-height: 38px;
+      letter-spacing: 0.3px;
+      color: #111;
+      margin-bottom: 18px;
+
+      @media only screen and (max-width: $md) {
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
+
+    &__ceo-name {
+      font-family: SFPD-Bold;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 120%;
+      letter-spacing: 0.3px;
+      color: #002d71;
+      margin-bottom: 3px;
+
+      @media only screen and (max-width: $md) {
+        font-size: 18px;
+      }
+    }
+
+    &__position {
+      font-family: SFPD-Regular;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 120%;
+      letter-spacing: 0.3px;
+      color: #777;
+
+      @media only screen and (max-width: $md) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__image {
+    width: 315px;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @media only screen and (max-width: $md) {
+      width: 13.5rem;
+      height: 17rem;
+      position: absolute;
+      right: 8px;
+      bottom: 0;
+    }
+
+    i {
+      background-image: url("/assets/images/client_home_ceo_image.png");
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: block;
+      height: 100%;
+    }
+  }
+}
+
+.client-home-news-categories-item {
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+
+    &__icon {
+      margin-right: 10px;
+      width: 4px;
+
+      svg {
+        display: block;
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    &__title {
+      font-family: SFPD-Bold;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #111;
+      margin-bottom: 0;
+    }
+  }
+
+  .clickable-opacity {
+    a {
+      height: 40px;
+      border-top: 1px solid #f1f1f1;
+      border-radius: 0 0 6px 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: SFPD-Medium;
+      font-size: 15px;
+      line-height: 18px;
+      background-color: #fff;
+      letter-spacing: 0.3px;
+      color: #002d71;
+
+      @media only screen and (max-width: $md) {
+        background: #e6e9ef;
+        border-radius: 4px;
+        height: 26px;
+      }
+    }
+  }
+}
+
+.client-home-list-by-category-item {
+  display: flex;
+  gap: 14px;
+  padding-bottom: 15px;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 15px;
+  }
+
+  @media only screen and (max-width: $md) {
+    &:last-of-type {
+      border-bottom: 0;
+    }
+  }
+
+  &__image {
+    flex: 0 0 90px;
+    width: 90px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    @media only screen and (max-width: $md) {
+      flex: 0 0 100px;
+      width: 100;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    margin-bottom: 0;
+    overflow: hidden;
+    font-family: SFPD-Medium;
+    line-height: 120%;
+    color: #222;
+
+    @media only screen and (max-width: $md) {
+      font-size: 16px;
+    }
+  }
+}

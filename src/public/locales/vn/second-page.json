@@ -1,0 +1,8 @@
+{
+  "change-locale": "Change locale",
+  "to-second-page": "To second page",
+  "error-with-status": "A {{statusCode}} error occurred on server",
+  "error-without-status": "An error occurred on the server",
+  "h1": "Eine zweite Seite, um das Routing zu demonstrieren",
+  "back-to-home": "Zurück zur Hauptseite"
+}

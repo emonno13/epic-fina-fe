@@ -1,0 +1,111 @@
+.loans-introduce .fina-partners {
+    padding: 80px 0;
+    background-image: url(/assets/images/bg-fina-partners.png), url(/assets/images/spiral-fina-partners.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+    .overlay {
+        display: none;
+    }
+
+    @screen md {
+        padding: 120px 0;
+    }
+
+    &::after {
+        content: none;
+
+        @screen md {
+            content: "";
+            width: 230px;
+            height: 100%;
+            position: absolute;
+            top: 15%;
+            right: 0;
+            background-image: url(/assets/images/spiral-fina-partners.svg);
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-size: contain;
+            z-index: 0;
+        }
+    }
+
+    // .slick-list {
+    //     z-index: 1;
+    // }
+
+    &-title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 38px;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+
+        @screen md {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .fina-partner-item {
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        height: 45px;
+        margin: 0 6px;
+        width: 105px;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+
+        @screen md {
+            width: 170px;
+            height: 72px;
+            margin: 0 15px;
+            padding: 5px 20px;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 40px;
+
+        @screen md {
+            max-height: 60px;
+        }
+    }
+
+    &-spacing {
+        height: 25px;
+
+        @screen md {
+            height: 40px;
+        }
+    }
+
+    &-desktop {
+        display: none;
+
+        @screen md {
+            display: block;
+        }
+    }
+
+    &-mobile {
+        display: block;
+
+        @screen md {
+            display: none;
+        }
+
+        &-first {
+            margin-bottom: 12px;
+        }
+    }
+}

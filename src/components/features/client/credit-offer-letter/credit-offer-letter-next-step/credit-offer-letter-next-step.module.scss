@@ -1,0 +1,43 @@
+.credit-offer-letter-next-step {
+
+  .download-images {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .user-account {
+    p {
+      margin: 0;
+    }
+    span {
+      font-family: SFPD-Bold;
+      color: #303030;
+    }
+  }
+
+  &__flow {
+
+    &__step {
+
+      & > p, & > ul {
+        margin-bottom: 0;
+      }
+
+      strong {
+        font-family: SFPD-Bold;
+      }
+    }
+  }
+
+  &-image {
+    text-align: center;
+    overflow: hidden;
+  }
+
+  &__footer {
+    margin-top: 12px;
+    max-width: 100%;
+  }
+}

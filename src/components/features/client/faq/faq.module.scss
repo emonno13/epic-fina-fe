@@ -1,0 +1,55 @@
+@import "../../../../styles/css_variables";
+
+.client-faq-content {
+  padding: 20px 0 50px;
+
+  @media only screen and (max-width: $md) {
+    padding: 25px 20px 50px;
+  }
+}
+
+.client-faq-panel-wrap {
+  p {
+    font-family: SFPD-Regular;
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 0.3px;
+    color: #222;
+  }
+}
+
+.client-faq-content-panel {
+  background: #fff !important;
+  overflow: hidden;
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 2px !important;
+
+  &:not(:last-of-type) {
+    margin-bottom: 24px;
+  }
+
+  &.ant-collapse-item-active {
+    > .ant-collapse-header {
+      background: #fffbf8;
+    }
+  }
+
+  .ant-collapse-header {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+    font-family: SFPD-Medium;
+    color: #111;
+
+    @media only screen and (max-width: $md) {
+      font-size: 16px;
+    }
+  }
+}
+
+.client-faq-content-collapse {
+  background: #fff !important;
+  overflow: hidden;
+  border: 0px !important;
+  border-radius: 2px !important;
+}

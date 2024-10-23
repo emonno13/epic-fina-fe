@@ -1,0 +1,253 @@
+@import "../../../../../styles/css_variables";
+
+.loans-introduce .product-fina {
+  padding: 80px 0;
+
+  .title-product-fina {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .first-title-product {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      text-align: center;
+      color: #1B1B1B;
+
+      @media only screen and (max-width: $lg) {
+        font-size: 24px;
+      }
+    }
+
+    .last-title-product {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      text-align: center;
+      color: #064DD6;
+      margin-left: 5px;
+
+      @media only screen and (max-width: $lg) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .list-product {
+    margin-top: 50px;
+
+    .ant-tabs {
+      overflow: initial;
+    }
+
+    .ant-tabs-nav-wrap {
+      width: 100%;
+      overflow: initial;
+    }
+
+    .ant-tabs-nav:before {
+      border-bottom: none;
+    }
+
+    .ant-tabs-ink-bar {
+      display: none;
+    }
+
+    .ant-tabs-nav-list {
+      justify-content: space-between;
+      width: 100%;
+      gap: 12px;
+      flex-wrap: wrap;
+      background: #F4F8FF;
+      border-radius: 12px;
+      padding: 16px 20px;
+
+      @screen lg {
+        gap: 20px;
+      }
+
+      .ant-tabs-tab {
+        padding: 14px 5px;
+        line-height: 20px;
+        // background: #F4F8FF;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 14px;
+        min-width: 47%;
+        text-align: center;
+        display: block;
+        margin: 0;
+        position: relative;
+
+        @screen lg {
+          font-size: 16px;
+          min-width: 165px;
+        }
+
+        .ant-tabs-tab-btn {
+          color: #474747;
+
+          svg {
+            position: absolute;
+            top: -20px;
+            right: -15px;
+          }
+        }
+
+        &.ant-tabs-tab-active {
+          background: #064DD6;
+          font-weight: 700;
+
+          &:nth-child(1),
+          &:nth-child(2) {
+            background: linear-gradient(180deg, #FB6D01 0%, #FC0001 100%);
+          }
+
+          .ant-tabs-tab-btn {
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+
+    .ant-tabs-nav {
+      margin-bottom: 30px;
+
+      @screen lg {
+        margin-bottom: 60px;
+      }
+    }
+
+    .product-item-loan {
+      display: block;
+      gap: 50px;
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column-reverse;
+
+      @screen lg {
+        display: flex;
+        flex-direction: initial;
+      }
+
+      &-icon {
+        svg {
+          width: 100%;
+          height: 345px;
+
+          @screen lg {
+            width: auto;
+            height: auto
+          }
+        }
+      }
+
+      &-content {
+        color: #474747;
+        font-weight: 400;
+        font-size: 14px;
+
+        @screen md {
+          font-size: 18px;
+        }
+
+        &-title {
+          margin-bottom: 18px;
+        }
+
+        &-descriptions-item {
+          display: flex;
+          margin-bottom: 10px;
+
+          svg {
+            width: 18px;
+            position: relative;
+
+            @screen md {
+              top: 2px;
+            }
+          }
+
+          &-content {
+            width: calc(100% - 18px);
+            padding-left: 12px;
+          }
+        }
+      }
+
+      .text-loans-bold {
+        font-weight: 700;
+      }
+
+      .button-register-fast {
+        width: 50%;
+        margin-top: 20px;
+        padding: 0px 24px;
+        border: none;
+      }
+    }
+
+    .product-item-view {
+      padding: 28px;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #064DD6;
+      border-radius: 12px;
+
+      @media only screen and (max-width: $lg) {
+        left: calc(50% - 40px);
+      }
+    }
+
+    .list-product-content {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: #474747;
+
+      @media only screen and (max-width: $lg) {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: #474747;
+      }
+    }
+
+    .title-item-product {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #303030;
+
+      @media only screen and (max-width: $lg) {
+        font-size: 20px;
+      }
+    }
+
+    .button_arrow_down {
+      position: absolute;
+      border-radius: 100%;
+      left: calc(50% - 54PX);
+      bottom: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media only screen and (max-width: $lg) {
+        left: calc(50% - 45px);
+        bottom: -17px;
+
+        svg {
+          width: 56px;
+          height: 56px;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,63 @@
+.recent-calls-main {
+  height: calc(100vh - 112px);
+  overflow: auto;
+}
+
+.recent-calls-list-group {
+  &__title {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+.recent-call-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 12px;
+  border-bottom: 2px solid #f2f2f2;
+  &:hover {
+    background-color: #f2f2f2;
+  }
+  &__left-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 30px;
+    align-content: center;
+    color: #722ed1;
+  }
+  &__button-phone-call {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border: none;
+    font-size: 20px;
+    align-content: center;
+    &:hover {
+      color: rgba(0, 0, 0, 0.85);
+      background: #f2f2f2;
+    }
+  }
+  &__center {
+    font-size: 15px;
+  }
+  &__date {
+    color: #ababab;
+    font-size: 15px;
+  }
+}
+
+.recent-call-name {
+  color: #ababab;
+  font-size: 15px;
+}
+

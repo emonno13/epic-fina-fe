@@ -1,0 +1,38 @@
+.refer-customer {
+	margin-top: 32px;
+	background: linear-gradient(0deg, #0a3eca -12.73%, #00217b 80%);
+	border-radius: 8px;
+	padding: 20px;
+
+	button {
+		width: 100%;
+		height: 50px;
+		border-radius: 8px;
+		font-size: 18px;
+		line-height: 21px;
+		&:not(:last-of-type) {
+			margin-bottom: 15px;
+		}
+
+		img {
+			margin-right: 16px;
+		}
+	}
+
+	.refer-customer__want-loan-button {
+		border-color: #fc7513;
+		background: #fc7513;
+		color: #ffffff;
+		&:hover {
+			border-color: #fc7513;
+			background: #fc7513;
+			color: #ffffff;
+		}
+	}
+  .refer-customer__refer-loan-button {
+		color: #0a3eca;
+		&:hover {
+			color: #0a3eca;
+		}
+	}
+}

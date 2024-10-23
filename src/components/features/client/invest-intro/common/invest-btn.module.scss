@@ -1,0 +1,14 @@
+.invest-btn {
+  background: #043BB8;
+  border: 1px solid #043BB8;
+  border-radius: 8px;
+  color: #fff;
+  height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.invest-btn:not([disabled]):hover {
+  color: #fff;
+  background: #064DD6;
+}

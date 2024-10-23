@@ -1,0 +1,13 @@
+.call-record {
+  width: 750px;
+  padding-left: 20px;
+  height: 660px;
+  padding-top: 0.8rem;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    display: inline-block;
+  }
+}

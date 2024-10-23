@@ -1,0 +1,27 @@
+.my-transaction-proifile {
+  .ant-form-horizontal .ant-form-item-label {
+    width: 200px;
+    text-align: left;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .ant-row {
+      display: revert;
+      margin-top: 15px;
+
+      .ant-form-item-row {
+        flex-direction: column;
+      }
+
+      .ant-form-item .advance-one-control {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .advance_search_panel .advance_search_content .ui-btns {
+    @media only screen and (max-width:768px) {
+      margin-top: 15px;
+    }
+  }
+}

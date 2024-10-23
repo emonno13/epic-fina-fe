@@ -1,0 +1,48 @@
+import { FormInstance } from 'antd/lib/form/hooks/useForm';
+import React, { createContext } from 'react';
+
+export type FeatureContextType = {
+  searchForm?: FormInstance<any>,
+  itemDocumentForm?: FormInstance<any>,
+  createButtonRef?: any,
+  submitDocumentButtonRef?: any,
+  submitAndContinueDocumentButtonRef?: any,
+  detailForm?: FormInstance<any>,
+  setSearchForm?: React.Dispatch<React.SetStateAction<FormInstance>>,
+  setItemDocumentForm?: React.Dispatch<React.SetStateAction<FormInstance>>,
+  setDetailForm?: React.Dispatch<React.SetStateAction<FormInstance>>,
+  apiEndpoint?: string,
+  nodeName?: string | Function,
+  endpoint?: string | Function,
+  documentId?: string,
+  documentIdName?: string,
+  useQueryParams?: boolean,
+  documentDetailNamespaceViaId?: boolean,
+  submitSearchFormFirstTime?: boolean,
+  featureId?: string,
+  limitNamespace?: string,
+  skipNamespace?: string,
+  pageNamespace?: string,
+}
+
+export const HFeatureContext = createContext<FeatureContextType>({
+  searchForm: undefined,
+  detailForm: undefined,
+  setSearchForm: (f => f),
+  setDetailForm: (f => f),
+  apiEndpoint: undefined,
+  featureId: undefined,
+  documentIdName: 'documentId',
+  documentId: undefined,
+  endpoint: undefined,
+  nodeName: undefined,
+  useQueryParams: true,
+  documentDetailNamespaceViaId: false,
+  createButtonRef: null,
+  submitSearchFormFirstTime: true,
+  submitDocumentButtonRef: null,
+  submitAndContinueDocumentButtonRef: null,
+  limitNamespace: 'limit',
+  skipNamespace: 'skip',
+  pageNamespace: 'page',
+});

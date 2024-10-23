@@ -1,0 +1,38 @@
+.phone-books-list-main {
+  height: calc(100vh - 112px);
+  overflow: auto;
+}
+
+.phone-books-list-group {
+  &__title {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+.phone-books-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 12px;
+  &:hover {
+    background-color: #f2f2f2;
+  }
+  &__left-content {
+    display: flex;
+    align-items: center;
+  }
+  &__avatar {
+    margin-right: 15px;
+  }
+  &__button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    align-content: center;
+  }
+}
+

@@ -1,0 +1,23 @@
+.h-user {
+  display: flex;
+  min-width: 180px;
+  max-width: 300px;
+  gap: 15px;
+  align-items: center;
+
+  &__avatar {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+
+    &__tick {
+      position: absolute;
+      bottom: -5px;
+      right: -0px;
+    }
+  }
+
+  &__content {
+    font-size: 14px;
+  }
+}

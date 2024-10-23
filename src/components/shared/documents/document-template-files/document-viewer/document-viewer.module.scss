@@ -1,0 +1,36 @@
+.ui-document-preview {
+  position: relative;
+  height: 66px;
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.document-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  margin: 0!important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &--required {
+    color: red;
+  }
+}
+
+.ant-collapse-content-active {
+  ::selection {
+    background: none;
+    color: #111;
+  }
+}

@@ -1,0 +1,1142 @@
+@import "../../../../styles/css_variables";
+
+.client-alma-landing {
+}
+
+.client-alma-landing .alma-hero-banner {
+  padding: 80px 0;
+  background: url("/assets/images/alma-hero-image.webp") no-repeat center center / cover;
+
+  @media only screen and (max-width: $xl) {
+    background: url("/assets/images/alma-hero-mobile-image.webp") no-repeat center center / cover;
+    height: 123.73vw;
+    box-sizing: border-box;
+    padding: 50% 24px 0 24px;
+    margin-bottom: 70%;
+  }
+  .alma-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media only screen and (max-width: $xl) {
+      flex-direction: column;
+      gap: 89px;
+    }
+    .alma-hero-banner-info {
+      flex: 0 0 570px;
+      @media only screen and (max-width: $xl) {
+        flex: auto;
+      }
+      &__vacation {
+        font-size: 28px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 12px;
+        @media only screen and (max-width: $md) {
+          font-size: 20px;
+          margin-bottom: 12px;
+        }
+      }
+      &__vacation-name {
+        font-family: Lato-Bold;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-bottom: 8px;
+        @media only screen and (max-width: $md) {
+          font-size: 30px;
+        }
+      }
+      &__vacation-location {
+        margin-bottom: 48px;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+        color: #ffffff;
+        @media only screen and (max-width: $md) {
+          font-size: 18px;
+          line-height: 22px;
+          margin-bottom: 32px;
+        }
+      }
+      &__gift {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(17px);
+        border-radius: 4px;
+        padding: 12px 16px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #474747;
+        @media only screen and (max-width: $md) {
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+
+.client-alma-landing .alma-register-form {
+  width: 470px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 36px 24px 40px 24px;
+  filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.25));
+  @media only screen and (max-width: $md) {
+    width: 100%;
+  }
+  &__title {
+    font-family: Lato-Bold;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1b1b1b;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    @media only screen and (max-width: $md) {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  &__detail-each-package {
+    margin-bottom: 24px;
+    &:hover {
+      p {
+        font-style: italic;
+      }
+    }
+    p {
+      text-decoration: underline;
+    }
+  }
+  .ant-form {
+    .ant-col.ant-col-24:last-of-type {
+      .ant-form-item {
+        margin-bottom: 0;
+      }
+    }
+    .ant-form-item-label > label {
+      font-size: 16px;
+      line-height: 24px;
+      color: #474747;
+      @media only screen and (max-width: $md) {
+        font-size: 14px;
+      }
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: inline-block;
+        margin-left: 4px;
+        color: #ff4d4f;
+        font-size: 14px;
+        font-family: SimSun, sans-serif;
+        line-height: 1;
+        content: "*";
+      }
+    }
+    input {
+      height: 44px;
+      border: 1px solid #c6c6c6;
+      box-sizing: border-box;
+      border-radius: 4px;
+      @media only screen and (max-width: $md) {
+        font-size: 12px;
+      }
+      &:placeholder-shown {
+        background: #e2e2e2;
+      }
+    }
+    .ant-checkbox-wrapper {
+      .ant-checkbox {
+        + span {
+          font-size: 14px;
+          line-height: 18px;
+          color: #474747;
+          @media only screen and (max-width: $md) {
+            font-size: 12px;
+            line-height: 130%;
+          }
+        }
+        &-inner {
+          width: 18px;
+          height: 18px;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+  &__submit-btn {
+    font-family: Lato-Medium;
+    background: #ff6c0e;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #ffffff;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 8px 16px;
+    border: none;
+    @media only screen and (max-width: $md) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      background: #ff6c0e;
+      border: none;
+    }
+  }
+}
+
+.client-alma-landing .alma-special-offer {
+  padding: 80px 0;
+  @media only screen and (max-width: $md) {
+    padding: 80px 24px;
+  }
+  &-container {
+    max-width: 970px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__title {
+    font-family: Lato-Bold;
+    font-size: 28px;
+    line-height: 140%;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    @media only screen and (max-width: $md) {
+      font-size: 22px;
+    }
+    &:first-of-type {
+      color: #006595;
+    }
+    &:last-of-type {
+      margin-bottom: 80px;
+    }
+  }
+  .single-item {
+    &-desc {
+      position: relative;
+      background: #ecf0f5;
+      border-radius: 4px;
+      padding: 32px 18px 16px 18px;
+      margin-bottom: 24px;
+      @media only screen and (max-width: $md) {
+        padding: 32px 16px 16px 16px;
+        margin-bottom: 8px;
+      }
+      &__icon {
+        position: absolute;
+        top: -24px;
+        left: 18px;
+      }
+      &__label {
+        font-family: Lato-Bold;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #303030;
+        margin-bottom: 8px;
+        @media only screen and (max-width: $md) {
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+      &__content {
+        font-size: 16px;
+        line-height: 19px;
+        color: #474747;
+        height: 76px;
+        span {
+          color: #0192af;
+          font-size: 18px;
+          line-height: 21px;
+        }
+        @media only screen and (max-width: $md) {
+          font-size: 14px;
+          line-height: 17px;
+          height: auto;
+        }
+      }
+    }
+    &-applicable-object {
+      padding: 16px 18px;
+      @media only screen and (max-width: $md) {
+        padding: 16px;
+      }
+      &__label {
+        font-family: Lato-Bold;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #303030;
+        @media only screen and (max-width: $md) {
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+      &__content {
+        font-size: 16px;
+        line-height: 19px;
+        color: #474747;
+        span {
+          color: #006595;
+          font-size: 18px;
+          line-height: 21px;
+        }
+        @media only screen and (max-width: $md) {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+  &__register-btn {
+    text-align: center;
+    margin-top: 48px;
+    .ant-btn {
+      font-family: Lato-Medium;
+      text-transform: uppercase;
+      background: #ff6c0e;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 40px;
+      padding: 8px 16px;
+      height: 40px;
+      margin: 0 auto;
+      color: #fff;
+      &:hover,
+      &:active,
+      &:focus {
+        background: #ff6c0e;
+        border: none;
+      }
+    }
+  }
+}
+
+.client-alma-landing .alma-condition {
+  background: #ecf0f5;
+  padding: 80px 0;
+  @media only screen and (max-width: $xl) {
+    padding: 80px 24px;
+  }
+  &__title {
+    font-family: Lato-Bold;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 140%;
+    text-align: center;
+    margin: 0;
+    @media only screen and (max-width: $md) {
+      font-size: 22px;
+    }
+    &:first-of-type {
+      color: #006595;
+    }
+    &:last-of-type {
+      margin-bottom: 56px;
+      @media only screen and (max-width: $md) {
+        margin-bottom: 48px;
+      }
+    }
+  }
+  &-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    @media only screen and (max-width: $xl) {
+      flex-direction: column;
+    }
+    &__list {
+      padding: 0 32px;
+      flex: 0 0 50%;
+      @media only screen and (max-width: $md) {
+        padding: 0;
+        margin-bottom: 40px;
+      }
+      &-item {
+        font-size: 18px;
+        line-height: 23px;
+        color: #474747;
+        margin: 0;
+        @media only screen and (max-width: $md) {
+          font-size: 16px;
+        }
+      }
+    }
+    &__image {
+      width: 100%;
+      height: 356px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.client-alma-landing .alma-service {
+  background: #ecf0f5;
+  padding: 80px 0;
+  @media only screen and (max-width: $xl) {
+    padding: 80px 24px;
+    .ant-row {
+      padding: 0 20px;
+    }
+  }
+  &__title {
+    font-family: Lato-Bold;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #1b1b1b;
+    margin-bottom: 16px;
+    font-weight: bold;
+    span {
+      color: #006595;
+    }
+    @media only screen and (max-width: $md) {
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+  &__desc {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #303030;
+    max-width: 828px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    @media only screen and (max-width: $md) {
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 60px;
+    }
+  }
+  &-panel {
+    background: #ffffff;
+    text-align: center;
+    border-radius: 16px;
+    &__thumb-image {
+      height: 150px;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 16px 16px 0 0;
+        object-fit: cover;
+      }
+      @media only screen and (max-width: $md) {
+      }
+    }
+    &__content {
+      padding: 16px 48px 40px 48px;
+    }
+    &__title {
+      font-family: Lato-Bold;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 29px;
+      color: #1b1b1b;
+      margin-bottom: 24px;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      @media only screen and (max-width: $md) {
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 16px;
+      }
+    }
+    &__desc {
+      margin-bottom: 40px;
+      font-size: 16px;
+      line-height: 19px;
+      color: #5e5e5e;
+      text-align: left;
+      height: 76px;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      @media only screen and (max-width: $md) {
+        font-size: 14px;
+        line-height: 17px;
+        height: 68px;
+      }
+    }
+    &__view-more {
+      font-size: 18px;
+      line-height: 22px;
+      color: #919191;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-icon {
+        svg {
+          display: block;
+          height: auto;
+          width: 100%;
+        }
+      }
+      @media only screen and (max-width: $md) {
+        font-size: 14px;
+        line-height: 17px;
+        &-icon {
+          width: 6px;
+        }
+      }
+      span {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+.alma-service-panel-modal {
+  .ant-modal-body {
+    padding: 40px;
+    @media only screen and (max-width: $md) {
+      padding: 24px;
+    }
+  }
+  .alma-service-panel-detail {
+    &__title {
+      font-family: Lato-Bold;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      color: #1b1b1b;
+      margin-bottom: 16px;
+      margin-top: 16px;
+      @media only screen and (max-width: $md) {
+        font-size: 22px;
+        line-height: 26px;
+        margin: 24px 0;
+      }
+    }
+    &__image {
+      width: 100%;
+      height: 240px;
+      @media only screen and (max-width: $md) {
+        height: 134px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    p,
+    li {
+      font-size: 16px;
+      line-height: 19px;
+      color: #474747;
+      margin-bottom: 4px;
+      @media only screen and (max-width: $md) {
+        font-size: 14px;
+        line-height: 17px;
+      }
+      span {
+        font-family: Lato-Bold;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.alma-image-carousel {
+  .ant-carousel {
+    .slick-arrow {
+      background: #e2e2e2 !important;
+      width: 32px !important;
+      height: 32px !important;
+      border-radius: 32px !important;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      z-index: 9;
+      @media only screen and (max-width: $md) {
+        width: 24px !important;
+        height: 24px !important;
+      }
+    }
+    .slick-next {
+      right: 16px;
+      @media only screen and (max-width: $md) {
+        right: 8px;
+      }
+    }
+    .slick-prev {
+      left: 16px;
+      @media only screen and (max-width: $md) {
+        left: 8px;
+      }
+    }
+    .slick-dots {
+      margin: 0;
+      bottom: 16px;
+      z-index: 9;
+      @media only screen and (max-width: $md) {
+        bottom: 8px;
+      }
+      li {
+        width: 35px;
+        @media only screen and (max-width: $md) {
+          width: 23.5px;
+          height: 2px;
+        }
+        button {
+          opacity: 1;
+        }
+        &.slick-active {
+          width: 35px;
+          @media only screen and (max-width: $md) {
+            width: 23.5px;
+          }
+          button {
+            background: #ff6c0e;
+          }
+        }
+      }
+    }
+  }
+}
+
+.client-alma-landing .alma-cam-ranh-resort {
+  padding: 113px 0 89px 0;
+
+  @media only screen and (max-width: $xl) {
+    padding: 80px 24px;
+  }
+  .alma-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 62px;
+    align-items: center;
+    @media only screen and (max-width: $xl) {
+      gap: 48px;
+      flex-direction: column;
+    }
+  }
+  &-carousel {
+    flex: 0 0 670px;
+    @media only screen and (max-width: $xl) {
+      flex: auto;
+    }
+    .image-gallery {
+      .alma-resort-gallery-nav-btn {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        background: #e2e2e2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        border-radius: 32px;
+        cursor: pointer;
+        &.left {
+          left: 24px;
+        }
+        &.right {
+          right: 24px;
+        }
+      }
+      .image-gallery-thumbnails-wrapper {
+        .image-gallery-thumbnails {
+          width: 100%;
+        }
+        .image-gallery-thumbnail {
+          width: 25%;
+          box-sizing: border-box;
+          &:focus,
+          &.active,
+          &:hover {
+            border: 3px solid #ff6c0e;
+          }
+        }
+      }
+    }
+  }
+  &__info {
+    position: relative;
+    padding-bottom: 24px;
+    max-width: 438px;
+    @media only screen and (max-width: $md) {
+      padding: 0 16px 24px 16px;
+    }
+    &::before {
+      background: #006595;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 80px;
+      height: 4px;
+      @media only screen and (max-width: $md) {
+        width: 40px;
+        height: 2px;
+      }
+    }
+    &-title {
+      font-size: 26px;
+      line-height: 31px;
+      font-weight: bold;
+      color: #1b1b1b;
+      margin-bottom: 24px;
+      font-family: Lato-Bold;
+
+      @media only screen and (max-width: $md) {
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+    &-desc {
+      font-size: 18px;
+      line-height: 22px;
+      color: #5e5e5e;
+      margin: 0;
+      @media only screen and (max-width: $md) {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}
+
+.client-alma-landing .alma-image-list {
+  padding: 80px 0;
+  @media only screen and (max-width: $xl) {
+    padding: 80px 40px;
+  }
+  .alma-image-carousel {
+    margin: 0 -15px;
+  }
+  &__image {
+    height: 174px;
+    padding: 0 15px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.client-alma-landing .alma-register-now {
+  padding: 80px 0;
+  background-image: url("/assets/images/alma-register-now-background.webp");
+  background-size: cover;
+  background-position: center;
+
+  @media only screen and (max-width: $md) {
+    padding: 80px 24px;
+  }
+  .alma-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.client-alma-landing .alma-reviews {
+  padding: 80px 0;
+  @media only screen and (max-width: $lg) {
+    padding: 80px 24px 14px;
+  }
+  &-container {
+    max-width: 970px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__title {
+    font-family: Lato-Bold;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #1b1b1b;
+    margin-bottom: 18px;
+    span {
+      color: #006595;
+    }
+    @media only screen and (max-width: $md) {
+      font-size: 22px;
+      line-height: 26px;
+      margin-bottom: 16px;
+    }
+  }
+  &__desc {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #303030;
+    margin-bottom: 40px;
+    @media only screen and (max-width: $md) {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 16px;
+      span {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    span {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: $lg) {
+      flex-direction: column;
+    }
+    &__image {
+      height: 336px;
+      flex: 0 0 470px;
+      @media only screen and (max-width: $lg) {
+        flex: 0 0 218px;
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+    }
+    &__review-container {
+      position: relative;
+      background-color: #0192af;
+      border-radius: 0px 16px 16px 0px;
+      padding: 24px 24px 24px 30px;
+      @media only screen and (max-width: $lg) {
+        padding: 8px 16px 16px 24px;
+        border-radius: 0px 0px 16px 16px;
+        max-width: calc(100% - 32px);
+      }
+      &-btn {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        border-radius: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #e2e2e2;
+        cursor: pointer;
+        bottom: 24px;
+        transition: all 0.2s;
+        svg path {
+          transition: all 0.2s;
+        }
+        @media only screen and (max-width: $lg) {
+          width: 24px;
+          height: 24px;
+          svg {
+            width: 6px;
+          }
+        }
+        &:hover {
+          background: #be844b;
+          svg path {
+            fill: white;
+          }
+        }
+        &.next {
+          right: 24px;
+          @media only screen and (max-width: $lg) {
+            right: 16px;
+          }
+        }
+        &.prev {
+          right: 72px;
+          @media only screen and (max-width: $lg) {
+            right: 52px;
+          }
+        }
+      }
+      &-short-text {
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+        margin-bottom: 12px;
+        font-family: Lato-Bold;
+        @media only screen and (max-width: $md) {
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+      &-text {
+        font-size: 16px;
+        line-height: 19px;
+        color: #fff;
+        margin-bottom: 26px;
+        @media only screen and (max-width: $md) {
+          font-size: 14px;
+          line-height: 16px;
+          margin-bottom: 32px;
+        }
+      }
+      &-customer-name {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #fff;
+        font-family: Lato-Bold;
+        margin-bottom: 6px;
+        @media only screen and (max-width: $md) {
+          margin-bottom: 6px;
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+      &-country {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        span {
+          font-size: 14px;
+          line-height: 17px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.client-alma-landing .alma-faq {
+  padding: 80px 0;
+  background: #ecf0f5;
+  @media only screen and (max-width: $xl) {
+    padding: 80px 24px;
+  }
+  &-container {
+    max-width: 970px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__title {
+    font-family: Lato-Bold;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 50px;
+    @media only screen and (max-width: $md) {
+      font-size: 22px;
+      line-height: 140%;
+      margin-bottom: 48px;
+    }
+    span {
+      color: #006595;
+    }
+  }
+  &-item {
+    &:not(:last-of-type) {
+      margin-bottom: 16px;
+    }
+    .ant-collapse {
+      border: none;
+      border-radius: 4px !important;
+      &-item {
+        border: none;
+        background: #ffffff;
+        border-radius: 4px !important;
+      }
+      &-header {
+        font-size: 16px;
+        line-height: 21px !important;
+        color: #474747 !important;
+        padding: 20px 60px 20px 20px !important;
+        border-radius: 4px !important;
+        @media only screen and (max-width: $md) {
+          font-size: 14px !important;
+          line-height: 18px !important;
+        }
+        svg {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 30px;
+        }
+      }
+      &-content {
+        border-radius: 4px !important;
+        border: none;
+        &-box {
+          padding: 0 20px 20px 20px;
+        }
+      }
+      .ant-collapse-item-active {
+        border: 1px solid #0192af;
+        border-radius: 4px;
+        .ant-collapse-header {
+          padding: 20px 60px 10px 20px !important;
+          color: #006595 !important;
+        }
+      }
+    }
+    &-content {
+      p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 18px;
+        color: #5e5e5e;
+        @media only screen and (max-width: $md) {
+          font-size: 13px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+}
+
+.client-alma-landing .alma-other-offers {
+  padding: 80px 0;
+  @media only screen and (max-width: $xl) {
+    padding: 80px 24px;
+  }
+  &__title {
+    font-family: Lato-Bold;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #1b1b1b;
+    margin-bottom: 57px;
+    @media only screen and (max-width: $md) {
+      font-size: 22px;
+      line-height: 140%;
+      margin-bottom: 48px;
+    }
+  }
+  &-list {
+    margin: 0 -15px;
+    &-item {
+      margin: 0 15px;
+      background: #ffffff;
+      border-radius: 4px;
+      &__image {
+        height: 128px;
+        border-radius: 8px 8px 0 0;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 8px 8px 0 0;
+        }
+      }
+      &__info {
+        padding: 16px 20px 31px 20px;
+        border: 1px solid #ababab;
+        border-top: none;
+        border-radius: 0px 0px 8px 8px;
+        @media only screen and (max-width: $md) {
+          padding: 16px 24px 24px 24px;
+        }
+        &-name {
+          font-family: Lato-Bold;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 22px;
+          color: #1b1b1b;
+          margin-bottom: 12px;
+          height: 66px;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          @media only screen and (max-width: $md) {
+            font-size: 16px;
+            line-height: 19px;
+            height: 57px;
+          }
+        }
+        &-desc {
+          font-size: 14px;
+          line-height: 20px;
+          color: #303030;
+          margin-bottom: 16px;
+          height: 40px;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          @media only screen and (max-width: $md) {
+            font-size: 13px;
+            line-height: 18px;
+            margin-bottom: 21px;
+            height: 36px;
+          }
+        }
+        &-see-detail {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          &-text {
+            font-size: 14px;
+            line-height: 18px;
+            color: #919191;
+          }
+        }
+      }
+    }
+  }
+}
+
+.alma-review-carousel {
+  .ant-carousel {
+    .slick-arrow {
+      background: #e2e2e2 !important;
+      width: 32px !important;
+      height: 32px !important;
+      border-radius: 32px !important;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      z-index: 9;
+      top: 67%;
+      @media only screen and (max-width: $md) {
+        width: 24px !important;
+        height: 24px !important;
+        top: 67%;
+      }
+    }
+    .slick-next {
+      right: 24px;
+      @media only screen and (max-width: $md) {
+        right: 32px;
+      }
+    }
+    .slick-prev {
+      right: 72px;
+      left: auto;
+      @media only screen and (max-width: $md) {
+        right: 72px;
+      }
+    }
+  }
+}

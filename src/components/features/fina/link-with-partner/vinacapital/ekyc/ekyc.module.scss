@@ -1,0 +1,45 @@
+@import '@styles/css_variables';
+.ekyc-with-vina-capital {
+  margin: 24px;
+  &__steps {
+    margin: 16px 0;
+    @screen md {
+      margin-bottom: 40px;
+    }
+    .ant-steps-item-description {
+      max-width: 100% !important;
+    }
+  }
+  .ant-steps-item-description {
+    font-size: 12px;
+    font-style: italic;
+  }
+}
+.ekyc-done-with-vina-capital {
+  &__wrapper {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 16px;
+  }
+  &__msg {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+  &__action {
+    display: flex;
+    justify-content: center;
+  }
+}
+.account-sync-with-vina-capital {
+  margin: 0;
+}
+
+.sync-account-with-mio {
+  padding: 24px 0;
+  @screen md {
+    padding: 24px 20%;
+  }
+}

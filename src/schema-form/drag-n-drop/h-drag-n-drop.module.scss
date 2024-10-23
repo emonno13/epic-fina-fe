@@ -1,0 +1,86 @@
+.ui-h-drag-n-drop {
+
+  .ui-chapter-panel {
+    border-left: 1px dashed #f0f0f0;
+  }
+  .draggable-item {
+    position: relative;
+
+    border-left: 2px solid transparent;
+    display: flex;
+    align-items: center;
+
+    .indicator {
+      padding: 10px 0 10px 8px;
+    }
+    .content-panel {
+      padding: 10px 8px;
+    }
+
+    &:hover, &.selected-item {
+      cursor: pointer;
+      border-left: 2px solid var(--primary-color) !important;
+      background-color: #EAF9F2;
+
+      .add-lecture {
+        display: block !important;
+      }
+    }
+
+    &.add-below-item {
+      cursor: pointer;
+      border-left: 2px solid var(--primary-color) !important;
+      border-bottom:  2px solid #EAF9F2 !important; ;
+
+      .add-lecture {
+        display: block !important;
+      }
+    }
+
+    .add-lecture {
+      padding: 5px;
+      position: absolute;
+      display: none;
+      transform: translate(-44px, 13px);
+      height: 38px;
+      width: 42px;
+      padding: 5px;
+    }
+
+    .arrow_box {
+      align-items: center;
+      z-index: 100;
+      color: #FFFFFF;
+      position: relative;
+      height: 28px;
+      background: var(--primary-color);
+      border: 2px solid #c2e1f5;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+    .arrow_box:after, .arrow_box:before {
+      left: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: "";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .arrow_box:after {
+      border-color: rgba(132, 194, 37, 0);
+      border-left-color: var(--primary-color);
+      border-width: 12px;
+      margin-top: -12px;
+    }
+    .arrow_box:before {
+      border-color: rgba(194, 225, 245, 0);
+      border-left-color: #c2e1f5;
+      border-width: 15px;
+      margin-top: -15px;
+    }
+  }
+}

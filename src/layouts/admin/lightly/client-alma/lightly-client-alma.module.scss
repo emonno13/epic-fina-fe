@@ -1,0 +1,272 @@
+@import "../../../../styles/css_variables";
+
+.alma-container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.alma-layout {
+  background-color: #fff !important;
+  font-family: Lato-Regular;
+  .ant-layout-header {
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    height: 80px;
+    @media only screen and (max-width: $md) {
+      height: 60px;
+      padding: 0 18px 0 24px;
+    }
+  }
+  .ant-layout-footer {
+    background: url("/assets/images/alma-footer-spiral-1.png") left bottom no-repeat,
+      url("/assets/images/alma-footer-spiral-2.png") right top no-repeat,
+      linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), #064dd6;
+    padding: 93px 0;
+    @media only screen and (max-width: $xl) {
+      padding: 80px 24px;
+      background: url("/assets/images/alma-footer-mobile-spiral.png") left 35% no-repeat,
+        linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), #064dd6;
+    }
+  }
+}
+
+.client-alma-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-logos {
+    display: flex;
+    align-items: center;
+    .logo-wrapper {
+      height: 72px;
+      width: 121px;
+      display: flex;
+      align-items: center;
+      @media only screen and (max-width: $md) {
+        height: 44px;
+        width: 74px;
+        margin-right: 6px;
+      }
+      img {
+        height: 100%;
+      }
+      &.fina {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        padding: 4px 0;
+      }
+      &.alma {
+        padding: 9px 17px;
+        @media only screen and (max-width: $md) {
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+  &-right {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    flex: 1;
+    justify-content: flex-end;
+    &__register-btn {
+      background: #064dd6;
+      border-radius: 4px;
+      font-size: 16px;
+      line-height: 40px !important;
+      text-transform: uppercase;
+      font-weight: bold;
+      height: 40px;
+      color: #fff;
+      font-family: Lato-Medium;
+      &:hover {
+        background: #064dd6;
+        color: #fff;
+      }
+      @media only screen and (max-width: $md) {
+        padding: 4px 8px;
+        font-size: 12px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+.client-alma-header-menu {
+  flex: 1;
+  ul.ant-menu-horizontal {
+    justify-content: flex-end;
+    border: 0;
+    li.ant-menu-item a {
+      font-family: Lato-Bold;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1b1b1b;
+    }
+  }
+}
+
+.client-alma-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media only screen and (max-width: $xl) {
+    flex-direction: column;
+    gap: 40px;
+    align-items: baseline;
+  }
+  &-contact {
+    &__logo {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 29px;
+      align-items: center;
+      &-fina {
+        width: 172px;
+        @media only screen and (max-width: $md) {
+          width: 139px;
+          margin-bottom: 32px;
+        }
+        svg {
+          display: block;
+          height: auto;
+          width: 100%;
+        }
+      }
+      &-alma {
+        filter: brightness(0) invert(1);
+      }
+    }
+    &__title {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+      color: #ffffff;
+      margin-bottom: 20px;
+      font-family: Lato-Medium;
+      @media only screen and (max-width: $md) {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 24px;
+      }
+    }
+    &__list {
+      &-item {
+        display: flex;
+        gap: 4px;
+        margin-bottom: 8px;
+        &-icon {
+          height: 24px;
+        }
+        &-text {
+          font-family: Lato-Medium;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          color: #ffffff;
+          @media only screen and (max-width: $md) {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 24px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .client-footer-app-links {
+    display: flex;
+    flex-direction: column;
+    max-width: 185px;
+    &__qr {
+      margin-bottom: 30px;
+      img {
+        height: 82px;
+        width: 82px;
+      }
+    }
+  }
+  &-form {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 36px 22px 54px 24px;
+    @media only screen and (max-width: $md) {
+      padding: 24px 16px;
+      width: 100%;
+    }
+    &__title {
+      font-family: Lato-Bold;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      color: #1b1b1b;
+      margin-bottom: 16px;
+      @media only screen and (max-width: $md) {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 8px;
+      }
+    }
+    &__desc {
+      font-size: 16px;
+      line-height: 24px;
+      color: #1b1b1b;
+      margin-bottom: 28px;
+      @media only screen and (max-width: $md) {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 32px;
+      }
+    }
+    &__form {
+      display: flex;
+      gap: 12px;
+      .ant-form {
+        @media only screen and (max-width: $md) {
+          flex: 1;
+        }
+        .ant-form-item {
+          margin: 0;
+        }
+        input {
+          height: 44px;
+          width: 249px;
+          border: 1px solid #c6c6c6;
+          @media only screen and (max-width: $md) {
+            width: 100%;
+            font-size: 12px;
+            line-height: 24px;
+          }
+          &:placeholder-shown {
+            background: #e2e2e2;
+          }
+        }
+      }
+      &-submit-btn {
+        font-family: Lato-Medium;
+        background: #ff6c0e;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        border: none;
+        height: 44px;
+        &:hover,
+        &:active,
+        &:focus {
+          background: #ff6c0e;
+          border: none;
+        }
+        @media only screen and (max-width: $md) {
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

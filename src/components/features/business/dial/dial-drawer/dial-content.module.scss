@@ -1,0 +1,227 @@
+@import '@styles/css_variables';
+
+.phone-call-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: none;
+
+  &__title {
+    font-size: 20px;
+    color: $word-color;
+  }
+}
+
+.key-board {
+  &__select {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: max-content;
+    background: #f5f9ff;
+    width: 100%;
+    justify-content: center;
+
+    :global {
+      .key-board-number__input input {
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+      }
+    }
+  }
+
+  .input-phone-number {
+    border-bottom: 1px solid;
+  }
+
+  &__list {
+    padding-top: 75px;
+    width: 233px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 1rem;
+
+    &__button {
+      display: inline-block;
+      width: 64px;
+      height: 64px;
+      border: none;
+      font-size: 30px;
+      background-color: #fff;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      border-radius: 50%;
+
+      &:hover {
+        color: rgba(0, 0, 0, 0.85);
+        background: #f2f2f2;
+      }
+    }
+  }
+}
+
+.phone-call {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  min-height: 600px;
+
+  .call-icon {
+    background: #73d13d;
+
+    &:hover {
+      background: #73d13d;
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    background-color: #fff;
+
+    &__button {
+      width: 64px;
+      height: 64px !important;
+      border: none !important;
+      font-size: 30px !important;
+
+      svg {
+        path {
+          fill: #aeb8d0;
+        }
+      }
+
+      &.active {
+        svg {
+          path {
+            fill: $primary-color;
+          }
+        }
+      }
+
+      &:hover {
+        color: rgba(0, 0, 0, 0.85) !important;
+        background: #73d33c;
+      }
+    }
+
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      border: 2px solid #f2f2f2;
+      padding: 10px 20px 0 20px;
+      width: 450px;
+
+      &__button {
+        display: inline-block;
+        width: 120px;
+        height: 70px !important;
+        border: none !important;
+        font-size: 40px !important;
+        align-content: center !important;
+        color: #c4c2c2;
+
+        svg {
+          path {
+            fill: #aeb8d0;
+          }
+        }
+
+        &.active {
+          svg {
+            path {
+              fill: $primary-color;
+            }
+          }
+        }
+
+        &:hover {
+          color: rgba(0, 0, 0, 0.85) !important;
+        }
+      }
+    }
+  }
+
+  .control-btn {
+    position: relative;
+    width: 233px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+    &__clear {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      outline: none;
+      box-shadow: none;
+      background: #f5f9ff;
+      padding: 0 !important;
+      width: 50px !important;
+      transition: all 0.1s;
+
+      &:hover,
+      &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.dial-drawer-business .ant-drawer-content-wrapper {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
+  box-shadow: -3px 0px 70px rgba(0, 0, 0, 0.16);
+  // position: relative;
+
+  .ant-drawer-content {
+    background: #f5f9ff;
+  }
+
+  .input-phone-number {
+    margin-top: 1rem;
+
+    input {
+      font-size: 34px;
+      color: #000;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      text-align: center;
+      background: #f5f9ff;
+    }
+  }
+
+  .select-country-code {
+    width: 10rem;
+  }
+
+  .cal-icon {
+    #icon-call-top {
+      fill: #fff;
+    }
+  }
+}
+
+.ant-menu-item-selected {
+  color: #064dd6;
+
+  svg {
+    path {
+      fill: blue;
+    }
+  }
+}

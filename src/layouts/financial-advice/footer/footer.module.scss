@@ -1,0 +1,76 @@
+@import "../../../styles/css_variables";
+
+.financial-advice-footer {
+  margin-top: 30px;
+
+  @media only screen and (max-width: $xl) {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .line-header {
+    background: linear-gradient(90deg, #FF6C0E 0%, rgba(255, 108, 14, 0) 100%);
+    height: 1px;
+    width: 70%;
+    margin-top: 4px;
+  }
+
+  .title-footer {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    width: max-content;
+    margin-bottom: 25px;
+
+    @media only screen and (max-width: $md) {
+      margin-top: 50px;
+    }
+  }
+
+  .footer-social-network {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  &-contact {
+    &__list {
+      &-item {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 8px;
+
+        &-icon {
+          height: 24px;
+        }
+
+        &-text {
+          font-family: Lato-Medium;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 24px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .client-footer-links-app {
+    .client-footer-links-app-content {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin: -10px;
+    }
+
+    .client-footer-links-app-store-link {
+      display: inline-block;
+    }
+
+    .client-footer-links-app-store-link:first-child {
+      margin-bottom: 16px;
+    }
+  }
+}

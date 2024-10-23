@@ -1,0 +1,10 @@
+.external-browser-popup {
+  height: calc(100vh);
+  .ant-modal-content {
+    //height: calc(100vh);
+    .ant-modal-body {
+      padding: 5px !important;
+      height: calc(100vh - 100px);
+    }
+  }
+}

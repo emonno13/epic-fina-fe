@@ -1,0 +1,31 @@
+.credit-offer-letter-teams {
+  display: flex;
+  gap: 54px;
+}
+
+.credit-offer-letter-team-item {
+  img {
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+}
+
+.credit-offer-letter-team-item-name {
+  color: #1b1b1b;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.credit-offer-letter-team-item-position {
+  font-size: 11px;
+  line-height: 13px;
+  color: #777777;
+  margin-bottom: 24px;
+}
+
+.credit-offer-letter-team-item-socials {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}

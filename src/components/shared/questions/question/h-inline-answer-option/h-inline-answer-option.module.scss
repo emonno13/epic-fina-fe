@@ -1,0 +1,87 @@
+.active {
+}
+.checker {
+	width: 25px;
+	height: 25px;
+}
+.checker.mode-single {
+	border-radius: 50% !important;
+	border: 1px solid #cadab3;
+}
+.checker .icon,
+.checker .anticon {
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+}
+.checker {
+	display: flex;
+	align-items: center;
+}
+.hover {
+	background-color: #d5e8c2;
+}
+.ui-hc-checkbox {
+	cursor: pointer;
+	padding: 4px;
+	border-radius: 8px;
+	border: 1px solid #e0e0e0;
+	transition: background-color 1.2s ease-out;
+}
+.checker {
+	margin-right: 6px;
+}
+.text-panel {
+}
+.delete-icon {
+	width: 20px;
+	margin-left: 20px;
+}
+.media-in-front {
+	display: flex;
+}
+.media-in-front .title {
+	margin-left: 16px;
+	box-sizing: border-box;
+}
+.media-above {
+	display: flex;
+	flex-direction: column;
+}
+.media-above .title {
+	margin-top: 8px;
+	align-self: center;
+	text-align: center;
+	padding: 0;
+}
+.media-below {
+	display: flex;
+	flex-direction: column-reverse;
+}
+.media-below .title {
+	margin-bottom: 8px;
+	align-self: center;
+	text-align: center;
+	padding: 0;
+}
+.media-in-the-back {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+.media-in-the-back .title {
+	box-sizing: border-box;
+}
+.media-below-text {
+	position: relative;
+}
+.media-below-text .title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: fit-content;
+	text-align: center;
+	padding: 0;
+	height: fit-content;
+}

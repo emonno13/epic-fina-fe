@@ -1,0 +1,11 @@
+.package-item-wrapper {
+  .divider {
+    .ant-form-item-label {
+      display: none;
+    }
+    
+    .ant-form-item-control-input {
+      min-height: 0 !important;
+    }
+  }
+}

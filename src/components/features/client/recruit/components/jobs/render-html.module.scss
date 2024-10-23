@@ -1,0 +1,26 @@
+@import '../../../../../../styles/css_variables';
+
+.render-html{
+  &__container{
+    margin-top: 40px;
+  }
+  &__label{
+    //@media only screen and (max-width: $md) {
+    //  margin: 24px 0 32px 0;
+    //}
+    font-family: SFPD-SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #064DD6;
+  }
+  &__content{
+    font-family: SFPD-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #5E5E5E;
+  }
+}

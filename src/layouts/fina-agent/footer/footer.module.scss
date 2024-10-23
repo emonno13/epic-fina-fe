@@ -1,0 +1,154 @@
+@import "../../../styles/css_variables";
+
+.fina-agent-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1250px;
+  margin:  0 auto;
+
+  @media only screen and (max-width: $xl) {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &-contact {
+    &__logo {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 29px;
+      align-items: center;
+      &-fina {
+        width: 172px;
+        @media only screen and (max-width: $md) {
+          width: 139px;
+          margin-bottom: 32px;
+        }
+        svg {
+          display: block;
+          height: auto;
+          width: 100%;
+        }
+      }
+      &-alma {
+        filter: brightness(0) invert(1);
+      }
+    }
+    &__title {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+      color: #ffffff;
+      margin-bottom: 20px;
+      font-family: Lato-Medium;
+      @media only screen and (max-width: $md) {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 24px;
+      }
+    }
+    &__list {
+      &-item {
+        display: flex;
+        gap: 4px;
+        margin-bottom: 8px;
+        &-icon {
+          height: 24px;
+        }
+        &-text {
+          font-family: Lato-Medium;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          color: #ffffff;
+          @media only screen and (max-width: $md) {
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 24px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  &-form {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 36px 22px 54px 24px;
+    @media only screen and (max-width: $md) {
+      padding: 24px 16px;
+      width: 100%;
+    }
+    &__title {
+      font-family: Lato-Bold;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      color: #1b1b1b;
+      margin-bottom: 16px;
+      @media only screen and (max-width: $md) {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 8px;
+      }
+    }
+    &__desc {
+      font-size: 16px;
+      line-height: 24px;
+      color: #1b1b1b;
+      margin-bottom: 28px;
+      @media only screen and (max-width: $md) {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 32px;
+      }
+    }
+    &__form {
+      display: flex;
+      gap: 12px;
+      .ant-form {
+        @media only screen and (max-width: $md) {
+          flex: 1;
+        }
+        .ant-form-item {
+          margin: 0;
+        }
+        input {
+          height: 44px;
+          width: 249px;
+          border: 1px solid #c6c6c6;
+          @media only screen and (max-width: $md) {
+            width: 100%;
+            font-size: 12px;
+            line-height: 24px;
+          }
+          &:placeholder-shown {
+            background: #e2e2e2;
+          }
+        }
+      }
+      &-submit-btn {
+        font-family: Lato-Medium;
+        background: #ff6c0e;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        border: none;
+        height: 44px;
+        &:hover,
+        &:active,
+        &:focus {
+          background: #ff6c0e;
+          border: none;
+        }
+        @media only screen and (max-width: $md) {
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

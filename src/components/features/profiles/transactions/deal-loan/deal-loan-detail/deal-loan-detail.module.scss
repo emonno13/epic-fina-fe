@@ -1,0 +1,36 @@
+.deal-loan-detail-handling-history {
+  .history-item {
+    .h-card {
+      max-width: 90%;
+    }
+  }
+}
+
+.deal-loan-detail-result {
+  &-item {
+    padding: 15px;
+
+    &__avatar {
+      width: 100px;
+      height: 100px;
+
+      & > img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .ant-tabs-tab {
+    border: none !important;
+    border-radius: 0 !important;
+
+    &:hover {
+      background: #fff !important;
+    }
+
+    &-active {
+      background: #fff !important;
+      border-bottom: 2px solid #e0e0e0 !important;
+    }
+  }
+}

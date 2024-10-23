@@ -1,0 +1,25 @@
+.upload-list-drag-drog .ant-upload-draggable-list-item {
+  border: 2px dashed rgba(0, 0, 0, 0);
+  height: 100%;
+  width: 100%;
+  cursor: 'move'; 
+}
+.upload-list-drag-drog .ant-upload-draggable-list-item.drop-over-downward {
+  border-color: #1890ff;
+}
+
+.upload-list-drag-drog .ant-upload-draggable-list-item.drop-over-upward {
+  border-color: #1890ff;
+}
+
+.preview-gallery-modal .image-gallery-slide img {
+  width: 100%;
+  height: 80vh;
+}
+.preview-gallery-modal .image-gallery-thumbnail img{
+  object-fit: cover;
+  max-height: 50px;
+}
+.hidden-ant-upload .ant-upload {
+  display: none !important;
+}

@@ -1,0 +1,162 @@
+.btn-contact-now {
+  text-align: center;
+
+  .ant-btn-link {
+    height: 45px;
+    background-color: #064DD6;
+    line-height: 45px;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 5px 25px;
+    text-transform: capitalize;
+  }
+}
+
+.news-detail-desc {
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding: 0 16px;
+}
+
+.news-detail-contact {
+  padding: 20px 0;
+
+  &-row {
+    margin-bottom: 50px;
+  }
+
+  @screen md {
+    padding: 40px 0;
+  }
+
+  svg {
+    width: 45px;
+
+    @screen md {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+  }
+
+  &-item {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @screen md {
+      margin-bottom: 0;
+      display: block;
+    }
+
+    &-title {
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.client-news-detail-wrapper {
+  scroll-margin-top: 100px;
+  font-family: 'SF Pro Display';
+
+  .client-page-cover {
+    padding: 14px 16px 14px;
+    margin: 0px -16px;
+
+    @screen md {
+      margin: 0;
+    }
+
+    &__breadcrumb {
+      margin-bottom: 0 !important;
+    }
+
+    &__title {
+      display: block;
+      padding: 0 16px;
+
+      @screen md {
+        display: none;
+      }
+    }
+  }
+
+  .client-news-detail-more {
+    min-height: 140px;
+    background-image: url("/assets/images/bg-more-info-news.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 86% 100%;
+    border-radius: 8px;
+    padding: 16px 24px;
+    margin-bottom: 30px;
+
+    &-wrapper {
+      padding: 0 16px;
+
+      @screen md {
+        padding: 0;
+      }
+    }
+
+    @screen md {
+      padding: 30px 100px;
+      position: relative;
+      background-position: center;
+    }
+
+    svg {
+      height: 35px;
+      width: auto;
+
+      @screen md {
+        height: 54px;
+        position: absolute;
+        top: 32%;
+      }
+    }
+
+    &-info {
+      @screen md {
+        text-align: center;
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFFFF;
+
+        @screen md {
+          font-size: 24px;
+          line-height: 24px;
+        }
+      }
+
+      .more-information-btn {
+        background: #FD9142;
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 24px;
+        color: #FFFFFF;
+        height: auto;
+        padding: 2px 20px;
+        padding-top: 1px !important;
+
+        @screen md {
+          border-radius: 8px;
+          font-size: 20px;
+          padding: 12px 25px;
+          padding-top: 12px !important;
+        }
+      }
+    }
+  }
+}

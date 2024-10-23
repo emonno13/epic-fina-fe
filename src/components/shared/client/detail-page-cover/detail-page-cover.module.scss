@@ -1,0 +1,35 @@
+@import "../../../../styles/css_variables";
+
+.client-detail-page-cover {
+  background: linear-gradient(180deg, #062b8c, #0a3eca);
+  height: 60px;
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: $md) {
+    padding: 0 16px;
+  }
+
+  &__breadcrumb {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    .ant-breadcrumb-link {
+      color: #fff;
+    }
+    a {
+      color: #fff;
+      &:hover {
+        color: #fff;
+      }
+    }
+    .ant-breadcrumb-separator {
+      color: #ff6c0e;
+    }
+  }
+}

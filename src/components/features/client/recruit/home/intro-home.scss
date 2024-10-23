@@ -1,0 +1,66 @@
+@import '../../../../../styles/css_variables';
+
+.intro-home{
+  @mixin text($fontFamily, $web, $mobile, $color: #FFFFFF){
+    @media only screen and (max-width: $md) {
+      font-size: $mobile;
+    }
+    font-family: $fontFamily;
+    font-size: $web;
+    color: $color;
+  }
+  &__header {
+    position: relative;
+    height: 400px;
+    display: flex;
+    padding: 0 25px 0 25px;
+    align-items: center;
+    justify-content: center;
+    background-repeat: round;
+    background-image: linear-gradient(to right, rgba(2, 70, 200, 1), rgba(6, 77, 214, 0.77)), url("/assets/images/home-building.png");
+  }
+  &__text{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    &__title{
+      @include text(SFPD-Bold,  36px, 32px);
+      @media only screen and (max-width: $md) {
+        width: 90%;
+      }
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+    &__content{
+      @include text(SFPD-Light, 24px, 16px);
+      @media only screen and (max-width: $md) {
+        width: 80%;
+      }
+      font-style: normal;
+      width: 700px;
+      margin-top: 10px;
+      font-weight: 300;
+      line-height: 31px;
+    }
+  }
+  &__button{
+    font-size: 14px;
+    background: #FF6C0E;
+    color: #FFFFFF;
+    height: 40px;
+    width: 200px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 48px;
+  }
+  &__triangle{
+    @media only screen and (max-width: $md) {
+      height: 300px;
+    }
+    position: absolute;
+    left: 0;
+  }
+}

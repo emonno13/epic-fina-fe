@@ -1,0 +1,244 @@
+@import '@styles/css_variables';
+
+.client-fund-certificate__related-product-list {
+  padding: 16px;
+
+  @screen md {
+    padding: 0;
+  }
+}
+
+.ekyc-fund-modal {
+  .ant-modal-content {
+    border-radius: 16px;
+  }
+
+  &-accuracy {
+    text-align: center;
+    padding: 20px 0;
+    max-width: 400px;
+    margin: 0 auto;
+
+    &-title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 29px;
+      color: #101828;
+      margin-top: 30px;
+      @screen md {
+        font-size: 24px;
+      }
+    }
+
+    &-desc {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 18px;
+      color: #667085;
+      margin: 0 auto;
+      @screen md {
+        font-size: 15px;
+      }
+    }
+    &-btns {
+      margin-top: 16px;
+      @screen md {
+        margin-top: 32px;
+      }
+
+      .ant-btn {
+        border-radius: 30px;
+        height: 50px;
+        font-weight: 700;
+        font-size: 15px;
+        box-shadow: none;
+        width: 100%;
+
+        &.ant-btn-primary {
+          background: #064dd6;
+          margin-top: 10px;
+          @screen md {
+            margin-top: 0;
+          }
+        }
+
+        &.ant-btn-default {
+          color: #a1a8ab;
+        }
+      }
+    }
+    &-actions {
+      margin-top: 32px;
+      flex-direction: column-reverse;
+      display: flex;
+      @screen md {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-direction: initial;
+      }
+
+      .ant-btn {
+        border-radius: 30px;
+        height: 50px;
+        min-width: 150px;
+        font-weight: 700;
+        font-size: 15px;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+
+        &.ant-btn-primary {
+          background: #064dd6;
+          margin-top: 10px;
+          @screen md {
+            margin-top: 0;
+          }
+        }
+
+        &.ant-btn-default {
+          color: #a1a8ab;
+        }
+      }
+    }
+  }
+
+  &-accuracy-success {
+    .ant-btn.ant-btn-primary {
+      width: 100%;
+      max-width: 310px;
+    }
+  }
+}
+
+.buy-fund-action {
+  height: 40px;
+  align-content: center;
+  background-color: #064dd6 !important;
+  border-radius: 4px;
+  font-weight: 600;
+  border: none;
+  font-size: 14px;
+  color: #ffffff !important;
+  // display: none;
+}
+
+.contract-preview {
+  canvas {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  max-height: 90vh;
+
+  @screen md {
+    canvas {
+      width: 610px !important;
+    }
+  }
+
+  &__body {
+    border: 1px solid #c8cbcf;
+    overflow: hidden;
+    max-height: 75vh;
+    overflow-y: scroll;
+  }
+
+  &__header {
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid #c8cbcf;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header--left {
+      max-height: 34px;
+      img {
+        height: 34px;
+        margin-right: 8px;
+      }
+      span {
+        font-weight: 700;
+      }
+    }
+    .header--right {
+      &__content {
+        background-color: #fdd1a2;
+        border-radius: 25px;
+        color: #ff6c0e;
+        font-weight: 500;
+        padding: 8px 11px;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+
+    .ant-btn {
+      letter-spacing: 0.32px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+      padding: 16px 50px;
+      height: 50px;
+      border-color: transparent;
+    }
+  }
+}
+
+.client-fund-certificate {
+  scroll-margin-top: 100px;
+}
+
+.buy-fund-modal-confirm {
+  .anticon-exclamation-circle {
+    display: none;
+  }
+
+  .ant-modal-body {
+    padding: 16px 20px;
+  }
+
+  .ant-modal-confirm-body
+    > .anticon
+    + .ant-modal-confirm-title
+    + .ant-modal-confirm-content {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  .ant-modal-confirm-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .ant-modal-confirm-content {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .ant-btn {
+    background: #ffffff;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    padding: 6px 25px;
+    height: auto;
+
+    &.ant-btn-primary {
+      background: #064dd6;
+      font-weight: 600;
+      color: #ffffff;
+    }
+  }
+}

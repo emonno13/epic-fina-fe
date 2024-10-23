@@ -1,0 +1,164 @@
+@import '@styles/css_variables';
+.investment-options {
+  @screen md {
+    padding-top: 52px;
+    padding-bottom: 32px;
+  }
+
+  .container {
+    max-width: 1170px;
+    background: #e8efff;
+    padding-top: 38px;
+    padding-bottom: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @screen md {
+      border-radius: 20px;
+      padding: 35px;
+    }
+  }
+
+  .header {
+    text-align: center;
+
+    @screen md {
+      margin-bottom: 38px;
+    }
+  }
+  .ant-tabs-tab {
+    font-size: 16px;
+    line-height: 15px;
+    padding: 16px !important;
+    background-color: #fff !important;
+    border: 1px solid #064dd6 !important;
+    @screen md {
+      font-size: 20px;
+      line-height: 15px;
+      padding: 16px 27px !important;
+      border: 1px solid transparent !important;
+    }
+    &-active {
+      font-family: 'SF Pro Display Medium';
+      background-color: #064dd6 !important;
+      color: #fff !important;
+      .ant-tabs-tab-btn {
+        color: #fff !important;
+        @screen md {
+          color: #064dd6 !important;
+        }
+      }
+      @screen md {
+        border: 1px solid #064dd6 !important;
+        background-color: #fff !important;
+      }
+    }
+  }
+  .ant-tabs-tab-btn {
+    color: #064dd6 !important;
+  }
+  .content-item {
+    font-size: 16px;
+    line-height: 32px;
+    color: #000;
+    display: flex;
+    font-size: 16px;
+    line-height: 24px;
+
+    @screen md {
+      margin-left: 28px;
+      font-size: 20px;
+      line-height: 32px;
+      margin-left: 0;
+    }
+    .logo {
+      @screen md {
+        margin-top: 8px;
+        margin-right: 10px;
+      }
+      margin-top: 6px;
+      margin-right: 8px;
+      width: 15px;
+      height: 15px;
+      display: block;
+      img {
+        display: block;
+      }
+    }
+    .text {
+      width: calc(100% - 15px);
+      margin-bottom: 10px;
+      @screen md {
+        margin-left: 30px;
+      }
+    }
+  }
+  .table {
+    width: 100%;
+  }
+  .ant-tabs-content {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 17px;
+
+    @screen md {
+      padding: 51px;
+      margin-bottom: 32px;
+    }
+  }
+  .activity-result {
+    .title {
+      @screen md {
+        display: flex;
+      }
+
+      p {
+        color: #000000;
+        padding-bottom: 0;
+        padding-right: 8px;
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 0;
+        font-family: 'SF Pro Display Bold';
+
+        @screen md {
+          font-size: 20px;
+          line-height: 32px;
+          margin-bottom: 16px;
+        }
+      }
+
+      span {
+        font-style: italic;
+        color: #4e5a65;
+        font-size: 12px;
+
+        @screen md {
+          font-size: 16px;
+          line-height: 32px;
+        }
+      }
+    }
+    @screen md {
+      padding-top: 58px;
+    }
+  }
+
+  .invest-btn {
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 11px 33px;
+    margin-top: 16px;
+
+    svg {
+      transform: rotate(-90deg);
+      margin-left: 16px;
+    }
+  }
+  .des {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}

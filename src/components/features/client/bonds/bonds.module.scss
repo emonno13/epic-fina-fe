@@ -1,0 +1,9 @@
+@import "../../../../styles/css_variables";
+
+.client-bonds {
+  &__list {
+    @media only screen and (max-width: $md) {
+      padding: 32px 16px;
+    }
+  }
+}

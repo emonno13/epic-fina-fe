@@ -1,0 +1,49 @@
+@import "styles/_css_variables.scss";
+
+.expert-detail-market-in-charge {
+  padding: 40px 0;
+  border-bottom: 1px solid #e2e2e2;
+  .expert-detail-market-in-charge-title {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 24px;
+    @media only screen and (max-width: $md) {
+      svg {
+        display: block;
+        width: 20px;
+        height: auto;
+      }
+    }
+    span {
+      font-size: 22px;
+      line-height: 26px;
+      color: #474747;
+      @media only screen and (max-width: $md) {
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+  }
+  .expert-detail-market-in-charge-locations {
+    display: flex;
+    gap: 15px 24px;
+    flex-wrap: wrap;
+    @media only screen and (max-width: $md) {
+      gap: 15px 12px;
+    }
+    .expert-detail-market-in-charge-location {
+      border: 1px solid #064dd6;
+      box-sizing: border-box;
+      border-radius: 28px;
+      padding: 12px 24px;
+      font-size: 16px;
+      line-height: 19px;
+      color: #064dd6;
+      @media only screen and (max-width: $md) {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+}

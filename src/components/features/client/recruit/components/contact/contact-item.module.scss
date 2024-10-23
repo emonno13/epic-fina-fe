@@ -1,0 +1,40 @@
+@import '../../../../../../styles/css_variables';
+
+.contact-item{
+  &__container{
+    @media only screen and (max-width: $lg) {
+      width: 100%;
+    }
+    width: 50%;
+    margin-bottom: 80px;
+
+  }
+
+  &__title{
+    font-family: SFPD-Medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1B1B1B;
+  }
+  &__text{
+    white-space: pre-line;
+    font-family: SFPD-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #777777;
+  }
+  &__item{
+    margin: 16px 0 32px;
+    width: 460px;
+  }
+  &__button{
+    width: 100px;
+    background: #FF6C0E;
+    color: #FFFFFF;
+    border-radius: 6px;
+  }
+}

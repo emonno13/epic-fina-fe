@@ -1,0 +1,10 @@
+@import '@styles/css_variables';
+
+.deals-loans-detail-create-loan {
+  top: 10px;
+  @media only screen and (max-width: $md) {
+    .ant-table-content {
+      overflow: auto;
+    }
+  }
+}

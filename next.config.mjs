@@ -1,3 +1,10 @@
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// Manually define __dirname
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   transpilePackages: ['@refinedev/antd'],
@@ -21,28 +28,33 @@ const nextConfig = {
       },
     ],
   },
+  webpack: (config) => {
+    // Add SCSS alias support
+    config.resolve.alias['@styles'] = path.resolve(__dirname, 'src/styles');
+    return config;
+  },
+  // Uncomment the headers section if needed
   // async headers() {
   //   return [
   //     {
-  //       // Matching all routes for CORS
   //       source: '/(.*)',
   //       headers: [
-  //         // {
-  //         //   key: 'Cross-Origin-Embedder-Policy',
-  //         //   value: 'unsafe-none',
-  //         // },
-  //         // {
-  //         //   key: 'Cross-Origin-Opener-Policy',
-  //         //   value: 'same-origin', // "same-origin-allow-popups"
-  //         // },
-  //         // {
-  //         //   key: 'Access-Control-Allow-Origin',
-  //         //   value: '*', // Make sure to adjust this in production for security
-  //         // },
-  //         // {
-  //         //   key: 'Access-Control-Allow-Methods',
-  //         //   value: 'GET, POST, OPTIONS',
-  //         // },
+  //         {
+  //           key: 'Cross-Origin-Embedder-Policy',
+  //           value: 'unsafe-none',
+  //         },
+  //         {
+  //           key: 'Cross-Origin-Opener-Policy',
+  //           value: 'same-origin', // or "same-origin-allow-popups"
+  //         },
+  //         {
+  //           key: 'Access-Control-Allow-Origin',
+  //           value: '*',
+  //         },
+  //         {
+  //           key: 'Access-Control-Allow-Methods',
+  //           value: 'GET, POST, OPTIONS',
+  //         },
   //       ],
   //     },
   //   ];

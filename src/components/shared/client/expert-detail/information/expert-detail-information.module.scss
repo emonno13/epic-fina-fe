@@ -1,0 +1,76 @@
+@import "styles/_css_variables.scss";
+
+.expert-detail-information {
+  display: flex;
+  border-bottom: 1px solid #e2e2e2;
+  gap: 24px;
+  padding: 40px 0;
+  @media only screen and (max-width: $md) {
+    flex-direction: column;
+    gap: 56px;
+  }
+  .expert-detail-information-about {
+    flex: 1;
+    &__title {
+      font-size: 22px;
+      line-height: 26px;
+      color: #474747;
+      margin-bottom: 16px;
+      @media only screen and (max-width: $md) {
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+    &__content {
+      min-height: 192px;
+      @media only screen and (max-width: $md) {
+        min-height: 315px;
+      }
+    }
+    &__content,
+    &__expertise {
+      font-size: 16px;
+      line-height: 150%;
+      color: #5e5e5e;
+      margin-bottom: 16px;
+      white-space: pre-line;
+      @media only screen and (max-width: $md) {
+        font-size: 14px;
+      }
+      span {
+        font-family: SFPD-Medium;
+      }
+    }
+  }
+  .expert-detail-information-real-estate {
+    flex: 0 0 392px;
+    height: 267px;
+    border: 1px solid #c6c6c6;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 22px;
+    @media only screen and (max-width: $md) {
+      flex: auto;
+      height: auto;
+      padding: 16px 16px 40px 16px;
+    }
+    h2 {
+      font-size: 20px;
+      line-height: 23px;
+      color: #474747;
+      margin-bottom: 20px;
+    }
+    .expert-detail-information-real-estate-item {
+      display: flex;
+      gap: 10px;
+      &:not(:last-of-type) {
+        margin-bottom: 24px;
+      }
+      &__content {
+        font-size: 16px;
+        line-height: 19px;
+        color: #474747;
+      }
+    }
+  }
+}

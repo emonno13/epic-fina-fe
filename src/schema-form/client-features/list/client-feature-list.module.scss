@@ -1,0 +1,28 @@
+.client-feature-list {
+  .view-more-button {
+    padding: 10px !important;
+    background: #f8f8f8 !important;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    align-items: center;
+    border: none !important;
+    height: auto !important;
+    width: 100%;
+  }
+  
+  .number-of-remaining-data {
+    background: #ffffff;
+    border-radius: 33px;
+    padding: 2px 7px;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--primary-color);
+  }
+  
+  .item {
+    padding: 15px 0;
+    border-top: 1px solid #e9e9e9;
+  }
+}

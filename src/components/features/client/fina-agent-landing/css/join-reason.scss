@@ -1,0 +1,79 @@
+@import "../../../../../styles/css_variables";
+
+.join-reason-item{
+  width: 250px;
+  border: 1px solid #151940;
+  border-radius: 24px;
+  padding: 44px 16px 32px 16px;
+  margin-bottom: 100px;
+  max-width: 1250px;
+
+  @media only screen and (max-width: $md) {
+    width: 170px;
+    height: 110px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+  }
+
+  &__icon{
+    @media only screen and (max-width: $md) {
+      width: 60px;
+      height: 60px;
+      margin-top: -75px;
+      margin-left: 10px;
+
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    margin-top: -90px;
+    margin-left: 15px;
+    width: 100px;
+    height: 100px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__title{
+    @media only screen and (max-width: $md) {
+      font-size: 12px;
+    }
+
+    font-style: normal;
+    font-size: 16px;
+  }
+  &__content{
+    @media only screen and (max-width: $md) {
+      font-size: 12px;
+    }
+
+    font-family: Lato-Regular;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+
+
+.join-reason{
+  text-align: center;
+
+  &__content{
+    max-width: 850px;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 65px;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $md) {
+      margin-top: 65px;
+      gap: 16px;
+      padding: 0;
+    }
+  }
+}

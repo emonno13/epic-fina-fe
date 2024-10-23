@@ -1,0 +1,310 @@
+.profile-earnings-commissions {
+  margin-bottom: 30px;
+
+  .profile-information-title {
+    padding: 0;
+    border-bottom: 1px solid #e0e1e4;
+    padding-bottom: 12px;
+  }
+
+  &-top {
+    min-height: 150px;
+    border-radius: 8px;
+    position: relative;
+    color: #ffffff;
+    margin-top: 25px;
+    z-index: 1;
+
+    @screen md {
+      background-image: url("/assets/images/bg-top-income.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top right;
+      display: flex;
+    }
+
+    &-left {
+      padding: 16px 20px;
+      background-image: url("/assets/images/bg-current-income.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      min-height: 150px;
+      position: relative;
+      margin-bottom: 12px;
+      margin-right: 7px;
+
+      @screen md {
+        margin-bottom: 0;
+        margin-right: 0;
+        width: 280px;
+      }
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 7px;
+        top: -5px;
+        border-radius: 8px;
+        z-index: -1;
+        background: linear-gradient(180deg, #0a257c 0%, #0d36c1 100%);
+        border-radius: 8px;
+      }
+    }
+
+    &-label {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      font-weight: 500;
+      font-size: 14px;
+      margin-bottom: 2px;
+      cursor: pointer;
+    }
+
+    &-value {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 30px;
+
+      sub,
+      sup {
+        font-size: 70%;
+      }
+
+      sup {
+        top: -5px;
+      }
+
+      sub {
+        bottom: 0;
+      }
+    }
+
+    &-right {
+      padding: 12px;
+      border-radius: 8px;
+      background-image: url("/assets/images/bg-top-income.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top right;
+
+      .ant-col {
+        @screen md {
+          border-right: 1px solid #3e7de6;
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+
+      @screen md {
+        background-image: none;
+        width: calc(100% - 280px);
+        padding: 20px;
+        padding-top: 25px;
+      }
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        svg {
+          margin: 0 auto;
+          min-height: 35px;
+        }
+
+        &-label {
+          color: #ffffff;
+          font-weight: 600;
+          font-size: 12px;
+          margin-top: 8px;
+          margin-bottom: 0;
+
+          @screen md {
+            font-size: 16px;
+          }
+        }
+
+        &-value {
+          color: #ffffff;
+          font-weight: 600;
+          font-size: 16px;
+          margin-bottom: 0;
+
+          @screen md {
+            font-size: 24px;
+          }
+
+          sup {
+            top: -5px;
+            font-size: 70%;
+          }
+        }
+      }
+    }
+
+    &-current-income {
+      margin-bottom: 10px;
+    }
+  }
+
+  .advance_search_panel {
+    background: #f3f7ff;
+    border-radius: 8px;
+    margin: 20px 0;
+
+    .advance_search_content {
+      padding: 18px 22px;
+    }
+
+    .h-search-portal-custom {
+      .advance-one-control {
+        .ant-input-group .ant-input {
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+        }
+
+        .ant-input-group-addon .ant-btn {
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+        }
+      }
+    }
+  }
+
+  .profile-earnings-commissions-advanced-search {
+    ant-form {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.profile-earnings-commissions-modal {
+  .ant-modal-header {
+    display: none;
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+
+  &-top {
+    background: #e8efff;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    &-label {
+      font-weight: 400;
+      font-size: 14px;
+      color: #000000;
+    }
+
+    &-value {
+      font-weight: 600;
+      font-size: 20px;
+      color: #000000;
+      line-height: 24px;
+    }
+
+    &-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    &-right {
+      text-align: right;
+    }
+
+    &-icon {
+      background: #ffffff;
+      border-radius: 8px;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .ant-modal-close-x path {
+    stroke: #aaafb3;
+  }
+
+  .ant-modal-content {
+    border-radius: 16px;
+  }
+
+  &-content {
+    margin-bottom: 24px;
+  }
+
+  .earnings-commissions-viewer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+    @screen md {
+      justify-content: initial;
+    }
+
+    &-label {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.3px;
+      color: #000000;
+      display: inline-block;
+      min-width: 100px;
+    }
+
+    &-value {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.3px;
+      color: #000000;
+    }
+
+    &-type {
+      font-size: 10px;
+      background: #fee8d0;
+      border-radius: 4px;
+      padding: 4px 8px;
+      color: #ff6c0e;
+    }
+  }
+}
+
+
+.profile-earnings-commissions-all  {
+  .profile-information-title {
+    justify-content: space-between;
+  }
+  .profile-information-title-back {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+}

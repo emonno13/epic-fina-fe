@@ -1,0 +1,93 @@
+@import '../../../../../styles/css_variables';
+
+.citation{
+  @mixin text($fontFamily, $web, $mobile, $color: #FFFFFF){
+    @media only screen and (max-width: $md) {
+      font-size: $mobile;
+    }
+    font-family: $fontFamily;
+    font-size: $web;
+    color: $color;
+  }
+  &__container{
+    @media only screen and (max-width: $lg) {
+    padding: 120px 0 0 50px;
+  }
+    @media only screen and (max-width: $md) {
+      padding: 120px 20px 0 10px;
+      justify-content: center;
+    }
+    width: 100%;
+    padding: 120px 160px 0 140px;
+    background: #ECF2FF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__body{
+    @media only screen and (max-width: $md) {
+      padding: 0 ;
+    }
+    position: relative;
+    padding: 0 0 0 50px ;
+  }
+  &__content{
+    @include text(SFPD-Light,24px,18px,#474747);
+    @media only screen and (max-width: $md) {
+      width: 280px;
+      margin-left: 0px;
+    }
+    margin-left: 50px;
+    width: 600px;
+    flex-wrap: wrap;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+  }
+  &__name{
+    @include text(SFPD-Bold,24px,18px,#064DD6);
+    @media only screen and (max-width: $md) {
+      margin-left: 0px;
+    }
+    margin: 40px 0 8px 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+  }
+  &__position{
+    @include text(SFPD-SemiBold,18px,14px,#303030);
+
+    @media only screen and (max-width: $md) {
+      margin-left: 0px;
+    }
+    margin-left: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+  }
+  &__first-quote{
+    @media only screen and (max-width: $md) {
+      margin-left: -11%;
+    }
+  }
+  &__second-quote{
+    @media only screen and (max-width: $md) {
+      top: 300px;
+      left: 95%;
+    }
+    position: absolute;
+    transform: rotate(180deg);
+    top: 250px;
+    left: 90%;
+  }
+  &__image{
+    @media only screen and (max-width: $md) {
+      width: 100%;
+      margin-left: 20%;
+  }
+    @media only screen and (max-width: $lg) {
+      width: 100%;
+      margin-left: 25%;
+  }
+  }
+}

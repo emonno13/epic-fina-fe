@@ -1,0 +1,5 @@
+const ClientWhyChooseUsTeamIcon = () => (
+  <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="19" cy="19" r="18" stroke="#0A3ECA" strokeWidth="2"></circle><path d="M16 28L18 23H20L22 28" stroke="#0A3ECA" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"></path><path d="M13.0029 11.796C13.6329 11.982 14.2949 12.106 14.9849 12.106C16.9449 12.106 18.7139 11.298 19.9849 10C21.2559 11.298 23.0389 12.106 24.9989 12.106" stroke="#0A3ECA" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"></path><path d="M13 12C13 8.686 15.686 6 19 6C22.314 6 25 8.686 25 12C25 17 22.314 20 19 20C15.686 20 13 17 13 12Z" stroke="#0A3ECA" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"></path><path d="M15.796 18.907L9.971 22.417C9.369 22.779 9 23.43 9 24.132V28H29V24.132C29 23.429 28.631 22.778 28.029 22.417L22.204 18.907" stroke="#0A3ECA" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"></path></svg>
+);
+
+export default ClientWhyChooseUsTeamIcon;

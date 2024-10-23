@@ -1,0 +1,19 @@
+.h-text {
+  .color {
+    $colors: "base" "light" "lighter" "lightest" "success" "danger" "info" "primary" "secondary" "white" "link";
+  
+    @each $color in $colors {
+      &-#{$color} {
+        color: var(--h-#{$color}-text-color);
+      }
+    }
+  }
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  .semistrong {
+    font-weight: 500;
+  }
+}

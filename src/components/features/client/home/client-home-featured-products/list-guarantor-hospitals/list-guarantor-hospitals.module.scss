@@ -1,0 +1,259 @@
+.list-guarantor-hospital {
+  &__close-icon {
+    margin-top: 20px;
+  }
+  .list-hospitals-client {
+    &__search-icon {
+      .advance_search_form .ant-form.ant-form-vertical .ant-input.ant-input-lg {
+        background-image: url("/assets/images/search-icon.png");
+        background-repeat: no-repeat;
+        background-position: 10px;
+        font-size: 13px;
+        border-radius: 40px;
+        padding: 10px 40px 8px;
+        line-height: 20px;
+        border: none;
+        background-color: #f5f5f5;
+      }
+
+      .ant-select-selection-placeholder {
+        font-size: 11px;
+        margin-top: 2px;
+      }
+    }
+
+    .ant-form-vertical {
+      .list-hospital-client__search-form {
+        margin: 15px 0 15px 0;
+        flex-direction: row;
+        align-items: center;
+
+        .ant-row.ant-form-item-row {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .ant-col.ant-form-item-label {
+          padding: 0;
+          width: fit-content;
+        }
+
+        .ant-col.ant-form-item-control {
+          width: 150px;
+          max-width: 150px;
+          margin-left: 4px;
+          margin-bottom: 2px;
+
+          .ant-select-selector {
+            height: 30px;
+            border: none;
+            box-shadow: none;
+
+            .ant-select-selection-search-input {
+              height: 30px;
+              line-height: 30px;
+            }
+
+            .ant-select-selection-item {
+              line-height: 30px;
+              font-size: 14px;
+            }
+
+            .ant-select-selection-placeholder {
+              line-height: 26px;
+              font-size: 14px;
+            }
+          }
+        }
+
+        .icon-search {
+          background: #000000;
+        }
+      }
+    }
+
+    .show-hospital-select {
+      border: 1.08333px solid #064dd6;
+      box-shadow: 0 0 4.33333px rgba(0, 0, 0, 0.25);
+      border-radius: 8.66667px;
+      height: 80px;
+    }
+
+    .show-hospital {
+      height: 80px;
+      &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        cursor: pointer;
+      }
+
+      &__name-hospital {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 140%;
+        text-align: center;
+        color: #064dd6;
+        margin-top: 8px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+
+    .title-show-hospital {
+      display: flex;
+      background-color: #064dd6;
+      align-items: center;
+      height: 24px;
+      margin-bottom: 26px;
+      padding: 6px 8px;
+      width: fit-content;
+      border-radius: 101px;
+      padding: 10px;
+
+      &__icon-show {
+        margin-right: 12px;
+      }
+
+      &__description {
+        color: #ffffff;
+      }
+    }
+
+    &__title-search-form {
+      display: flex;
+      align-items: center;
+
+      &__title {
+        margin-left: 8px;
+        color: #bababa;
+      }
+    }
+
+    .ant-carousel .slick-dots-bottom {
+      bottom: -30px;
+
+      li {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+          display: flex;
+          background: #064dd6;
+          width: 10px;
+          height: 10px;
+          border-radius: 100%;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .advance_search_form {
+      .ant-form.ant-form-vertical {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .ant-input-group-addon {
+          display: none;
+        }
+
+        .ant-input.ant-input-lg {
+          border-radius: 40px;
+          padding-left: 38px;
+        }
+      }
+    }
+  }
+
+  .ant-modal-title {
+    color: #000000;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140.5%;
+    margin-top: 7px;
+  }
+  .ant-modal-content {
+    .ant-modal-body {
+      padding: 14px 16px;
+    }
+
+    .ant-modal-footer {
+      padding: 0;
+      border: none;
+    }
+  }
+
+  .show-hospital-detail {
+    &__name {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: #000000;
+    }
+    &__address {
+      margin-top: 4px;
+
+      display: flex;
+      &__icon {
+        color: #064dd6;
+        width: 12px;
+      }
+      &__detail {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        color: #000000;
+        margin-left: 5.5px;
+        width: calc(100% - 12px);
+      }
+    }
+
+    &__tels {
+      display: flex;
+      align-items: center;
+      font-size: 10px;
+      margin-top: 8px;
+
+      &__icon {
+        margin-right: 4.5px;
+      }
+    }
+  }
+
+  .ant-divider.ant-divider-horizontal {
+    margin: 16px 0;
+  }
+
+  .show-hospital-sline {
+    width: 100%;
+    height: 4px;
+    left: 0;
+    top: 526px;
+    background: #d9d9d9;
+    opacity: 0.2;
+    margin: 16px 0 16px -16px;
+  }
+
+  .advance_search_content {
+    position: relative;
+
+    .icon_search {
+      position: absolute;
+      z-index: 1;
+      top: 8px;
+      left: 10px;
+    }
+  }
+}

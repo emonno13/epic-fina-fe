@@ -1,0 +1,21 @@
+.h-input-number-container {
+  display: flex;
+
+  .h-input-number-suffix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 11px;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: normal;
+    background-color: #fafafa;
+    // border: 1px solid #d9d9d9;
+    // border-left: 0;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+
+  .ant-input-number {
+    flex: 1;
+  }
+}

@@ -1,0 +1,37 @@
+.h-user-rating {
+  display: flex;
+
+  &__avatar {
+    padding: 0 25px;
+  }
+
+  &__information {
+    width: 100%;
+
+    &-fullName {
+      color: #111111;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: capitalize;
+    }
+
+    &-rate {
+      padding: 5px 0px;
+    }
+
+    &-created {
+
+    }
+
+    &-message {
+      padding-top: 15px;
+    }
+
+    &-metadata {
+      text-align: right;
+      margin-top: 25px;
+      font-weight: 500;
+    }
+  }
+}

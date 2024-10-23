@@ -1,0 +1,23 @@
+.ui-h-view-more-button {
+  button {
+    width: 120px;
+    height: 30px;
+    opacity: 0.5;
+    background: #9ba8ca;
+    border-radius: 25px;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    font-family: SFPD-Medium;
+    color: #fff;
+    border: none;
+    &:active,
+    &:focus,
+    &:hover {
+      background: #9ba8ca;
+      border: none;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+export enum ROLES {
+  FINA_ADMIN = 'ADMIN',
+  FINA_STAFF = 'FINA_STAFF',
+  BANK_STAFF = 'BANK_STAFF',
+  ADMIN_BANK = 'ADMIN_BANK',
+  COLLABORATOR = 'COLLABORATOR',
+  CUSTOMER = 'CUSTOMER',
+}
+
+export const ROLE_OPTIONS = [{
+  label: 'ADMIN',
+  value: ROLES.FINA_ADMIN,
+}, {
+  label: 'FINA STAFF',
+  value: ROLES.FINA_STAFF,
+}, {
+  label: 'BANK STAFF',
+  value: ROLES.BANK_STAFF,
+}, {
+  label: 'ADMIN BANK',
+  value: ROLES.ADMIN_BANK,
+}, {
+  label: 'COLLABORATOR',
+  value: ROLES.COLLABORATOR,
+}, {
+  label: 'CUSTOMER',
+  value: ROLES.CUSTOMER,
+}];
+
+export const ROLE_OPTIONS_LABEL_MAPPING = {
+  [ROLES.FINA_ADMIN]: 'ADMIN',
+  [ROLES.FINA_STAFF]: 'FINA STAFF',
+  [ROLES.BANK_STAFF]: 'BANK STAFF',
+  [ROLES.ADMIN_BANK]: 'ADMIN BANK',
+  [ROLES.COLLABORATOR]: 'COLLABORATOR',
+  [ROLES.CUSTOMER]: 'CUSTOMER',
+};

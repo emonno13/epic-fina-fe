@@ -1,0 +1,20 @@
+.verify-account {
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  &.verifying-account {
+    color: #064DD6;
+  }
+
+  &.no-verify-account {
+    color: #FF6C0E;
+  }
+}

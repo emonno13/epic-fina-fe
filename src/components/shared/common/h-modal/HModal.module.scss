@@ -1,0 +1,25 @@
+.modal-without-title {
+  .ant-modal-close {
+    top: -14px !important;
+    right: -14px !important;
+    z-index: 10 !important;
+    color: rgba(0, 0, 0, 0.45) !important;
+  }
+
+  .ant-modal-close-x {
+    width: 30px !important;
+    height: 30px !important;
+    background: rgba(0, 0, 0, 0.6) !important;
+    border-radius: 50% !important;
+    color: #ffffff !important;
+    line-height: 32px !important;
+  }
+}
+
+.h-modal {
+  .extra-title {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+  }
+}

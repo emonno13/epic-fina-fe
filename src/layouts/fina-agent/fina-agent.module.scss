@@ -1,0 +1,33 @@
+@import "../../styles/css_variables";
+
+.fina-agent--container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.alma-layout {
+  background-color: #fff !important;
+  font-family: Lato-Regular;
+  .ant-layout-header {
+    display: flex;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    height: 80px;
+    @media only screen and (max-width: $md) {
+      height: 60px;
+      padding: 0 18px 0 24px;
+    }
+  }
+  .ant-layout-footer {
+    background: url("/assets/images/alma-footer-spiral-1.png") left bottom no-repeat,
+      url("/assets/images/alma-footer-spiral-2.png") right top no-repeat,
+      linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), #064dd6;
+    padding: 93px 0;
+    @media only screen and (max-width: $xl) {
+      padding: 80px 24px;
+      background: url("/assets/images/alma-footer-mobile-spiral.png") left 35% no-repeat,
+        linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), #064dd6;
+    }
+  }
+}

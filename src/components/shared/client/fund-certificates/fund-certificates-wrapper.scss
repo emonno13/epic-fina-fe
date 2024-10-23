@@ -1,0 +1,291 @@
+.fund-certificates-wrapper {
+  margin-top: 30px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: #303030;
+    margin-bottom: 11px;
+    font-family: SFPD-Bold;
+  }
+
+  &__des {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    color: #064dd6;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+
+.client-fund-certificates-table.ant-table-wrapper {
+  filter: none;
+  margin: 0 -16px;
+  max-width: max-content;
+
+  @screen md {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  @screen md {
+    filter: drop-shadow(0px 1px 14px rgba(0, 0, 0, 0.2));
+
+    .ant-table {
+      border-radius: 12px;
+    }
+  }
+
+  .ant-table-row {
+    cursor: pointer;
+  }
+
+  .ant-pagination:first-child {
+    display: none;
+  }
+
+  .fund-info {
+    color: #87888C !important;
+    font-size: 16px !important;
+    font-weight: 100 !important;
+    padding-bottom: 0px !important;
+  }
+
+  &.ant-table-wrapper.h-table-form .ant-table-thead>tr>th.ant-table-cell {
+    background: #F7F9FF;
+    padding: 8px 12px;
+    font-weight: 600;
+    font-size: 11px;
+    color: #000000;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    vertical-align: bottom;
+
+    &::before {
+      content: none !important;
+    }
+
+    @screen md {
+      font-size: 14px;
+      padding: 10px 16px;
+
+      &:first-child {
+        border-top-left-radius: 12px !important;
+      }
+
+      &:last-child {
+        border-top-right-radius: 12px !important;
+      }
+    }
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  &.ant-table-wrapper .ant-table-tbody>tr>td.ant-table-cell {
+    padding: 10px 10px 10px 12px;
+    .fund-info{
+      color: red;
+    }
+
+    @screen md {
+      padding: 16px;
+    }
+  }
+
+  .fund-certificates-table {
+    &-name {
+      font-weight: 600;
+      font-size: 13px;
+      color: #064DD6;
+    }
+
+    &-info {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      img {
+        width: 28px;
+        height: 28px;
+        object-fit: cover;
+      }
+
+      .anticon {
+        color: #064DD6;
+        margin-left: 6px;
+        cursor: pointer;
+        font-size: 12px;
+      }
+    }
+
+    &-name-wrapper {
+      line-height: 16px;
+    }
+
+    &-issuers {
+      font-weight: 500;
+      font-size: 13px;
+      color: #000000;
+
+      .anticon {
+        color: #064DD6;
+        margin-left: 6px;
+        cursor: pointer;
+        font-size: 12px;
+      }
+    }
+
+    &-fund-type {
+      font-weight: 500;
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    &-nearest-price {
+      font-weight: 400;
+      font-size: 14px;
+      color: #000000;
+    }
+
+    &-date-update {
+      font-weight: 400;
+      font-size: 10px;
+      color: rgba(0, 0, 0, 0.5);
+      font-style: italic;
+
+      @screen md {
+        font-size: 12px;
+      }
+    }
+
+    &-interest-rate {
+      font-weight: 600;
+      font-size: 12px;
+      color: #0A9A36;
+
+      @screen md {
+        font-size: 14px;
+      }
+    }
+
+    &-percent {
+      font-size: 12px;
+      font-weight: 500;
+      margin-right: 10px;
+      display: inline-block;
+      min-width: 50px;
+
+      &-hole {
+        color: #FF0000;
+      }
+
+      &-interest {
+        color: #0A9A36;
+      }
+    }
+
+    &-buy-button {
+      height: 30px;
+      width: fit-content;
+      background: #064DD6;
+      color: #FFFFFF;
+      border-radius: 4px;
+      border: none;
+      font-weight: 600;
+      line-height: 20px;
+
+      &:focus,
+      &:active,
+      &:hover {
+        background: #064DD6;
+      }
+    }
+  }
+
+  .buy-fund-action {
+    height: 30px;
+    width: fit-content;
+    background: #064DD6;
+    color: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    font-weight: 600;
+    line-height: 20px;
+
+    &:focus,
+    &:active,
+    &:hover {
+      background: #064DD6;
+    }
+  }
+
+  .ant-table-row{
+    &:hover > td {
+      background: #D3E2FF ;
+
+      // .fund-certificates-table-fund-type {
+      //   color: #FF6C0E;
+      // }
+    }
+  }
+}
+
+.fund-certificates-table-issuers-content {
+  width: 350px;
+
+  &-title {
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 0;
+
+    @screen md {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+
+  &-item {
+    display: flex;
+    padding: 8px 16px;
+    transition: 0.3s;
+    margin: 8px -16px 0;
+
+    @screen md {
+      padding: 12px 16px;
+    }
+
+    &:hover {
+      background: #E2ECFF;
+      cursor: pointer;
+
+      .fund-certificates-table-issuers-content-value {
+        font-weight: 700;
+      }
+    }
+  }
+
+
+  &-label {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.7);
+    width: 35%;
+  }
+
+  &-value {
+    font-weight: 400;
+    font-size: 12px;
+    width: 65%;
+    display: block;
+    text-align: right;
+  }
+}
+
+

@@ -1,0 +1,25 @@
+@import '@styles/css_variables';
+
+.signup-custom-form {
+  .ant-form-item-control {
+    width: 100% !important;
+  }
+
+  .info__custom-checkbox {
+    display: flex;
+
+    .has-collaborator-contract {
+      b {
+        color: #0a3eca;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .pre-login--title {
+    @screen md {
+      font-size: 18px;
+    }
+  }
+}

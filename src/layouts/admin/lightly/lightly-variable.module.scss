@@ -1,0 +1,20 @@
+.ui-lightly-admin-layout {
+  height: calc(100vh - 115px) !important;
+  position: relative;
+
+  .ui-lightly-admin {
+    padding-top: 55px;
+    height: calc(100vh - 115px) !important;
+
+    .ui-lightly-content {
+      padding: 30px 20px;
+      background-color: #f7f8fb;
+    }
+  }
+
+  .ui-lightly-site-layout {
+    //overflow: hidden;
+    max-height: calc(100vh - 115px);
+  }
+
+}

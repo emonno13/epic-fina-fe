@@ -1,0 +1,23 @@
+@import '../../../../../styles/css_variables';  
+
+.plan-and-requirements-customer {
+  p, ul {
+    margin-bottom: 0;
+  }
+
+  .title {
+    font-size: 24px;
+    color: $main-color;
+    font-family: SFPD-Bold;
+    margin-bottom: 1rem;
+  }
+
+  .name-item {
+    font-family: SFPD-Bold;
+  }
+
+  img {
+    margin-top: 24px;
+    border-radius: 24px;
+  }
+}

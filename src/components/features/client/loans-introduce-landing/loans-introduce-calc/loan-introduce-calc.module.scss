@@ -1,0 +1,120 @@
+@import "../../../../../styles/css_variables";
+
+.loans-introduce .content-loan-calc-tool {
+  padding-top: 80px;
+  width: 100%;
+  height: auto;
+  background: #F4F8FF;
+}
+
+.loans-introduce .content-loan-calc {
+  // padding-bottom: 80px;
+
+  .loans-introduce-tabs {
+    &>.ant-tabs-nav {
+      margin-bottom: 10px;
+
+      .ant-tabs-nav-wrap {
+        width: 100%;
+      }
+
+      &.ant-tabs-nav:before {
+        border-bottom: none;
+      }
+
+      .ant-tabs-ink-bar {
+        display: none;
+      }
+
+      .ant-tabs-nav-list {
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        @screen lg {
+          gap: 20px;
+        }
+
+        .ant-tabs-tab {
+          padding: 14px 16px;
+          line-height: 20px;
+          background: #FFFFFF;
+          border-radius: 8px;
+          font-weight: 700;
+          font-size: 14px;
+          text-align: center;
+          display: block;
+          margin: 0;
+          position: relative;
+          width: 47%;
+
+          @screen lg {
+            font-size: 16px;
+            width: 168px;
+            padding: 14px 24px;
+          }
+
+          .ant-tabs-tab-btn {
+            color: #474747;
+            white-space: pre-wrap;
+          }
+
+          &.ant-tabs-tab-active {
+            background: #064DD6;
+
+            .ant-tabs-tab-btn {
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+    }
+
+    &>.ant-tabs-content-holder {
+      .bank-loan-calculator-wrapper,
+      .budget-planner-wrapper,
+      .calculating-tax-by-salary-wrapper {
+        max-width: 800px;
+      }
+
+      .container {
+        padding: 0;
+      }
+
+      .loan-calculator,
+      .bank-loan-calculator,
+      .budget-planner,
+      .calculating-tax-by-salary {
+        padding: 16px;
+        border: none;
+      }
+    }
+  }
+
+  .Fn_LoanCalc_Wrapper {
+    .Fn_LoanCalc_Bottom {
+      display: none;
+    }
+
+    .Fn_LoanCalc_Mobile_Quote {
+      display: none;
+    }
+  }
+
+  .title-itroduce-loan-calc {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #1B1B1B;
+    margin-bottom: 40px;
+
+    @media only screen and (max-width: $lg) {
+      margin-bottom: 30px;
+    }
+  }
+}

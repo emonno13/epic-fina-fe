@@ -1,0 +1,95 @@
+@import '@styles/css_variables';
+$m_width_image: 236px;
+$width_image: 270.64px;
+$m_height_image: 333.7px;
+
+.invest-in-fina {
+  overflow: hidden;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    @screen md {
+      justify-content: space-between;
+      flex-direction: initial;
+    }
+
+    .wrapper-img {
+      width: 100%;
+      height: $m_height_image;
+      position: relative;
+      @screen md {
+        height: initial;
+        width: $width_image;
+      }
+
+      .node-shape {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        @screen md {
+          left: 0;
+          transform: initial;
+        }
+      }
+    }
+
+    .wrapper-content {
+      padding-bottom: 36px;
+      @screen md {
+        margin-left: 33px;
+        width: calc(100% - #{$width_image} - 33px);
+      }
+    }
+  }
+
+  .container {
+    max-width: 1110px;
+  }
+
+  .h2-title {
+    text-align: left !important;
+    line-height: 0 !important;
+
+    p {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 0 !important;
+
+      @screen md {
+        font-size: 40px !important;
+        line-height: 48px !important;
+      }
+    }
+
+    span {
+      font-size: 16px;
+      color: #000000;
+      font-family: 'SF Pro Display';
+      line-height: 24px;
+      padding: 16px 0;
+      display: block;
+    }
+  }
+  .ant-input-lg {
+    padding: 10px 13px;
+  }
+
+  .invest-btn {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 12px 23px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @screen md {
+      margin-left: initial;
+      margin-right: initial;
+    }
+
+    svg {
+      margin-right: 13px;
+    }
+  }
+}

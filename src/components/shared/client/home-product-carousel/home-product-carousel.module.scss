@@ -1,0 +1,40 @@
+@import '../../../../styles/css_variables';
+
+.client-home-product-carousel {
+	margin-left: -12px;
+	margin-right: -12px;
+
+	.slick-arrow {
+		background-color: #9ba8ca !important;
+		width: 30px !important;
+		height: 60px !important;
+		border-radius: 25px;
+		display: flex !important;
+		justify-content: center;
+		align-items: center;
+		background: #f0f4ff;
+		opacity: 0.3;
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+		span.anticon {
+			color: #fff;
+			font-size: 14px;
+		}
+
+		@media only screen and (max-width: $md) {
+			display: none !important;
+		}
+	}
+
+	.slick-next {
+		right: -48px !important;
+	}
+
+	.slick-prev {
+		left: -48px !important;
+		z-index: 1;
+	}
+}

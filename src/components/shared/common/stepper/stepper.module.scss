@@ -1,0 +1,16 @@
+.ui-stepper-panel {
+  .ui-stepper-content {
+
+  }
+
+  .ui-stepper-controls {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+
+    .ui-stepper-container {
+      flex-grow: 1;
+      padding: 0 15px;
+    }
+  }
+}

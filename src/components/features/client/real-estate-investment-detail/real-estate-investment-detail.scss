@@ -1,0 +1,193 @@
+.client-real-estate-investment-detail {
+  .real-estate-investment-detail {
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    padding: 16px;
+
+    &-title {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 24px;
+      color: #064DD6;
+      margin-bottom: 16px;
+    }
+
+    &-desc {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      color: #777777;
+    }
+
+    &-carousel {
+      position: relative;
+      margin-bottom: 25px;
+
+      &-type  {
+        border-radius: 4px;
+        height: 26px;
+        font-weight: 600;
+        font-size: 12px;
+        padding: 4px 10px;
+        min-width: 90px;
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        background: #E8FFEF;
+        color: #0A9A36;
+        display: inline-block;
+        text-align: center;
+        z-index: 1;
+
+        &.type-apartment {
+          color: #064DD6;
+          background: #BBD2FF;
+        }
+      }
+
+      &-image {
+        img {
+          width: 100%;
+          height: 300px;
+          border-radius: 4px;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &-scale {
+      margin: 30px 0;
+
+      &-info {
+        @screen md {
+          max-width: 80%;
+        }
+      }
+    }
+
+    &-map {
+      margin-bottom: 15px;
+
+      iframe {
+        width: 100%;
+        height: 500px;
+      }
+    }
+
+    &-investor {
+      font-size: 16px;
+
+      img {
+        width: 56px;
+        height: 56px;
+      }
+    }
+
+    &-need-login {
+      margin: 15px auto;
+      text-align: center;
+
+      .ant-btn  {
+        color: #064DD6;
+        background: #F4F8FF;
+        border-radius: 6px;
+        width: 50%;
+      }
+    }
+  }
+
+  &-related-projects {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    &-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h2 {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 30px;
+        color: #000000;
+      }
+    }
+  }
+}
+
+.modal-real-estate-investment-detail-request {
+  .ant-modal-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .ant-modal-close-x {
+    line-height: 65px;
+  }
+
+  .ant-modal-content {
+    border-radius: 16px;
+
+    .ant-modal-header {
+      border-radius: 16px 16px 0 0;
+      padding: 16px;
+    }
+
+    .ant-modal-body {
+      padding: 16px;
+    }
+  }
+
+  .fina-form__input-control {
+    font-size: 14px;
+    height: 48px;
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #064DD6;
+  }
+
+  &-info {
+    background: #F3F6FA;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 12px;
+    margin-bottom: 15px;
+
+    &-label {
+      color: #000000;
+      opacity: 0.9;
+    }
+
+    &-value {
+      font-weight: 600;
+      font-size: 11px;
+      color: #000000;
+    }
+  }
+
+  &-form {
+    margin-top: 20px;
+
+    .ant-input  {
+      padding: 15px 12px;
+    }
+
+    .ant-input-number {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .ant-input-number-input {
+      height: auto;
+      padding: 15px 11px;
+    }
+
+    .h-input-number-suffix {
+      background-color: #FFFFFF;
+    }
+  }
+}

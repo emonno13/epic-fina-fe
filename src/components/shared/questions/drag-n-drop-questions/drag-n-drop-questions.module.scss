@@ -1,0 +1,34 @@
+.add-question-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  align-items: center;
+  span {
+    margin-right: 8px;
+  }
+  button {
+    display: flex;
+    align-items: center;
+  }
+  &__first-btn-group {
+    display: flex;
+  }
+  .create-btn {
+    border-radius: 50px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 12px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+}
+
+.question-title {
+  white-space: pre-wrap;
+  span {
+    font-weight: bold;
+  }
+}

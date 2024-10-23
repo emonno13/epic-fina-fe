@@ -1,0 +1,714 @@
+//loanCalc
+
+.Fn_LoanCalc_Wrapper {
+  position: relative;
+  margin-bottom: 45px;
+
+  .Fn_LoanCalc_Quote {
+    margin-bottom: 26px;
+
+    h2 {
+      font-family: SFPD-Bold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 33px;
+      letter-spacing: 0.3px;
+      color: #111111;
+    }
+  }
+
+  .Fn_LoanCalc_Calc {
+    background: #ffffff;
+    border: 1px solid #d6e0ec;
+    border-radius: 8px 8px 0 0;
+    box-sizing: border-box;
+    padding: 43px 30px 39px 30px;
+
+    .Fn_LoanCalc_Calc_Row {
+      flex-direction: column-reverse;
+
+      @screen md {
+        flex-direction: row;
+      }
+    }
+  }
+
+  .Fn_LoanCalc_Calc_preferentialRate_Wrapper {
+    margin-bottom: 38px;
+
+    &>h3 {
+      font-family: SFPD-Bold;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 120%;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      color: #111111;
+      margin-bottom: 31px;
+    }
+
+    .Fn_LoanCalc_Calc_preferentialRate_Group {
+      margin-bottom: 25px;
+
+      .customRadio {
+        .ant-radio-inner {
+          width: 22px;
+          height: 22px;
+
+          &::after {
+            width: 12px;
+            height: 12px;
+            background-color: #0a3eca;
+            transform: scale(1);
+            margin: 0;
+            top: 4px;
+            left: 4px;
+          }
+        }
+
+        .ant-radio-checked .ant-radio-inner {
+          border-color: #0a3eca;
+        }
+
+        .ant-radio-checked {
+          &::after {
+            border: none;
+          }
+        }
+
+        .customRadio_Span {
+          position: relative;
+          top: -2px;
+          font-family: SFPD-Regular;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 17px;
+          line-height: 20px;
+          letter-spacing: 0.3px;
+          color: #222222;
+        }
+      }
+    }
+
+    .Fn_LoanCalc_Calc_preferentialRate_Select {
+      margin-bottom: 16px;
+
+      .customSelect {
+        width: 466px;
+        position: relative;
+        max-width: 100%;
+
+        .ant-select-selector {
+          width: auto;
+          display: flex;
+          align-items: center;
+          height: 40px;
+          background: #ffffff;
+          border: 1px solid #dfe3ec;
+          box-sizing: border-box;
+          border-radius: 6px;
+        }
+
+        .ant-select-selection-placeholder {
+          opacity: 1;
+        }
+
+        .ant-select-selection-search-input {
+          height: 38px;
+          font-family: SFPD-Medium;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          /* identical to box height */
+
+          letter-spacing: 0.3px;
+
+          color: #222222;
+        }
+
+        .customPlaceHolder {
+          font-family: SFPD-Medium;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          /* identical to box height */
+
+          letter-spacing: 0.3px;
+
+          color: #222222;
+        }
+      }
+
+      .customSelectBlock {
+        .ant-select-selection-placeholder {
+          opacity: 0.4 !important;
+        }
+      }
+    }
+  }
+
+  .Fn_LoanCalc_Calc_payments_Wrapper {
+    margin-bottom: 38px;
+
+    &>h3 {
+      font-family: SFPD-Bold;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 120%;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+      color: #111111;
+      margin-bottom: 31px;
+    }
+
+    .Fn_LoanCalc_Calc_payments_Group {
+      .customRadio {
+        .ant-radio-inner {
+          width: 22px;
+          height: 22px;
+
+          &::after {
+            width: 12px;
+            height: 12px;
+            background-color: #0a3eca;
+            transform: scale(1);
+            margin: 0;
+            top: 4px;
+            left: 4px;
+          }
+        }
+
+        .ant-radio-checked .ant-radio-inner {
+          border-color: #0a3eca;
+        }
+
+        .ant-radio-checked {
+          &::after {
+            border: none;
+          }
+        }
+
+        .customRadio_Span {
+          position: relative;
+          top: -2px;
+          font-family: SFPD-Regular;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 17px;
+          line-height: 20px;
+          letter-spacing: 0.3px;
+          color: #222222;
+        }
+      }
+    }
+  }
+
+  .Fn_LoanCalc_Calc_prepayments_Wrapper {
+    margin-bottom: 27px;
+
+    .Fn_LoanCalc_Calc_prepayments_Quote {
+      font-family: SFPD-Bold;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 120%;
+      /* identical to box height, or 17px */
+
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+
+      color: #111111;
+    }
+
+    .Fn_LoanCalc_Calc_prepayments_Checkbox {
+      margin-bottom: 27px;
+
+      .ant-checkbox-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      .customCheckbox {
+        .ant-checkbox-inner {
+          width: 18px;
+          height: 18px;
+        }
+
+        .ant-checkbox-checked {
+          &::after {
+            border: none;
+          }
+        }
+
+        .ant-checkbox-checked .ant-checkbox-inner {
+          background: #0a3eca;
+          border-radius: 3px;
+          border: none;
+        }
+      }
+    }
+
+    .block {
+      opacity: 0.4;
+    }
+  }
+
+  .Fn_LoanCalc_Calc_grace_period_Wrapper {
+    margin-bottom: 27px;
+
+    .Fn_LoanCalc_Calc_grace_period_Quote {
+      font-family: SFPD-Bold;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 120%;
+      /* identical to box height, or 17px */
+
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+
+      color: #111111;
+    }
+
+    .Fn_LoanCalc_Calc_grace_period_Checkbox {
+      margin-bottom: 27px;
+
+      .ant-checkbox-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      .customCheckbox {
+        .ant-checkbox-inner {
+          width: 18px;
+          height: 18px;
+        }
+
+        .ant-checkbox-checked {
+          &::after {
+            border: none;
+          }
+        }
+
+        .ant-checkbox-checked .ant-checkbox-inner {
+          background: #0a3eca;
+          border-radius: 3px;
+          border: none;
+        }
+      }
+    }
+
+    .block {
+      opacity: 0.4;
+    }
+  }
+
+  .Fn_LoanCalc_Bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 17px 0;
+    background: #ffffff;
+    border-radius: 0px 0px 8px 8px;
+    border-right: 1px solid #d6e0ec;
+    border-left: 1px solid #d6e0ec;
+    border-bottom: 1px solid #d6e0ec;
+
+    .Fn_LoanCalc_Bottom_Wrapper {
+      &>h3 {
+        font-family: SFPD-Medium;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: 0.3px;
+
+        color: #111111;
+        margin-bottom: 0;
+      }
+
+      &>.Fn_LoanCalc_Bottom_Svg {
+        max-height: 18px;
+      }
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .Fn_LoanCalc_Mobile_Quote {
+    text-align: center;
+    margin-top: 14px;
+    display: none;
+
+    &>span {
+      font-family: SFPD-Regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 17px;
+      text-align: center;
+      letter-spacing: 0.3px;
+
+      color: #777777;
+    }
+  }
+
+  .Fn_LoanCalc_Calc_Right {
+    box-sizing: border-box;
+    // padding: 0px 8px 0 20px;
+
+    .Loan_Calc_Result_Wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+
+      @screen md {
+        display: block;
+      }
+    }
+
+    .Fn_LoanCalc_Result {
+      margin: 0 -20px 16px -20px;
+
+      @screen md {
+        margin: 32px 0 0 0;
+      }
+
+      .Fn_LoanCalc_Result_Wrapper {
+        background: #064DD6;
+        padding: 8px 16px;
+        position: relative;
+
+        @screen md {
+          padding: 16px;
+          background: #ffffff;
+          border: 2px solid #0a3eca;
+          border-radius: 6px;
+        }
+
+        .Fn_LoanCalc_Result_Quote {
+          &>h3 {
+            font-family: SFPD-Bold;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 21px;
+            line-height: 19px;
+            letter-spacing: 0.3px;
+            color: #FFFFFF;
+            margin-bottom: 0;
+            font-size: 14px;
+
+            @screen md {
+              color: #111111;
+              font-size: 18px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+
+        .Fn_LoanCalc_Result_Price {
+          &>h2 {
+            font-family: SFPD-Bold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 19px;
+            letter-spacing: 0.3px;
+            color: #FFFFFF;
+            margin-bottom: 0;
+            position: absolute;
+            right: 16px;
+            top: 30%;
+
+            @screen md {
+              color: #0a3eca;
+              margin-bottom: 16px;
+              position: initial;
+            }
+          }
+        }
+
+        .Fn_LoanCalc_Result_SubQuote {
+          &>span {
+            font-family: SFPD-Regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            letter-spacing: 0.3px;
+            color: rgba(255, 255, 255, 0.6);
+
+            @screen md {
+              font-size: 12px;
+              color: #777777;
+            }
+          }
+        }
+      }
+    }
+
+    .Fn_LoanCalc_Chart {
+      margin-top: 0;
+      margin-bottom: 24px;
+
+      @screen md {
+        margin-top: 35px;
+        margin-bottom: 0;
+      }
+
+      .Fn_LoanCalc_Chart_Wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+
+        @screen md {
+          display: block;
+        }
+
+        .chartjs-render-monitor {
+          height: 150px !important;
+          width: auto !important;
+
+          @screen md {
+            display: block;
+            height: 250px !important;
+          }
+        }
+
+        .Fn_LoanCalc_Chart_Legends {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: flex-end;
+          justify-content: space-between;
+          margin-bottom: 0;
+          width: 130px;
+
+          @screen md {
+            width: auto;
+          }
+
+          .Fn_LoanCalc_Chart_Legend {
+            display: flex;
+            margin-bottom: 5px;
+            align-items: baseline;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            .Fn_LoanCalc_Chart_icon_1, .Fn_LoanCalc_Chart_icon_2, .Fn_LoanCalc_Chart_icon_3 {
+              width: 12px;
+              height: 12px;
+              margin-right: 4px;
+              border-radius: 50%;
+            }
+
+            .Fn_LoanCalc_Chart_icon_1 {
+              background: #002d71;
+            }
+
+            .Fn_LoanCalc_Chart_Labels {
+              width: calc(100% - 16px);
+            }
+
+            .Fn_LoanCalc_Chart_icon_2 {
+              background: #0a3eca;
+            }
+
+            .Fn_LoanCalc_Chart_icon_3 {
+              background: #fc7513;
+            }
+
+            .Fn_LoanCalc_Chart_Labels {
+              width: calc(100% - 16px);
+              .Fn_LoanCalc_Chart_Label {
+                &>span {
+                  font-family: SFPD-Regular;
+                  font-style: normal;
+                  font-weight: normal;
+                  letter-spacing: 0.338298px;
+
+                  color: #777777;
+                  font-size: 12px;
+                  line-height: 12px;
+                }
+              }
+
+              .Fn_LoanCalc_Chart_Price {
+                &>span {
+                  font-family: SFPD-Regular;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 12px;
+                  line-height: 12px;
+                  letter-spacing: 0.338298px;
+                  color: #111111;
+                }
+              }
+            }
+          }
+        }
+
+        .Fn_LoanCalc_Chart_Doughnut {
+          position: relative;
+          width: 185px;
+
+          @screen md {
+            margin: 0px auto;
+          }
+
+          .Fn_LoanCalc_TotalPayment {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &>span {
+              font-family: SFPD-Regular;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 19px;
+              word-break: break-all;
+              /* identical to box height, or 90% */
+
+              letter-spacing: 0.3px;
+
+              color: #111111;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.Mobile_Button_Group {
+  display: none;
+
+  .Mobile_Button_Group_Wrapper {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 17px 20px;
+    border-bottom: 1px solid #dfe3ec;
+    border-left: 1px solid #dfe3ec;
+    border-right: 1px solid #dfe3ec;
+    background: #ffffff;
+    flex-direction: column;
+
+    .Mobile_Button_Group_Btn {
+      border-radius: 6px;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &>span {
+        font-family: SFPD-Regular;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        color: #ffffff;
+      }
+    }
+
+    .Mobile_Button_Group_BtnLeft {
+      background: #0a3eca;
+      margin-bottom: 15px;
+    }
+
+    .Mobile_Button_Group_BtnRight {
+      background: #fc7513;
+    }
+  }
+}
+
+.customModal {
+  .ant-modal-body {
+    padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Fn_LoanCalc_Wrapper {
+    .Fn_LoanCalc_Quote {
+      display: none;
+    }
+
+    .Fn_LoanCalc_Calc {
+      background: #f2f5f9;
+      border: none;
+      padding: 23px 21px;
+    }
+
+    .Fn_LoanCalc_Calc_Right {
+      padding: 0;
+
+      .Fn_LoanCalc_Result .Fn_LoanCalc_Result_Wrapper .Fn_LoanCalc_Result_Price {
+        &>h2 {
+          word-break: break-all;
+          line-height: 24px;
+        }
+      }
+
+      .Fn_LoanCalc_Chart .Fn_LoanCalc_Chart_Wrapper .Fn_LoanCalc_Chart_Legends {
+        display: block;
+
+        .Fn_LoanCalc_Chart_Legend .Fn_LoanCalc_Chart_Labels .Fn_LoanCalc_Chart_Price>span {
+          word-break: break-all;
+          line-height: 24px;
+        }
+      }
+
+    }
+
+    .Fn_LoanCalc_Bottom {
+      width: 90%;
+      margin: auto;
+      border: 0.7px solid #dfe3ec;
+      border-radius: 6px;
+      margin-top: 12px;
+    }
+
+    .Fn_LoanCalc_Mobile_Quote {
+      display: block;
+    }
+  }
+
+  .Fn_LoanCalc_Chart {
+    .Fn_LoanCalc_Chart_Wrapper {
+      // display: block;
+
+      .chartjs-render-monitor {
+        height: auto !important;
+        width: 180px !important;
+      }
+
+      .Fn_LoanCalc_Chart_Legends {
+        align-items: baseline;
+        display: block;
+      }
+    }
+  }
+
+  .customFormRegistration {
+    display: none;
+  }
+
+  .Mobile_Button_Group {
+    display: block;
+  }
+}

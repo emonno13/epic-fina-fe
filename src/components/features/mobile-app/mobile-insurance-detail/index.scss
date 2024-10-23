@@ -1,0 +1,27 @@
+.product-menu-content-insurance-detail {
+	&__category-name {
+		font-weight: 600;
+		font-size: 11px;
+		line-height: 16px;
+		text-transform: uppercase;
+		color: #002d71;
+		margin-bottom: 9px;
+	}
+	&__name {
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 12px;
+		color: #111111;
+	}
+	&__description {
+		margin-bottom: 32px;
+		white-space: pre-line;
+	}
+}
+
+.product-global-care-iframe {
+	height: calc(100vh - 152px);
+	position: absolute;
+	margin: -25px;
+}

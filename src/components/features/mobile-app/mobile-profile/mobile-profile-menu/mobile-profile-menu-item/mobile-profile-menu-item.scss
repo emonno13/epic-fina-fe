@@ -1,0 +1,14 @@
+.mobile-profile-menu-item {
+	padding: 13px 15px;
+	display: flex;
+	align-items: center;
+	background: #ffffff;
+	border-radius: 6px;
+  margin-bottom: 10px;
+	&__label {
+    margin-left: 21px;
+		font-size: 18px;
+		line-height: 16px;
+		color: #333333;
+	}
+}

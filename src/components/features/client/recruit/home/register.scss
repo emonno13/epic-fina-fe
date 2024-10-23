@@ -1,0 +1,73 @@
+@import '../../../../../styles/css_variables';
+
+.register{
+  @mixin text($fontFamily, $web, $mobile, $color: #FFFFFF){
+    @media only screen and (max-width: $md) {
+      font-size: $mobile;
+    }
+    font-family: $fontFamily;
+    font-size: $web;
+    color: $color;
+  }
+  &__container{
+    @media only screen and (max-width: $md) {
+      justify-content: center;
+    }
+    background-image: url("/assets/images/recruit_tower.png");
+    background-repeat: round;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+  }
+  &__body{
+    @media only screen and (max-width: $md) {
+      margin-right: 0;
+    }
+    border-radius: 8px;
+    padding: 32px;
+    height: 300px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 200px;
+    -webkit-box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.2);
+  }
+  &__title{
+    @include text(SFPD-Bold, 28px, 24px, #1B1B1B);
+    font-style: normal;
+    font-weight: 700;
+  }
+  &__content{
+    @include text(SFPD-Light, 16px, 14px, #777777);
+    width: 320px;
+    @media only screen and (max-width: $md) {
+      width: 280px;
+    }
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+  }
+  &__button{
+    color: #FFFFFF;
+    margin-top: 55px;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 6px;
+    background-color: #FF6C0E;
+  }
+  &__image{
+    @media only screen and (max-width: $md) {
+      right: -100px;
+    }
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+}

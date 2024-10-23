@@ -1,0 +1,193 @@
+.home-loan-list-item {
+  box-sizing: border-box;
+  margin: 0 12px;
+
+  &__header {
+    height: 36px;
+    border-radius: 8px 8px 0px 0px;
+    background-color: #005992;
+    background-size: cover;
+    background-position: 0;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border: 1px solid #dfe3ec;
+    position: relative;
+    min-width: 300px;
+
+    img {
+      height: 100%;
+    }
+
+    &__checkbox {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 15px;
+
+      > span {
+        font-size: 12px;
+        line-height: 14px;
+        font-family: SFPD-Regular;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        margin-right: 8px;
+      }
+
+      .ant-checkbox-inner {
+        background-color: transparent;
+        border: 1px solid #dadada;
+      }
+
+      .ant-checkbox-input:focus + .ant-checkbox-inner {
+        border: 1px solid #dadada;
+      }
+
+      .ant-checkbox-checked {
+        &::after {
+          border: 1px solid #dadada;
+        }
+      }
+
+      .ant-checkbox:hover {
+        .ant-checkbox-inner {
+          background-color: transparent;
+          border: 1px solid #dadada;
+        }
+      }
+    }
+  }
+
+  &__content {
+    padding: 8px 15px;
+    border-radius: 0px 0px 8px 8px;
+    border-bottom: 1px solid #dfe3ec;
+    border-left: 1px solid #dfe3ec;
+    border-right: 1px solid #dfe3ec;
+    height: calc(100% - 48px);
+    background-color: #fff;
+
+    &__title {
+      font-family: SFPD-Medium;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.3px;
+      color: #222;
+      height: 34px;
+      margin-bottom: 9px;
+      box-sizing: border-box;
+    }
+
+    &__advantage {
+      font-family: SFPD-Regular;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.3px;
+      color: #fc7513;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 14px;
+      min-height: 16px;
+
+      &__icon {
+        margin-right: 8px;
+        color: #ff6c0e;
+      }
+    }
+
+    &__service {
+      margin-bottom: 10px;
+      border: 1px solid #e5e5e5;
+      box-sizing: border-box;
+      border-radius: 6px;
+      padding: 18px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__divider {
+        height: 67px;
+        background: #ababab;
+      }
+
+      &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+        &__label,
+        &__unit {
+          font-family: SFPD-Regular;
+          font-size: 12px;
+          line-height: 14px;
+          text-align: center;
+          letter-spacing: 0.3px;
+          text-transform: uppercase;
+          color: #76809a;
+        }
+
+        &__value {
+          font-family: SFPD-Bold;
+          font-size: 24px;
+          line-height: 29px;
+          text-align: center;
+          letter-spacing: 0.3px;
+          color: #000;
+          margin: 5px 0;
+        }
+      }
+    }
+
+    &__request-button {
+      font-family: SFPD-Regular;
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 500;
+
+      button {
+        height: 40px;
+        width: 100%;
+        background: #f0f4ff;
+        border-radius: 6px;
+        border: none;
+        color: #0a3eca;
+
+        &:focus,
+        &:active,
+        &:hover {
+          background: #f0f4ff;
+          border: none;
+        }
+      }
+    }
+
+    &__detail-button {
+      font-family: SFPD-Regular;
+      width: 100%;
+      color: #76809a !important;
+      padding: 0 !important;
+      height: auto !important;
+      font-size: 13px !important;
+      line-height: 16px !important;
+
+      .anticon {
+        color: #fc7513;
+      }
+
+      &:focus,
+      &:active,
+      &:hover {
+        color: #919191;
+      }
+    }
+  }
+}

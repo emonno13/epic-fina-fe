@@ -1,0 +1,35 @@
+.general-information-of-task {
+    cursor: pointer;
+    margin: -16px;
+    padding: 16px;
+
+    &.active {
+        background-color: #F0F5FF;
+    }
+
+    &__item {
+        .ant-tag {
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+
+    .ant-typography {
+        margin-top: 10px;
+
+        strong {
+            font-size: 16px;
+        }
+    }
+
+    .h2j-platform-item-wrapper-label {
+        margin-bottom: 0;
+    }
+
+    .h2j-platform-item-wrapper {
+        > p, > span {
+            color: #282121a6 !important;
+        }
+    }
+}

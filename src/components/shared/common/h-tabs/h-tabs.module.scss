@@ -1,0 +1,37 @@
+.h-tabs {
+    &.button-type {
+        .ant-tabs-nav {
+            &:before {
+                border-bottom: none !important;
+            }
+    
+            .ant-tabs-ink-bar {
+                display: none;
+            }
+    
+            .ant-tabs-tab {
+                border-radius: 8px;
+                border: 1px solid #919191;
+                background-color: #fff;
+                padding: 5px 10px;
+    
+                &:hover {
+                    background-color: #f0f0f0;
+                }
+                
+                .ant-tabs-tab-btn {
+                    color: #333;
+                }
+        
+                &.ant-tabs-tab-active {
+                    background-color: var(--primary-color);
+        
+                    .ant-tabs-tab-btn {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,15 @@
+@import "../../../../styles/css_variables";
+
+.checkin-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__htpearl {
+    width: 50%;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

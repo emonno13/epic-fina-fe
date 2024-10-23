@@ -1,0 +1,45 @@
+@import "../../../../styles/css_variables";
+
+.ui-profile-menu {
+  border-radius: 50%;
+  background: #ffffff;
+  color: var(--primary-color);
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  .ant-badge-dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.ant-popover {
+  .label-call-status {
+    background: #ffffff;
+    font-size: 12px;
+  }
+
+  .default {
+    background: #ffffff;
+    color: #00000073;
+  }
+
+  .success {
+    background: #ffffff;
+    color: #52c41a;
+  }
+
+  .error {
+    background: #ffffff;
+    color: #ff4d4f;
+  }
+
+  .warning {
+    background: #ffffff;
+    color: #faad14;
+  }
+}

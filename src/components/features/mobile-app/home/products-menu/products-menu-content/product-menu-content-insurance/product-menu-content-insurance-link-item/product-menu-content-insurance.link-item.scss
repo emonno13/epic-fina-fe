@@ -1,0 +1,47 @@
+.menu-insurance-link-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	&:not(:last-of-type) {
+		padding-bottom: 20px;
+		border-bottom: 1px solid #f1f1f1;
+		margin-bottom: 8px;
+	}
+
+	&__content-wrap {
+		display: flex;
+		align-items: center;
+
+		img {
+			margin-right: 12px;
+		}
+
+		&__content {
+			&__title {
+				font-size: 14px;
+				line-height: 18px;
+				color: #474747;
+				margin-bottom: 4px;
+			}
+			&__detail {
+				margin-bottom: 4px;
+				font-size: 12px;
+				line-height: 16px;
+				color: #064dd6;
+				&__label {
+					color: #919191;
+					margin-right: 9px;
+				}
+			}
+		}
+	}
+}
+
+.insurance-content-detail-code {
+	background: #f5f9ff;
+	border-radius: 2px;
+	padding: 2px 4px;
+	color: #064dd6;
+}

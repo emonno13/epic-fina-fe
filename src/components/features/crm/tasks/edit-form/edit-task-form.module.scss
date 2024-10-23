@@ -1,0 +1,18 @@
+.ant-drawer-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.task-edit-modal-clone {
+  font-size: 16px;
+  color: #ff4d4f;
+
+  &-title {
+    padding-top: 20px;
+  }
+
+  .ant-btn {
+    height: 40px;
+    font-size: 16px;
+  }
+}

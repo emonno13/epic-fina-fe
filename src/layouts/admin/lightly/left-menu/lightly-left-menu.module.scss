@@ -1,0 +1,28 @@
+@import "../../../../styles/css_variables";
+
+.ui-lightly-left-menu {
+  background-color: #ffffff !important;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+
+  &--mobile {
+    @media only screen and (max-width: $md) {
+      display: none;
+    }
+  }
+
+  .ant-layout-sider-trigger {
+    background-color: #0068ff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 16px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  &.ui-lightly-left-menu-collapsed .ant-layout-sider-trigger {
+    padding: 0px 32px;
+  }
+}

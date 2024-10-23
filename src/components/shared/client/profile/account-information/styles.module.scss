@@ -1,0 +1,585 @@
+.profile-information {
+  margin-bottom: 30px;
+  font-family: 'SF Pro Display';
+
+  @screen md {
+    margin-bottom: 50px;
+  }
+
+  &.profile-account-information {
+    .profile-information-title {
+      padding: 12px 16px 12px;
+      margin-bottom: 0;
+    }
+  }
+
+  &-title {
+    font-weight: 600;
+    font-size: 20px;
+    border-bottom: 1px solid #E0E1E4;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+
+    &-left {
+      display: flex;
+      gap: 10px;
+
+      @screen md {
+        gap: 20px;
+      }
+    }
+
+    &-image {
+      width: 75px;
+      height: 75px;
+      overflow: hidden;
+      border-radius: 8px;
+
+      @screen md {
+        width: 150px;
+        height: 150px;
+        border-radius: 16px;
+      }
+
+      .profile-information-top-upload {
+        height: 100%;
+        position: relative;
+
+        &-icon {
+          position: absolute;
+          bottom: 5px;
+          right: 5px;
+          z-index: 0;
+          width: 24px;
+          height: 24px;
+
+          @screen md {
+            width: auto;
+            height: auto;
+          }
+        }
+
+        .ant-upload-picture-card-wrapper {
+          height: 100%;
+        }
+
+        .ant-upload-list-picture-card-container,
+        .ant-upload  {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          border: none;
+          background: #E8EFFF;
+        }
+
+        .ant-upload {
+          position: relative;
+          z-index: 1;
+        }
+
+        .ant-upload-list {
+          height: 100%;
+        }
+
+        .ant-upload-draggable-list-item  {
+          border: none;
+
+          .ant-upload-list-item {
+            border: none;
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    &-content {
+      &-name {
+        font-weight: 700;
+        font-size: 16px;
+
+        @screen md {
+          font-size: 24px;
+        }
+      }
+
+      &-code {
+        font-size: 14px;
+        color: #064DD6;
+      }
+
+      &-type {
+        color: #4E5A65;
+      }
+    }
+
+    &-qr-code {
+      text-align: center;
+
+      .referral-code {
+        color: #4E5A65;
+        display: none;
+
+        @screen md {
+          display: block;
+        }
+
+        b {
+          color: #000000;
+        }
+      }
+
+      &-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        justify-content: center;
+        margin-top: 4px;
+
+        .qr-code-action {
+          cursor: pointer;
+          height: 24px;
+        }
+      }
+    }
+  }
+
+  .verify-account {
+    margin-bottom: 4px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+
+      @screen md {
+        width: 27px;
+        height: 27px;
+      }
+    }
+  }
+
+  .profile-information-no-verified-label {
+    background: #FEF3E7;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-top: 4px;
+    font-size: 10px;
+    color: #FF6C0E;
+
+    @screen md {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+
+    span {
+      color: #064DD6;
+      cursor: pointer;
+    }
+  }
+
+  &-actions {
+    text-align: right;
+    margin-top: 18px;
+    display: flex;
+    justify-content: right;
+    padding: 16px;
+    gap: 12px;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+
+    @screen md {
+      position: initial;
+      padding: 0;
+    }
+
+    .ant-btn {
+      height: 48px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #C8CBCF;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #4E5A65;
+      background-color: #FFFFFF;
+      min-width: 135px;
+    }
+
+    .ant-btn-primary {
+      min-width: 140px;
+      background: #064DD6;
+      border: none;
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+  }
+
+  .profile-title-black {
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .profile-info-detail-wrapper {
+    .profile-info-detail {
+      .profile-title {
+        margin-bottom: 14px;
+
+        @screen md {
+          margin-bottom: 20px;
+        }
+      }
+
+      &-left {
+        @screen md {
+          border-right: 1px solid #ECECEE;
+        }
+      }
+
+      &-images {
+        text-align: center;
+        font-weight: 400;
+        font-size: 12px;
+
+        .ant-image-img {
+          border-radius: 8px;
+          height: 87px;
+          object-fit: contain;
+        }
+      }
+
+      .ant-image-mask {
+        border-radius: 8px;
+      }
+    }
+
+    .profile-information-actions .ant-btn {
+      width: 100%;
+
+      @screen md {
+        width: auto;
+      }
+    }
+  }
+
+  .profile-info-viewer {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+    justify-content: space-between;
+
+    @screen md {
+      margin-bottom: 20px;
+    }
+
+    &-label {
+      color: #4E5A65;
+      font-weight: 400;
+      font-size: 14px;
+      min-width: 100px;
+    }
+
+    &-value {
+      color: #000000;
+      font-weight: 500;
+      font-size: 14px;
+      text-align: right;
+    }
+  }
+
+  .profile-info-edit-wrapper {
+    .profile-information-actions .ant-btn {
+      width: 50%;
+
+      @screen md {
+        width: auto;
+      }
+    }
+  }
+
+  .profile-info-edit {
+    .profile-title {
+      margin-bottom: 16px;
+
+      @screen md {
+        margin-bottom: 24px;
+      }
+    }
+
+    &-left {
+      @screen md {
+        border-right: 1px solid #ECECEE;
+      }
+    }
+
+    .ant-upload-list-item-info {
+      border-radius: 8px;
+    }
+
+    .anticon-align-left {
+      display: none;
+    }
+
+    .label-content {
+      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 10px;
+      text-transform: initial;
+      padding: 0;
+    }
+
+    &-btn-upload {
+      width: 100%;
+    }
+
+    &-upload {
+      p {
+        margin-bottom: 0;
+        font-size: 12px;
+        margin-top: 8px;
+        text-align: center;
+      }
+
+      .ant-upload-list-picture-card-container {
+        width: 100%;
+        height: 100px;
+        margin: 0;
+
+        @screen md {
+          height: 80px;
+        }
+
+        .ant-upload-draggable-list-item  {
+          border: none;
+        }
+
+        .ant-upload-list-item {
+          padding: 0;
+          border: none;
+          border-radius: 8px;
+        }
+      }
+    }
+
+    .ant-upload {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      background-color: transparent;
+      border: none;
+
+      img {
+        border-radius: 8px;
+        width: 100%;
+      }
+    }
+
+    .ant-input-lg,
+    .ant-picker-large {
+      padding: 14px 10px;
+      font-size: 14px;
+    }
+
+    .ant-picker-large {
+      input {
+        font-size: 14px;
+      }
+    }
+
+    .as-label {
+      top: -6px;
+    }
+
+    .ant-select-single.ant-select-lg:not(.ant-select-customize-input) .ant-select-selector {
+      height: auto;
+      padding: 6px 10px;
+
+      .ant-select-selection-item {
+        font-size: 14px;
+      }
+
+      .ant-select-selection-search {
+        left: 10px;
+
+        .ant-select-selection-search-input {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.profile-info-modal {
+  .ant-modal-content {
+    border-radius: 16px;
+  }
+
+  .ant-modal-close-x {
+    line-height: 65px;
+
+    path {
+      stroke: #AAAFB3;
+    }
+  }
+
+  .ant-modal-confirm-body {
+    .ant-modal-confirm-content {
+      margin-left: 0 !important;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .anticon-check-circle  {
+      display: none;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: #101828;
+    }
+  }
+
+  .ant-modal-confirm-btns {
+    display: none;
+  }
+
+  &-ekyc {
+    .ant-modal-body {
+      padding: 30px 16px;
+
+      @screen md {
+        padding: 40px;
+      }
+    }
+
+    &-title {
+      text-align: center;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 29px;
+      margin-bottom: 24px;
+      color: #101828;
+
+      @screen md {
+        font-size: 24px;
+      }
+    }
+
+    .profile-title-primary {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: #064DD6;
+      display: block;
+      margin-bottom: 5px;
+
+      &-first {
+        margin-bottom: 20px;
+      }
+
+      .anticon-align-left {
+        display: none;
+      }
+
+      .label-content {
+        padding: 0;
+      }
+    }
+
+    .ant-input-lg,
+    .ant-picker-large {
+      padding: 14px 10px;
+      font-size: 16px;
+    }
+
+    .as-label {
+      top: -6px;
+    }
+
+    .profile-information-actions {
+      padding: 0;
+      .ant-btn-primary {
+        width: 100%;
+      }
+    }
+
+    .ant-upload-list-picture-card-container {
+      margin: 0;
+      width: 100%;
+      height: 100px;
+
+      @screen md {
+        height: 150px;
+      }
+
+      .ant-upload-draggable-list-item {
+        border: none;
+
+        .ant-upload-list-item {
+          border: none;
+          border-radius: 8px;
+          padding: 0;
+
+          .ant-upload-list-item-info {
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+
+    .ant-upload.ant-upload-select {
+      margin: 0;
+      width: 100%;
+      height: auto;
+      border: none;
+
+      .profile-info-edit-btn-upload {
+        width: 100%;
+        height: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .text-center {
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.profile-info-modal-ekyc-success {
+  &.ant-modal-confirm .ant-modal-body {
+    padding: 32px 16px 24px;
+  }
+}
+
+.profile-info-share {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &-item {
+    width: 40px;
+    height: 40px;
+    background: #E8EFFF;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .react-share__ShareButton {
+      line-height: 10px !important;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import '../../../../../../styles/css_variables';
+
+.no-data{
+  @mixin text($fontFamily, $web, $color){
+    font-family: $fontFamily;
+    font-style: normal;
+    font-size: $web;
+    color: $color;
+  }
+  &__container{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+  }
+  &__sorry{
+    @include text(SFPD-Medium, 20px, #064DD6);
+  }
+  &__no-job{
+    @include text(SFPD-Medium, 18px, #303030);
+  }
+  &__try-again{
+    @include text(SFPD-Regular, 16px, #919191);
+    margin-top: 10px;
+  }
+}

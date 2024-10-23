@@ -1,0 +1,7 @@
+.deal-steps {
+  margin: 10px 0px 25px 0px;
+
+  .ant-steps-item-tail::after {
+    height: 3px !important;
+  }
+}

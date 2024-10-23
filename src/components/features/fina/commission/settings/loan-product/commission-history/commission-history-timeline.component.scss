@@ -1,0 +1,17 @@
+.commission-history {
+	max-width: 950px;
+	margin: 0 auto;
+
+	&-timeline {
+		width: 45%;
+		border-radius: 5px;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		box-shadow: 4px 6px 18px -6px;
+
+		&__item {
+			padding: 0.5rem;
+			text-align: left;
+		}
+	}
+}

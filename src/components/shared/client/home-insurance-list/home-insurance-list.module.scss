@@ -1,0 +1,100 @@
+.client-home-insurance-list-item {
+	box-sizing: border-box;
+
+	&__image {
+		border-radius: 8px 8px 0px 0px;
+		height: 101px;
+		overflow: hidden;
+		position: relative;
+
+		&__overlay {
+			max-width: 100%;
+			background: linear-gradient(90deg, #062b8c 0, rgba(6, 43, 140, 0.93) 30%, transparent);
+			width: 670px;
+			box-sizing: border-box;
+			position: absolute;
+			align-items: center;
+			color: #fff;
+
+			img {
+				width: 80px;
+			}
+
+			&__insurance-txt {
+				font-family: SFPD-Regular;
+				margin-left: 6px;
+			}
+
+			&__description {
+				padding: 16px;
+			}
+
+			&__name {
+				color: #fff;
+				display: inline-block;
+				font-weight: 600;
+				font-family: SFPD-Bold;
+			}
+
+			&__logo {
+				padding: 16px;
+				display: flex;
+				align-items: center;
+				font-size: 14px;
+			}
+		}
+
+		i {
+			padding-top: 37.65%;
+			width: 100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50%;
+			display: block;
+		}
+	}
+
+	&__content {
+		padding: 16px;
+		border-radius: 0 0 8px 8px;
+		height: 130px;
+		position: relative;
+		background: #fff;
+		border: 1px solid #dfe3ec;
+
+		&__category-name {
+			font-family: SFPD-Medium;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing: 0.3px;
+			color: #002d71;
+		}
+
+		&__name {
+			line-height: 19px;
+			letter-spacing: 0.3px;
+			display: block;
+			color: #111;
+			overflow: hidden;
+			font-size: 16px;
+			font-weight: 600;
+		}
+
+		&__desc {
+			font-size: 13px;
+			line-height: 19px;
+			margin-bottom: 0;
+			max-width: 100%;
+			font-family: SFPD-Regular;
+			letter-spacing: 0.3px;
+			color: #555;
+			overflow: hidden;
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+			margin-top: 8px;
+		}
+	}
+}

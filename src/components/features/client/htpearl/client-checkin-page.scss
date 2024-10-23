@@ -1,0 +1,16 @@
+@import "../../../../styles/css_variables";
+
+.client-checkin-page {
+  display: flex;
+  justify-content: center;
+
+  .alma-register-form {
+    filter: none;
+
+  }
+
+  .alma-register-form__detail-each-package {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,45 @@
+.client-home-insurance-list-with-category {
+	&__name {
+		font-weight: bold;
+		font-size: 26px;
+		line-height: 34px;
+		color: #303030;
+		margin-bottom: 32px;
+	}
+	&__title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__show-full {
+		color: #064dd6;
+		font-weight: 400;
+		font-size: 14px;
+		cursor: pointer;
+	}
+	.insurance-list-carousel {
+		&__view-items {
+			padding: 0px 10px;
+		}
+	}
+	.slick-arrow {
+		background-color: #9ba8ca !important;
+		width: 30px;
+		height: 60px;
+		border-radius: 25px;
+		display: flex !important;
+		justify-content: center;
+		align-items: center;
+		background: #f0f4ff;
+		opacity: 0.3;
+	}
+	.ant-carousel{
+		.slick-prev {
+			left: -40px;
+		}
+		.slick-next {
+			right: -40px;
+		}
+	}
+}

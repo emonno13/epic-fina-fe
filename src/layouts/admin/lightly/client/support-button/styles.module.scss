@@ -1,0 +1,174 @@
+.support-button-wrapper {
+    .support-button {
+        display: none;
+
+        &+label {
+            cursor: pointer;
+            position: absolute;
+            right: 16px;
+            bottom: 50px;
+            background: #FD9142;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @screen md {
+                right: 30px;
+                bottom: 50px;
+            }
+        }
+
+        &:checked~.zalo-action,
+        &:checked~.facebook-action,
+        &:checked~.phone-action {
+            opacity: 1;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                color: #FFFFFF;
+            }
+        }
+
+        &:checked~.zalo-action {
+            background: #0068FF;
+            bottom: 27%;
+            font-weight: 700;
+            right: 16px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: 190px;
+
+            @screen md {
+                bottom: 200px;
+                right: 30px;
+                font-size: 20px;
+            }
+        }
+
+        &:checked~.facebook-action {
+            bottom: 120px;
+            right: 16px;
+            z-index: 3;
+
+            .fb_invisible_flow {
+                display: block;
+            }
+
+            .fb_dialog_content {
+                display: block;
+
+                &>iframe {
+                    display: block;
+                }
+            }
+
+            @screen md {
+                right: 30px;
+                bottom: 125px;
+            }
+        }
+
+        &:checked~.phone-action {
+            background: #FFFFFF;
+            right: 16px;
+            bottom: 37%;
+            bottom: 265px;
+
+            @screen md {
+                right: 30px;
+                bottom: 275px;
+            }
+        }
+    }
+
+    .zalo-action,
+    .facebook-action,
+    .phone-action {
+        cursor: pointer;
+        position: absolute;
+        right: 16px;
+        bottom: 50px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        opacity: 0;
+        z-index: 2;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-property: all;
+        transition-duration: .3s;
+        // transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+        @screen md {
+            right: 30px;
+            bottom: 50px;
+        }
+    }
+
+    .facebook-action {
+        .fb_dialog.fb_dialog_advanced {
+            top: 0;
+            left: 0;
+            padding: 0 !important;
+            height: 60px;
+            width: 60px;
+            background: transparent;
+        }
+
+        .fb_reset {
+            width: 100%;
+            height: 100%;
+        }
+
+        .fb_invisible_flow {
+            display: none;
+        }
+
+        .fb_dialog_mobile {
+            top: 0;
+            background: transparent;
+        }
+
+        .fb_invisible_flow iframe {
+            bottom: inherit;
+            top: initial !important;
+            bottom: 0 !important;
+
+            @screen md {
+                right: 100px !important;
+                bottom: 35px !important;
+                height: 500px !important;
+            }
+        }
+
+        .fb_dialog_content {
+            width: 60px;
+            height: 60px;
+            background: transparent;
+            display: none;
+        }
+
+        .fb_dialog_content>iframe {
+            margin: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            box-shadow: none !important;
+            position: absolute !important;
+            display: none;
+        }
+    }
+}

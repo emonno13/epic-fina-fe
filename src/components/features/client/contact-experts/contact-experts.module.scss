@@ -1,0 +1,58 @@
+@import '../../../../styles/css_variables';
+
+.client-contact-experts {
+	&__list {
+		padding: 40px 0;
+		&__pagination {
+			@media only screen and (max-width: $md) {
+				text-align: center;
+			}
+		}
+	}
+}
+
+.expert-list-item {
+	text-align: center;
+	padding: 32px;
+	&__avatar {
+		margin-bottom: 24px;
+	}
+	&__name {
+		font-size: 24px;
+		line-height: 31px;
+		color: #1b1b1b;
+		font-family: SFPD-Medium;
+		margin-bottom: 8px;
+		height: 62px;
+	}
+	&__info {
+		font-size: 20px;
+		line-height: 26px;
+		color: #5e5e5e;
+		font-family: SFPD-Regular;
+		margin-bottom: 24px;
+	}
+	&__see-info-btn {
+		background: #ffffff;
+		border: 1px solid #777777;
+		box-sizing: border-box;
+		border-radius: 6px;
+		height: 40px;
+		width: 164px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 13px;
+		line-height: 17px;
+		color: #777777;
+		font-family: SFPD-Medium;
+		cursor: pointer;
+		margin: 0 auto;
+		transition: all 0.2s;
+		&:hover {
+			background: #064dd6;
+			border-color: #064dd6;
+			color: #fff;
+		}
+	}
+}

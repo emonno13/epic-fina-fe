@@ -1,0 +1,76 @@
+.profile-information-survey {
+  .profile-survey-no-data {
+    text-align: center;
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-des {
+      max-width: 400px;
+      color: #aaafb3;
+      font-size: 16px;
+      margin: 25px 0;
+      line-height: 24px;
+      font-family: "SF Pro Display";
+    }
+
+    &-button {
+      background: #064dd6;
+      border-radius: 8px;
+      color: #fff;
+      width: 187px;
+      height: 48px;
+    }
+  }
+
+  &-step-ui {
+    padding: 0 50px;
+  }
+}
+
+.profile-information-survey-step {
+  padding: 24px;
+  
+  .profile-survey-step {
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 40px;
+    margin-top: 25px;
+
+    &-title {
+      font-family: "SF Pro Display";
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: #064dd6;
+    }
+  }
+
+  .profile-information-action {
+    display: flex;
+    justify-content: flex-end;
+    margin: 24px 0;
+
+    &-button {
+      border-radius: 8px;
+      width: 187px;
+      height: 48px;
+    }
+
+    &-reject {
+      margin-right: 16px;
+      background: #ffffff;
+      border: 1px solid #e0e1e4;
+      color: #7f868d;
+    }
+
+    &-next {
+      background: #064dd6;
+      border-radius: 8px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+  }
+}

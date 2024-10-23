@@ -1,0 +1,39 @@
+@import '@styles/css_variables';
+
+.bond-information-wrapper {
+  font-size: 12px;
+  display: flex;
+  margin-bottom: 5px;
+
+  &.space-between {
+    justify-content: space-between;
+  }
+
+  &.down-line {
+    flex-wrap: wrap;
+
+    .bond-information-wrapper__label {
+      width: 100%;
+      font-weight: 300;
+      color: #4e5a65;
+    }
+  }
+
+  &__label {
+    margin-right: 5px;
+    margin-bottom: 0;
+    color: #000000;
+    opacity: 0.6;
+
+    &::after {
+      content: ':';
+    }
+  }
+
+  &__content {
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 0;
+    text-align: right;
+  }
+}

@@ -1,0 +1,111 @@
+@import '@styles/css_variables';
+.product {
+  background-color: #f3f7ff;
+  padding-top: 45px;
+  padding-bottom: 65px;
+  .container {
+    max-width: 1040px;
+    padding: 0 16px;
+    @screen md {
+      padding: 0 20px;
+    }
+    .invest-btn {
+      font-family: 'SF Pro Display Medium';
+      padding: 0 30px;
+      margin-bottom: 0;
+      font-size: 16px;
+      line-height: 36px;
+      margin-left: auto;
+      margin-right: auto;
+      @screen md {
+        margin-top: 25px;
+        margin-left: initial;
+        margin-right: initial;
+      }
+    }
+    .ant-tabs-tab {
+      font-size: 16px;
+      line-height: 15px;
+      padding: 16px !important;
+      background-color: #fff !important;
+      border: 1px solid #064dd6 !important;
+      @screen md {
+        font-size: 20px;
+        line-height: 15px;
+        padding: 16px 27px !important;
+        border: 1px solid transparent !important;
+      }
+      &-active {
+        font-family: 'SF Pro Display Medium';
+        background-color: #064dd6 !important;
+        color: #fff !important;
+        .ant-tabs-tab-btn {
+          color: #fff !important;
+          @screen md {
+            color: #064dd6 !important;
+          }
+        }
+        @screen md {
+          border: 1px solid #064dd6 !important;
+          background-color: #fff !important;
+        }
+      }
+    }
+    .ant-tabs-tab-btn {
+      color: #064dd6 !important;
+    }
+    .des {
+      font-size: 16px;
+      line-height: 28px;
+      margin: 16px 0;
+      color: #000;
+
+      @screen md {
+        margin-bottom: 24px;
+        margin-top: 24px;
+      }
+    }
+    .content {
+      .content-item {
+        display: flex;
+        font-size: 16px;
+        line-height: 28px;
+        @screen md {
+          margin-left: 28px;
+          font-size: 20px;
+          line-height: 32px;
+          margin-left: 0;
+        }
+        .logo {
+          @screen md {
+            margin-top: 8px;
+            margin-right: 10px;
+          }
+          margin-top: 6px;
+          margin-right: 16px;
+          width: 15px;
+          height: 15px;
+          display: block;
+          img {
+            display: block;
+          }
+        }
+        .text {
+          width: calc(100% - 15px);
+          margin-bottom: 10px;
+          color: #4e5a65;
+          @screen md {
+            font-size: 16px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+    .invest-img {
+      width: 307px;
+      @screen md {
+        width: 330px;
+      }
+    }
+  }
+}

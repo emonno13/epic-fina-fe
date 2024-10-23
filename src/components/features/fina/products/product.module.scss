@@ -1,0 +1,32 @@
+@import "../../../../styles/css_variables";
+
+.product {
+  .social-media-share{
+    display: flex;
+  }
+}
+
+.product-pvi-btn{
+  display: flex;
+  position: relative;
+  &__roll-back{
+    position: absolute !important;
+    top: 0;
+    left: 0;
+  }
+  &__continue{
+    position: absolute !important;
+    top: 0;
+    right: 0;
+  }
+}
+
+.introduce-pvi{
+  height: 70vh;
+  img{
+    width: 100%;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

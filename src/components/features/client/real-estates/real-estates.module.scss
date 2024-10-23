@@ -1,0 +1,20 @@
+@import '../../../../styles/css_variables';
+
+.client-real-estates {
+	&__list {
+  	background: linear-gradient(180deg, #fff, #f2f5f9);
+		padding: 40px 0;
+
+		@media only screen and (max-width: $md) {
+			padding: 32px 16px;
+		}
+	}
+
+	.pagination {
+		margin: 33px 0;
+
+		@media only screen and (max-width: $md) {
+			padding: 0px 20px;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+@import "../../../../../../styles/css_variables";
+
+.custom-collapse{
+  .ant-collapse-item{
+    border: none;
+    background: #fff;
+    .ant-collapse-header{
+      width: 20%;
+      background: #f2f4f5;
+      border: 1px solid #f0f0f0;
+      border-radius: 4px !important;
+      padding: 10px 8px 8px 40px;
+      @media only screen and (max-width: $md) {
+        width: 100%;
+      }
+    }
+  }
+}

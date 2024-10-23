@@ -1,0 +1,199 @@
+@import "../../../../../styles/css_variables";
+
+.loans-introduce .rate-information {
+  display: flex;
+
+  .ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    display: none;
+  }
+
+  .ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::after {
+    display: inline-block;
+    margin-right: 4px;
+    color: #ff4d4f;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: '*';
+  }
+
+  @media only screen and (max-width: $lg) {
+    flex-direction: column;
+    // padding: 16px;
+  }
+
+  .rate-infomation-detail {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+
+    @media only screen and (max-width: $lg) {
+      flex-direction: column;
+      width: 100%;
+      padding: 0px;
+    }
+
+    .title-rate-infomation {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 56px;
+      line-height: 130%;
+      color: #064DD6;
+      width: 100%;
+      text-transform: uppercase;
+
+      @media only screen and (max-width: $lg) {
+        flex-direction: column;
+        width: 100%;
+        font-size: 32px;
+        margin-top: 25px;
+      }
+
+    }
+
+    .rate {
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      margin-top: 23px;
+
+      @media only screen and (max-width: $lg) {
+        width: 100%;
+      }
+
+      .decription-rete {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 140%;
+        margin-right: 11px;
+        color: #474747;
+
+        @media only screen and (max-width: $lg) {
+          font-size: 20px;
+        }
+      }
+
+      .number-rate {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 80px;
+        line-height: 100%;
+        position: relative;
+        top: 5px;
+        background: linear-gradient(247.68deg, #FFAE64 5.84%, #FF6C0E 86.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media only screen and (max-width: $lg) {
+          font-size: 56px;
+        }
+      }
+
+      .decription-rate-last {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 140%;
+        color: #474747;
+
+        @media only screen and (max-width: $lg) {
+          font-size: 16px;
+        }
+      }
+
+      .rate-year {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        color: #303030;
+
+        @media only screen and (max-width: $lg) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .form-register-fast {
+    width: 37%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    margin: 80px 80px 73px 73px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.1));
+
+    @media only screen and (max-width: $lg) {
+      width: 100%;
+      padding: 16px;
+      margin-left: 0px;
+      margin: 0px;
+      display: block;
+      margin-top: 37px;
+    }
+
+
+    .title-form-register {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 24px 0px;
+
+      .first-title-register {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: #FF6C0E;
+
+        @media only screen and (max-width: $lg) {
+          font-size: 20px;
+        }
+      }
+
+      .last-title-register {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: #303030;
+
+        @media only screen and (max-width: $lg) {
+          font-size: 20px;
+        }
+      }
+    }
+
+
+  }
+}
+
+.loans-introduce .button-register-fast {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 24px;
+  gap: 10px;
+  background: linear-gradient(247.68deg, #19A1EE 5.84%, #064DD6 86.06%);
+  border-radius: 74px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 140%;
+}

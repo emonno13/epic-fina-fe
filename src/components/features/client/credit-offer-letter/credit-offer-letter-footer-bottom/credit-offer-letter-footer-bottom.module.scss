@@ -1,0 +1,58 @@
+.footer-bottom {
+  padding: 80px 0;
+  min-height: 415px;
+  background: url(/assets/images/credit-offer-letter-footer-bottom-bg.png), url(/assets/images/credit-offer-letter-footer-bottom-main.png);
+  background-size: cover, cover;
+  color: white;
+
+  .logo {
+    margin-bottom: 40px;
+  }
+
+  .footer-right {
+    margin-top: 40px;
+
+    @screen md {
+      margin-top: 0
+    }
+  }
+
+  .title-footer {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    width: max-content;
+    margin-bottom: 25px;
+  }
+
+  .line-header {
+      background: linear-gradient(90deg, #FF6C0E 0%, rgba(255, 108, 14, 0) 100%);
+      height: 1px;
+      width: 70%;
+      margin-top: 4px;
+  }
+
+  .info-item {
+    max-width: 355px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 13px;
+
+    img {
+      margin-right: 10px;
+    }
+
+    .info-item__content {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer-social-network {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+}

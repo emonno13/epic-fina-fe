@@ -1,0 +1,33 @@
+@import "../../../../styles/css_variables";
+
+._mobile_drawer {
+  display: none;
+
+  .ant-drawer-wrapper-body {
+    .ant-drawer-header {
+      padding: 0px 24px 0px 0px;
+      border-radius: 0 !important;
+      min-height: var(--layout-header-height);
+      display: flex;
+      color: var(--layout-header-text-color);
+      background: var(--primary-color);
+      align-items: center;
+
+      .ant-drawer-title, .ant-drawer-close {
+        color: var(--layout-header-text-color);
+      }
+    }
+  }
+
+  &.p-0i {
+    .ant-drawer-body {
+      padding: 0 !important;
+    }
+  }
+}
+
+@media only screen and (max-width: $md) {
+  ._mobile_drawer {
+    display: block !important;
+  }
+}

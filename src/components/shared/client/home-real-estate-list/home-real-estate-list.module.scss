@@ -1,0 +1,56 @@
+.client-home-real-estate-list-item {
+	&:hover {
+		.client-home-real-estate-list-item__image i {
+			transform: scale(1.2);
+		}
+	}
+	box-sizing: border-box;
+	margin: 0 13px;
+	&__image {
+		overflow: hidden;
+		display: block;
+		border-radius: 8px 8px 0 0;
+		z-index: 1;
+		height: 165px;
+		i {
+			transition: all 0.2s ease-in-out;
+			width: 100%;
+			padding-top: 100%;
+			border-radius: 8px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50%;
+			display: block;
+		}
+	}
+	&__content {
+		background: #fff;
+		overflow: hidden;
+		border-radius: 0 0 8px 8px;
+		padding: 9px 16px;
+		height: 110px;
+		box-sizing: border-box;
+		&__name {
+			font-family: SFPD-SemiBold;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 19px;
+			letter-spacing: 0.3px;
+			color: #111;
+			margin-bottom: 13px;
+			text-align: center;
+		}
+		&__desc {
+			font-size: 15px;
+			line-height: 19px;
+			color: #5e5e5e;
+		}
+	}
+}
+
+.home-real-estate-carousel {
+	.slick-arrow {
+		top: 25%;
+	}
+}

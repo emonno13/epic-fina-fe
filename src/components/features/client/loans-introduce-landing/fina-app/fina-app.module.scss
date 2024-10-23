@@ -1,0 +1,97 @@
+.loans-introduce .fina-app {
+    padding-top: 100px;
+    padding-bottom: 60px;
+
+    &-img {
+        position: relative;
+
+        .icon-spiral {
+            position: absolute;
+            top: -110px;
+            left: -140px;
+            display: none;
+
+            @screen md {
+                display: block;
+            }
+        }
+
+        img {
+            position: relative;
+        }
+    }
+
+    &-content {
+        &-title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            text-transform: capitalize;
+            color: #303030;
+            margin-bottom: 5px;
+
+            @screen md {
+                font-size: 32px;
+                margin-bottom: 0;
+            }
+        }
+
+        &-description {
+            font-weight: 400;
+            font-size: 14px;
+            max-width: 600px;
+            line-height: 140%;
+
+            @screen md {
+                font-size: 16px;
+            }
+        }
+
+        &-download {
+            margin-top: 45px;
+
+            &-title {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 140%;
+                color: #303030;
+                margin-bottom: 5px;
+            }
+
+            .app-icon-link:first-child {
+                margin-right: 12px;
+            }
+        }
+
+        &-achievement {
+            margin-top: 32px;
+
+            &-item {
+                background: #F4F8FF;
+                border-radius: 8px;
+                padding: 16px;
+                text-align: center;
+                filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
+                height: 100%;
+
+                @screen md {
+                    padding: 20px;
+                }
+
+                h2 {
+                    font-weight: 700;
+                    font-size: 20px;
+                    margin-bottom: 0;
+                    color: #064DD6;
+                }
+
+                p {
+                    margin-bottom: 0;
+                    font-size: 16px;
+                    line-height: 140%;
+                    color: #474747;
+                }
+            }
+        }
+    }
+}

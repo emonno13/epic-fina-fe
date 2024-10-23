@@ -1,0 +1,15 @@
+@import "../../../../styles/css_variables";
+.ui-scroll-screen {
+  position: relative;
+  ._scroll-state {
+    position: fixed;
+    height: 3px;
+    z-index: 1;
+    background: rgb(240, 160, 58);
+  }
+
+  .ui-scroll-helper {
+    position: relative;
+    height: 100%;
+  }
+}

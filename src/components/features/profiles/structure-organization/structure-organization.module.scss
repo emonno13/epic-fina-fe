@@ -1,0 +1,36 @@
+.structure-organization {
+  &__avatar {
+    margin-bottom: 40px;
+
+    &-image {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      top: -22px;
+      left: 50%;
+      background-color: #fff;
+      background-size: cover;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      margin: auto;
+    }
+  }
+
+  &__content-org {
+    p {
+      margin: 15px 0px;
+    }
+  }
+
+  &__content-description {
+    p {
+      margin: 15px 0px;
+    }
+  }
+
+  &__content-member {
+    &-admin-data {
+      margin-top: 20px;
+    }
+  }
+}

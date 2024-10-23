@@ -1,0 +1,847 @@
+@import '../../../../../styles/css_variables';
+
+.insurance-detail {
+  margin-bottom: 50px;
+  margin-top: 24px;
+  display: block;
+  gap: 24px;
+
+  @screen md {
+    margin-bottom: 120px;
+    display: flex;
+  }
+
+  &__banner {
+    margin-bottom: 50px;
+
+    @screen md {
+      margin-bottom: 180px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &-left {
+    width: 100%;
+    padding: 0 16px;
+
+    @screen md {
+      width: 310px;
+      padding: 0;
+    }
+
+    &-back {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .client-home-insurance-list-item {
+      &__image {
+        border-radius: 8px;
+      }
+
+      &__content {
+        border: none;
+        padding: 16px;
+
+        @screen md {
+          padding: 16px 0;
+        }
+      }
+    }
+
+    .ant-btn {
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 16px;
+      height: auto;
+    }
+
+    .ant-btn-ghost {
+      border: 1px solid #064dd6;
+      color: #064dd6;
+      margin-bottom: 12px;
+    }
+
+    .ant-btn-primary {
+      background: #064dd6;
+      color: #ffffff;
+    }
+  }
+
+  &-right {
+    width: 100%;
+    margin-top: 24px;
+
+    @screen md {
+      width: calc(100% - 310px);
+      margin-top: 10px;
+    }
+
+    .insurance-detail__content {
+      padding: 16px;
+
+      @screen md {
+        padding: 0;
+      }
+    }
+  }
+
+  &__content__buy-insurance {
+    border-radius: 8px;
+    padding: 11px;
+    font-size: 16px;
+    height: auto;
+    background: #064dd6;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+
+.product-detail-insurance-send-info-wrapper {
+  @media only screen and (max-width: $md) {
+    padding: 0 16px;
+  }
+}
+
+.product-detail-insurance-send-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 42px 0 36px;
+  border: 1px solid #dfe3ec;
+  border-radius: 8px;
+  margin: 20px 0;
+  background: #fff;
+
+  &__title {
+    font-family: SFPD-Regular;
+    font-size: 28px;
+    line-height: 34px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #002d71;
+    margin-bottom: 24px;
+    margin-top: 16px;
+
+    @media only screen and (max-width: $md) {
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
+
+  .counselling-request-single-input {
+    margin-bottom: 16px;
+    width: 400px;
+
+    @media only screen and (max-width: $md) {
+      width: 80%;
+    }
+  }
+
+  &__contact {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #222;
+    font-family: SFPD-Regular;
+  }
+
+  &__phone {
+    color: #002d71;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    font-family: SFPD-Regular;
+  }
+}
+
+.buying-insurance-modal {
+  .insurance-steps__title-container {
+    margin-top: 30px;
+    @media only screen and (max-width: 520px) {
+      .ant-steps-item:not(:last-child) {
+        width: 15%;
+        .ant-steps-item-content .ant-steps-item-title {
+          width: 75px;
+        }
+      }
+    }
+  }
+  .info-beneficiary__divider {
+    border: 0px;
+  }
+  .info-beneficiary-container {
+    background: #f3f7ff;
+  }
+  .info-beneficiary__info-section-title {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140.5%;
+  }
+  .info-beneficiary__title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .info-beneficiary__title {
+    display: flex;
+    align-items: center;
+    color: #064dd6;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140.5%;
+    &:hover {
+      background: transparent;
+      color: #064dd6;
+    }
+  }
+  .info-beneficiary__delete-text {
+    color: #cacaca;
+    margin-left: 10px;
+  }
+  .ant-modal-header {
+    padding: 16px;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .ant-modal-close {
+    .ant-modal-close-x {
+      line-height: 55px;
+      width: 55px;
+      height: 55px;
+      font-size: 30px;
+    }
+  }
+
+  .ant-modal-title {
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .clickable-opacity {
+      line-height: 10px;
+    }
+  }
+
+  .ant-modal-content {
+    border-radius: 16px;
+
+    .ant-modal-body {
+      padding: 16px;
+    }
+
+    .ant-form-item.mb-0 {
+      margin-bottom: 0;
+    }
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .buying-insurance-checkbox {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    position: relative;
+    top: -5px;
+  }
+
+  .add-beneficiary {
+    font-weight: 600;
+    font-size: 14px;
+    background: #064dd6;
+    border-radius: 32px;
+    min-height: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    .anticon {
+      font-size: 20px;
+      line-height: 14px;
+    }
+  }
+
+  &-result {
+    margin: 0 -16px;
+    padding: 24px 16px;
+    padding-bottom: 0;
+    border-radius: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+
+    &-total {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #bababa;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 10px;
+
+      .money {
+        font-weight: 600;
+        font-size: 24px;
+        color: #064dd6;
+      }
+    }
+
+    &-endow {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #bababa;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 15px;
+
+      .collaborators {
+        font-weight: 700;
+        font-size: 12px;
+        color: #ff6c0e;
+        gap: 14px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #ff6c0e;
+        border-radius: 20px;
+        line-height: 24px;
+        padding-right: 16px;
+      }
+    }
+  }
+
+  &-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: #fff;
+
+    .ant-btn {
+      width: 100%;
+      min-height: 54px;
+      border-radius: 8px;
+      font-weight: 600;
+      border: 1px solid #064dd6;
+      font-size: 16px;
+
+      &.ant-btn-ghost {
+        color: #064dd6;
+      }
+
+      &.ant-btn-primary {
+        background-color: #064dd6;
+      }
+    }
+  }
+
+  .show {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  &.hidden-icon-close-modal {
+    .ant-modal-close {
+      display: none;
+    }
+  }
+
+  .buy-insurance-customer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    &-name {
+      padding: 10px 16px;
+      border: 1px dashed #d8e1f2;
+      border-radius: 32px;
+      font-size: 14px;
+      width: 85%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .clickable-opacity {
+        line-height: 10px;
+      }
+    }
+
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  .payment-insurance {
+    &-title {
+      font-weight: 600;
+      font-size: 14px;
+      color: #151940;
+    }
+
+    &-image {
+      border: 1px solid #064dd6;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    &-methods {
+      margin-top: 24px;
+
+      .payment-insurance-title {
+        margin-bottom: 16px;
+        padding-left: 16px;
+      }
+    }
+
+    .insurance-info {
+      padding: 16px;
+      border: 1px solid #064dd6;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      .payment-insurance-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .ant-collapse {
+      .ant-collapse-item {
+        margin-bottom: 16px;
+
+        .ant-collapse-header {
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+          border-radius: 8px;
+          font-weight: 600;
+          font-size: 14px;
+          color: #151940;
+        }
+
+        .insurance-info {
+          margin: 0 -16px;
+        }
+
+        &.ant-collapse-item-active .ant-collapse-header .ant-collapse-arrow {
+          transform: translateY(-50%) rotate(180deg);
+        }
+      }
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 12px;
+
+      &-label {
+        font-weight: 600;
+        font-size: 12px;
+        color: #aaadb7;
+      }
+
+      &-value {
+        font-weight: 600;
+        font-size: 12px;
+        color: #151940;
+      }
+    }
+
+    &-user {
+      margin-bottom: 16px;
+      border-bottom: 1px solid #f0f0f0;
+      padding-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 0;
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+
+    .payment-button {
+      min-height: 54px;
+      border-radius: 8px;
+      font-weight: 600;
+      border: 1px solid #064dd6;
+      background-color: #064dd6;
+      font-size: 16px;
+      margin-top: 16px;
+    }
+  }
+
+  .transaction-insurance {
+    width: 100%;
+    height: 650px;
+  }
+
+  .payment-insurance-success {
+    text-align: center;
+    padding-top: 50px;
+
+    h2 {
+      font-size: 24px;
+      color: #064dd6;
+      font-weight: 600;
+    }
+
+    .payment-button-success {
+      min-height: 54px;
+      border-radius: 8px;
+      font-weight: 600;
+      border: 1px solid #064dd6;
+      background-color: #064dd6;
+      font-size: 16px;
+      margin-top: 16px;
+      margin-top: 100px;
+    }
+
+    &-description {
+      font-weight: 500;
+    }
+  }
+
+  .confirm-close-buy-insurance {
+    text-align: center;
+
+    &-description {
+      font-size: 16px;
+      padding: 30px 0;
+      font-weight: 600;
+    }
+  }
+
+  .cus-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 8px;
+      background: var(--background, #fff);
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+      padding: 16px;
+
+      &.checked {
+        border: 1px solid var(--primary, #064dd6);
+        background: #e5f1ff;
+      }
+
+      @supports (-webkit-appearance: none) or (-moz-appearance: none) {
+        input[type='checkbox'],
+        input[type='radio'] {
+          --active: #275efe;
+          --active-inner: #fff;
+          --focus: 2px rgba(39, 94, 254, 0.3);
+          --border: #bbc1e1;
+          --border-hover: #275efe;
+          --background: #fff;
+          --disabled: #f6f8ff;
+          --disabled-inner: #e1e6f9;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          height: 21px;
+          outline: none;
+          display: inline-block;
+          vertical-align: top;
+          position: relative;
+          margin: 0;
+          cursor: pointer;
+          border: 1px solid var(--bc, var(--border));
+          background: var(--b, var(--background));
+          transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+          &:after {
+            content: '';
+            display: block;
+            left: 0;
+            top: 0;
+            position: absolute;
+            transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
+              opacity var(--d-o, 0.2s);
+          }
+          &:checked {
+            --b: var(--active);
+            --bc: var(--active);
+            --d-o: 0.3s;
+            --d-t: 0.6s;
+            --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
+          }
+          &:disabled {
+            --b: var(--disabled);
+            cursor: not-allowed;
+            opacity: 0.9;
+            &:checked {
+              --b: var(--disabled-inner);
+              --bc: var(--border);
+            }
+            & + label {
+              cursor: not-allowed;
+            }
+          }
+          &:hover {
+            &:not(:checked) {
+              &:not(:disabled) {
+                --bc: var(--border-hover);
+              }
+            }
+          }
+          &:focus {
+            box-shadow: 0 0 0 var(--focus);
+          }
+          &:not(.switch) {
+            width: 21px;
+            &:after {
+              opacity: var(--o, 0);
+            }
+            &:checked {
+              --o: 1;
+            }
+          }
+          & + label {
+            font-size: 14px;
+            line-height: 21px;
+            display: inline-block;
+            vertical-align: top;
+            cursor: pointer;
+            margin-left: 4px;
+          }
+        }
+        input[type='checkbox'] {
+          &:not(.switch) {
+            border-radius: 7px;
+            &:after {
+              width: 5px;
+              height: 9px;
+              border: 2px solid var(--active-inner);
+              border-top: 0;
+              border-left: 0;
+              left: 7px;
+              top: 4px;
+              transform: rotate(var(--r, 20deg));
+            }
+            &:checked {
+              --r: 43deg;
+            }
+          }
+          &.switch {
+            width: 38px;
+            border-radius: 11px;
+            &:after {
+              left: 2px;
+              top: 2px;
+              border-radius: 50%;
+              width: 15px;
+              height: 15px;
+              background: var(--ab, var(--border));
+              transform: translateX(var(--x, 0));
+            }
+            &:checked {
+              --ab: var(--active-inner);
+              --x: 17px;
+            }
+            &:disabled {
+              &:not(:checked) {
+                &:after {
+                  opacity: 0.6;
+                }
+              }
+            }
+          }
+        }
+        input[type='radio'] {
+          border-radius: 50%;
+          &:after {
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+            background: var(--active-inner);
+            opacity: 0;
+            transform: scale(var(--s, 0.7));
+          }
+          &:checked {
+            --s: 0.5;
+          }
+        }
+      }
+    }
+  }
+  &__billing-payment-step-2 {
+    background: #f9f9f9;
+    padding: 17px;
+    margin-bottom: 20px;
+    .qr-code-container {
+      background: white;
+      border-radius: 16px;
+      width: 100%;
+      padding-top: 12px;
+      padding-bottom: 16px;
+      padding-inline: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      .title {
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .qr-code-payment-instruction-img-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .qr-code-box {
+          display: flex;
+          border-radius: 16px;
+          padding: 4px;
+          background: linear-gradient(white, white) padding-box,
+            linear-gradient(to right, #0a257c, #0d36c1) border-box;
+          border: 10px solid transparent;
+        }
+        .img-download-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 18px;
+          .download-icon-btn {
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+          }
+          span {
+            color: var(--fina-blue, #064dd6);
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+
+      .text-info {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 4px;
+        span {
+          color: #000;
+          text-align: justify;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%;
+        }
+      }
+      .instruction-title {
+        color: var(--fina-blue, #064dd6);
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .banking-option-title {
+      color: #000;
+      text-align: justify;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%;
+      margin-top: 24px;
+      margin-bottom: 16px;
+    }
+    .banking-info-container {
+      background: white;
+      border-radius: 16px;
+      .divider {
+        margin: 0px !important;
+      }
+      .detail-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 12px;
+        p {
+          margin: 0px !important;
+        }
+        .content {
+          .title {
+            color: var(--navigation-bar, #a1a8ab);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.49px;
+          }
+          .name {
+            margin-top: 4px;
+            color: #000;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.42px;
+          }
+        }
+      }
+
+      .text-info {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 4px;
+        padding: 12px;
+        span {
+          color: #000;
+          text-align: justify;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%;
+        }
+      }
+    }
+  }
+}

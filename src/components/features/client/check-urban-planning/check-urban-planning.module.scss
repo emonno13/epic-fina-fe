@@ -1,0 +1,33 @@
+.check-urban-planning {
+  iframe {
+    width: 100%;
+    height: calc(100vh - 123px);
+    border: none;
+  }
+}
+
+#meeymapfrm {
+  max-width:1110px;
+  margin:0 auto;
+  z-index: 999999999999;
+
+  @screen md {
+    z-index: 1;
+  }
+
+  &:not(:root):fullscreen::backdrop {
+    z-index: 999999999999;
+  }
+
+  .mm-btn-fullscreen-mobile {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  iframe {
+    z-index: 999999999999;
+  }
+}

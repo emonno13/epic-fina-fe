@@ -1,0 +1,16 @@
+.displayValueWrap {
+  margin-bottom: 27px;
+  > h3 {
+    font-family: SFPD-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #222222;
+  }
+  .value {
+    font-family: SFPD-Regular;
+    opacity: 0.7;
+  }
+}

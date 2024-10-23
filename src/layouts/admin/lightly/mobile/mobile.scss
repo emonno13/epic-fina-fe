@@ -1,0 +1,64 @@
+@import '@styles/css_variables';
+// @import "~slick-carousel/slick/slick.css";
+// @import "~slick-carousel/slick/slick-theme.css";
+
+.fina-mobile-login-drawer {
+  .pre-login__login-form {
+    width: 100%;
+  }
+}
+
+.fina-mobile {
+  background: #f2f5f9;
+  &__header {
+    padding: 0 1rem;
+    background: #0a3eca;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-icon {
+      width: 100px;
+      height: 26px;
+      display: flex;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    &-right-content {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      img {
+        margin-left: 8px;
+      }
+      .notification-button {
+        padding-top: 4px;
+        .anticon {
+          font-size: 21px;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &__content {
+    padding: 0 1rem;
+    background: #f2f5f9;
+    min-height: 100vh;
+    .notification-wrapper {
+      .ant-drawer-content-wrapper {
+        width: 85% !important;
+      }
+    }
+  }
+
+  &__footer {
+    padding: 0 1rem;
+    width: 100%;
+    bottom: 0;
+    background: #fff;
+  }
+}

@@ -1,0 +1,94 @@
+@import "../../../../../styles/css_variables";
+
+.make-money{
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 160px 0;
+  max-width: 1250px;
+  margin: 0 auto;
+
+  &__content {
+    margin-top: 65px;
+
+    @media only screen and (max-width: $md) {
+      margin-top: 25px;
+    }
+  }
+
+  @media only screen and (max-width: $xl) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 60px;
+  }
+  @media only screen and (max-width: $md) {
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+
+    &__image {
+      svg {
+        width: 172px;
+        height: 172px;
+      }
+    }
+  }
+}
+
+.make-money-item{
+  display: flex;
+  align-items: center;
+  padding: 34px 24px;
+  max-width: 80%;
+  @media only screen and (max-width: $md) {
+    flex-direction: column;
+    padding: 16px;
+    max-width: 100%;
+    text-align: center;
+  }
+  &:hover{
+    .make-money-item__title{
+      color: #064DD6;
+    }
+    .make-money-item__content{
+      color: #2B72FB;
+    }
+    border: 1px solid #064DD6;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+  }
+  &__body{
+    @media only screen and (max-width: $md) {
+      margin: 16px 0;
+    }
+    margin-left: 32px;
+  }
+  &__title{
+    @media only screen and (max-width: $md) {
+      font-size: 16px;
+    }
+    font-family: Lato-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #151940;
+    text-transform: capitalize;
+  }
+  &__content{
+    @media only screen and (max-width: $md) {
+      font-size: 14px;
+      margin: 0 10%;
+    }
+    flex-wrap: wrap;
+    font-family: Lato-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #9F9F9F;
+  }
+}

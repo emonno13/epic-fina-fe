@@ -1,0 +1,17 @@
+.h-card {
+    &__title {
+        display: flex;
+        align-items: center;
+
+        &-tooltip__label {
+            margin-left: 10px;
+        }
+    }
+
+    &__content {
+        border-radius: 8px;
+        background-color: #F4F8FF;
+        padding: 16px;
+        min-height: 100px;
+    }
+}

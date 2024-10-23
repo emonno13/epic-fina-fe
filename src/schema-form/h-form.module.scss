@@ -1,0 +1,187 @@
+.schema-form-panel {
+  .have-after-fragment {
+    margin-bottom: 0 !important;
+  }
+
+  .after-fragment {
+    margin-bottom: 24px;
+  }
+
+  .ant-form-item-label {
+    padding-top: 10px;
+    color: #575757;
+    font-size: 15px;
+    line-height: 16px;
+    margin-bottom: 0px;
+
+    label {
+      &:after {
+        content: '';
+      }
+    }
+  }
+
+  .date-picker {
+    width: 100%;
+  }
+
+  .ant-checkbox-wrapper {
+    span {
+      font-family: Exo;
+      font-size: 15px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #000000;
+    }
+  }
+}
+
+.form-input {
+  width: 100%;
+  height: 38px;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 2px 0 rgba(102, 113, 123, 0.21);
+  border: solid 1px #e2e5ed;
+  background-color: #ffffff;
+  margin-top: 8px;
+  font-family: Exo;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.form-select {
+  margin-top: 8px;
+  margin-bottom: 5px;
+
+  .ant-select-selection--single {
+    position: relative;
+    height: 38px;
+    cursor: pointer;
+  }
+
+  .ant-select-selection__placeholder,
+  .ant-select-search__field__placeholder {
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    left: 0;
+    max-width: 100%;
+    margin-top: -7px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+    text-overflow: ellipsis;
+    font-family: Exo;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+
+  .ant-select-selection-selected-value {
+    position: absolute;
+    top: 50%;
+    right: 9px;
+    left: 0;
+    max-width: 100%;
+    margin-top: -7px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+    text-overflow: ellipsis;
+    font-family: Exo;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+}
+
+.ant-form label {
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+.ant-form-item-required {
+  &:before {
+    display: none;
+  }
+
+  &:after {
+    display: inline-block;
+    margin-right: 4px;
+    color: #f5222d;
+    font-size: 14px;
+    font-family: SimSun, sans-serif;
+    line-height: 1;
+    content: '*' !important;
+  }
+}
+
+.hform-btn-panel {
+  margin-bottom: 20px !important;
+  .ant-form-item-label {
+    label {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .hform-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+.editable-cell {
+  position: relative;
+}
+
+.editable-row {
+  .ant-table-cell {
+    .ant-form-item {
+      &:last-child {
+        margin-bottom: 0px !important;
+      }
+    }
+  }
+}
+
+.editable-cell-value-wrap {
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+.editable-row:hover .editable-cell-value-wrap {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 4px 11px;
+}
+
+[data-theme='dark'] .editable-row:hover .editable-cell-value-wrap {
+  border: 1px solid #434343;
+}
+
+.drawer-no-padding-top {
+  .ant-drawer-body {
+    padding-top: 0 !important;
+  }
+}

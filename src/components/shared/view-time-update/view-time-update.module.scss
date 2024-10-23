@@ -1,0 +1,49 @@
+.popover-view-time-update {
+  max-width: 400px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .ant-popover-inner {
+    border-radius: 8px;
+  }
+
+  .ant-popover-inner-content {
+    border: 1px solid #064dd6;
+    border-radius: 8px;
+    padding: 8px;
+
+    .item {
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .ant-popover-arrow {
+    display: none;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+
+    .dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 100%;
+      background: #0b51d7;
+    }
+
+    span {
+      color: #0b51d7;
+    }
+  }
+}

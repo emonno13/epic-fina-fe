@@ -1,0 +1,75 @@
+@import '@styles/css_variables';
+
+.radio-programs {
+  width: 100%;
+
+  .radio-program {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 8px;
+
+    & > span:last-child {
+      display: block;
+      width: 100%;
+    }
+
+    @screen md {
+    }
+  }
+
+  .radio-program:last-child {
+    margin-bottom: 0;
+  }
+
+  b {
+    color: #000;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 14px;
+  }
+
+  .buy-min {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #000;
+  }
+
+  .buy-min-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .buy-label {
+    color: #7f868d;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  .ant-radio-wrapper-checked {
+    border: 1px solid #0a7aff;
+  }
+
+  .item-label {
+    font-size: 12px;
+    color: #064dd6;
+    text-decoration: underline;
+    max-width: 20%;
+  }
+
+  .fund-detail__left--content__programs-item {
+    border-radius: 4px;
+    border: 0.5px solid #b8cbea;
+    background-image: url('/assets/images/program_fund_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .item-value {
+    max-width: 80%;
+  }
+}

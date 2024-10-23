@@ -1,0 +1,55 @@
+.ui-img-preview {
+  position: relative;
+  height: fit-content;
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+
+  &__cover-photo {
+    width: 120px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .image-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--alone-download {
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  .unclassified-action {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    z-index: 1;
+    padding: 3px;
+    background: #fff;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+}
+
+.document-container {
+  width: auto!important;
+}

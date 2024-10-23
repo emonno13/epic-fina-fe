@@ -1,0 +1,43 @@
+.target-group-edit-modal {
+  display: flex;
+
+  &__menu {
+    width: 20%;
+  }
+
+  &__content {
+    width: 80%;
+    border-left: 2px solid #0068ff;
+    padding: 0 1rem;
+  }
+}
+
+.rule-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    padding: 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    &--active {
+      color: #fff;
+      background-color: #0068ff;
+    }
+  }
+}
+
+.active-span {
+  width: 0;
+  height: 0;
+  border-top: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+  border-right: 24px solid white;
+  position: absolute;
+  right: -2px;
+  z-index: 2;
+}

@@ -1,0 +1,22 @@
+.counselling-request-single-input {
+  .ant-input-affix-wrapper {
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    width: 100%;
+    padding: 4px 8px;
+
+    @screen md {
+      width: 300px;
+    }
+
+    input {
+      background: #FFFFFF;
+      font-family: SFPD-Regular;
+      font-size: 14px;
+    }
+    .ant-input-suffix {
+      cursor: pointer;
+    }
+  }
+}

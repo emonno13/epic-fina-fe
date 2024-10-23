@@ -1,0 +1,48 @@
+
+.sidebar-viewer {
+  margin-right: 15px;
+
+  .custom-label-item {
+    color: rgba(6, 77, 214, 1);
+  }
+  .sidebar-border{
+    margin-top: 15px;
+    border: 1px #D9D9D9 solid;
+    background: #D9D9D9;
+  }
+
+  .custom-button-add-loan {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .custom-label-item-info {
+    margin-top: 30px;
+    color: rgba(6, 77, 214, 1);
+    font-size: 16px;
+  }
+
+  .custom-label-item-task {
+    margin-top: 25px;
+
+    .label-content {
+      text-transform: none;
+    }
+  }
+
+  .custom-label-item-document {
+    @extend .custom-label-item-task
+  }
+
+  .sidebar-history {
+    margin-top: 25px;
+
+    .label-content {
+      text-transform: none;
+    }
+  }
+
+  .sidebar-note {
+    @extend .sidebar-history
+  }
+}

@@ -1,0 +1,17 @@
+@import '@styles/css_variables';
+.account-async {
+  margin-top: 20px;
+
+  .switch-screen {
+    margin: 8px 0;
+    @screen md {
+      margin: 16px 20%;
+    }
+  }
+
+  .ant-steps {
+    @screen md {
+      margin-bottom: 32px;
+    }
+  }
+}

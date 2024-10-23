@@ -1,0 +1,120 @@
+@import "../../../../../styles/css_variables";
+
+.deal-insurance-aplication-transaction-information {
+
+  @media only screen and (max-width: 1170px) {
+    overflow-x: scroll;
+    min-width: 1170px;
+  }
+
+  .information-user-profile {
+    display: flex;
+    align-items: center;
+
+    .information-user-name {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .information-dexcription {
+      font-size: 13px;
+    }
+  }
+
+  .information-deal-insurance-status {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .component-render-insurance {
+    display: flex;
+    margin-top: 10px;
+
+    .component-render-insurance-label {
+      width: 75px;
+      font-size: 13px;
+      font-weight: 700
+    }
+
+    .component-render-insurance-value {
+      width: calc(100% - 75px);
+      font-size: 12px;
+    }
+  }
+
+  .information-title {
+    display: flex;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .infomation-cantract-owner {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .infomation-cantract-owner-fullName {
+      width: 60%;
+      font-size: 16x;
+      font-weight: 700;
+    }
+  }
+
+  .information {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1500px) {
+      flex-direction: column;
+    }
+
+    .contract-owner-infomation-component {
+      width: 50%;
+      margin: 5px;
+
+      @media only screen and (max-width: 1500px) {
+        width: 100%;
+        margin: 0px;
+      }
+    }
+
+    .infomation-contract-owner {
+      margin-right: 20px;
+    }
+  }
+
+  .view-select {
+    background-color: #f4f8ff;
+    border-radius: 15px;
+    padding: 5px;
+  }
+
+  .h-table-form.ant-table-wrapper .ant-table-thead>tr:first-child th:last-child {
+    border-radius: 15px 0px 0px 0px;
+  }
+
+  .deal-loan-management-wrapper__right {
+    overflow: auto;
+
+    .deal-loan-management-wrapper__right--header {
+      height: 55px;
+      background-color: #064DD6;
+      color: white;
+    }
+  }
+
+
+  .deal-loan-management-wrapper {
+    padding: 0px;
+    margin-top: 50px;
+    .ant-table-pagination.ant-pagination{
+      margin-top: -36px;
+      margin-right:  10px;
+    }
+  }
+
+}

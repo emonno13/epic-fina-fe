@@ -1,0 +1,106 @@
+@import "../../../styles/css_variables";
+
+.client-loans-introduce-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__verticalMenu {
+        @media only screen and (max-width: $md) {
+            display: inline;
+        }
+
+        display: none;
+    }
+
+    &__horizontalMenu {
+        @media only screen and (max-width: $md) {
+            display: none;
+        }
+
+        flex: auto;
+    }
+
+    &-logos {
+        display: flex;
+        align-items: center;
+
+        .logo-wrapper {
+            display: flex;
+
+            &.fina {
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                padding: 4px 0;
+
+                img {
+                    width: 123px;
+                }
+
+                @media only screen and (max-width: $md) {
+                    img {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        flex: 1;
+        justify-content: flex-end;
+
+        &__register-btn {
+            background: #064dd6;
+            border-radius: 4px;
+            font-size: 16px;
+			padding: 0 40px;
+            line-height: 40px !important;
+            font-weight: 700;
+            height: 40px;
+            color: #fff;
+
+            &:hover {
+                background: #064dd6;
+                color: #fff;
+            }
+
+            @media only screen and (max-width: $md) {
+                padding: 4px 16px;
+                font-size: 14px;
+                line-height: 32px !important;
+				height: 32px;
+            }
+        }
+    }
+
+	.ui-top-menu-mobile-handle-menu-button {
+		padding-right: 0;
+	}
+}
+
+.client-loans-introduce-header-menu {
+    flex: 1;
+	padding-left: 24px;
+
+    ul.ant-menu-horizontal {
+        border: 0;
+        background: initial;
+
+		li.ant-menu-item {
+			padding: 0 16px;
+
+			a {
+				font-weight: 700;
+				font-size: 13px;
+				line-height: 16px;
+				color: #303030;
+				font-family: "Lato-Regular";
+			}
+		}
+    }
+}

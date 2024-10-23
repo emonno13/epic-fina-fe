@@ -1,0 +1,18 @@
+.links-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+	&__left {
+		display: flex;
+		align-items: center;
+		img {
+			margin-right: 16px;
+		}
+		span {
+			font-size: 16px;
+			line-height: 16px;
+			color: #303030;
+		}
+	}
+}

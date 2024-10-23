@@ -1,0 +1,182 @@
+@import "../../../../../styles/css_variables";
+
+.loans-introduce .title-infomation {
+  display: flex;
+  align-items: center;
+
+  .title-infomation-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -2px;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1B1B1B;
+    margin-bottom: 0px;
+    margin-left: 10px;
+
+    @media only screen and (max-width: $lg) {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
+
+.loans-introduce .item-view-infomation {
+  display: flex;
+  margin-top: 20px;
+
+  .content-icon {
+    width: 40px;
+    height: 40px;
+    background: #064DD6;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16PX;
+  }
+
+  .decription-infomation {
+    width: calc(100% - 56px);
+
+    .title-item-infomation {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: #064DD6;
+
+      @media only screen and (max-width: $lg) {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+
+    .detail-infomation {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 140%;
+      color: #303030;
+
+      @media only screen and (max-width: $lg) {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+      }
+    }
+  }
+
+}
+
+.loans-introduce .content-register-footer {
+  padding: 95px;
+
+  @media only screen and (max-width: $lg) {
+    margin-top: 80px;
+    padding: 0;
+    margin-bottom: 80px;
+  }
+
+  .form-register-footer {
+    width: calc(100% - 114px);
+
+    .ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+      display: none;
+    }
+
+    .ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::after {
+      display: inline-block;
+      margin-right: 4px;
+      color: #ff4d4f;
+      font-size: 14px;
+      font-family: SimSun, sans-serif;
+      line-height: 1;
+      content: '*';
+    }
+
+    @media only screen and (max-width: $lg) {
+      width: 100%;
+      margin-bottom: 56px;
+    }
+
+    .title-form-register-footer {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      color: #1B1B1B;
+
+      @media only screen and (max-width: $lg) {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+
+    .form-regsiter {
+      width: 100%;
+      height: fit-content;
+      margin-top: 24px;
+      padding: 24px;
+      background: #FFFFFF;
+      border-radius: 12px;
+      filter: drop-shadow(4px 4px 20px rgba(0, 0, 0, 0.1));
+
+      @media only screen and (max-width: $lg) {
+        margin-top: 32px;
+      }
+    }
+
+    .decription-form-register-footer {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: #5E5E5E;
+
+      @media only screen and (max-width: $lg) {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+      }
+    }
+  }
+
+  .information-socal-network {
+    background: #F4F8FF;
+    width: 100%;
+    padding: 22px;
+    height: 100%;
+
+    @screen md {
+      padding: 32px 40px;
+    }
+
+    circle {
+      stroke: #FFFFFF;
+    }
+  }
+
+  .decription-contact {
+    margin-bottom: 40px;
+  }
+
+  .icon-socal-network {
+    border: none;
+  }
+
+  .footer-social-network {
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+  }
+}

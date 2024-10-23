@@ -1,0 +1,11 @@
+@import '@styles/css_variables';
+.deals-loans-import-deals {
+  @media only screen and (max-width: $md) {
+    .ui-stepper-controls {
+      margin: 0 -1rem 20px -1rem;
+      .ui-stepper-container + button {
+        margin: 0 !important;
+      }
+    }
+  }
+}

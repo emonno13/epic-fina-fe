@@ -1,0 +1,136 @@
+.client-news-detail {
+  max-width: 800px;
+  margin: 24px auto;
+  padding: 0 16px;
+  position: relative;
+
+  @screen md {
+    margin: 40px auto;
+    padding: 0;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    font-family: SFPD-Bold;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #064DD6;
+
+    @screen md {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    font-family: SFPD-Regular;
+    margin-bottom: 32px;
+    color: #AAAFB3;
+
+    &__created-at,
+    &_author {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+  }
+
+  &__content {
+    font-family: SFPD-Regular;
+    margin-bottom: 54px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      height: auto;
+    }
+  }
+
+  &__desc {
+    font-family: SFPD-Regular;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &__author {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #064DD6;
+  }
+
+  .ant-tag {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #064DD6;
+    padding: 8px;
+    background: #CBE3FC;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+
+  &-share {
+    font-weight: 400;
+    font-size: 16px;
+    // line-height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    z-index: 1;
+
+    &-item {
+      width: 40px;
+      height: 40px;
+      background: #E8EFFF;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      .react-share__ShareButton {
+        line-height: 10px !important;
+      }
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  &-share-sticky {
+    position: absolute;
+    right: -60px;
+    display: none;
+
+    @screen md {
+      display: block
+    }
+
+    &-wrapper {
+      position: fixed;
+    }
+
+    .client-news-detail-share {
+      flex-direction: column;
+
+      &-title {
+        display: none;
+      }
+    }
+  }
+}

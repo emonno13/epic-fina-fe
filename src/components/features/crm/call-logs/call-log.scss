@@ -1,0 +1,71 @@
+.direction-call {
+  max-width: 30px;
+
+  &__icon {
+    max-width: 100%;
+  }
+}
+
+.missCall {
+  border: 1px solid #FDA7A2;
+  background-color: #FFF1F0;
+  color: #FD4545;
+}
+
+.userBusy {
+  border: 1px solid #FFD591;
+  background-color: #FFF7E6;
+  color: #F28E3C;
+}
+
+.call-state {
+  border: 1px solid;
+
+  &--missing {
+    border-color: #FDA7A2 !important;
+    background-color: #FFF1F0 !important;
+    color: #FD4545 !important;
+  }
+
+  &--busy {
+    border-color: #FFD591 !important;
+    background-color: #FFF7E6 !important;
+    color: #F28E3C !important;
+  }
+
+  &--success {
+    border-color: #B7EB8F !important;
+    background-color: #F6FFED !important;
+    color: #20BA2F !important;
+  }
+}
+
+.call-timeline {
+  margin-left: 3.5rem;
+
+  &__item {
+    .ant-timeline-item-label {
+      padding-right: 20px;
+    }
+
+    .ant-timeline-item-content {
+      padding-left: 20px;
+      padding-bottom: 20px;
+      display: flex;
+
+      div:first-child {
+        width: 27%;
+      }
+    }
+  }
+}
+
+.call-logs-select-user {
+  .ant-select-selector {
+    padding: 0px !important;
+
+    .ant-select-selection-item {
+      color: black;
+    }
+  }
+}

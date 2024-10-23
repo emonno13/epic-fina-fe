@@ -1,0 +1,59 @@
+@import '../../../../../../styles/css_variables';
+
+
+.content-connection {
+  text-align: center;
+
+  // margin-bottom: 160px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    color: #1b1b1b;
+    margin-bottom: 16px;
+  }
+
+  &__des {
+    padding-bottom: 40px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #919191;
+    margin:  0 auto;
+  }
+
+  &__webimages {
+    margin-bottom: 160px;
+
+    @media only screen and (max-width: $md) {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      height: 325px;
+    }
+  }
+
+  &__mobileimages {
+    margin-bottom: 160px;
+
+    @media only screen and (max-width: $md) {
+      display: block;
+    }
+
+    display: none;
+
+    img {
+      width: 100%;
+      height: 425px;
+    }
+  }
+
+  .sustainable-development {
+    width: 100%;
+    margin-bottom: 120px;
+  }
+}

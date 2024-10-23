@@ -1,0 +1,154 @@
+@import '../../../../../styles/css_variables';
+
+.credit-offer-letter-header {
+  // padding: 30px 0 40px;
+  font-size: 14px;
+  line-height: 140%;
+
+  @screen md {
+    font-size: 18px;
+  }
+
+  &__customer-name {
+    font-size: 20px;
+    font-weight: 600;
+
+    strong {
+      font-size: 18px;
+      line-height: 21px;
+      color: #1b1b1b;
+      font-family: SFPD-Bold;
+    }
+  }
+
+  .banner-footer {
+    background-image: url(/assets/images/letter-template-banner-footer.jpeg);
+  }
+}
+
+.origin-credit-offer-letter {
+  .banner {
+    height: 274px;
+    background: url(/assets/images/letter-template-background-banner.png), url(/assets/images/letter-template-main-banner.png);
+    background-size: cover, cover;
+    background-blend-mode: multiply;
+
+    @media only screen and (max-width: $md) {
+      background: url(/assets/images/letter-template-background-banner-mobile.png), url(/assets/images/letter-template-main-banner-mobile.png);
+      background-size: cover, cover;
+    }
+
+    .content {
+      display: flex;
+      align-items: baseline;
+      padding: 80px 0;
+
+      @media only screen and (max-width: $md) {
+        justify-content: center;
+        padding: 100px 0;
+      }
+
+      .sticker {
+
+        img {
+          @media only screen and (max-width: $md) {
+            height: 162px;
+          }
+        }
+      }
+
+      .icon-shape {
+        display: block;
+        position: relative;
+        top: 5px;
+
+        @media only screen and (max-width: $md) {
+          display: none;
+        }
+      }
+
+      .icon-shape-mobile {
+        display: none;
+
+        @media only screen and (max-width: $md) {
+          display: block;
+        }
+      }
+
+      .slogan {
+        font-size: 36px;
+        font-family: SFPD-Bold;
+        color: #FFF;
+        padding-left: 18px;
+        text-transform: capitalize;
+
+        @media only screen and (max-width: $md) {
+          font-size: 24px;
+          padding-left: 14px;
+        }
+    
+        & > span {
+          color: #FFF;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .org-info {
+    padding: 80px 0;
+    background: #F4F8FF;
+    background-image: url(/assets/images/bg-org-info-gradient.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    @media only screen and (max-width: $md) {
+      padding: 22px 0;
+      background-size: 40%;
+    }
+
+
+    .welcome {
+      font-size: 20px;
+
+      @media only screen and (max-width: $md) {
+        font-size: 14px;
+      }
+    }
+
+    .org-name {
+      font-size: 32px;
+      font-family: Lato-Bold;
+
+      @media only screen and (max-width: $md) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .org-info-detail {
+    .info-item {
+      max-width: 430px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      font-size: 13px;
+
+      @screen md {
+        font-size: 16px;
+      }
+
+      > img {
+        margin-right: 10px;
+      }
+
+      > p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.offer-letter-welcome {
+  padding: 80px 0;
+}

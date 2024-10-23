@@ -1,0 +1,38 @@
+.setting-layout {
+  .ant-form-item-label {
+    width: 80%;
+    text-align: left;
+
+    label {
+      white-space: pre-wrap;
+    }
+  }
+
+  &__email-all, &__sms-all {
+    .ant-switch-checked {
+      background-color: rgba(117, 187, 67, 1)
+    }
+  }
+}
+
+.user-information_form-setting {
+
+  .menu-bar {
+    &__button {
+      padding: 10px;
+      border: 1px solid #0068ff;
+      border-radius: 8px;
+      margin: 5px;
+    }
+
+    .active {
+      background: #0068ff;
+      color: #fff
+    }
+  
+    .no-active {
+      color: #0068ff;
+      background: #fff
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@import "../../styles/css_variables";
+
+.loans-introduce-page {
+    overflow-x: hidden;
+
+    .height100percent {
+        overflow-y: auto;
+        height: auto;
+    }
+}
+
+.loans-introduce {
+    &.alma-layout {
+        background-color: #FFFFFF !important;
+        font-family: 'Lato-Regular';
+        background-image: url(/assets/images/bg_layout_loans_introduce.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 60%;
+
+        @screen md {
+            background-size: auto;
+        }
+
+        .ant-layout-header {
+            display: flex;
+            background: transparent;
+            padding: 0;
+            height: 72px;
+            box-shadow: none;
+
+            &.header-scroll {
+                transition: 0.3s;
+                background: #ffffff;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+            }
+
+            @media only screen and (max-width: $md) {
+                height: 64px;
+                background: #ffffff;
+            }
+        }
+
+        .ant-layout-footer {
+            padding: 80px 0;
+            min-height: 430px;
+            background: url(/assets/images/credit-offer-letter-footer-bottom-bg.png), url(/assets/images/credit-offer-letter-footer-bottom-main.png);
+            background-size: cover, cover;
+            color: white;
+        }
+
+        .text-loans-hightlight {
+            color: #FF6C0E;
+        }
+    }
+}
+
+.loans-introduce-container {
+    max-width: 1202px;
+    padding: 0 16px;
+    width: 100%;
+    margin: 0 auto;
+}

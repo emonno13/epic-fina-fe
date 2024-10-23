@@ -1,0 +1,10 @@
+.ui-label-title {
+  .label-content {
+    padding: 0 8px;
+    font-size: 16px;
+
+    &.uppercase {
+      text-transform: uppercase;
+    }
+  }
+}

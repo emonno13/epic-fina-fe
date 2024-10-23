@@ -1,0 +1,28 @@
+@import '@styles/css_variables';
+
+.fund-certificate-chart {
+  .ant-tabs-tab {
+    background-color: #f5f5f5 !important;
+    border: none !important;
+    font-size: 10px !important;
+    border-radius: 3px !important;
+    font-weight: 500 !important;
+    padding: 6px 16px !important;
+  }
+
+  .ant-tabs-tab-active {
+    background-color: #064dd6 !important;
+  }
+
+  .ant-tabs-tab + .ant-tabs-tab {
+    margin-left: 8px;
+  }
+
+  .ant-tabs-nav-list {
+    justify-content: space-between;
+    width: 100%;
+    @screen md {
+      justify-content: initial;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+@import "styles/_css_variables.scss";
+
+.expert-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 300px;
+  @media only screen and (max-width: $md) {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+  .expert-detail-header-info {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    @media only screen and (max-width: $md) {
+      flex-direction: column;
+      gap: 16px;
+    }
+    &-detail {
+      @media only screen and (max-width: $md) {
+        text-align: center;
+      }
+      &__name {
+        font-family: SFPD-Bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        color: #064dd6;
+        margin-bottom: 6px;
+      }
+      &__title {
+        font-size: 16px;
+        line-height: 19px;
+        color: #474747;
+        margin-bottom: 16px;
+      }
+      &__rate {
+        padding: 6px 12px;
+        background: #ffc107;
+        border-radius: 34px;
+        width: fit-content;
+        @media only screen and (max-width: $md) {
+          margin: 0 auto;
+        }
+        .anticon {
+          margin-right: 8px;
+        }
+        span {
+          color: #ffffff;
+          font-family: SFPD-Bold;
+          font-weight: bold;
+        }
+      }
+      &-rate-and-socials {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        .expert-detail-header-info-social-item {
+          display: block;
+          width: 24px;
+          height: 24px;
+          svg {
+            display: block;
+            width: 100%;
+            height: auto;
+            path {
+              fill: #fff;
+            }
+          }
+          #expert-detail-header-info-zalo-icon {
+            circle {
+              fill: #064dd6;
+            }
+          }
+        }
+      }
+    }
+  }
+  .expert-detail-header-contact {
+    min-width: 300px;
+    &-btns {
+      display: grid;
+      gap: 16px;
+      margin-bottom: 16px;
+      grid-template-columns: 1fr 1fr;
+      .ant-btn {
+        flex: 1;
+        height: 40px;
+        border: 1px solid #064dd6;
+        color: #064dd6;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        gap: 8px;
+        font-size: 14px;
+        line-height: 18px;
+        border-radius: 8px;
+        .anticon {
+          font-size: 18px;
+          transform: rotate(90deg);
+        }
+      }
+      &__telegram {
+        max-height: 80%;
+      }
+    }
+    &-create-request {
+      width: 100%;
+      background: #064dd6;
+      border-radius: 6px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    &-vcard {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column ;
+    }
+  }
+}
