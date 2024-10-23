@@ -11,10 +11,16 @@ import {
   InputPhoneNumberSchemaItem,
 } from '@components/shared/input-with-rule';
 import { PopoverExplain } from '@components/shared/popover-explain';
+import { IconUploadImage } from '@icons';
+import { useHTranslation } from '@lib/i18n';
+import { endpoints } from '@lib/networks/endpoints';
+import { useCurrentUser } from '@lib/providers/auth';
+import { ImageUtils } from '@lib/utils/image';
 import { SEARCH_MODES } from '@schema-form/features/search-form/schema';
 import { HForm, HSubForm } from '@schema-form/h-form';
 import { createSchemaItem, HFormProps } from '@schema-form/h-types';
 import { FormUtils, RelationUtils } from '@schema-form/utils/form-utils';
+import { ORGANIZATION_TYPES } from '@types/organization';
 import {
   Button,
   Checkbox,
@@ -25,15 +31,9 @@ import {
   Row,
   Spin,
 } from 'antd';
-import { IconUploadImage } from 'icons';
-import { useHTranslation } from 'lib/i18n';
-import { endpoints } from 'lib/networks/endpoints';
-import { useCurrentUser } from 'lib/providers/auth';
-import { ImageUtils } from 'lib/utils/image';
 import { isEmpty } from 'lodash';
 import moment from 'moment';
 import { Fragment, memo, ReactNode, useEffect, useState } from 'react';
-import { ORGANIZATION_TYPES } from 'types/organization';
 
 import './kyc.module.scss';
 

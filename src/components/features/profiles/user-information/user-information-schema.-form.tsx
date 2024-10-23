@@ -4,8 +4,8 @@ import {
 } from '@components/features/organizations/users/constants';
 import { getProfileHref } from '@components/features/organizations/users/utils';
 import { InputPhoneNumberSchemaItem } from '@components/shared/input-with-rule';
+import { CommentUtils } from '@lib/utils/comment';
 import { Button, Divider, Input, Radio, Switch } from 'antd';
-import { CommentUtils } from 'lib/utils/comment';
 import moment from 'moment';
 import { useEffect, useState } from 'react';
 import { useHTranslation } from '../../../../lib/i18n';

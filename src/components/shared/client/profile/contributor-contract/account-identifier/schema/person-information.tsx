@@ -4,15 +4,15 @@ import { HInput } from '@components/shared/common-form-elements/h-input';
 import { HSelect } from '@components/shared/common-form-elements/select';
 import { SelectUtils } from '@components/shared/common-form-elements/select/Utils';
 import { InputPhoneNumberSchemaItem } from '@components/shared/input-with-rule';
+import { ArrowDownSmallIcon } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { useCurrentUser } from '@lib/providers/auth';
 import { SEARCH_MODES } from '@schema-form/features/search-form/schema';
 import { HSubForm } from '@schema-form/h-form';
 import { createSchemaItem } from '@schema-form/h-types';
-import { ArrowDownSmallIcon } from 'icons';
+import { ORGANIZATION_TYPES } from '@types/organization';
 import moment from 'moment';
 import { useState } from 'react';
-import { ORGANIZATION_TYPES } from 'types/organization';
 
 export const InfoAccountSchema = () => {
   const { t } = useHTranslation('common');

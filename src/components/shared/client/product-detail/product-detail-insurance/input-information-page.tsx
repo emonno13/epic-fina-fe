@@ -1,14 +1,14 @@
 import { CheckCircleFilled } from '@ant-design/icons';
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
 import { HModal } from '@components/shared/common/h-modal';
+import { ArrowLeftCircleSvg, CloseIconLargeSvg } from '@icons';
+import { IconBuySuccess } from '@icons/rsvgs/buy-success-icon';
 import { FormatterUtils } from '@lib/formatter';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
 import { useAuth } from '@lib/providers/auth';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Form, Steps } from 'antd';
-import { ArrowLeftCircleSvg, CloseIconLargeSvg } from 'icons';
-import { IconBuySuccess } from 'icons/rsvgs/buy-success-icon';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';

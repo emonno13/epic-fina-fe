@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import { SellFundAction } from '@components/features/client/fund-certificate/sell-fund/sell-fund-action';
 import { Link } from '@components/shared/link';
+import { CloseIconLargeSvg } from '@icons';
 import { ConverterUtils } from '@lib/converter';
 import { useHTranslation } from '@lib/i18n';
 import { TableUtils } from '@lib/table-utils';
 import { HTable } from '@schema-form/features';
 import { Modal } from 'antd';
-import { CloseIconLargeSvg } from 'icons';
 import moment from 'moment';
 import { useMemo, useState } from 'react';
 import { IconCart, IconDown, IconSale, IconUp } from './constants';

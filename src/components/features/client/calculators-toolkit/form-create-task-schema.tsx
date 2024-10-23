@@ -1,12 +1,12 @@
 import { CloseOutlined } from '@ant-design/icons';
 import { TASK_TYPE } from '@components/features/crm/tasks/utils';
+import { ArrowRightCircleRightSvg } from '@icons';
 import { ConverterUtils } from '@lib/converter';
 import { useHTranslation } from '@lib/i18n';
 import { useCurrentUser } from '@lib/providers/auth';
 import { HForm } from '@schema-form/h-form';
 import { createSchemaItem } from '@schema-form/h-types';
 import { Form, Input } from 'antd';
-import { ArrowRightCircleRightSvg } from 'icons';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 

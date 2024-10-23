@@ -1,7 +1,7 @@
+import { ArrowDownIconSvg } from '@icons';
 import { ConverterUtils } from '@lib/converter';
 import { useHTranslation } from '@lib/i18n';
 import { Input, InputNumber, List, Select } from 'antd';
-import { ArrowDownIconSvg } from 'icons';
 import { TYPE_TIME } from '../constants';
 
 import './styles.module.scss';

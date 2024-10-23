@@ -1,10 +1,10 @@
 import { useHTranslation } from '@lib/i18n';
 import { HForm } from '@schema-form/h-form';
 import { FormUtils } from '@schema-form/utils/form-utils';
+import { USER_TYPES } from '@types/organization';
 import { Button, Form, Modal } from 'antd';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import { USER_TYPES } from 'types/organization';
 import { FinaAgentRegisterSchema } from '../../../../../layouts/fina-agent/footer/form-schemas';
 
 import '../css/register-agent-form.module.scss';

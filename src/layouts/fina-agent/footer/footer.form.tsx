@@ -1,7 +1,7 @@
 import { useHTranslation } from '@lib/i18n';
 import { HForm } from '@schema-form/h-form';
+import { USER_TYPES } from '@types/organization';
 import { Button, Form, Modal } from 'antd';
-import { USER_TYPES } from 'types/organization';
 import { FinaAgentFooterFormSchema } from './form-schemas';
 
 const FinaAgentFooterForm = () => {

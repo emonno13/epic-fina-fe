@@ -1,8 +1,8 @@
+import { PhoneOutlinedIconSvg } from '@icons';
 import { ConverterUtils } from '@lib/converter';
 import { CallPhoneFcssSDKConvert } from '@lib/fccs-sdk-convert';
 import { useHTranslation } from '@lib/i18n';
 import { Popover } from 'antd';
-import { PhoneOutlinedIconSvg } from 'icons';
 import { FC, memo, ReactNode } from 'react';
 import { AnyObject } from '../atom/type';
 import { EmailWithIcon } from '../common/configuration/email-icon';

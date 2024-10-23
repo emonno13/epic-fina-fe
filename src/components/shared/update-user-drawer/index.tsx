@@ -1,8 +1,8 @@
-import { Drawer, DrawerProps } from 'antd';
-import { memo } from 'react';
 import RenderCustomerUpdate from '@components/features/business/customer/render-customer-update';
 import { ConverterUtils } from '@lib/converter';
-import { ORGANIZATION_TYPES } from 'types/organization';
+import { ORGANIZATION_TYPES } from '@types/organization';
+import { Drawer, DrawerProps } from 'antd';
+import { memo } from 'react';
 // import { useCurrentUser } from '@lib/providers/auth';
 import { useCheckRoleFinaStaff } from 'dynamic-configuration/hooks';
 import { AnyObject } from '../atom/type';

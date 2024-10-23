@@ -4,8 +4,8 @@ import { useState } from 'react';
 import { RootStateOrAny, useDispatch, useSelector } from 'react-redux';
 
 import { SVGIcon } from '@components/shared/atom/svg-icon';
+import { ClearPhoneSvg, ClockSvg, ContactSvg, KeyboardSvg } from '@icons';
 import classNames from 'classnames';
-import { ClearPhoneSvg, ClockSvg, ContactSvg, KeyboardSvg } from 'icons';
 import { useCurrentUser } from '../../../../../lib/providers/auth';
 import { HForm } from '../../../../../schema-form/h-form';
 import { createSchemaItem } from '../../../../../schema-form/h-types';

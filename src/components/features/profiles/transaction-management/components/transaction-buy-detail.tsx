@@ -1,7 +1,7 @@
 import PaymentConfirmationQRCode from '@components/features/client/fund-certificate/buy-fund/payment-confirmation-qr-code';
+import { ConverterUtils } from '@lib/converter';
+import { useHTranslation } from '@lib/i18n';
 import { Col, Divider, Empty, Row } from 'antd';
-import { ConverterUtils } from 'lib/converter';
-import { useHTranslation } from 'lib/i18n';
 import { isEmpty } from 'underscore';
 import { DescriptionItem } from './drawer-transaction-detail';
 

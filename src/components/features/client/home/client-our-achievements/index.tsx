@@ -1,10 +1,10 @@
 import { NEWS_STATUS } from '@components/features/news-management/news/constant';
 import { rgbDataURL } from '@components/shared/atom/rgb';
 import FeaturedNewsCarousel from '@components/shared/client/featured-news/featured-news.carousel';
+import { IconArrowRight } from '@icons/rsvgs/arrow-right';
 import { useHTranslation } from '@lib/i18n';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Button, Col, Row } from 'antd';
-import { IconArrowRight } from 'icons/rsvgs/arrow-right';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';

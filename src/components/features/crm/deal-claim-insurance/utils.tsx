@@ -1,5 +1,10 @@
+import {
+  AppraisalProgressIcon,
+  LendApprovalIcon,
+  ProcessIcon,
+  WaitProcessIcon,
+} from '@icons';
 import { Tag } from 'antd';
-import { AppraisalProgressIcon, LendApprovalIcon, ProcessIcon, WaitProcessIcon } from 'icons';
 
 export const DEAL_CLAIM_INSURANCE_STATUSES = {
   WAIT_PROCESSING: 'wait_processing', // Đang xử lý hồ sơ
@@ -63,12 +68,17 @@ export const mappingLabelClaimInsurance = (status) => {
       break;
     }
   }
-		
-  return <Tag {...{
-    color,
-  }}>{label}</Tag>;
-};
 
+  return (
+    <Tag
+      {...{
+        color,
+      }}
+    >
+      {label}
+    </Tag>
+  );
+};
 
 export const DEAL_CLAIM_INSURANCE_STEP = [
   DEAL_CLAIM_INSURANCE_STATUSES.WAIT_PROCESSING, // Đang xử lý hồ sơ
@@ -81,45 +91,47 @@ export const DEAL_CLAIM_INSURANCE_STEP = [
   DEAL_CLAIM_INSURANCE_STATUSES.DISBURSED, // đã giải ngân
 ];
 
-export const mappingLabelDealClaimInsurance = [	{
-  icon:  <WaitProcessIcon />,
-  name : 'Khởi tạo',
-  color: '#1890ff',
-  value: DEAL_CLAIM_INSURANCE_STATUSES.WAIT_PROCESSING,
-},
-{
-  icon: <ProcessIcon />,
-  name : 'xử lý hồ sơ',
-  color: '#ffc53d',
-  value: DEAL_CLAIM_INSURANCE_STATUSES.MOVE_TO_PARTNER,
-},
-{
-  icon: <LendApprovalIcon />,
-  name : 'Chờ đối tác phê duyệt',
-  color: '#73d13d',
-  value: DEAL_CLAIM_INSURANCE_STATUSES.PARTNER_CONFIRM,
-},
-{
-  icon: <ProcessIcon />,
-  name : 'Nhận bản cứng khách hàng',
-  color: '#ff4d4f',
-  value: DEAL_CLAIM_INSURANCE_STATUSES.DOCUMENT_CONFIRM,
-},
-{
-  icon: <LendApprovalIcon />,
-  name : 'Gửi bản cứng hồ sơ cho đối tác',
-  color: '#ff4d4f',
-  value: DEAL_CLAIM_INSURANCE_STATUSES.MOVE_DOCUMENT_TO_PARTNER,
-},
-{
-  icon: <ProcessIcon />,
-  name : 'Đang giải ngân',
-  color: '#ff4d4f',
-  value: DEAL_CLAIM_INSURANCE_STATUSES.DISBURSING,
-},
-{
-  icon: <AppraisalProgressIcon />,
-  name: 'Đã giải ngân',
-  color: '#ff4d4f',
-  value: DEAL_CLAIM_INSURANCE_STATUSES.DISBURSED,
-}];
+export const mappingLabelDealClaimInsurance = [
+  {
+    icon: <WaitProcessIcon />,
+    name: 'Khởi tạo',
+    color: '#1890ff',
+    value: DEAL_CLAIM_INSURANCE_STATUSES.WAIT_PROCESSING,
+  },
+  {
+    icon: <ProcessIcon />,
+    name: 'xử lý hồ sơ',
+    color: '#ffc53d',
+    value: DEAL_CLAIM_INSURANCE_STATUSES.MOVE_TO_PARTNER,
+  },
+  {
+    icon: <LendApprovalIcon />,
+    name: 'Chờ đối tác phê duyệt',
+    color: '#73d13d',
+    value: DEAL_CLAIM_INSURANCE_STATUSES.PARTNER_CONFIRM,
+  },
+  {
+    icon: <ProcessIcon />,
+    name: 'Nhận bản cứng khách hàng',
+    color: '#ff4d4f',
+    value: DEAL_CLAIM_INSURANCE_STATUSES.DOCUMENT_CONFIRM,
+  },
+  {
+    icon: <LendApprovalIcon />,
+    name: 'Gửi bản cứng hồ sơ cho đối tác',
+    color: '#ff4d4f',
+    value: DEAL_CLAIM_INSURANCE_STATUSES.MOVE_DOCUMENT_TO_PARTNER,
+  },
+  {
+    icon: <ProcessIcon />,
+    name: 'Đang giải ngân',
+    color: '#ff4d4f',
+    value: DEAL_CLAIM_INSURANCE_STATUSES.DISBURSING,
+  },
+  {
+    icon: <AppraisalProgressIcon />,
+    name: 'Đã giải ngân',
+    color: '#ff4d4f',
+    value: DEAL_CLAIM_INSURANCE_STATUSES.DISBURSED,
+  },
+];

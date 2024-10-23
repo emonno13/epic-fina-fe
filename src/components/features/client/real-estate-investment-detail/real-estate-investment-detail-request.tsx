@@ -3,6 +3,7 @@ import {
   TASK_TYPE,
 } from '@components/features/crm/tasks/utils';
 import { HModal } from '@components/shared/common/h-modal';
+import { CloseIconLargeSvg } from '@icons';
 import { ConverterUtils } from '@lib/converter';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
@@ -11,7 +12,6 @@ import { NumberUtils } from '@lib/utils/number';
 import { HForm } from '@schema-form/h-form';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Button, Col, Form, notification, Row } from 'antd';
-import { CloseIconLargeSvg } from 'icons';
 import Image from 'next/image';
 import { useState } from 'react';
 import { RealEstateInvestmentDetailRequestSchema } from './real-estate-investment-detail-request-schema';

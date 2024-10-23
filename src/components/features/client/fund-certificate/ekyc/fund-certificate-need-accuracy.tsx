@@ -1,7 +1,7 @@
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
+import { NoAccuracyEkyc } from '@icons/rsvgs/no-accuracy-ekyc';
 import { useHTranslation } from '@lib/i18n';
 import { Divider } from 'antd';
-import { NoAccuracyEkyc } from 'icons/rsvgs/no-accuracy-ekyc';
 import { kycWithMioStep } from '../detail/constants';
 
 export const FundCertificateNeedAccuracy = ({ setCurrentStepKycWithMio }) => {

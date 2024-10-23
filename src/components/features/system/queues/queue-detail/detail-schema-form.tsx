@@ -1,13 +1,13 @@
 import { Input } from 'antd';
 
 import { HInput } from '@components/shared/common-form-elements/h-input';
+import { useHTranslation } from '@lib/i18n';
+import { ValidationMessages } from '@lib/validation-message';
 import {
   createSchemaItem,
   HFormItemProps,
   HFormProps,
 } from '@schema-form/h-types';
-import { useHTranslation } from 'lib/i18n';
-import { ValidationMessages } from 'lib/validation-message';
 import { HSelect } from '../../../../shared/common-form-elements/select';
 
 export const QueueDetailSchemaForm = (props: HFormProps): HFormItemProps[] => {

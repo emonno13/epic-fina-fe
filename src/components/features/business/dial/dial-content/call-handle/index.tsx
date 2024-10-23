@@ -1,8 +1,6 @@
 import { CaretUpOutlined } from '@ant-design/icons';
 import { TaskPopover } from '@components/features/crm/tasks/task-popover';
 import { SVGIcon } from '@components/shared/atom/svg-icon';
-import { useSetDocumentDetailVisibility } from '@schema-form/features/hooks';
-import { FormUtils } from '@schema-form/utils/form-utils';
 import {
   DocumentSvg,
   ForwardSvg,
@@ -13,7 +11,9 @@ import {
   Play,
   RequestCounsellingIconSvg,
   UserSvg,
-} from 'icons';
+} from '@icons';
+import { useSetDocumentDetailVisibility } from '@schema-form/features/hooks';
+import { FormUtils } from '@schema-form/utils/form-utils';
 import moment from 'moment';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { RootStateOrAny, useDispatch, useSelector } from 'react-redux';

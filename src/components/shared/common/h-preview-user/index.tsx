@@ -1,5 +1,5 @@
+import { MailIcon } from '@icons';
 import { ConverterUtils } from '@lib/converter';
-import { MailIcon } from 'icons';
 import { useHTranslation } from '../../../../lib/i18n';
 import { USER_TYPES } from '../../../../types/organization';
 import { IconEmail } from '../configuration/icon-email';

@@ -1,16 +1,18 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBuilding } from '@fortawesome/free-solid-svg-icons';
-import { TFunction } from 'next-i18next';
-import { ClientHomeCollaboratorIcon, ClientHomeLoginIcon, ClientHomePersonalIcon } from 'icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
+  ClientHomeCollaboratorIcon,
+  ClientHomeLoginIcon,
+  ClientHomePersonalIcon,
   IconAccountProfile,
   IconProfileDashboard,
   IconSettingProfile,
   IconTransactionProfile,
   IconWealthProfile,
-} from 'icons';
-import PhoneIcon from './icons/client-footer.phone-icon';
+} from '@icons';
+import { TFunction } from 'next-i18next';
 import EmailIcon from './icons/client-footer.email-icon';
+import PhoneIcon from './icons/client-footer.phone-icon';
 import PinIcon from './icons/client-footer.pin-icon';
 
 export const getFooterMenus = (t) => [
@@ -18,7 +20,10 @@ export const getFooterMenus = (t) => [
     title: t('House loan', { en: 'House loan', vn: 'Vay mua nhà' }),
     href: '/danh-sach-san-pham-vay',
     subMenu: [
-      { title: t('House loan', { en: 'House loan', vn: 'Vay mua nhà' }), href: '/danh-sach-san-pham-vay' },
+      {
+        title: t('House loan', { en: 'House loan', vn: 'Vay mua nhà' }),
+        href: '/danh-sach-san-pham-vay',
+      },
       {
         title: t('Certificated house loan', {
           en: 'Certificated house loan',
@@ -33,7 +38,10 @@ export const getFooterMenus = (t) => [
     href: '/danh-sach-bat-dong-san',
     subMenu: [
       {
-        title: t('Project real estate', { en: 'Project real estate', vn: 'Bất động sản dự án' }),
+        title: t('Project real estate', {
+          en: 'Project real estate',
+          vn: 'Bất động sản dự án',
+        }),
         href: '/danh-sach-bat-dong-san',
       },
       {
@@ -63,11 +71,17 @@ export const getFooterMenus = (t) => [
         href: '/danh-sach-bao-hiem',
       },
       {
-        title: t('Human insurance', { en: 'Human insurance', vn: 'Bảo hiểm con người' }),
+        title: t('Human insurance', {
+          en: 'Human insurance',
+          vn: 'Bảo hiểm con người',
+        }),
         href: '/danh-sach-bao-hiem',
       },
       {
-        title: t('Other insurance', { en: 'Other insurance', vn: 'Bảo hiểm khác' }),
+        title: t('Other insurance', {
+          en: 'Other insurance',
+          vn: 'Bảo hiểm khác',
+        }),
         href: '/danh-sach-bao-hiem',
       },
     ],
@@ -76,7 +90,10 @@ export const getFooterMenus = (t) => [
     title: t('News', { en: 'News', vn: 'Tin tức' }),
     href: '/tin-tuc',
     subMenu: [
-      { title: t('Knowledge', { en: 'Knowledge', vn: 'Kiến thức' }), href: '/tin-tuc' },
+      {
+        title: t('Knowledge', { en: 'Knowledge', vn: 'Kiến thức' }),
+        href: '/tin-tuc',
+      },
       { title: t('News', { en: 'News', vn: 'Tin tức' }), href: '/tin-tuc' },
       { title: t('Blog', { en: 'Blog', vn: 'Blog' }), href: '/tin-tuc' },
     ],
@@ -87,32 +104,46 @@ export const getFooterInfo = (t) => [
   { title: t('About us', { en: 'About us', vn: 'Về chúng tôi' }) },
   { title: t('FAQ', { en: 'FAQ', vn: 'Hỏi đáp' }) },
   { title: t('Collaborator', { en: 'Collaborator', vn: 'Cộng tác viên' }) },
-  { title: t('Privacy policy', { en: 'Privacy policy', vn: 'Chính sách bảo mật' }) },
+  {
+    title: t('Privacy policy', {
+      en: 'Privacy policy',
+      vn: 'Chính sách bảo mật',
+    }),
+  },
   { title: t('Contact us', { en: 'Contact us', vn: 'Liên hệ chúng tôi' }) },
 ];
 
-export const getMobileDropdown = t => [
+export const getMobileDropdown = (t) => [
   {
     title: t('Login', { en: 'Login', vn: 'Đăng nhập' }),
     href: '/users/login?redirect=/vn',
     icon: <ClientHomeLoginIcon />,
   },
   {
-    title: t('Register collaborator', { en: 'Register collaborator', vn: 'Đăng ký TK cá nhân' }),
+    title: t('Register collaborator', {
+      en: 'Register collaborator',
+      vn: 'Đăng ký TK cá nhân',
+    }),
     href: '/users/signup',
     icon: <ClientHomePersonalIcon />,
   },
   {
-    title: t('Register collaborator', { en: 'Register collaborator', vn: 'Đăng ký cộng tác viên' }),
+    title: t('Register collaborator', {
+      en: 'Register collaborator',
+      vn: 'Đăng ký cộng tác viên',
+    }),
     href: '/users/signup',
     icon: <ClientHomeCollaboratorIcon />,
   },
 ];
 
-export const getFooterContactUsData = t => [
+export const getFooterContactUsData = (t) => [
   {
     icon: () => (
-      <FontAwesomeIcon icon={faBuilding} style={{ color: '#FC7513', fontSize: 16 }} />
+      <FontAwesomeIcon
+        icon={faBuilding}
+        style={{ color: '#FC7513', fontSize: 16 }}
+      />
     ),
     text: <span>Công ty cổ phần Dịch vụ Tài chính Bất động sản Tulip</span>,
   },
@@ -128,9 +159,9 @@ export const getFooterContactUsData = t => [
     icon: PinIcon,
     text: (
       <span>
-				L17-11, Tầng 17, Toà nhà Vincom Center Đồng Khởi,
+        L17-11, Tầng 17, Toà nhà Vincom Center Đồng Khởi,
         <br />
-				72 Lê Thánh Tôn, Phường Bến Nghé, Quận 1, TP.HCM
+        72 Lê Thánh Tôn, Phường Bến Nghé, Quận 1, TP.HCM
       </span>
     ),
   },

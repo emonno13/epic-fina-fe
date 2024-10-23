@@ -1,10 +1,10 @@
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
+import { FilterIconSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
 import { useSubmitSearchForm } from '@schema-form/features/hooks';
 import { useFeatureData } from '@schema-form/features/hooks/feature-hooks';
 import { FormUtils } from '@schema-form/utils/form-utils';
-import { FilterIconSvg } from 'icons';
 import { useState } from 'react';
 import { HFeature, HTable } from '../../../../schema-form/features';
 import { HFeatureForm } from '../../../../schema-form/features/forms/h-feature-form';

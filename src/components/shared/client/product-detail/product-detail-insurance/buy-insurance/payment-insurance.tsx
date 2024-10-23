@@ -1,10 +1,10 @@
-import { Collapse, Divider, Typography } from 'antd';
-import moment from 'moment';
-import { ArrowDownIconSvg } from 'icons';
+import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
+import { ArrowDownIconSvg } from '@icons';
 import { FormatterUtils } from '@lib/formatter';
 import { useHTranslation } from '@lib/i18n';
-import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
 import { CommentUtils } from '@lib/utils/comment';
+import { Collapse, Divider, Typography } from 'antd';
+import moment from 'moment';
 import { OPTIONS_RELATIONSHIP } from '../buy-insurance/form-staff';
 import { renderPrice } from '../constants';
 

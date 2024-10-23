@@ -1,9 +1,9 @@
-import { Col, Row } from 'antd';
-import { useRouter } from 'next/router';
 import HCard from '@components/shared/common/h-card';
 import { ClickableOpacity } from '@components/shared/utils/clickable-opacity';
 import { useHTranslation } from '@lib/i18n';
-import { ORGANIZATION_TYPES, USER_TYPES } from 'types/organization';
+import { ORGANIZATION_TYPES, USER_TYPES } from '@types/organization';
+import { Col, Row } from 'antd';
+import { useRouter } from 'next/router';
 import { ConverterUtils } from '../../../../../../../lib/converter';
 import { FormatterUtils } from '../../../../../../../lib/formatter';
 import { useCurrentUser } from '../../../../../../../lib/providers/auth';

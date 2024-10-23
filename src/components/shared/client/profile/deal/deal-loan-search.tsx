@@ -2,7 +2,7 @@ import { HSelect } from '@components/shared/common-form-elements/select';
 import { useHTranslation } from '@lib/i18n';
 import { useCurrentUser } from '@lib/providers/auth';
 import { createSchemaItem, HFormItemProps } from '@schema-form/h-types';
-import { ORGANIZATION_TYPES, PRODUCT_TYPE } from 'types/organization';
+import { ORGANIZATION_TYPES, PRODUCT_TYPE } from '@types/organization';
 
 export const AdvanceSearchSchema = (): HFormItemProps[] => {
   const { t } = useHTranslation('admin-common');

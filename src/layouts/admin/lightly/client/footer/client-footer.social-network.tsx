@@ -3,7 +3,7 @@ import {
   ClientFooterGmailIcon,
   ClientFooterYoutubeIcon,
   ClientFooterZaloIcon,
-} from 'icons';
+} from '@icons';
 
 const ClientFooterSocialNetwork = () => {
   return (

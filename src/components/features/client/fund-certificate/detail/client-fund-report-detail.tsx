@@ -1,5 +1,5 @@
+import { ArrowDownIconSvg } from '@icons';
 import { Collapse } from 'antd';
-import { ArrowDownIconSvg } from 'icons';
 // import { MAPPING_REPORT_FUND } from './constans';
 
 import './client-fund-certificate-detail.module.scss';
@@ -10,7 +10,6 @@ const ClientFundReportDetail = (props) => {
   const { bondDetail = {} } = props;
 
   console.log('bondDetail', bondDetail);
-  
 
   return (
     <div className="bond-detail--company report-fund">

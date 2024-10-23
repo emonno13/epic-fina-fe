@@ -6,6 +6,7 @@ import {
   mergeArrayObjects,
 } from '@components/features/fina/deals/utils';
 import { Phones } from '@components/shared/stringee';
+import { CloseIconLargeSvg } from '@icons';
 import { ConverterUtils, useGenerateConcealContent } from '@lib/converter';
 import { FormatterUtils } from '@lib/formatter';
 import { useHTranslation } from '@lib/i18n';
@@ -15,7 +16,6 @@ import {
   useSetDocumentDetail,
 } from '@schema-form/features/hooks';
 import { Col, Modal, Row, Steps } from 'antd';
-import { CloseIconLargeSvg } from 'icons';
 import moment from 'moment';
 import { useEffect, useState } from 'react';
 import { IconBack } from '../../affiliate/components/icons/icon-back';

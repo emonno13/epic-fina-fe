@@ -1,20 +1,20 @@
+import { TemplateCollaboratorContract } from '@components/features/profiles/collaborator-contract/template-collaborator-contract';
+import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
+import { CloseIconLargeSvg } from '@icons';
+import { CheckedGreenIcon } from '@icons/rsvgs/checked-green';
+import { InfoOrangeIcon } from '@icons/rsvgs/info-orange';
+import { ConverterUtils } from '@lib/converter';
+import { useIsMobile } from '@lib/hooks/use-media';
+import { useHTranslation } from '@lib/i18n';
+import { useCurrentUser } from '@lib/providers/auth';
 import { Modal } from 'antd';
 import { useEffect, useMemo, useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import { useDispatch } from 'react-redux';
-import { TemplateCollaboratorContract } from '@components/features/profiles/collaborator-contract/template-collaborator-contract';
-import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
-import { CloseIconLargeSvg } from 'icons';
-import { CheckedGreenIcon } from 'icons/rsvgs/checked-green';
-import { InfoOrangeIcon } from 'icons/rsvgs/info-orange';
-import { useIsMobile } from '@lib/hooks/use-media';
-import { useCurrentUser } from '@lib/providers/auth';
 import { requestInformationUser } from 'store/actions';
-import { useHTranslation } from '@lib/i18n';
-import { ConverterUtils } from '@lib/converter';
 import AccountIdentifier from './account-identifier';
-import { SignatureReSign } from './signature-re-sign';
 import { ConfirmSignContractSuccess } from './account-identifier/info-contract';
+import { SignatureReSign } from './signature-re-sign';
 
 import './styles.module.scss';
 

@@ -1,6 +1,6 @@
 import { LeftFixedRightDynamicColumn } from '@components/shared/common/h-grids/left-fixed-right-dynamic';
+import { DragIndicator } from '@icons';
 import { useSetItem } from '@schema-form/features/hooks';
-import { DragIndicator } from 'icons';
 import { useMemo, useState } from 'react';
 import { Draggable } from 'react-beautiful-dnd';
 import {

@@ -1,7 +1,7 @@
 import HomeInsuranceListWithCategory from '@components/shared/client/home-insurance-list-with-category';
 import { HFeature } from '@schema-form/features';
 import { HSearchFormHiddenAble } from '@schema-form/features/search-form';
-import { PRODUCT_TYPES } from 'types/organization';
+import { PRODUCT_TYPES } from '@types/organization';
 import InsuranceProductsCategoryList from './insurance-products.category-list';
 
 import './insurance-products.module.scss';

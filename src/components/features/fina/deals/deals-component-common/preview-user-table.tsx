@@ -1,11 +1,10 @@
-import React from 'react';
+import { HComment } from '@components/shared/common-form-elements/h-comment';
+import { NoCommentIcon } from '@icons';
+import { useHTranslation } from '@lib/i18n';
 import { Divider, Tooltip } from 'antd';
 import { Scrollbars } from 'react-custom-scrollbars';
-import { useHTranslation } from '@lib/i18n';
-import { HComment } from '@components/shared/common-form-elements/h-comment';
-import { NoCommentIcon } from 'icons';
-import { HPreviewUser } from '../../../../shared/common/h-preview-user';
 import { UserAvatar } from '../../../../shared/common/h-avatar';
+import { HPreviewUser } from '../../../../shared/common/h-preview-user';
 
 export const PreviewUserTable = (props: any) => {
   const { document, user, userTitle, showComment = true } = props;

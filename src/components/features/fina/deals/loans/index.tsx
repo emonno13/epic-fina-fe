@@ -9,6 +9,7 @@ import {
   HButton,
   HButtonProps,
 } from '@components/shared/common-form-elements/h-confirmation-button';
+import { CloseIconSvg, FilterIconSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
 import { useCurrentUser } from '@lib/providers/auth';
@@ -31,15 +32,14 @@ import HSearchForm, {
 import { SEARCH_MODES } from '@schema-form/features/search-form/schema';
 import { createSchemaItem } from '@schema-form/h-types';
 import { RelationUtils } from '@schema-form/utils/form-utils';
+import { USER_TYPES } from '@types/organization';
 import { Form, Input, Row, Tabs } from 'antd';
 import cls from 'classnames';
 import { useHaveDownloadPermission } from 'dynamic-configuration/hooks';
-import { CloseIconSvg, FilterIconSvg } from 'icons';
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import { memo, useEffect, useState } from 'react';
 import Scrollbars from 'react-custom-scrollbars-2';
-import { USER_TYPES } from 'types/organization';
 import { DEAL_STATUSES, DEAL_TYPE } from '../utils';
 import ShortTableSchema from './deals.short-table-schema';
 import { DealsTableSchema } from './deals.table-schema';

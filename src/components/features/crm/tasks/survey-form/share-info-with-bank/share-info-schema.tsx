@@ -8,9 +8,9 @@ import {
   HFormItemProps,
   HFormProps,
 } from '@schema-form/h-types';
+import { GROUP_TYPES } from '@types/group';
 import { Checkbox, Typography } from 'antd';
 import { useState } from 'react';
-import { GROUP_TYPES } from 'types/group';
 
 import './share-info-with-bank.module.scss';
 const { Text } = Typography;

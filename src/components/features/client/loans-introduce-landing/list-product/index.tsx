@@ -1,13 +1,13 @@
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
 import HScrollAnimation from '@components/shared/common/h-scroll-animation';
+import { HeaderShapeMedium, HotTagIcon } from '@icons';
+import { InsuranceIcon } from '@icons/rsvgs/insurance-icon';
+import { InvertIcon } from '@icons/rsvgs/invert-icon';
+import { MinuteConsultationIcon } from '@icons/rsvgs/minute-consultation-icon';
+import { MortgageLoanIcon } from '@icons/rsvgs/mortgage-loan-Icon';
+import { TuitionLoanIcon } from '@icons/rsvgs/tuition-loan-icon';
+import { UnsecuredLoanIcon } from '@icons/rsvgs/unsecured-loan-icon';
 import { Tabs } from 'antd';
-import { HeaderShapeMedium, HotTagIcon } from 'icons';
-import { InsuranceIcon } from 'icons/rsvgs/insurance-icon';
-import { InvertIcon } from 'icons/rsvgs/invert-icon';
-import { MinuteConsultationIcon } from 'icons/rsvgs/minute-consultation-icon';
-import { MortgageLoanIcon } from 'icons/rsvgs/mortgage-loan-Icon';
-import { TuitionLoanIcon } from 'icons/rsvgs/tuition-loan-icon';
-import { UnsecuredLoanIcon } from 'icons/rsvgs/unsecured-loan-icon';
 import { useRouter } from 'next/router';
 
 import './list-product.module.scss';

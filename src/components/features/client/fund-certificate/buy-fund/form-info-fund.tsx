@@ -3,6 +3,7 @@ import {
   HInputNumber,
 } from '@components/shared/common-form-elements/h-input';
 import { HSelect } from '@components/shared/common-form-elements/select';
+import { ArrowDownIconSvg, DropDownSvg, IconInfoRoundYellow } from '@icons';
 import { ConverterUtils } from '@lib/converter';
 import { useIsMobile } from '@lib/hooks/use-media';
 import { useHTranslation } from '@lib/i18n';
@@ -13,7 +14,6 @@ import { createSchemaItem } from '@schema-form/h-types';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Col, Collapse, Form, notification, Row } from 'antd';
 import classNames from 'classnames';
-import { ArrowDownIconSvg, DropDownSvg, IconInfoRoundYellow } from 'icons';
 import { debounce } from 'lodash';
 import { useContext, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';

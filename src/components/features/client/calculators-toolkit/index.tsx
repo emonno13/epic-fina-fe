@@ -8,11 +8,11 @@ import {
   InputFullNameSchemaItem,
   InputPhoneNumberSchemaItem,
 } from '@components/shared/input-with-rule';
+import { ArrowRightCircleRightSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { HForm } from '@schema-form/h-form';
 import { createSchemaItem } from '@schema-form/h-types';
 import { Checkbox, Col, Collapse, Form, Modal, Row } from 'antd';
-import { ArrowRightCircleRightSvg } from 'icons';
 import { useState } from 'react';
 import Calculator from './calculator';
 

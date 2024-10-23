@@ -1,6 +1,7 @@
 import { EyeOutlined } from '@ant-design/icons';
 import { HSchemaActions } from '@components/shared/common/h-item-actions';
 import { HModal } from '@components/shared/common/h-modal';
+import { CreateIconSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { CommentUtils } from '@lib/utils/comment';
 import { ActionDndParamsWithDefaultActions } from '@schema-form/drag-n-drop/types';
@@ -8,7 +9,6 @@ import { NEW_ITEM_DOCUMENT_ID } from '@schema-form/features/forms/h-item-form';
 import { useDocumentDetail, useSetItem } from '@schema-form/features/hooks';
 import { HForm } from '@schema-form/h-form';
 import { Button, Form } from 'antd';
-import { CreateIconSvg } from 'icons';
 import { useMemo, useState } from 'react';
 import { PreviewQuestionsFormSchema } from '../preview-questions/preview-questions.form.schema';
 import { QuestionUtils } from '../question/question-utils';

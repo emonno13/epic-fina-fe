@@ -1,5 +1,3 @@
-import { useHTranslation } from '@lib/i18n';
-import { Col, Row } from 'antd';
 import {
   IconAdvancedSurveys,
   IconAffiliateAccount,
@@ -9,7 +7,9 @@ import {
   IconListTransactions,
   IconRecordsManagement,
   IconReferrer,
-} from 'icons';
+} from '@icons';
+import { useHTranslation } from '@lib/i18n';
+import { Col, Row } from 'antd';
 
 import './styles.module.scss';
 

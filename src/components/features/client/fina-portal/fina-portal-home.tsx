@@ -1,10 +1,10 @@
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
-import { useHTranslation } from '@lib/i18n';
 import {
   ClientFooterFbIcon,
   ClientFooterInstagramIcon,
   ClientFooterZaloIcon,
-} from 'icons';
+} from '@icons';
+import { useHTranslation } from '@lib/i18n';
 import { useMemo } from 'react';
 import ClientHomeBanner from '../home/client-home-banner';
 import { TYPE_FINA_PORTAL, useFinaPortalContext } from './fina-portal-context';

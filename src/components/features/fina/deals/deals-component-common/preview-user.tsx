@@ -1,12 +1,12 @@
-import { isEmpty } from 'lodash';
-import { USER_TYPES } from 'types/organization';
+import { IconEmail } from '@components/shared/common/configuration/icon-email';
 import { UserAvatar } from '@components/shared/common/h-avatar';
-import { useGenerateConcealContent, ConverterUtils } from '@lib/converter';
+import { Phones } from '@components/shared/stringee';
+import { ConverterUtils, useGenerateConcealContent } from '@lib/converter';
+import { CallPhoneFcssSDKConvert } from '@lib/fccs-sdk-convert';
 import { useHTranslation } from '@lib/i18n';
 import { useCurrentUser } from '@lib/providers/auth';
-import { Phones } from '@components/shared/stringee';
-import { IconEmail } from '@components/shared/common/configuration/icon-email';
-import { CallPhoneFcssSDKConvert } from '@lib/fccs-sdk-convert';
+import { USER_TYPES } from '@types/organization';
+import { isEmpty } from 'lodash';
 
 import './deals.module.scss';
 

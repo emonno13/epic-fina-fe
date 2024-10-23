@@ -2,9 +2,9 @@ import { downloadFormURI } from '@components/shared/utils/download';
 import { tkManager } from '@lib/networks/http';
 import { useCurrentUser } from '@lib/providers/auth';
 import { useSearchForm } from '@schema-form/features/hooks';
+import { USER_TYPES } from '@types/organization';
 import { Button, ButtonProps } from 'antd';
 import { useCallback } from 'react';
-import { USER_TYPES } from 'types/organization';
 
 interface ExportUserButtonProps extends ButtonProps {
   userType?: string;

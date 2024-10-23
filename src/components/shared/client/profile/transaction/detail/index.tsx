@@ -1,12 +1,12 @@
-import { Modal } from 'antd';
-import React from 'react';
 import { useIsMobile } from '@lib/hooks/use-media';
 import { useHTranslation } from '@lib/i18n';
+import { Modal } from 'antd';
+import React from 'react';
 // import { TransactionBuyDetail } from '@components/features/profiles/transaction-management/components/transaction-buy-detail';
 import { TransactionSellDetail } from '@components/features/profiles/transaction-management/components/transaction-sell-detail';
-import { CloseIconLargeSvg } from 'icons';
-import { IconEys } from './icon-eye';
+import { CloseIconLargeSvg } from '@icons';
 import { TransactionBuyDetail } from './buy';
+import { IconEys } from './icon-eye';
 
 export interface DescriptionItemProps {
   title: string;

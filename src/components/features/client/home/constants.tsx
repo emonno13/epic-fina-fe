@@ -4,7 +4,7 @@ import {
   HereToHelpChatIcon,
   HereToHelpMailIcon,
   HereToHelpTimeIcon,
-} from 'icons';
+} from '@icons';
 import ClientHomeEndowIcon from './icons/client-home.endow-icon';
 import ClientHomeFreeIcon from './icons/client-home.free-icon';
 import ClientHomeIndependentIcon from './icons/client-home.independent-icon';

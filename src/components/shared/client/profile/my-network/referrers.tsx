@@ -1,3 +1,4 @@
+import { IconGrid, IconList } from '@icons';
 import { useIsMobile } from '@lib/hooks/use-media';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
@@ -5,7 +6,6 @@ import { FormDataUtils } from '@lib/networks/http/form-data-utils';
 import { useCurrentUser } from '@lib/providers/auth';
 import { callApi } from '@schema-form/common/actions';
 import { FormUtils } from '@schema-form/utils/form-utils';
-import { IconGrid, IconList } from 'icons';
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { VIEW_TYPE_REFERRER } from './constant';

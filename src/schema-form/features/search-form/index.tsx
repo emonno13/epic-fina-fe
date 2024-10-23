@@ -1,7 +1,7 @@
 import { RouteUtils } from '@components/shared/layout/router-contaner/utils';
+import { CreateIconSvg } from '@icons';
 import { Button, ButtonProps, Typography } from 'antd';
 import { FormInstance } from 'antd/lib/form/Form';
-import { CreateIconSvg } from 'icons';
 import {
   differenceWith,
   identity,

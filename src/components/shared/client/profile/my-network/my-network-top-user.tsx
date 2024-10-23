@@ -1,10 +1,10 @@
+import { IconCopy, IconShareProfile } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
 import { useCurrentUser, useRefferalLink } from '@lib/providers/auth';
 import { CommentUtils } from '@lib/utils/comment';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Input } from 'antd';
-import { IconCopy, IconShareProfile } from 'icons';
 import QRCode from 'qrcode.react';
 import { useEffect, useState } from 'react';
 import ShareSocialProfile from '../share-social-profile';

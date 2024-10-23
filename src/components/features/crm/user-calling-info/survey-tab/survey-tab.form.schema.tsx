@@ -5,7 +5,7 @@ import {
   HFormProps,
 } from '@schema-form/h-types';
 import { FormUtils } from '@schema-form/utils/form-utils';
-import { getProductTypeOptions } from 'types/organization';
+import { getProductTypeOptions } from '@types/organization';
 import SurveyTabListSelect from './survey-tab-list-select';
 
 export const SurveyTabFormSchema = (

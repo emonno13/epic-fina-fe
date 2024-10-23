@@ -1,8 +1,8 @@
 import { TASK_TYPE } from '@components/features/crm/tasks/utils';
+import { CounsellingRequestSendIcon } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Input, Modal } from 'antd';
-import { CounsellingRequestSendIcon } from 'icons';
 import { useState } from 'react';
 
 import './counselling-request-single-input.module.scss';

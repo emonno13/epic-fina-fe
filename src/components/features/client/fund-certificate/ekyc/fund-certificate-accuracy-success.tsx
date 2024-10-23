@@ -1,6 +1,6 @@
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
+import { AccuracyEkyc } from '@icons';
 import { useHTranslation } from '@lib/i18n';
-import { AccuracyEkyc } from 'icons';
 
 interface FundCertificateAccuracySuccessProps {
   callback?: (value?: any) => void;

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Link } from '@components/shared/link';
+import { ArrowLeftCircleSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
-import { ArrowLeftCircleSvg } from 'icons';
 
 import './styles.module.scss';
 

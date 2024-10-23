@@ -1,6 +1,6 @@
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
+import { BuyFundSuccessIcon } from '@icons/rsvgs/buy-fund-success';
 import { ConverterUtils } from '@lib/converter';
-import { BuyFundSuccessIcon } from 'icons/rsvgs/buy-fund-success';
 import { ReactNode, useContext } from 'react';
 import { SellActionContext } from './sell-fund/context';
 

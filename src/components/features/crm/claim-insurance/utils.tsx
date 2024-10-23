@@ -1,5 +1,10 @@
+import {
+  AppraisalProgressIcon,
+  LendApprovalIcon,
+  ProcessIcon,
+  WaitProcessIcon,
+} from '@icons';
 import { Tag } from 'antd';
-import { AppraisalProgressIcon, LendApprovalIcon, ProcessIcon, WaitProcessIcon } from 'icons';
 import { TASK_CLAIM_INSURANCE_STATUS } from './contants';
 
 export const mappingLabelClaimInsurance = (status) => {
@@ -39,39 +44,47 @@ export const mappingLabelClaimInsurance = (status) => {
     }
   }
 
-  return <Tag {...{
-    color,
-  }}>{label}</Tag>;
+  return (
+    <Tag
+      {...{
+        color,
+      }}
+    >
+      {label}
+    </Tag>
+  );
 };
 
 export const CLAIM_INSURANCE_STEP = [
   TASK_CLAIM_INSURANCE_STATUS.CREATED, // Đang xử lý hồ sơ
   TASK_CLAIM_INSURANCE_STATUS.ASSIGNED, // chỉ dịnh người nhận yêu cầu bồi thường bảo hiểm
-  TASK_CLAIM_INSURANCE_STATUS.CONSULTED, // Tạo yêu cầu bồi thường bảo hiểm 
+  TASK_CLAIM_INSURANCE_STATUS.CONSULTED, // Tạo yêu cầu bồi thường bảo hiểm
   TASK_CLAIM_INSURANCE_STATUS.DONE, // Hoàn thành
 ];
 
-export const mappingLabelClaimInsuranceStep = [	{
-  icon:  <WaitProcessIcon />,
-  name : 'Khởi tạo',
-  color: '#1890ff',
-  value: TASK_CLAIM_INSURANCE_STATUS.CREATED,
-},
-{
-  icon: <ProcessIcon />,
-  name : 'Thu Thập thông tin',
-  color: '#ffc53d',
-  value: TASK_CLAIM_INSURANCE_STATUS.ASSIGNED,
-},
-{
-  icon: <LendApprovalIcon />,
-  name : 'tạo yêu cầu bồi thường',
-  color: '#73d13d',
-  value: TASK_CLAIM_INSURANCE_STATUS.CONSULTED,
-},
-{
-  icon: <AppraisalProgressIcon />,
-  name: 'Hoàn thành',
-  color: '#ff4d4f',
-  value: TASK_CLAIM_INSURANCE_STATUS.DONE,
-}];
+export const mappingLabelClaimInsuranceStep = [
+  {
+    icon: <WaitProcessIcon />,
+    name: 'Khởi tạo',
+    color: '#1890ff',
+    value: TASK_CLAIM_INSURANCE_STATUS.CREATED,
+  },
+  {
+    icon: <ProcessIcon />,
+    name: 'Thu Thập thông tin',
+    color: '#ffc53d',
+    value: TASK_CLAIM_INSURANCE_STATUS.ASSIGNED,
+  },
+  {
+    icon: <LendApprovalIcon />,
+    name: 'tạo yêu cầu bồi thường',
+    color: '#73d13d',
+    value: TASK_CLAIM_INSURANCE_STATUS.CONSULTED,
+  },
+  {
+    icon: <AppraisalProgressIcon />,
+    name: 'Hoàn thành',
+    color: '#ff4d4f',
+    value: TASK_CLAIM_INSURANCE_STATUS.DONE,
+  },
+];

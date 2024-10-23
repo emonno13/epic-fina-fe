@@ -1,10 +1,10 @@
 import { endpoints } from '@lib/networks/endpoints';
 import { useAuth } from '@lib/providers/auth';
 import { FormUtils } from '@schema-form/utils/form-utils';
+import { USER_TYPES } from '@types/organization';
 import { Button, Form, Steps } from 'antd';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { USER_TYPES } from 'types/organization';
 import { TYPE } from './form-staff';
 import StepOne from './step-one';
 import StepThree from './step-three';

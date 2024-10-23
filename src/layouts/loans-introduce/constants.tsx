@@ -1,11 +1,15 @@
-import { ClientFooterFbIcon, ClientFooterGmailIcon, ClientFooterYoutubeIcon, ClientFooterZaloIcon } from 'icons';
+import {
+  ClientFooterFbIcon,
+  ClientFooterGmailIcon,
+  ClientFooterYoutubeIcon,
+  ClientFooterZaloIcon,
+} from '@icons';
 import AlmaFooterAparmentIcon from '../admin/lightly/client-alma/icons/alma-footer-apartment-icon';
-import AlmaFooterPhoneIcon from '../admin/lightly/client-alma/icons/alma-footer-phone-icon';
 import AlmaFooterEmailIcon from '../admin/lightly/client-alma/icons/alma-footer-email-icon';
+import AlmaFooterPhoneIcon from '../admin/lightly/client-alma/icons/alma-footer-phone-icon';
 import AlmaFooterPinIcon from '../admin/lightly/client-alma/icons/alma-footer-pin-icon';
 
-
-export const getFooterLoansIntroduceData = t => [
+export const getFooterLoansIntroduceData = (t) => [
   {
     icon: <AlmaFooterAparmentIcon />,
     text: <span>Công ty cổ phần Dịch vụ Tài chính Bất động sản Tulip</span>,
@@ -22,9 +26,9 @@ export const getFooterLoansIntroduceData = t => [
     icon: <AlmaFooterPinIcon />,
     text: (
       <span>
-				L17-11, Tầng 17, Toà nhà Vincom Center Đồng Khởi,
+        L17-11, Tầng 17, Toà nhà Vincom Center Đồng Khởi,
         <br />
-				72 Lê Thánh Tôn, Phường Bến Nghé, Quận 1, TP.HCM
+        72 Lê Thánh Tôn, Phường Bến Nghé, Quận 1, TP.HCM
       </span>
     ),
   },
@@ -48,4 +52,3 @@ export const URL_SOCIAL_NETWORK = [
     url: 'mailto:support@fina.com.vn',
   },
 ];
-

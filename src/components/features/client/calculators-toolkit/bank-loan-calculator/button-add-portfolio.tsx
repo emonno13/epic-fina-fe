@@ -1,6 +1,6 @@
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
+import { CreateIconSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
-import { CreateIconSvg } from 'icons';
 import { TYPE_GENERAL } from '../constants';
 
 const ButtonAddPortfolio = ({ type, addPortfolio }) => {

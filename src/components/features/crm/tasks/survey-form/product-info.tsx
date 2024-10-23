@@ -5,7 +5,7 @@ import {
   HFormItemProps,
   HFormProps,
 } from '@schema-form/h-types';
-import { PRODUCT_TYPES } from 'types/organization';
+import { PRODUCT_TYPES } from '@types/organization';
 import { TASK_STATUSES_ASSIGNED } from '../../../../../constants/crm/task';
 import { useDocumentDetail } from '../../../../../schema-form/features/hooks';
 

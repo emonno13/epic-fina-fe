@@ -1,11 +1,11 @@
 import { FormatterUtils } from '@lib/formatter';
 import { useHTranslation } from '@lib/i18n';
 import { useAuth } from '@lib/providers/auth';
+import { USER_TYPES } from '@types/organization';
 import { Button, Checkbox } from 'antd';
 import { CheckboxChangeEvent } from 'antd/lib/checkbox';
 import moment from 'moment';
 import { useState } from 'react';
-import { USER_TYPES } from 'types/organization';
 
 const MaxAge = 65;
 

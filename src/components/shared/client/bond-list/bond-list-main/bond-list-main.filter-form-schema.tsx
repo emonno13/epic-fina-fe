@@ -11,7 +11,7 @@ import {
 } from '@schema-form/h-types';
 import { InputNumber, Slider } from 'antd';
 
-import { ArrowDownSmallIcon } from 'icons';
+import { ArrowDownSmallIcon } from '@icons';
 import { TypeOfProfit } from '../constants';
 
 export const ClientBondListMainFilterFormSchema = (

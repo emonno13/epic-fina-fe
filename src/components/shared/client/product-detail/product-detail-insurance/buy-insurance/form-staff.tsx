@@ -1,6 +1,7 @@
 import { HDatePicker } from '@components/shared/common-form-elements/date-picker';
 import { createHDynamicSchemaFormItems } from '@components/shared/common-form-elements/h-dynamic-form-items/insurance-version';
 import { USER_RELATIONSHIP } from '@components/shared/user/constants';
+import { DropDownSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { HSubForm } from '@schema-form/h-form';
 import {
@@ -10,7 +11,6 @@ import {
   HFormProps,
 } from '@schema-form/h-types';
 import { Divider, Input, Select, Typography } from 'antd';
-import { DropDownSvg } from 'icons';
 import moment from 'moment';
 import { useEffect, useState } from 'react';
 import { checkAge } from '../constants';

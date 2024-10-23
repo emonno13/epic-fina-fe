@@ -1,6 +1,6 @@
+import { CloseIconLargeSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { Modal } from 'antd';
-import { CloseIconLargeSvg } from 'icons';
 import { modals } from '../..';
 import ModalAffiliateAdd from './add';
 import ModalAffiliateCreate from './create';

@@ -11,6 +11,8 @@
 @import './float-control/index.scss';
 @import './overwrite-antd.scss';
 
+@import '../styles/app.scss';
+
 .auth-input {
   &.ant-input {
     padding: 13px 16px;

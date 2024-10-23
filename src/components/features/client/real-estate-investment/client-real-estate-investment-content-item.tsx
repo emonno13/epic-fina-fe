@@ -4,10 +4,6 @@ import {
   PROPERTIES_TYPE,
 } from '@components/features/fina/properties/contansr';
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
-import { useIsMobile } from '@lib/hooks/use-media';
-import { useHTranslation } from '@lib/i18n';
-import { NumberUtils } from '@lib/utils/number';
-import { Col, Row } from 'antd';
 import {
   HomeIconSvg,
   IconBathroom,
@@ -15,7 +11,11 @@ import {
   IconGridArtboard,
   IconSingleBed,
   MapIconSvg,
-} from 'icons';
+} from '@icons';
+import { useIsMobile } from '@lib/hooks/use-media';
+import { useHTranslation } from '@lib/i18n';
+import { NumberUtils } from '@lib/utils/number';
+import { Col, Row } from 'antd';
 
 import './real-estate-investment.module.scss';
 

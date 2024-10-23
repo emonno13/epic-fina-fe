@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { useFetchUser } from '@components/features/organizations/users/hooks';
 import { HUploadImage } from '@components/shared/common-form-elements/h-upload';
+import { CloseIconLargeSvg, IconCopyProfile, IconShareProfile } from '@icons';
 import { ConverterUtils } from '@lib/converter';
 import { useIsMobile } from '@lib/hooks/use-media';
 import { useHTranslation } from '@lib/i18n';
@@ -9,7 +10,6 @@ import { useAuth, useCurrentUser, useRefferalLink } from '@lib/providers/auth';
 import { CommentUtils } from '@lib/utils/comment';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Modal } from 'antd';
-import { CloseIconLargeSvg, IconCopyProfile, IconShareProfile } from 'icons';
 import Cookies from 'js-cookie';
 import { isEmpty } from 'lodash';
 import QRCode from 'qrcode.react';

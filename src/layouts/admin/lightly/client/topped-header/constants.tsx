@@ -1,4 +1,8 @@
-import { ClientToppedHeaderMailIcon, ClientToppedHeaderPhoneIcon, IconClock } from 'icons';
+import {
+  ClientToppedHeaderMailIcon,
+  ClientToppedHeaderPhoneIcon,
+  IconClock,
+} from '@icons';
 
 export const toppedHeaderContactInfo = [
   {

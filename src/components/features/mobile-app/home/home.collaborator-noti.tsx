@@ -3,11 +3,11 @@ import {
   useCurrentUser,
   useIsAuthenticated,
 } from '@lib/providers/auth';
+import { USER_TYPES } from '@types/organization';
 import Cookies from 'js-cookie';
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { requestInformationUser } from 'store/actions';
-import { USER_TYPES } from 'types/organization';
 import { ConverterUtils } from '../../../../lib/converter';
 import { HModal } from '../../../shared/common/h-modal';
 import { RouteUtils } from '../../../shared/layout/router-contaner/utils';

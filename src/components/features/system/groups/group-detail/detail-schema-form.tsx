@@ -1,16 +1,16 @@
 import { Input } from 'antd';
 
 import { HSelect } from '@components/shared/common-form-elements/select';
+import { useHTranslation } from '@lib/i18n';
+import { ValidationMessages } from '@lib/validation-message';
 import { useDocumentDetail } from '@schema-form/features/hooks';
 import {
   createSchemaItem,
   HFormItemProps,
   HFormProps,
 } from '@schema-form/h-types';
-import { useHTranslation } from 'lib/i18n';
-import { ValidationMessages } from 'lib/validation-message';
+import { getGroupTypeOptions } from '@types/group';
 import { isEmpty } from 'lodash';
-import { getGroupTypeOptions } from 'types/group';
 
 export const GroupDetailSchemaForm = (props: HFormProps): HFormItemProps[] => {
   const { t } = useHTranslation('admin-common');

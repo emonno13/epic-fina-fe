@@ -1,7 +1,7 @@
+import { RoundCloseIcon } from '@icons/rsvgs/round-close';
 import { useIsMobile } from '@lib/hooks/use-media';
 import { Affix } from 'antd';
 import Layout, { Content } from 'antd/lib/layout/layout';
-import { RoundCloseIcon } from 'icons/rsvgs/round-close';
 import { useRouter } from 'next/router';
 import Script from 'next/script';
 import { useState } from 'react';

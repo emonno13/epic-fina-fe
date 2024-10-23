@@ -1,5 +1,5 @@
+import { ClientInsuranceDetailPhoneIcon } from '@icons';
 import { useHTranslation } from '@lib/i18n';
-import { ClientInsuranceDetailPhoneIcon } from 'icons';
 import CounsellingRequestSingleInput from '../../counselling-request-single-input';
 
 const ProductDetailInsuraceSendInfo = () => {

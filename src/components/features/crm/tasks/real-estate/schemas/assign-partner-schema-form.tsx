@@ -5,7 +5,7 @@ import { createSchemaLabelItem } from '@components/shared/common/h-label/h-label
 import { ConverterUtils } from '@lib/converter';
 import { useHTranslation } from '@lib/i18n';
 import { createSchemaItem, HFormProps } from '@schema-form/h-types';
-import { ORGANIZATION_TYPES } from 'types/organization';
+import { ORGANIZATION_TYPES } from '@types/organization';
 import { USER_TYPES } from '../../constans';
 
 export default function useAssignPartnerSchemaForm() {

@@ -1,7 +1,7 @@
 import { HTableDragNDrop } from '@components/shared/common/h-table-drag-n-drop/h-table-drag-n-drop';
 import { ClickableOpacity } from '@components/shared/utils/clickable-opacity';
+import { TrashIconSvg } from '@icons';
 import { Form } from 'antd';
-import { TrashIconSvg } from 'icons';
 import { useRouter } from 'next/router';
 import { useEffect, useMemo, useState } from 'react';
 import { useHTranslation } from '../../../../../lib/i18n';

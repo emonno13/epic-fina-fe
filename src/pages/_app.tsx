@@ -31,11 +31,8 @@ import '../styles/antd-custom.less';
 import 'animate.css/animate.min.css';
 import 'fccs-sdk/dist/index.css';
 import 'nprogress/nprogress.css';
-import 'public/app.scss';
 import 'tailwindcss/tailwind.css';
-import '../styles/_css_utils.scss';
-import '../styles/_default.scss';
-import '../styles/_nprogress_custom.scss';
+import '../styles/global.scss';
 
 export const Notification = dynamic(
   () => import('@components/shared/firebase/notification'),

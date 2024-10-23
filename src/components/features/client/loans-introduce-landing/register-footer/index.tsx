@@ -1,6 +1,4 @@
 import HScrollAnimation from '@components/shared/common/h-scroll-animation';
-import { useHTranslation } from '@lib/i18n';
-import { Col, Form, Row } from 'antd';
 import {
   FacebookWhiteIconSvg,
   HeaderShapeMedium,
@@ -10,7 +8,9 @@ import {
   SubtractEmailIconSvg,
   YoutubeWhiteIconSvg,
   ZaloWhiteIconSvg,
-} from 'icons';
+} from '@icons';
+import { useHTranslation } from '@lib/i18n';
+import { Col, Form, Row } from 'antd';
 import { ButtonSubmitForm, FormRegisterSchema } from '../rate-infomation';
 
 import './reta-information.module.scss';

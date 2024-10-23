@@ -1,6 +1,6 @@
 import { Link } from '@components/shared/link';
+import { CheckIcon } from '@icons';
 import { Button } from 'antd';
-import { CheckIcon } from 'icons';
 
 export const OverviewAssetProduct = ({
   asset,

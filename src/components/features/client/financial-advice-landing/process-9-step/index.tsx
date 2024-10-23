@@ -1,6 +1,6 @@
+import { PlayIconGray } from '@icons';
 import { useIsMobile } from '@lib/hooks/use-media';
 import { Col, Row } from 'antd';
-import { PlayIconGray } from 'icons';
 
 import './process-9-step.module.scss';
 

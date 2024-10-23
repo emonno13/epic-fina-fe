@@ -1,6 +1,6 @@
+import { ArrowDownIconSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { Input, InputNumber, Select } from 'antd';
-import { ArrowDownIconSvg } from 'icons';
 import { TYPE_TIME } from '../constants';
 
 const { Option } = Select;

@@ -2,9 +2,9 @@ import { createHDynamicSchemaFormItems } from '@components/shared//common-form-e
 import { HDatePicker } from '@components/shared/common-form-elements/date-picker';
 import { HSelect } from '@components/shared/common-form-elements/select';
 import { createSchemaItem } from '@schema-form/h-types';
+import { getUserTypeOptions } from '@types/organization';
 import { Input, Radio } from 'antd';
 import { useTranslation } from 'next-i18next';
-import { getUserTypeOptions } from 'types/organization';
 
 export const DetailSchemaForm = () => {
   const { t } = useTranslation('admin-common');

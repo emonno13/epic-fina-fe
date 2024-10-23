@@ -1,17 +1,17 @@
-import { useState } from 'react';
-import { Button, Form, Modal } from 'antd';
-import { useIsMobile } from '@lib/hooks/use-media';
-import { useCurrentUser } from '@lib/providers/auth';
-import { useHTranslation } from '@lib/i18n';
 import { RenderSteps } from '@components/features/profiles/account-identifier/steps';
-import { CloseIconLargeSvg } from 'icons';
-import NoDataSurvey from './components/no-data';
-import StepOneSurvey from './components/step-one';
-import { IconSurvey } from './components/icon-survey';
+import { CloseIconLargeSvg } from '@icons';
+import { useIsMobile } from '@lib/hooks/use-media';
+import { useHTranslation } from '@lib/i18n';
+import { useCurrentUser } from '@lib/providers/auth';
+import { Button, Form, Modal } from 'antd';
+import { useState } from 'react';
 import {
   IconArrowRight,
   IconCurrentIncome,
 } from '../earnings-commissions/constants';
+import { IconSurvey } from './components/icon-survey';
+import NoDataSurvey from './components/no-data';
+import StepOneSurvey from './components/step-one';
 
 import './styles.module.scss';
 

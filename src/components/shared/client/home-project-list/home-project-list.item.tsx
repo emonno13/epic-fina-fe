@@ -1,8 +1,8 @@
 import { CLIENT_PRODUCT_DETAIL_ROUTE } from '@components/features/client/product-detail/constants';
 import { rgbDataURL } from '@components/shared/atom/rgb';
 import { Link } from '@components/shared/link';
+import { FavoriteIcon } from '@icons';
 import cls from 'classnames';
-import { FavoriteIcon } from 'icons';
 import Image from 'next/image';
 
 const IMAGE_REAL_ESTATE_DEFAULT =

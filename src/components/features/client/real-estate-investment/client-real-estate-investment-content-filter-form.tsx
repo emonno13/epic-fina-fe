@@ -4,6 +4,7 @@ import {
 } from '@components/features/fina/properties/contansr';
 import { HInput } from '@components/shared/common-form-elements/h-input';
 import { HSelect } from '@components/shared/common-form-elements/select';
+import { ArrowDownSmallIcon, SearchSmallIcon } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import HSearchForm, {
   HResetPaginationButton,
@@ -13,8 +14,7 @@ import {
   HFormItemProps,
   HFormProps,
 } from '@schema-form/h-types';
-import { ArrowDownSmallIcon, SearchSmallIcon } from 'icons';
-import { PRODUCT_TYPES } from 'types/organization';
+import { PRODUCT_TYPES } from '@types/organization';
 
 const ClientRealEstateInvestmentListMainFilterForm = ({
   hiddenValues = {},

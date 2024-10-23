@@ -9,8 +9,8 @@ import { LabelItem } from '@components/shared/common/h-label/h-label-title';
 import { endpoints } from '@lib/networks/endpoints';
 import { useSetTransactionsOfDeal } from '@schema-form/features/hooks/document-detail-hooks';
 import { FormUtils } from '@schema-form/utils/form-utils';
+import { ORGANIZATION_TYPES, USER_TYPES } from '@types/organization';
 import { Tabs } from 'antd';
-import { ORGANIZATION_TYPES, USER_TYPES } from 'types/organization';
 import { ManagerLoanWithBank } from './edit-bank-loan';
 import { ProgressView } from './view-progress';
 

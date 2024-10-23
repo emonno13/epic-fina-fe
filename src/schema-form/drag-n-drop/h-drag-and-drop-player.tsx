@@ -1,7 +1,7 @@
 import { PlusOutlined } from '@ant-design/icons/lib/icons';
+import { BoardIcon } from '@icons';
 import { useDocumentDetail, useFeatureId } from '@schema-form/features/hooks';
 import { Tag } from 'antd';
-import { BoardIcon } from 'icons';
 import { useEffect, useState } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
 import { HButton } from '../../components/shared/common-form-elements/h-confirmation-button';

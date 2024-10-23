@@ -8,11 +8,11 @@ import {
   HFormItemProps,
   HFormProps,
 } from '@schema-form/h-types';
+import { getAgentTypeCallOptions } from '@types/agent-type-call';
+import { GROUP_TYPES } from '@types/group';
 import { Input, InputNumber, Radio, Typography } from 'antd';
 import { isEmpty } from 'lodash';
 import { useMemo } from 'react';
-import { getAgentTypeCallOptions } from 'types/agent-type-call';
-import { GROUP_TYPES } from 'types/group';
 import {
   CATEGORY_DOCUMENTATION_STATUS,
   CATEGORY_DOCUMENTATION_STATUS_OPTIONS,

@@ -1,9 +1,9 @@
 import FeaturedNews from '@components/shared/client/featured-news';
 import NewsDetail from '@components/shared/client/news-detail';
 import ClientPageCover from '@components/shared/client/page-cover';
+import { CallContactIcon, FanpageContactIcon, MailContactIcon } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { Button, Col, Row } from 'antd';
-import { CallContactIcon, FanpageContactIcon, MailContactIcon } from 'icons';
 import { useEffect, useRef } from 'react';
 import ClientNewsDetailMoreInfo from './new-detail-more-info';
 

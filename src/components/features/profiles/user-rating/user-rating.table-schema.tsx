@@ -1,5 +1,5 @@
 import { HUserRating } from '@components/shared/common/h-user-rating';
-import { TableUtils } from 'lib/table-utils';
+import { TableUtils } from '@lib/table-utils';
 import { useHTranslation } from '../../../../lib/i18n';
 
 export const UserRatingTableSchema = (props?: any) => {

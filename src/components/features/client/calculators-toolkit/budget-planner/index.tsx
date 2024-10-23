@@ -9,9 +9,9 @@ import { HButton } from '@components/shared/common-form-elements/h-confirmation-
 import HContainer from '@components/shared/common/h-container';
 import { HModal } from '@components/shared/common/h-modal';
 import HTabs from '@components/shared/common/h-tabs';
+import { PrintIconSvg, ResetIconSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { Collapse, Tabs } from 'antd';
-import { PrintIconSvg, ResetIconSvg } from 'icons';
 import { useRouter } from 'next/router';
 import { useEffect, useRef, useState } from 'react';
 import { useReactToPrint } from 'react-to-print';

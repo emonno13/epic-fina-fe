@@ -1,4 +1,12 @@
 import { connectAgentCallStatus } from '@components/shared/stringee/actions';
+import {
+  SET_DATASOURCE_EVENT,
+  SET_DOCUMENT_DETAIL_EVENT,
+  SET_PAGINATION_EVENT,
+  SetDatasourceEventArgType,
+  SetDocumentDetailDetailEventArgType,
+  SetPaginationEventArgType,
+} from '@types/socket';
 import { eventChannel } from 'redux-saga';
 import {
   call,
@@ -15,14 +23,6 @@ import {
   disconnectMeliSocket,
   SET_MELI_SOCKET,
 } from 'store/actions';
-import {
-  SET_DATASOURCE_EVENT,
-  SET_DOCUMENT_DETAIL_EVENT,
-  SET_PAGINATION_EVENT,
-  SetDatasourceEventArgType,
-  SetDocumentDetailDetailEventArgType,
-  SetPaginationEventArgType,
-} from 'types/socket';
 import {
   createWebSocketConnection,
   getFeatureActionType,

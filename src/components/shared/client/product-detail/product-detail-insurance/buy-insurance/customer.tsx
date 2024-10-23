@@ -1,6 +1,6 @@
 import { ClickableOpacity } from '@components/shared/utils/clickable-opacity';
-import { IconTrackLargeSvg } from 'icons';
-import { PenIcon } from 'icons/rsvgs/pen-icon';
+import { IconTrackLargeSvg } from '@icons';
+import { PenIcon } from '@icons/rsvgs/pen-icon';
 import { IS_INSURED } from '../constants';
 
 import '../product-detail-insurance.module.scss';

@@ -10,11 +10,11 @@ import { useCurrentUser } from '@lib/providers/auth';
 import { SEARCH_MODES } from '@schema-form/features/search-form/schema';
 import { HSubForm } from '@schema-form/h-form';
 import { createSchemaItem } from '@schema-form/h-types';
+import { ORGANIZATION_TYPES } from '@types/organization';
 import { Checkbox } from 'antd';
 import { isEmpty } from 'lodash';
 import moment from 'moment';
 import { useEffect, useState } from 'react';
-import { ORGANIZATION_TYPES } from 'types/organization';
 
 export const KycUserInformationSchemaDetail = (props) => {
   const { t } = useHTranslation('admin-common');

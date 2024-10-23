@@ -3,10 +3,10 @@ import { HButton } from '@components/shared/common-form-elements/h-confirmation-
 import { HModal } from '@components/shared/common/h-modal';
 import { endpoints } from '@lib/networks/endpoints';
 import { HForm } from '@schema-form/h-form';
+import { ORGANIZATION_TYPES } from '@types/organization';
 import Form from 'antd/lib/form';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ORGANIZATION_TYPES } from 'types/organization';
 import { GROUP_TYPE } from '../common';
 import { DetailSchemaForm } from './detail-schema-form';
 

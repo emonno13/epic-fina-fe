@@ -1,4 +1,5 @@
 import { GlobalOutlined } from '@ant-design/icons';
+import { CallSvg, TrashIconSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
 import { TableUtils } from '@lib/table-utils';
@@ -8,7 +9,6 @@ import { HDocumentDrawerPanel } from '@schema-form/features/panels';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Button, Form, Modal, notification, Table } from 'antd';
 import * as htmlToImage from 'html-to-image';
-import { CallSvg, TrashIconSvg } from 'icons';
 import Cookies from 'js-cookie';
 import { isEmpty } from 'lodash';
 import { useEffect, useRef, useState } from 'react';

@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import HScrollAnimation from '@components/shared/common/h-scroll-animation';
+import { SpiralIconSvg } from '@icons';
 import { APP_STORE_LINK, GOOGLE_PLAY_LINK } from '@lib/utils/mobile';
 import { Col, Row } from 'antd';
-import { SpiralIconSvg } from 'icons';
 import { ACHIEVEMENTS } from '../constants';
 
 import './fina-app.module.scss';

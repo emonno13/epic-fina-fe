@@ -3,9 +3,9 @@ import { KeyboardNumberList } from '@components/features/business/dial/dial-draw
 import { SVGIcon } from '@components/shared/atom/svg-icon';
 import { setDtmfCallOut } from '@components/shared/stringee/actions';
 import { CALL_DIRECTION } from '@components/shared/stringee/constant';
+import { ClearPhoneSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { Badge, Input } from 'antd';
-import { ClearPhoneSvg } from 'icons';
 import { useMemo, useState } from 'react';
 import { RootStateOrAny, useDispatch, useSelector } from 'react-redux';
 import { TYPE_FINA_PORTAL, useFinaPortalContext } from './fina-portal-context';

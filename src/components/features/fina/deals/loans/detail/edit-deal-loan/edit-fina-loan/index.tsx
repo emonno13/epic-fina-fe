@@ -7,6 +7,7 @@ import {
 } from '@components/features/fina/deals/utils';
 import { WithPermission } from '@components/shared/accessibility/with-permission';
 import { LabelItem } from '@components/shared/common/h-label/h-label-title';
+import { TooltipIcon } from '@icons/rsvgs/tooltip-icon';
 import { endpoints } from '@lib/networks/endpoints';
 import { httpRequester } from '@lib/networks/http';
 import { useCurrentUser } from '@lib/providers/auth';
@@ -26,13 +27,12 @@ import {
   useViewTypeOfDeal,
 } from '@schema-form/features/hooks/document-detail-hooks';
 import { FormUtils } from '@schema-form/utils/form-utils';
+import { ORGANIZATION_TYPES, USER_TYPES } from '@types/organization';
 import { Button, Collapse, notification, Row } from 'antd';
-import { TooltipIcon } from 'icons/rsvgs/tooltip-icon';
 import { useTranslation } from 'next-i18next';
 import dynamic from 'next/dynamic';
 import { ReactNode, useEffect, useMemo, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { ORGANIZATION_TYPES, USER_TYPES } from 'types/organization';
 import { isEmpty } from 'underscore';
 import { VIEW_TYPE_OF_DEAL } from '../../..';
 import { HButtonControlDeal } from '../../component-deal-loan-common/button-control';

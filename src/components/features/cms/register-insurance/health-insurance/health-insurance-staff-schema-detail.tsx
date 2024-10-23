@@ -9,17 +9,17 @@ import {
 } from '@components/features/fina/deals/deals-component-common/preview-user';
 import { HComment } from '@components/shared/common-form-elements/h-comment';
 import HSteps from '@components/shared/common/h-step';
-import { useDocumentDetail } from '@schema-form/features/hooks';
-import { createSchemaItem } from '@schema-form/h-types';
 import {
   AppraisalProgressIcon,
   LendApprovalIcon,
   ProcessIcon,
   WaitProcessIcon,
-} from 'icons';
-import { ConverterUtils } from 'lib/converter';
-import { FormatterUtils } from 'lib/formatter';
-import { useHTranslation } from 'lib/i18n';
+} from '@icons';
+import { ConverterUtils } from '@lib/converter';
+import { FormatterUtils } from '@lib/formatter';
+import { useHTranslation } from '@lib/i18n';
+import { useDocumentDetail } from '@schema-form/features/hooks';
+import { createSchemaItem } from '@schema-form/h-types';
 import { isEmpty } from 'lodash';
 import moment from 'moment';
 import { useEffect, useMemo, useState } from 'react';

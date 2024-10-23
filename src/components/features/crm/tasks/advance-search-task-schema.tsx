@@ -2,9 +2,9 @@ import { HSelect } from '@components/shared/common-form-elements/select';
 import { ConverterUtils } from '@lib/converter';
 import { useHTranslation } from '@lib/i18n';
 import { createSchemaItem, HFormItemProps } from '@schema-form/h-types';
+import { USER_TYPES } from '@types/organization';
 import { DatePicker } from 'antd';
 import { ROOT_TASK_OPTIONS } from 'constants/crm/task';
-import { USER_TYPES } from 'types/organization';
 import { PRODUCT_TYPES } from './constans';
 
 const { RangePicker } = DatePicker;

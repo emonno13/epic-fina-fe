@@ -1,10 +1,10 @@
-import classNames from 'classnames';
-import { RootStateOrAny, useDispatch, useSelector } from 'react-redux';
 import { SVGIcon } from '@components/shared/atom/svg-icon';
 import { setEndingCall } from '@components/shared/stringee/actions';
-import { ShutDownSvg } from 'icons';
+import { ShutDownSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { useCurrentUser } from '@lib/providers/auth';
+import classNames from 'classnames';
+import { RootStateOrAny, useDispatch, useSelector } from 'react-redux';
 import { setShowDetailCallRecord } from '../../actions';
 import { useSetCurrentControl } from '../../hooks';
 

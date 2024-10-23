@@ -1,4 +1,4 @@
-import { AppStoreIcon, ChPlayIcon } from 'icons';
+import { AppStoreIcon, ChPlayIcon } from '@icons';
 
 export const DOWNLOAD_APP_URL = {
   android: 'https://play.google.com/store/apps/details?id=com.fina.mobile',
@@ -6,26 +6,28 @@ export const DOWNLOAD_APP_URL = {
 };
 
 const DownloadAppBtnGroup = () => {
-  return <div className="download-btn-group">
-    <a
-      {...{
-        target: '_blank',
-        rel: 'noopener',
-        href: DOWNLOAD_APP_URL.ios,
-      }}
-    >
-      <AppStoreIcon />
-    </a>
-    <a
-      {...{
-        target: '_blank',
-        rel: 'noopener',
-        href: DOWNLOAD_APP_URL.android,
-      }}
-    >
-      <ChPlayIcon />
-    </a>
-  </div>;
+  return (
+    <div className="download-btn-group">
+      <a
+        {...{
+          target: '_blank',
+          rel: 'noopener',
+          href: DOWNLOAD_APP_URL.ios,
+        }}
+      >
+        <AppStoreIcon />
+      </a>
+      <a
+        {...{
+          target: '_blank',
+          rel: 'noopener',
+          href: DOWNLOAD_APP_URL.android,
+        }}
+      >
+        <ChPlayIcon />
+      </a>
+    </div>
+  );
 };
 
 export default DownloadAppBtnGroup;

@@ -4,7 +4,7 @@ import { HTable } from '@schema-form/features';
 import HFeature from '@schema-form/features/feature';
 import HSearchForm from '@schema-form/features/search-form';
 import { createSchemaItem } from '@schema-form/h-types';
-import { PRODUCT_TYPES } from 'types/organization';
+import { PRODUCT_TYPES } from '@types/organization';
 import {
   TRANSACTION_FUNDS_ACTION_MAPPING,
   TRANSACTION_FUNDS_STATUS,

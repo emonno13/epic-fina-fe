@@ -1,5 +1,5 @@
+import { ClientAboutWhatIsFinaIcon } from '@icons';
 import { useHTranslation } from '@lib/i18n';
-import { ClientAboutWhatIsFinaIcon } from 'icons';
 
 const ClientAboutWhatIsFina = () => {
   const { t } = useHTranslation('common');

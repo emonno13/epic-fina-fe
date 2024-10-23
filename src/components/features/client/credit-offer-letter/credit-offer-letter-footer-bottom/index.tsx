@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import { endpoints } from '@lib/networks/endpoints';
-import { FormUtils } from '@schema-form/utils/form-utils';
-import { Col, Row } from 'antd';
 import {
   ClientFooterFbIcon,
   ClientFooterGmailIcon,
   ClientFooterYoutubeIcon,
   ClientFooterZaloIcon,
-} from 'icons';
+} from '@icons';
+import { endpoints } from '@lib/networks/endpoints';
+import { FormUtils } from '@schema-form/utils/form-utils';
+import { Col, Row } from 'antd';
 import { useEffect, useState } from 'react';
 import CreditOfferLetterBodyContainer from '../credit-offer-letter-body-container';
 import CreditOfferLetterContainer from '../credit-offer-letter-container';

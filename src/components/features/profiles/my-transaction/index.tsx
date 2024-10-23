@@ -1,7 +1,7 @@
 import TransactionDealInsurancesManagement from '@components/features/fina/deals/insurances';
+import { useHTranslation } from '@lib/i18n';
 import { RelationUtils } from '@schema-form/utils/form-utils';
 import { Tabs } from 'antd';
-import { useHTranslation } from 'lib/i18n';
 import { endpoints } from '../../../../lib/networks/endpoints';
 import { useCurrentUser } from '../../../../lib/providers/auth';
 import { HFeature, HTable } from '../../../../schema-form/features';

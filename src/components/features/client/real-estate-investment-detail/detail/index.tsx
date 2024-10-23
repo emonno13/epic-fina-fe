@@ -4,10 +4,6 @@ import {
   PROPERTIES_TYPE,
 } from '@components/features/fina/properties/contansr';
 import HCarousel from '@components/shared/common/h-carousel';
-import { useHTranslation } from '@lib/i18n';
-import { useIsAuthenticated } from '@lib/providers/auth';
-import { NumberUtils } from '@lib/utils/number';
-import { Button } from 'antd';
 import {
   HomeIconSvg,
   IconBathroom,
@@ -15,7 +11,11 @@ import {
   IconGridArtboard,
   IconSingleBed,
   MapIconSvg,
-} from 'icons';
+} from '@icons';
+import { useHTranslation } from '@lib/i18n';
+import { useIsAuthenticated } from '@lib/providers/auth';
+import { NumberUtils } from '@lib/utils/number';
+import { Button } from 'antd';
 import { UtilityIcon } from '../../real-estate-investment/client-real-estate-investment-content-item';
 
 const RealEstateInvestmentDetail = ({ realEstate }) => {

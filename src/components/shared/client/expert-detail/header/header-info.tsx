@@ -1,9 +1,9 @@
 import { StarFilled, UserOutlined } from '@ant-design/icons';
+import { ZaloIcon } from '@icons';
 import { ConverterUtils } from '@lib/converter';
 import { useHTranslation } from '@lib/i18n';
 import { Avatar } from 'antd';
 import camelCase from 'camelcase';
-import { ZaloIcon } from 'icons';
 import {
   FacebookIcon,
   LinkedinIcon,

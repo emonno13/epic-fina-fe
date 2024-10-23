@@ -1,6 +1,6 @@
 import { Link } from '@components/shared/link';
+import { ArrowRightIcon } from '@icons';
 import { useHTranslation } from '@lib/i18n';
-import { ArrowRightIcon } from 'icons';
 import { FC } from 'react';
 
 export interface ClientRelatedProductHeaderProps {

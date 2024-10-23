@@ -1,5 +1,5 @@
 import { TableUtils } from '@lib/table-utils';
-import { mappingLabelGroupType } from 'types/group';
+import { mappingLabelGroupType } from '@types/group';
 import { useHTranslation } from '../../../../lib/i18n';
 
 export const GroupTableSchema = () => {

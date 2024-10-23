@@ -1,8 +1,8 @@
 import { CALCULATION_QUESTION_GROUP_CODE } from '@components/shared/questions/question/types';
 import { endpoints } from '@lib/networks/endpoints';
 import { FormUtils } from '@schema-form/utils/form-utils';
+import { PRODUCT_TYPES } from '@types/organization';
 import { FormInstance } from 'antd';
-import { PRODUCT_TYPES } from 'types/organization';
 
 export const fetchQuestionGroup = async (props: {
   groupKey: string;

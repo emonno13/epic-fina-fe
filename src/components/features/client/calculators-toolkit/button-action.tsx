@@ -1,7 +1,7 @@
 import { UnorderedListOutlined } from '@ant-design/icons';
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
+import { PrintIconSvg, ResetIconSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
-import { PrintIconSvg, ResetIconSvg } from 'icons';
 
 import './bank-loan-calculator/styles.module.scss';
 

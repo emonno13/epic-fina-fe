@@ -1,8 +1,8 @@
+import { TooltipIcon } from '@icons/rsvgs/tooltip-icon';
 import { Tooltip, Typography } from 'antd';
 import { TitleProps } from 'antd/lib/typography/Title';
 import classNames from 'classnames';
 import { ReactNode } from 'react';
-import { TooltipIcon } from 'icons/rsvgs/tooltip-icon';
 
 import './h-card.module.scss';
 
@@ -46,17 +46,24 @@ const HCard = (props: HCardProps) => {
           className={classNames('h-card__title', titleProps?.className)}
         >
           {title}
-          {titleProps?.tooltip &&
+          {titleProps?.tooltip && (
             <Tooltip
               title={titleProps?.tooltip}
               className="h-card__title--tooltip"
             >
-              {titleProps?.tooltipIcon || <div className="h-card__title-tooltip__label"><TooltipIcon/></div>}
+              {titleProps?.tooltipIcon || (
+                <div className="h-card__title-tooltip__label">
+                  <TooltipIcon />
+                </div>
+              )}
             </Tooltip>
-          }
+          )}
         </Title>
       )}
-      <div {...contentProps} className={classNames('h-card__content', contentProps?.className)}>
+      <div
+        {...contentProps}
+        className={classNames('h-card__content', contentProps?.className)}
+      >
         {children}
       </div>
     </div>

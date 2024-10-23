@@ -1,7 +1,7 @@
 import { HSelect } from '@components/shared/common-form-elements/select';
+import { ArrowDownSmallIcon } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { usePagination, useSearchForm } from '@schema-form/features/hooks';
-import { ArrowDownSmallIcon } from 'icons';
 import {
   getSortingResultOptions,
   getSortingResultSubmitData,

@@ -1,6 +1,6 @@
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
+import { ESignature } from '@icons/rsvgs/e-signature';
 import { useHTranslation } from '@lib/i18n';
-import { ESignature } from 'icons/rsvgs/e-signature';
 import { FC } from 'react';
 
 interface FundCertificateESignatureFinishProps {

@@ -1,6 +1,9 @@
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
 import { HTextArea } from '@components/shared/common-form-elements/h-input';
 import { HModal } from '@components/shared/common/h-modal';
+import { CloseIconSvg, FilterIconSvg } from '@icons';
+import { useHTranslation } from '@lib/i18n';
+import { endpoints } from '@lib/networks/endpoints';
 import { HFeature, HTable } from '@schema-form/features';
 import { HFeatureForm } from '@schema-form/features/forms/h-feature-form';
 import {
@@ -18,9 +21,6 @@ import { createSchemaItem } from '@schema-form/h-types';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Form, Tabs } from 'antd';
 import classNames from 'classnames';
-import { CloseIconSvg, FilterIconSvg } from 'icons';
-import { useHTranslation } from 'lib/i18n';
-import { endpoints } from 'lib/networks/endpoints';
 import { useState } from 'react';
 import {
   DEAL_INSURANCE_STATUSES,

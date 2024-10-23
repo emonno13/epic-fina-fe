@@ -1,10 +1,10 @@
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
+import { BuyFundSuccessIcon } from '@icons/rsvgs/buy-fund-success';
 import { ConverterUtils } from '@lib/converter';
 import { useIsMobile } from '@lib/hooks/use-media';
 import { NumberUtils } from '@lib/utils/number';
 import { Col, Row } from 'antd';
 import classNames from 'classnames';
-import { BuyFundSuccessIcon } from 'icons/rsvgs/buy-fund-success';
 import { useSelector } from 'react-redux';
 import { fundStoreName } from '../store';
 

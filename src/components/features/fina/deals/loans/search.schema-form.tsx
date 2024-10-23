@@ -6,9 +6,9 @@ import { useCurrentUser } from '@lib/providers/auth';
 import { useSearchForm } from '@schema-form/features/hooks';
 import { SEARCH_MODES } from '@schema-form/features/search-form/schema';
 import { createSchemaItem, HFormItemProps } from '@schema-form/h-types';
+import { ORGANIZATION_TYPES, USER_TYPES } from '@types/organization';
 import { Tooltip } from 'antd';
 import { useEffect, useState } from 'react';
-import { ORGANIZATION_TYPES, USER_TYPES } from 'types/organization';
 
 export const AdvanceSearch = (props): HFormItemProps[] => {
   const { t } = useHTranslation('admin-common');

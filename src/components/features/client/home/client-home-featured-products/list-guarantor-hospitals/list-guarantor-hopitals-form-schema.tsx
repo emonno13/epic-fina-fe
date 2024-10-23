@@ -1,7 +1,7 @@
 import { CaretDownOutlined } from '@ant-design/icons';
 import { HSelect } from '@components/shared/common-form-elements/select';
+import { AddressSvg } from '@icons';
 import { createSchemaItem } from '@schema-form/h-types';
-import { AddressSvg } from 'icons';
 import { useHTranslation } from '../../../../../../lib/i18n';
 
 import './list-guarantor-hospitals.module.scss';

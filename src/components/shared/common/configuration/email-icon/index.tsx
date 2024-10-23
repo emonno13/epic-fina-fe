@@ -1,5 +1,5 @@
+import { EmailOutlinedIconSvg } from '@icons';
 import { useGenerateConcealContent } from '@lib/converter';
-import { EmailOutlinedIconSvg } from 'icons';
 
 import '../../../../features/fina/deals/deals-component-common/deals.module.scss';
 

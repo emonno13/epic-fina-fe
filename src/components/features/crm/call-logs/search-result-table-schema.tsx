@@ -1,11 +1,11 @@
 import { Popover, Tag } from 'antd';
 import ReactAudioPlayer from 'react-audio-player';
 
+import { ExpandNoteSvg } from '@icons';
 import { CallPhoneFcssSDKConvert } from '@lib/fccs-sdk-convert';
 import { FormatterUtils } from '@lib/formatter';
 import { useHTranslation } from '@lib/i18n';
 import { TableUtils } from '@lib/table-utils';
-import { ExpandNoteSvg } from 'icons';
 import { ConverterUtils } from '../../../../lib/converter';
 import { HImg } from '../../../shared/common/h-img';
 import {

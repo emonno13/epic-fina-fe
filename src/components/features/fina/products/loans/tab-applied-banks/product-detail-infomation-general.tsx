@@ -1,25 +1,25 @@
-import { Input, InputNumber } from 'antd';
-import { useRouter } from 'next/router';
 import { HDatePicker } from '@components/shared/common-form-elements/date-picker';
-import { ORGANIZATION_TYPES } from 'types/organization';
-import { useHTranslation } from '@lib/i18n';
 import { HSlug } from '@components/shared/common-form-elements/h-slug';
 import { setFormSlugValue } from '@components/shared/common-form-elements/utils';
 import { ClickableOpacity } from '@components/shared/utils/clickable-opacity';
+import { useHTranslation } from '@lib/i18n';
+import { ORGANIZATION_TYPES } from '@types/organization';
+import { Input, InputNumber } from 'antd';
+import { useRouter } from 'next/router';
+import { ValidationMessages } from '../../../../../../lib/validation-message';
+import {
+  useDocumentDetail,
+  useIsNewDocument,
+} from '../../../../../../schema-form/features/hooks/document-detail-hooks';
 import {
   createSchemaItem,
   HFormItemProps,
   HFormProps,
 } from '../../../../../../schema-form/h-types';
-import { createSchemaLabelItem } from '../../../../../shared/common/h-label/h-label-title';
-import { ValidationMessages } from '../../../../../../lib/validation-message';
 import { createOrganizationSuggestionElement } from '../../../../../shared/common-form-elements/select';
+import { createSchemaLabelItem } from '../../../../../shared/common/h-label/h-label-title';
 import { HRadioGroup } from '../../../../../shared/common/h-radio-group';
 import { LOAN_STATUSES_OPTIONS } from '../../utils';
-import {
-  useDocumentDetail,
-  useIsNewDocument,
-} from '../../../../../../schema-form/features/hooks/document-detail-hooks';
 
 export const ProductDetailInfoLoan = (props: HFormProps): HFormItemProps[] => {
   const { t } = useHTranslation('admin-common');

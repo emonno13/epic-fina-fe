@@ -1,5 +1,5 @@
 import { TableUtils } from '@lib/table-utils';
-import { mappingLabelAgentTypeCall } from 'types/agent-type-call';
+import { mappingLabelAgentTypeCall } from '@types/agent-type-call';
 import { ConverterUtils } from '../../../../../lib/converter';
 import { useHTranslation } from '../../../../../lib/i18n';
 

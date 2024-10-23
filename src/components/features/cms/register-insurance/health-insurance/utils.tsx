@@ -1,7 +1,7 @@
 import { ItemViewer } from '@components/shared/common/configuration/item-viewer';
+import { endpoints } from '@lib/networks/endpoints';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { notification } from 'antd';
-import { endpoints } from 'lib/networks/endpoints';
 
 export const RegisterInsuranceUtils = {
   renderUser: ({ fullName, email, phone, sex, t }: any) => {

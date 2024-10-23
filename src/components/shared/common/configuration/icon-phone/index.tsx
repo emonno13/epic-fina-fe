@@ -7,10 +7,10 @@ import { CALL_DIRECTION } from '@components/shared/stringee/constant';
 import { useGenerateConcealContent } from '@lib/converter';
 import { useCurrentUser, useStringeeToken } from '@lib/providers/auth';
 import { useSearchForm } from '@schema-form/features/hooks';
+import { USER_TYPES } from '@types/organization';
 import { Tooltip, Typography } from 'antd';
 import { useEffect, useMemo } from 'react';
 import { RootStateOrAny, useDispatch, useSelector } from 'react-redux';
-import { USER_TYPES } from 'types/organization';
 import { PhoneIcon } from '../../../../../icons';
 
 const { Paragraph } = Typography;

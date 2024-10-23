@@ -1,21 +1,18 @@
-import { Col, Divider, Popover, Row, Tag, Tooltip } from 'antd';
 import { EyeOutlined, UndoOutlined } from '@ant-design/icons';
+import { RenderInsuranceComponent } from '@components/features/profiles/transactions/deal-insurance/common';
+import { AnyObject } from '@components/shared/atom/type';
 import { UserAvatar } from '@components/shared/common/h-avatar';
+import { HPreviewUser } from '@components/shared/common/h-preview-user';
 import { ClickableOpacity } from '@components/shared/utils/clickable-opacity';
 import { ViewCustomer } from '@components/shared/view-customer';
 import { ViewTimeUpdate } from '@components/shared/view-time-update';
-import { ExpandNoteSvg, FileTextSvg } from 'icons';
-import { useHTranslation } from '@lib/i18n';
-import { TableUtils } from '@lib/table-utils';
-import { HPreviewUser } from '@components/shared/common/h-preview-user';
+import { ExpandNoteSvg, FileTextSvg } from '@icons';
 import { ConverterUtils } from '@lib/converter';
-import { RenderInsuranceComponent } from '@components/features/profiles/transactions/deal-insurance/common';
 import { CallPhoneFcssSDKConvert } from '@lib/fccs-sdk-convert';
+import { useHTranslation } from '@lib/i18n';
 import { useHasPermissions } from '@lib/providers/auth';
-import { AnyObject } from '@components/shared/atom/type';
-import { mappingStatusOfTask } from './utils';
-import { useSetDocumentSelected, useSetVisibleReopenTask } from './hooks';
-import { PRODUCT_TYPES } from './constans';
+import { TableUtils } from '@lib/table-utils';
+import { Col, Divider, Popover, Row, Tag, Tooltip } from 'antd';
 import {
   TASK_STATUSES,
   TASK_STATUSES_COLOR_MAPPING,
@@ -29,6 +26,9 @@ import {
 } from '../../../../schema-form/features/hooks';
 import { Link } from '../../../shared/link';
 import { DEAL_DOCUMENT_ID_NAME } from '../../fina/deals/loans';
+import { PRODUCT_TYPES } from './constans';
+import { useSetDocumentSelected, useSetVisibleReopenTask } from './hooks';
+import { mappingStatusOfTask } from './utils';
 
 import '../../../../styles/_default_responsive.scss';
 import './task.module.scss';

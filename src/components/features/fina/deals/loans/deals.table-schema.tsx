@@ -1,15 +1,6 @@
 import { EmailWithIcon } from '@components/shared/common/configuration/email-icon';
 import { HPreviewUser } from '@components/shared/common/h-preview-user';
 import { Link } from '@components/shared/link';
-import { CallPhoneFcssSDKConvert } from '@lib/fccs-sdk-convert';
-import { FormatterUtils } from '@lib/formatter';
-import { useHTranslation } from '@lib/i18n';
-import { endpoints } from '@lib/networks/endpoints';
-import { TableUtils } from '@lib/table-utils';
-import { CommentUtils } from '@lib/utils/comment';
-import { useViewTypeOfDeal } from '@schema-form/features/hooks/document-detail-hooks';
-import { useSetDocumentDetailWithoutVisible } from '@schema-form/features/hooks/table-hooks';
-import { Button, Col, Row, Tabs, Tag, Tooltip } from 'antd';
 import {
   AccessTimeIcon,
   DollarIcon,
@@ -21,7 +12,16 @@ import {
   SourceIcon,
   StatusIcon,
   UserIcon,
-} from 'icons/icon';
+} from '@icons/icon';
+import { CallPhoneFcssSDKConvert } from '@lib/fccs-sdk-convert';
+import { FormatterUtils } from '@lib/formatter';
+import { useHTranslation } from '@lib/i18n';
+import { endpoints } from '@lib/networks/endpoints';
+import { TableUtils } from '@lib/table-utils';
+import { CommentUtils } from '@lib/utils/comment';
+import { useViewTypeOfDeal } from '@schema-form/features/hooks/document-detail-hooks';
+import { useSetDocumentDetailWithoutVisible } from '@schema-form/features/hooks/table-hooks';
+import { Button, Col, Row, Tabs, Tag, Tooltip } from 'antd';
 import { useRouter } from 'next/router';
 import { useEffect, useMemo, useState } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars';

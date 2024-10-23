@@ -6,12 +6,12 @@ import {
   InputFullNameSchemaItem,
   InputPhoneNumberSchemaItem,
 } from '@components/shared/input-with-rule';
+import { SendBtn } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
 import { HForm } from '@schema-form/h-form';
 import { createSchemaItem } from '@schema-form/h-types';
 import { Form } from 'antd';
-import { SendBtn } from 'icons';
 import { InvestButton } from './common/invest-btn';
 import { useInvestIntroTransaction } from './hooks';
 

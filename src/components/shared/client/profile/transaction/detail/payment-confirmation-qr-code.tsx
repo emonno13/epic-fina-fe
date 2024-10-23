@@ -1,6 +1,6 @@
-// import { IconInfoRoundYellow } from 'icons';
+// import { IconInfoRoundYellow } from '@icons';
 import PaymentQRCode from '@components/features/client/fund-certificate/buy-fund/qr-code-payment';
-import { IconInfoRoundYellow } from 'icons';
+import { IconInfoRoundYellow } from '@icons';
 
 const PaymentConfirmationQRCode = ({
   data,

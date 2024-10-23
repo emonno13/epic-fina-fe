@@ -2,6 +2,7 @@
 import { InfoCircleOutlined } from '@ant-design/icons';
 import { mappingLabelTypeOfFund } from '@components/features/fina/products/fund/utils';
 import { Link } from '@components/shared/link';
+import { DesIcon, IncIcon } from '@icons';
 import { ConverterUtils } from '@lib/converter';
 import { useIsMobile } from '@lib/hooks/use-media';
 import { useHTranslation } from '@lib/i18n';
@@ -10,7 +11,6 @@ import { NumberUtils } from '@lib/utils/number';
 import { HTable } from '@schema-form/features';
 import { useTableSourceData } from '@schema-form/features/hooks';
 import { Button, Popover } from 'antd';
-import { DesIcon, IncIcon } from 'icons';
 import { useRouter } from 'next/router';
 
 import '../../../features/client/fund-certificate/buy-fund/buy-fund.module.scss';

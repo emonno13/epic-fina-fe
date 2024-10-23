@@ -1,8 +1,8 @@
 import { HSelect } from '@components/shared/common-form-elements/select';
+import { useHTranslation } from '@lib/i18n';
 import { useDocumentDetail } from '@schema-form/features/hooks';
-import { useHTranslation } from 'lib/i18n';
+import { ORGANIZATION_TYPES, PRODUCT_TYPE } from '@types/organization';
 import { useMemo } from 'react';
-import { ORGANIZATION_TYPES, PRODUCT_TYPE } from 'types/organization';
 import {
   createSchemaItem,
   HFormItemProps,

@@ -6,10 +6,10 @@ import {
   HFormItemProps,
   HFormProps,
 } from '@schema-form/h-types';
+import { getAgentTypeCallOptions } from '@types/agent-type-call';
+import { GROUP_TYPES } from '@types/group';
 import { isEmpty } from 'lodash';
 import { useMemo } from 'react';
-import { getAgentTypeCallOptions } from 'types/agent-type-call';
-import { GROUP_TYPES } from 'types/group';
 import { ConverterUtils } from '../../../../../lib/converter';
 import { HSelect } from '../../../../shared/common-form-elements/select';
 import { USER_TYPES } from '../../../../shared/user/constants';

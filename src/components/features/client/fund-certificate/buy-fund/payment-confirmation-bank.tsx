@@ -1,7 +1,7 @@
+import { IconCopy } from '@icons/rsvgs/copy-icon';
 import { ConverterUtils } from '@lib/converter';
 import { useHTranslation } from '@lib/i18n';
 import { CommentUtils } from '@lib/utils/comment';
-import { IconCopy } from 'icons/rsvgs/copy-icon';
 
 const PaymentConfirmationBank = ({ data }) => {
   const { t } = useHTranslation('admin-common');

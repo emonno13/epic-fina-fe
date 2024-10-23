@@ -1,12 +1,15 @@
-import { RootStateOrAny, useDispatch, useSelector } from 'react-redux';
-import { FormOutlined, CopyOutlined } from '@ant-design/icons';
-import { isEqual } from 'underscore';
-import { RouteUtils } from '@components/shared/layout/router-contaner/utils';
-import { EditIconSvg, TransferSvg, TrashIconSvg } from 'icons';
-import { ClickableOpacity } from '@components/shared/utils/clickable-opacity';
-import { httpRequester } from '@lib/networks/http';
-import { useHTranslation } from '@lib/i18n';
+import { CopyOutlined, FormOutlined } from '@ant-design/icons';
 import { SVGIcon } from '@components/shared/atom/svg-icon';
+import { RouteUtils } from '@components/shared/layout/router-contaner/utils';
+import { ClickableOpacity } from '@components/shared/utils/clickable-opacity';
+import { EditIconSvg, TransferSvg, TrashIconSvg } from '@icons';
+import { useHTranslation } from '@lib/i18n';
+import { httpRequester } from '@lib/networks/http';
+import { RootStateOrAny, useDispatch, useSelector } from 'react-redux';
+import { isEqual } from 'underscore';
+import { setDataSource, setDocumentDetail } from '../actions';
+import { useGetDocumentDetail } from './common';
+import { useIsNewDocument } from './document-detail-hooks';
 import {
   useApiEndpoint,
   useFeature,
@@ -14,9 +17,6 @@ import {
   useFeatureId,
 } from './feature-hooks';
 import { useSearchForm } from './search-form-hooks';
-import { useGetDocumentDetail } from './common';
-import { useIsNewDocument } from './document-detail-hooks';
-import { setDataSource, setDocumentDetail } from '../actions';
 
 export function useSetDocumentDetailWithoutVisible(
   featureIdDefault?: string,

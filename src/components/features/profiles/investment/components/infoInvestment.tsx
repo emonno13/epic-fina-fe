@@ -2,7 +2,7 @@ import {
   mappingTypeOfFund,
   TYPE_OF_FUND,
 } from '@components/features/fina/products/fund/constants';
-import { ConverterUtils } from 'lib/converter';
+import { ConverterUtils } from '@lib/converter';
 import ChartPie from './chartPie';
 
 import './tabs.scss';

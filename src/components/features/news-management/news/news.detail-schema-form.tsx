@@ -21,7 +21,7 @@ import {
   HFormItemProps,
   HFormProps,
 } from '@schema-form/h-types';
-import { PRODUCT_TYPES } from 'types/organization';
+import { PRODUCT_TYPES } from '@types/organization';
 import { NEWS_STATUS, NEWS_STATUS_OPTIONS } from './constant';
 
 export const useNewsDetailWithSeoSchemaForm = () => {

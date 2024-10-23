@@ -2,9 +2,9 @@ import { HSelect } from '@components/shared/common-form-elements/select';
 import { useHTranslation } from '@lib/i18n';
 import { HForm } from '@schema-form/h-form';
 import { createSchemaItem } from '@schema-form/h-types';
+import { ORGANIZATION_TYPES } from '@types/organization';
 import { Button, Form, notification } from 'antd';
 import { useState } from 'react';
-import { ORGANIZATION_TYPES } from 'types/organization';
 
 import './preferential-modal-custom.scss';
 

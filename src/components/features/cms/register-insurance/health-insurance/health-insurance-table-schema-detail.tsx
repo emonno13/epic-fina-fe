@@ -5,11 +5,11 @@ import {
   PreViewUser,
 } from '@components/features/fina/deals/deals-component-common/preview-user';
 import { FiledViewer } from '@components/shared/common/configuration/field-viewer';
+import { ConverterUtils } from '@lib/converter';
+import { FormatterUtils } from '@lib/formatter';
+import { useHTranslation } from '@lib/i18n';
+import { TableUtils } from '@lib/table-utils';
 import { Tag, Tooltip } from 'antd';
-import { ConverterUtils } from 'lib/converter';
-import { FormatterUtils } from 'lib/formatter';
-import { useHTranslation } from 'lib/i18n';
-import { TableUtils } from 'lib/table-utils';
 import { isEmpty } from 'lodash';
 import { useOnDocumentClick } from '../../../../../schema-form/features/hooks/table-hooks';
 import { ClickableOpacity } from '../../../../shared/utils/clickable-opacity';

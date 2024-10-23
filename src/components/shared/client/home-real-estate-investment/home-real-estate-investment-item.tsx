@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { PROPERTIES_TYPE } from '@components/features/fina/properties/contansr';
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
-import { HomeIconSvg, MapIconSvg } from 'icons';
+import { HomeIconSvg, MapIconSvg } from '@icons';
 import { NumberUtils } from '@lib/utils/number';
 
 export const HomeRealEstateInvestmentItem = ({ realEstate }) => {

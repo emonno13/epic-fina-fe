@@ -1,7 +1,7 @@
 import { SelectUtils } from '@components/shared/common-form-elements/select/Utils';
+import { useHTranslation } from '@lib/i18n';
 import { createSchemaItem, HFormItemProps } from '@schema-form/h-types';
 import { DatePicker } from 'antd';
-import { useHTranslation } from 'lib/i18n';
 
 const { RangePicker } = DatePicker;
 

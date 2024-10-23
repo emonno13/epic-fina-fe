@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
+import { CloseIconLargeSvg } from '@icons';
 import { endpoints } from '@lib/networks/endpoints';
 import { useAuth, useCurrentUser } from '@lib/providers/auth';
 import { Modal } from 'antd';
 import { useForm } from 'antd/lib/form/Form';
-import { CloseIconLargeSvg } from 'icons';
 import Cookies from 'js-cookie';
 import moment from 'moment';
 import { useRouter } from 'next/router';
@@ -14,12 +14,12 @@ import { HButton } from '@components/shared/common-form-elements/h-confirmation-
 import { HInput } from '@components/shared/common-form-elements/h-input';
 import { HUploadImage } from '@components/shared/common-form-elements/h-upload';
 import { createSchemaLabelItem } from '@components/shared/common/h-label/h-label-title';
+import { IconEkycSuccess } from '@icons/rsvgs/ekyc-success';
 import { useIsMobile } from '@lib/hooks/use-media';
 import { useHTranslation } from '@lib/i18n';
 import { HForm } from '@schema-form/h-form';
 import { createSchemaItem } from '@schema-form/h-types';
 import { FormUtils } from '@schema-form/utils/form-utils';
-import { IconEkycSuccess } from 'icons/rsvgs/ekyc-success';
 
 import './styles.module.scss';
 

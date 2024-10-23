@@ -1,9 +1,9 @@
 import { HSelect } from '@components/shared/common-form-elements/select';
 import { useHTranslation } from '@lib/i18n';
 import { createSchemaItem, HFormItemProps } from '@schema-form/h-types';
+import { PRODUCT_TYPES } from '@types/organization';
 import { DatePicker } from 'antd';
 import { TFunction } from 'react-i18next';
-import { PRODUCT_TYPES } from 'types/organization';
 
 const { RangePicker } = DatePicker;
 

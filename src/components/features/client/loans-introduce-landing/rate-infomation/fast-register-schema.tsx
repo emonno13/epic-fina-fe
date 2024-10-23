@@ -1,7 +1,7 @@
+import { ArrowDownSmallIcon } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { createSchemaItem } from '@schema-form/h-types';
 import { Input, Select } from 'antd';
-import { ArrowDownSmallIcon } from 'icons';
 import { useState } from 'react';
 
 const FastRegisterSchema = () => {

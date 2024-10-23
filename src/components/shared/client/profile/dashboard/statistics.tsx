@@ -1,4 +1,7 @@
 import { fundActions } from '@components/features/profiles/transaction-management/components/constants';
+import { IconsStatisticsDashboard } from '@icons';
+import { IconInvestmentReturns } from '@icons/rsvgs/icon-investment-returns';
+import { IconTransaction } from '@icons/rsvgs/icon-transaction';
 import { FormatterUtils } from '@lib/formatter';
 import { useIsMobile } from '@lib/hooks/use-media';
 import { useHTranslation } from '@lib/i18n';
@@ -6,9 +9,6 @@ import { endpoints } from '@lib/networks/endpoints';
 import { useCurrentUser } from '@lib/providers/auth';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Col, Row } from 'antd';
-import { IconsStatisticsDashboard } from 'icons';
-import { IconInvestmentReturns } from 'icons/rsvgs/icon-investment-returns';
-import { IconTransaction } from 'icons/rsvgs/icon-transaction';
 import { useEffect, useState } from 'react';
 import {
   IconCurrentIncome,

@@ -1,4 +1,4 @@
-import { IconComment, IconPhone } from 'icons';
+import { IconComment, IconPhone } from '@icons';
 
 import './styles.module.scss';
 
@@ -15,8 +15,12 @@ const SupportButton = () => {
         <div id="fb-customer-chat" className="fb-customerchat"></div>
       </div>
       <div className="zalo-action">
-        <a href={'https://zalo.me/937476885441449805'} target="_blank" rel="noopener noreferrer">
-					Zalo
+        <a
+          href={'https://zalo.me/937476885441449805'}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zalo
         </a>
       </div>
       <div className="phone-action">

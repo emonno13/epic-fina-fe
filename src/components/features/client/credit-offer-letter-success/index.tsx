@@ -1,6 +1,6 @@
+import { CheckCircleIcon } from '@icons/rsvgs/check-circle';
 import { useHTranslation } from '@lib/i18n';
 import { Button } from 'antd';
-import { CheckCircleIcon } from 'icons/rsvgs/check-circle';
 import { useRouter } from 'next/router';
 import { creditOfferLetterSuccessLinks } from './constants';
 import CreditOfferLetterSuccessCard from './credit-offer-letter-success-card';

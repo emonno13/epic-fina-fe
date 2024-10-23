@@ -1,10 +1,10 @@
 import HCard from '@components/shared/common/h-card';
 import { ConverterUtils } from '@lib/converter';
 import { useHTranslation } from '@lib/i18n';
+import { ORGANIZATION_TYPES, USER_TYPES } from '@types/organization';
 import { Drawer, Empty } from 'antd';
 import dynamic from 'next/dynamic';
 import { useState } from 'react';
-import { ORGANIZATION_TYPES, USER_TYPES } from 'types/organization';
 import { isEmpty } from 'underscore';
 import { FiledViewer } from '../../../../../../shared/common/configuration/field-viewer';
 import { PreViewUser } from '../../../deals-component-common/preview-user';

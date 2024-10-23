@@ -1,12 +1,12 @@
 import { EnvironmentOutlined, ScheduleOutlined } from '@ant-design/icons';
 import HUser from '@components/shared/common/h-user';
 import { Link } from '@components/shared/link';
+import { ActionSvg, EditIconSvg } from '@icons';
 import { ConverterUtils, useGenerateConcealContent } from '@lib/converter';
 import { CallPhoneFcssSDKConvert } from '@lib/fccs-sdk-convert';
 import { useHTranslation } from '@lib/i18n';
 import { Popover, Tag } from 'antd';
 import camelCase from 'camelcase';
-import { ActionSvg, EditIconSvg } from 'icons';
 import { useRouter } from 'next/router';
 import { isEmpty } from 'underscore';
 import { endpoints } from '../../../../lib/networks/endpoints';

@@ -1,4 +1,5 @@
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
+import { CloseIconLargeSvg } from '@icons';
 import { useIsMobile } from '@lib/hooks/use-media';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
@@ -6,7 +7,6 @@ import { useCurrentUser } from '@lib/providers/auth';
 import { HForm } from '@schema-form/h-form';
 import { Col, Modal, Row } from 'antd';
 import { useForm } from 'antd/lib/form/Form';
-import { CloseIconLargeSvg } from 'icons';
 import { ChangePasswordFormSchema } from './change-password-form-schema';
 import {
   IconChangePasswordSuccess,

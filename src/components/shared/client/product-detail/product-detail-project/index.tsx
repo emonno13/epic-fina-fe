@@ -1,9 +1,9 @@
-import { Col, Row } from 'antd';
-import Head from 'next/head';
 import { CLIENT_PRODUCT_DETAIL_ROUTE } from '@components/features/client/product-detail/constants';
 import { getProductDetailContent } from '@components/features/client/product-detail/utils';
-import { ExternalLinkIcon } from 'icons';
+import { ExternalLinkIcon } from '@icons';
 import { useHTranslation } from '@lib/i18n';
+import { Col, Row } from 'antd';
+import Head from 'next/head';
 import ClientDetailPageCover from '../../detail-page-cover';
 import FeaturedNews from '../../featured-news';
 import { HomeLoanListWithFetching } from '../../home-loan-list';

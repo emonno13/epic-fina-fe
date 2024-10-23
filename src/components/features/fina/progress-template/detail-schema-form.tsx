@@ -8,13 +8,13 @@ import {
   HFormItemProps,
   HFormProps,
 } from '@schema-form/h-types';
-import { Input } from 'antd';
-import { useState } from 'react';
 import {
   getOrganizationTypeOptions,
   getProductTypeOptions,
   PRODUCT_TYPES,
-} from 'types/organization';
+} from '@types/organization';
+import { Input } from 'antd';
+import { useState } from 'react';
 import { useHTranslation } from '../../../../lib/i18n';
 import { HSelect } from '../../../shared/common-form-elements/select';
 import { getOptionsSubCategoryProduct } from './utils';

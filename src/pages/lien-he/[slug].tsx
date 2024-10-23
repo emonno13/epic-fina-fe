@@ -1,10 +1,10 @@
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { LightlyClientLayout } from 'layouts/admin/lightly/client';
 import ClientExpertDetail from '@components/features/client/expert-detail';
-import { doRequest } from '@lib/networks/http';
-import { endpoints } from '@lib/networks/endpoints';
-import { USER_TYPES } from 'types/organization';
 import { getUserIdFromSlug } from '@components/features/client/expert-detail/utils';
+import { endpoints } from '@lib/networks/endpoints';
+import { doRequest } from '@lib/networks/http';
+import { USER_TYPES } from '@types/organization';
+import { LightlyClientLayout } from 'layouts/admin/lightly/client';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const ContactDetailPage = ({ contactDetail }: any) => {
   return <ClientExpertDetail {...{ contactDetail: contactDetail || {} }} />;

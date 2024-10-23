@@ -3,7 +3,7 @@ import { TASK_TYPES } from 'constants/crm/task';
 import { useContext, useMemo } from 'react';
 
 import { useCurrentUser } from '@lib/providers/auth';
-import { ORGANIZATION_TYPES, USER_TYPES } from 'types/organization';
+import { ORGANIZATION_TYPES, USER_TYPES } from '@types/organization';
 import { TaskManagerContext } from './components';
 
 export const useTaskManagerContext = () => {

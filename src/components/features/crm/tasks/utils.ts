@@ -1,12 +1,12 @@
 import { endpoints } from '@lib/networks/endpoints';
 import { FormUtils } from '@schema-form/utils/form-utils';
+import { PRODUCT_TYPES } from '@types/organization';
 import {
   TASK_RESPONSE_STATUS,
   TASK_STATUSES,
   TASK_STATUSES_ASSIGNED,
   TASK_TYPES,
 } from 'constants/crm/task';
-import { PRODUCT_TYPES } from 'types/organization';
 
 export const TASK_TYPE = {
   call: 'call',

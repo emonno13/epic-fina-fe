@@ -1,6 +1,6 @@
+import { SearchIconSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { Input } from 'antd';
-import { SearchIconSvg } from 'icons';
 
 import './news.module.scss';
 

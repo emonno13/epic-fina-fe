@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react-hooks/exhaustive-deps */
 import NewsList from '@components/shared/client/news-list';
+import { ArrowDownIconSvg } from '@icons';
 import { useTableSourceData } from '@schema-form/features/hooks';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Col, Menu, Pagination, Row, Select } from 'antd';
-import { ArrowDownIconSvg } from 'icons';
 import { useRouter } from 'next/router';
 import { useEffect, useRef, useState } from 'react';
 

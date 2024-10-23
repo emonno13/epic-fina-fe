@@ -1,11 +1,11 @@
 import HCarousel from '@components/shared/common/h-carousel';
+import { IconArrowLeft } from '@icons/rsvgs/arrow-left';
+import { IconArrowRight } from '@icons/rsvgs/arrow-right';
 import { useIsMobile } from '@lib/hooks/use-media';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Col, Row } from 'antd';
-import { IconArrowLeft } from 'icons/rsvgs/arrow-left';
-import { IconArrowRight } from 'icons/rsvgs/arrow-right';
 import { useEffect, useState } from 'react';
 import { ITEM_SLIDE, NUMBER_NEW, NUMBER_OUTSTANDING } from './constants';
 import NewsSlideItem from './news-slide-item';

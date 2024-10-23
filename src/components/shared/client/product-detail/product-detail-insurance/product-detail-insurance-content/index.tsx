@@ -1,6 +1,6 @@
+import { DotCustomIcon } from '@icons/rsvgs/dot-custom';
 import { ConvertUtils } from '@lib/utils/convert';
 import { Timeline } from 'antd';
-import { DotCustomIcon } from 'icons/rsvgs/dot-custom';
 import { useTranslation } from 'react-i18next';
 
 import './product-detail-insurance-content.module.scss';

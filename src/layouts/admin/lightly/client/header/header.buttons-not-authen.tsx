@@ -1,9 +1,9 @@
 import { PhoneFilled } from '@ant-design/icons';
-import { Button, Dropdown } from 'antd';
 import { Link } from '@components/shared/link';
-import { ClientHomeRegisterIcon } from 'icons';
+import { ClientHomeRegisterIcon } from '@icons';
 import { useIsMobile } from '@lib/hooks/use-media';
 import { useHTranslation } from '@lib/i18n';
+import { Button, Dropdown } from 'antd';
 import { getMobileDropdown } from '../constants';
 
 const OverlayMenu = () => {

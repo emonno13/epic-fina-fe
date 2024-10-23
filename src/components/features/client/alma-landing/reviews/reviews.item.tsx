@@ -1,5 +1,5 @@
+import { VnFlagIcon } from '@icons';
 import { useHTranslation } from '@lib/i18n';
-import { VnFlagIcon } from 'icons';
 import React from 'react';
 import AlmaImageCarouselLeftArrowIcon from '../icons/alma-image-carousel-left-arrow-icon';
 import AlmaImageCarouselRightArrowIcon from '../icons/alma-image-carousel-right-arrow-icon';

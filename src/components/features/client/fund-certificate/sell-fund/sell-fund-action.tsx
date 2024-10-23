@@ -1,10 +1,10 @@
 import { fundActions } from '@components/features/profiles/transaction-management/components/constants';
 import { HModal } from '@components/shared/common/h-modal';
+import { CartIcon } from '@icons/rsvgs/cart';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { notification } from 'antd';
-import { CartIcon } from 'icons/rsvgs/cart';
 import { useRouter } from 'next/router';
 import {
   FC,

@@ -1,5 +1,6 @@
 import { EditOutlined } from '@ant-design/icons';
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
+import { FilterIconSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
 import { HFeature, HTable } from '@schema-form/features';
@@ -10,7 +11,6 @@ import HSearchForm, {
 } from '@schema-form/features/search-form';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Form, Tabs } from 'antd';
-import { FilterIconSvg } from 'icons';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { usePublicEnvironment } from 'system/hooks';

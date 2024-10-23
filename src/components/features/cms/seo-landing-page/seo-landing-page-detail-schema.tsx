@@ -3,6 +3,7 @@ import { DEFAULT_FIELD_NAME_OF_SEO } from '@components/shared/common-form-elemen
 import { useSeoDetailSchemaForm } from '@components/shared/common-form-elements/h-seo-element/h-seo-schema-detail';
 import { onUpdateSeoFields } from '@components/shared/common-form-elements/h-seo-element/utils';
 import { createSchemaLabelItem } from '@components/shared/common/h-label/h-label-title';
+import { useHTranslation } from '@lib/i18n';
 import { HSubForm } from '@schema-form/h-form';
 import {
   HFormItemProps,
@@ -10,7 +11,6 @@ import {
   createSchemaItem,
 } from '@schema-form/h-types';
 import { Switch } from 'antd';
-import { useHTranslation } from 'lib/i18n';
 
 export const useSeoLandingPageDetailSchema = () => {
   const { t } = useHTranslation('admin-common');

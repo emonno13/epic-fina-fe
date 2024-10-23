@@ -1,8 +1,8 @@
 import { PlusOutlined } from '@ant-design/icons';
 import HCarousel from '@components/shared/common/h-carousel';
+import { AddressBlueSvg, CallMiniIcon, GroupShowSvg } from '@icons';
 import { useTableSourceData } from '@schema-form/features/hooks';
 import { Avatar } from 'antd';
-import { AddressBlueSvg, CallMiniIcon, GroupShowSvg } from 'icons';
 import { isEmpty } from 'lodash';
 import { useEffect, useState } from 'react';
 import { ConverterUtils } from '../../../../../../lib/converter';

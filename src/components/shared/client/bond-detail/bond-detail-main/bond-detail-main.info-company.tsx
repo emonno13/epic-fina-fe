@@ -1,7 +1,7 @@
-import { Collapse, Typography } from 'antd';
 import { MAPPING_INFO_FUND } from '@components/features/client/fund-certificate/detail/constans';
-import { ArrowDownIconSvg } from 'icons';
+import { ArrowDownIconSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
+import { Collapse, Typography } from 'antd';
 
 const { Panel } = Collapse;
 

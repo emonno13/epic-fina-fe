@@ -2,6 +2,7 @@ import {
   TASK_PRODUCT_TYPES,
   TASK_TYPE,
 } from '@components/features/crm/tasks/utils';
+import { CloseIconLargeSvg } from '@icons';
 import { FormatterUtils } from '@lib/formatter';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
@@ -9,7 +10,6 @@ import { useAuth } from '@lib/providers/auth';
 import { HForm } from '@schema-form/h-form';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Button, Form, Modal, notification } from 'antd';
-import { CloseIconLargeSvg } from 'icons';
 import { TYPE_ACTIONS } from '../constants';
 import { ClientBondTransactionFormSchema } from './bond-list-main.bond-transaction-schema';
 

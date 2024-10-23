@@ -1,12 +1,12 @@
-import { IconInfoRoundYellow } from 'icons';
+import { IconInfoRoundYellow } from '@icons';
 import PaymentQRCode from './qr-code-payment';
 
 const PaymentConfirmationQRCode = ({
   data,
   showConfirmMessage = true,
 }: {
-  data?: any,
-  showConfirmMessage?:boolean
+  data?: any;
+  showConfirmMessage?: boolean;
 }) => {
   const { productDetailInfo, amount, transferContent } = data;
   return (
@@ -26,23 +26,28 @@ const PaymentConfirmationQRCode = ({
 
       <div className="payment-confirmation-fund-content-qr-code-guide">
         <div className="payment-confirmation-fund-content-qr-code-guide-image">
-          <PaymentQRCode data={{
-            'accountNo': productDetailInfo?.bankNumber,
-            'accountName': productDetailInfo?.dataBank?.shortName,
-            'swiftCode': productDetailInfo?.dataBank?.swiftCode,
-            'amount': amount,
-            'addInfo': transferContent,
-            'format': 'text',
-            'template': 'qrZcR1S',
-          }} />
+          <PaymentQRCode
+            data={{
+              accountNo: productDetailInfo?.bankNumber,
+              accountName: productDetailInfo?.dataBank?.shortName,
+              swiftCode: productDetailInfo?.dataBank?.swiftCode,
+              amount: amount,
+              addInfo: transferContent,
+              format: 'text',
+              template: 'qrZcR1S',
+            }}
+          />
         </div>
         <div className="payment-confirmation-fund-content-qr-code-guide-content">
           <div className="payment-confirmation-fund-content-qr-code-desc">
-            <IconInfoRoundYellow /> <span>Một số Ngân hàng chưa hỗ trợ quét mã QR</span>
+            <IconInfoRoundYellow />{' '}
+            <span>Một số Ngân hàng chưa hỗ trợ quét mã QR</span>
           </div>
           <div className="payment-confirmation-fund-content-qr-code-desc">
             <IconInfoRoundYellow />
-            <span>Quý khách vui lòng đối chiếu lại. Thông tin trước khi chuyển khoản</span>
+            <span>
+              Quý khách vui lòng đối chiếu lại. Thông tin trước khi chuyển khoản
+            </span>
           </div>
         </div>
       </div>

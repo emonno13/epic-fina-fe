@@ -1,9 +1,17 @@
-import React from 'react';
+import {
+  AppraisalProgressIcon,
+  BankIcon,
+  DisbursedIcon,
+  DisbursingIcon,
+  LendApprovalIcon,
+  ProcessIcon,
+  ReceivedIcon,
+  TripartiteBlockadeIcon,
+  WaitProcessIcon,
+} from '@icons';
 import { Steps } from 'antd';
-import { WaitProcessIcon, ProcessIcon, BankIcon, AppraisalProgressIcon, ReceivedIcon,
-  LendApprovalIcon, TripartiteBlockadeIcon, DisbursingIcon, DisbursedIcon } from 'icons';
-import { useHTranslation } from '../../../../../../../lib/i18n';
 import { ConverterUtils } from '../../../../../../../lib/converter';
+import { useHTranslation } from '../../../../../../../lib/i18n';
 import { DEAL_DETAIL_STATUSES, DEAL_STATUSES } from '../../../utils';
 
 import './deal-step.module.scss';
@@ -13,36 +21,43 @@ const { Step } = Steps;
 export const RenderDealSteps = (props: any) => {
   const { t } = useHTranslation('admin-common');
   const {
-    currentStep = 0, 
-    steps = [], 
+    currentStep = 0,
+    steps = [],
     getIcon = MapIconBySteps,
     dealDetail,
   } = props;
-  let width = 0, height = 0;
+  let width = 0,
+    height = 0;
   if (typeof window !== 'undefined') {
     width = window.innerWidth;
     height = window.innerHeight;
   }
-	
+
   return (
     <div className={'deal-steps'}>
-      <Steps 
-        current={+currentStep} 
-        labelPlacement={'vertical'} 
+      <Steps
+        current={+currentStep}
+        labelPlacement={'vertical'}
         size={'small'}
         direction={width < 768 ? 'vertical' : 'horizontal'}
       >
         {steps.map((step, index) => (
-          <Step key={`${step}-${index}`} {...{
-            icon: getIcon(step?.value),
-            title:
-							<div>
-							  <div>{t(step?.name)}</div>
-							  <div className={'time-updatedAt'}>{ConverterUtils.dateConverterToString(step?.updatedAt)}</div>
-							</div>,
-            status: dealDetail?.subStatus ? 'error' : step?.status,
-            disabled: step?.disable || false,
-          }} />
+          <Step
+            key={`${step}-${index}`}
+            {...{
+              icon: getIcon(step?.value),
+              title: (
+                <div>
+                  <div>{t(step?.name)}</div>
+                  <div className={'time-updatedAt'}>
+                    {ConverterUtils.dateConverterToString(step?.updatedAt)}
+                  </div>
+                </div>
+              ),
+              status: dealDetail?.subStatus ? 'error' : step?.status,
+              disabled: step?.disable || false,
+            }}
+          />
         ))}
       </Steps>
     </div>

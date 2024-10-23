@@ -3,9 +3,9 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Input, Select, Slider } from 'antd';
 
 import { formatNumber } from '@components/shared/common-form-elements/utils';
+import { ArrowDownIconSvg } from '@icons';
 import { useRequest } from '@umijs/hooks';
 import BigNumber from 'bignumber.js';
-import { ArrowDownIconSvg } from 'icons';
 import { isEmpty } from 'lodash';
 import { number } from '../loan-calculator/utils';
 

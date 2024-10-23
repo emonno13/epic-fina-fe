@@ -1,5 +1,6 @@
 import { Link } from '@components/shared/link';
 import { ClickableOpacity } from '@components/shared/utils/clickable-opacity';
+import { EditIconSvg } from '@icons';
 import { ConverterUtils } from '@lib/converter';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
@@ -9,7 +10,6 @@ import { callApi } from '@schema-form/common/actions';
 import { HTable } from '@schema-form/features';
 import { useSetDocumentDetailWithoutVisible } from '@schema-form/features/hooks/table-hooks';
 import { FormUtils } from '@schema-form/utils/form-utils';
-import { EditIconSvg } from 'icons';
 import { memo, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 

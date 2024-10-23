@@ -1,9 +1,9 @@
-import { Col, Row } from 'antd';
 import { COMMISSION_REASON_SPEND_MAPPING } from '@components/features/fina/commission/settings/loan-product/constant';
 import { HModal } from '@components/shared/common/h-modal';
-import { CloseIconLargeSvg } from 'icons';
+import { CloseIconLargeSvg } from '@icons';
 import { ConverterUtils } from '@lib/converter';
 import { FormatterUtils } from '@lib/formatter';
+import { Col, Row } from 'antd';
 import { IconRose } from './constants';
 import { MappingRole } from './my-commission-search-result-table-schema';
 

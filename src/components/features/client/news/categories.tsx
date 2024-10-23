@@ -3,6 +3,7 @@
 import { rgbDataURL } from '@components/shared/atom/rgb';
 import NewsList from '@components/shared/client/news-list';
 import { Link } from '@components/shared/link';
+import { ArrowRightIcon } from '@icons';
 import { ConverterUtils } from '@lib/converter';
 import { useIsMobile } from '@lib/hooks/use-media';
 import { useHTranslation } from '@lib/i18n';
@@ -11,7 +12,6 @@ import { useTableSourceData } from '@schema-form/features/hooks';
 import { HSearchFormHiddenAble } from '@schema-form/features/search-form';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Col, Row, Tabs } from 'antd';
-import { ArrowRightIcon } from 'icons';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { MAX_ITEM_NEWS, MAX_ITEM_RENDER } from './constants';

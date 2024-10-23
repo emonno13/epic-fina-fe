@@ -2,8 +2,8 @@
 
 import { rgbDataURL } from '@components/shared/atom/rgb';
 import { HSmallContainer } from '@components/shared/common/h-container';
+import { ArrowDown } from '@icons';
 import { useIsMobile } from '@lib/hooks/use-media';
-import { ArrowDown } from 'icons';
 import Image from 'next/image';
 import { ReactNode } from 'react';
 import { InvestButton } from './common/invest-btn';

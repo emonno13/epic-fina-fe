@@ -1,8 +1,8 @@
+import { SearchSmallIcon } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import HSearchForm, {
   HResetPaginationButton,
 } from '@schema-form/features/search-form';
-import { SearchSmallIcon } from 'icons';
 import { ClientBondListMainFilterFormSchema } from './bond-list-main.filter-form-schema';
 
 const ClientBondListMainFilterForm = ({ hiddenValues = {} }) => {

@@ -4,14 +4,14 @@ import {
   SET_DOCUMENT_DETAIL,
   SET_PAGINATION,
 } from '@schema-form/features/actions';
-import Cookies from 'js-cookie';
-import { io } from 'socket.io-client';
 import {
   SET_DATASOURCE_EVENT,
   SET_DOCUMENT_DETAIL_EVENT,
   SET_PAGINATION_EVENT,
-} from 'types/socket';
-import { DEVICE_UUID_HEADER_NAMESPACE } from 'types/uuid';
+} from '@types/socket';
+import { DEVICE_UUID_HEADER_NAMESPACE } from '@types/uuid';
+import Cookies from 'js-cookie';
+import { io } from 'socket.io-client';
 
 const API_SERVER = process.env.NEXT_PUBLIC_API_SERVER;
 export let SOCKET_SERVER: any = null;

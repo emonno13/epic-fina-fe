@@ -1,7 +1,7 @@
+import { InfoBlueIcon } from '@icons/rsvgs/info-blue';
+import { InfoOrangeIcon } from '@icons/rsvgs/info-orange';
 import { useHTranslation } from '@lib/i18n';
 import { useCurrentUser } from '@lib/providers/auth';
-import { InfoBlueIcon } from 'icons/rsvgs/info-blue';
-import { InfoOrangeIcon } from 'icons/rsvgs/info-orange';
 import { isEmpty } from 'lodash';
 
 import './styles.modules.scss';

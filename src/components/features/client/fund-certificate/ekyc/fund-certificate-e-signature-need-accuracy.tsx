@@ -1,5 +1,5 @@
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
-import { NoESignature } from 'icons/rsvgs/no-e-signature';
+import { NoESignature } from '@icons/rsvgs/no-e-signature';
 import { eSignatureStep } from '../detail/constants';
 
 const FundCertificateESignatureNeedAccuracy = ({

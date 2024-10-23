@@ -8,7 +8,7 @@ import {
   HFormItemProps,
   HFormProps,
 } from '@schema-form/h-types';
-import { ORGANIZATION_TYPES, PRODUCT_TYPES } from 'types/organization';
+import { ORGANIZATION_TYPES, PRODUCT_TYPES } from '@types/organization';
 import {
   getLoanPeriodOptions,
   getMoneyOptions,

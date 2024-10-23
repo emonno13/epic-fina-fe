@@ -1,7 +1,7 @@
+import { ArrowRightCircleSvg } from '@icons';
 import { ConverterUtils } from '@lib/converter';
 import { useHTranslation } from '@lib/i18n';
 import { Popover } from 'antd';
-import { ArrowRightCircleSvg } from 'icons';
 
 import './view-time-update.module.scss';
 

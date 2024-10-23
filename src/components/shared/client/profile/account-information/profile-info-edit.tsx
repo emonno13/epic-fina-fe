@@ -1,4 +1,5 @@
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
+import { CloseIconLargeSvg, IconSaveSuccess } from '@icons';
 import { ConverterUtils } from '@lib/converter';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
@@ -7,7 +8,6 @@ import { HForm } from '@schema-form/h-form';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Modal } from 'antd';
 import { useForm } from 'antd/lib/form/Form';
-import { CloseIconLargeSvg, IconSaveSuccess } from 'icons';
 import Cookies from 'js-cookie';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
