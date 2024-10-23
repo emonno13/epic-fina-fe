@@ -5,22 +5,22 @@ import { TYPE_PRODUCT_HOME_SLUG } from './client/home/constants';
 import { CLIENT_PRODUCT_DETAIL_ROUTE } from './client/product-detail/constants';
 
 export const ClientHome = dynamic(
-  () => import('components/features/client/home'),
+  () => import('@components/features/client/home'),
   { ssr: false },
 );
 
 export const ClientCalculator = dynamic(
-  () => import('components/features/client/calculator'),
+  () => import('@components/features/client/calculator'),
   { ssr: false },
 );
 
 export const ClienLoans = dynamic(
-  () => import('components/features/client/loans'),
+  () => import('@components/features/client/loans'),
   { ssr: false },
 );
 
 export const ClientInsuranceDetail = dynamic(
-  () => import('components/features/client/insuarnce-detail'),
+  () => import('@components/features/client/insuarnce-detail'),
   { ssr: false },
 );
 
@@ -33,143 +33,143 @@ export const ClientInsuranceInputInformationDetail = dynamic(
 );
 
 export const ClientRealEstates = dynamic(
-  () => import('components/features/client/real-estates'),
+  () => import('@components/features/client/real-estates'),
   { ssr: false },
 );
 
 export const ClientInsurances = dynamic(
-  () => import('components/features/client/insurances'),
+  () => import('@components/features/client/insurances'),
   { ssr: false },
 );
 
 export const ClientAbout = dynamic(
-  () => import('components/features/client/about'),
+  () => import('@components/features/client/about'),
   { ssr: false },
 );
 
 export const ClientFaq = dynamic(
-  () => import('components/features/client/faq'),
+  () => import('@components/features/client/faq'),
   { ssr: false },
 );
 
 export const ClientProductDetail = dynamic(
-  () => import('components/features/client/product-detail'),
+  () => import('@components/features/client/product-detail'),
   { ssr: false },
 );
 
 export const ClientLoanEstimate = dynamic(
-  () => import('components/features/client/loan-estimate'),
+  () => import('@components/features/client/loan-estimate'),
   { ssr: false },
 );
 
 export const ClientBonds = dynamic(
-  () => import('components/features/client/bonds'),
+  () => import('@components/features/client/bonds'),
   { ssr: false },
 );
 
 export const ClientBondDetail = dynamic(
-  () => import('components/features/client/bond-detail'),
+  () => import('@components/features/client/bond-detail'),
   { ssr: false },
 );
 
 export const ClientFundCertificate = dynamic(
-  () => import('components/features/client/fund-certificate'),
+  () => import('@components/features/client/fund-certificate'),
   {
     ssr: false,
   },
 );
 
 export const ClientFundCertificateDetail = dynamic(
-  () => import('components/features/client/fund-certificate/detail'),
+  () => import('@components/features/client/fund-certificate/detail'),
   {
     ssr: false,
   },
 );
 
 export const ClientRealEstateInvestment = dynamic(
-  () => import('components/features/client/real-estate-investment'),
+  () => import('@components/features/client/real-estate-investment'),
   { ssr: false },
 );
 
 export const ClientRealEstateInvestmentDetail = dynamic(
-  () => import('components/features/client/real-estate-investment-detail'),
+  () => import('@components/features/client/real-estate-investment-detail'),
   { ssr: false },
 );
 
 export const ClientNewsCategories = dynamic(
-  () => import('components/features/client/news-categories'),
+  () => import('@components/features/client/news-categories'),
   { ssr: false },
 );
 
 export const ClientSearchNews = dynamic(
-  () => import('components/features/client/search-news'),
+  () => import('@components/features/client/search-news'),
   { ssr: false },
 );
 
 export const ClientProfileAccountInformation = dynamic(
-  () => import('components/shared/client/profile/account-information'),
+  () => import('@components/shared/client/profile/account-information'),
   { ssr: false },
 );
 
 export const ClientProfileSurvey = dynamic(
-  () => import('components/shared/client/profile/survey'),
+  () => import('@components/shared/client/profile/survey'),
   { ssr: false },
 );
 
 export const ClientProfileEarningsCommissions = dynamic(
-  () => import('components/shared/client/profile/earnings-commissions'),
+  () => import('@components/shared/client/profile/earnings-commissions'),
   { ssr: false },
 );
 
 export const ClientProfileAffiliate = dynamic(
-  () => import('components/shared/client/profile/affiliate'),
+  () => import('@components/shared/client/profile/affiliate'),
   { ssr: false },
 );
 
 export const ProfileAccountTransaction = dynamic(
-  () => import('components/shared/client/profile/transaction'),
+  () => import('@components/shared/client/profile/transaction'),
   { ssr: false },
 );
 
 export const ProfileAccountDeal = dynamic(
-  () => import('components/shared/client/profile/deal'),
+  () => import('@components/shared/client/profile/deal'),
 );
 
 export const ClientProfileContributorContract = dynamic(
-  () => import('components/shared/client/profile/contributor-contract'),
+  () => import('@components/shared/client/profile/contributor-contract'),
   { ssr: false },
 );
 
 export const ClientProfileMyNetwork = dynamic(
-  () => import('components/shared/client/profile/my-network'),
+  () => import('@components/shared/client/profile/my-network'),
 );
 
 export const ClientProfileDashboard = dynamic(
-  () => import('components/shared/client/profile/dashboard'),
+  () => import('@components/shared/client/profile/dashboard'),
   { ssr: false },
 );
 
 export const ClientProfileSettingChangePassword = dynamic(
-  () => import('components/shared/client/profile/setting/change-password'),
+  () => import('@components/shared/client/profile/setting/change-password'),
   { ssr: false },
 );
 
 export const ClientProfileSettingNotification = dynamic(
-  () => import('components/shared/client/profile/setting/notification'),
+  () => import('@components/shared/client/profile/setting/notification'),
   { ssr: false },
 );
 
 export const ClientProfileSettingLanguage = dynamic(
-  () => import('components/shared/client/profile/setting/language'),
+  () => import('@components/shared/client/profile/setting/language'),
 );
 
 export const ClientProfileAssetManagement = dynamic(
-  () => import('components/shared/client/profile/asset-management'),
+  () => import('@components/shared/client/profile/asset-management'),
   { ssr: false },
 );
 
 export const ClientProfileMyDocument = dynamic(
-  () => import('components/shared/client/profile/my-document'),
+  () => import('@components/shared/client/profile/my-document'),
   { ssr: false },
 );
 

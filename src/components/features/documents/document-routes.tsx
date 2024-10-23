@@ -2,18 +2,18 @@ import dynamic from 'next/dynamic';
 
 import { RouteUtils } from '../../shared/layout/router-contaner/utils';
 
-export const  DocumentCategoryPage = dynamic(
-  () => import('components/features/documents/category'),
+export const DocumentCategoryPage = dynamic(
+  () => import('@components/features/documents/category'),
   { ssr: false },
 );
 
-export const  DocumentPage = dynamic(
-  () => import('components/features/documents/management'),
+export const DocumentPage = dynamic(
+  () => import('@components/features/documents/management'),
   { ssr: false },
 );
 
-export const  TemplatePage = dynamic(
-  () => import('components/features/documents/templates'),
+export const TemplatePage = dynamic(
+  () => import('@components/features/documents/templates'),
   { ssr: false },
 );
 

@@ -3,27 +3,27 @@ import dynamic from 'next/dynamic';
 import { RouteUtils } from '../../shared/layout/router-contaner/utils';
 
 export const GreetingFileManagement = dynamic(
-  () => import('components/features/system/greeting-files'),
+  () => import('@components/features/system/greeting-files'),
   { ssr: false },
 );
 
 export const GroupManagement = dynamic(
-  () => import('components/features/system/groups'),
+  () => import('@components/features/system/groups'),
   { ssr: false },
 );
 
 export const QueueManagement = dynamic(
-  () => import('components/features/system/queues'),
+  () => import('@components/features/system/queues'),
   { ssr: false },
 );
 
 export const ScenarioIvrTreeManagement = dynamic(
-  () => import('components/features/system/scenario-ivr-tree'),
+  () => import('@components/features/system/scenario-ivr-tree'),
   { ssr: false },
 );
 
 export const HotlineManagement = dynamic(
-  () => import('components/features/system/hotline'),
+  () => import('@components/features/system/hotline'),
   { ssr: false },
 );
 

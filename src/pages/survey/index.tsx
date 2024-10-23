@@ -1,8 +1,10 @@
+import SurveyLayout from 'layouts/survey';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import dynamic from 'next/dynamic';
-import SurveyLayout from 'layouts/survey';
 
-const SurveyForm = dynamic(() => import('components/shared/survey'), { ssr: false });
+const SurveyForm = dynamic(() => import('@components/shared/survey'), {
+  ssr: false,
+});
 
 const SurveyPage = () => {
   return <SurveyForm />;

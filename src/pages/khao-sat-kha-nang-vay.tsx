@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
-const SurveyForm = dynamic(() => import('components/shared/survey'), {
+const SurveyForm = dynamic(() => import('@components/shared/survey'), {
   ssr: false,
 });
 

@@ -2,52 +2,52 @@ import { RouteUtils } from '@components/shared/layout/router-contaner/utils';
 import dynamic from 'next/dynamic';
 
 export const MobileHome = dynamic(
-  () => import('components/features/mobile-app/home'),
+  () => import('@components/features/mobile-app/home'),
   { ssr: false },
 );
 
 export const MobileProducts = dynamic(
-  () => import('components/features/mobile-app/mobile-products'),
+  () => import('@components/features/mobile-app/mobile-products'),
   { ssr: false },
 );
 
 export const MobileDocumentManagement = dynamic(
-  () => import('components/features/profiles/profile-document'),
+  () => import('@components/features/profiles/profile-document'),
   { ssr: false },
 );
 
 export const MobileDealLoanManagement = dynamic(
-  () => import('components/features/fina/deals/loans'),
+  () => import('@components/features/fina/deals/loans'),
   { ssr: false },
 );
 
 export const MobileProfile = dynamic(
-  () => import('components/features/mobile-app/mobile-profile'),
+  () => import('@components/features/mobile-app/mobile-profile'),
   { ssr: false },
 );
 
 export const MobileChangePassword = dynamic(
-  () => import('components/features/mobile-app/mobile-change-password'),
+  () => import('@components/features/mobile-app/mobile-change-password'),
   { ssr: false },
 );
 
 export const MobilePlanningCheck = dynamic(
-  () => import('components/features/mobile-app/mobile-planning-check'),
+  () => import('@components/features/mobile-app/mobile-planning-check'),
   { ssr: false },
 );
 
 export const MobileLoanCalculator = dynamic(
-  () => import('components/features/mobile-app/mobile-loan-calculator'),
+  () => import('@components/features/mobile-app/mobile-loan-calculator'),
   { ssr: false },
 );
 
 export const MobileManagement = dynamic(
-  () => import('components/features/mobile-app/mobile-management'),
+  () => import('@components/features/mobile-app/mobile-management'),
   { ssr: false },
 );
 
 export const MobileManagementInsurance = dynamic(
-  () => import('components/features/fina/transaction'),
+  () => import('@components/features/fina/transaction'),
   { ssr: false },
 );
 

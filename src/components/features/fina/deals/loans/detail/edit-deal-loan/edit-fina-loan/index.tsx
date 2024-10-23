@@ -58,7 +58,7 @@ interface PanelHeaderUploadProps extends ManagerLoanWithFinaProps {
 }
 
 export const DocumentManagement = dynamic(
-  () => import('components/shared/documents'),
+  () => import('@components/shared/documents'),
   { ssr: false },
 );
 

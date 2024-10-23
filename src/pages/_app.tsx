@@ -1,18 +1,18 @@
+import { loadMioEKyc } from '@components/features/client/fund-certificate/store';
+import AppSeoTags from '@components/shared/app-seo-tags';
+import { AppUtils } from '@lib/utils/app-utils';
+import { DeviceUuidUtils } from '@lib/utils/device-uuid-utils';
+import { MobileUtils } from '@lib/utils/mobile';
 import cookie from 'cookie';
+import { StringeeCall as StringeeCallSDK } from 'fccs-sdk/dist';
 import { appWithTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import App, { AppInitialProps, AppProps } from 'next/app';
 import dynamic from 'next/dynamic';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { useEffect, useRef } from 'react';
 import { useDispatch } from 'react-redux';
-import Head from 'next/head';
-import { StringeeCall as StringeeCallSDK } from 'fccs-sdk/dist';
-import { useRouter } from 'next/router';
-import { MobileUtils } from '@lib/utils/mobile';
-import { DeviceUuidUtils } from '@lib/utils/device-uuid-utils';
-import { AppUtils } from '@lib/utils/app-utils';
-import { loadMioEKyc } from '@components/features/client/fund-certificate/store';
-import AppSeoTags from '@components/shared/app-seo-tags';
 import { CookieMessage } from '../@types';
 import { UserCallingDetail } from '../components/features/crm/user-calling-info';
 import { connectToStringeeServer } from '../components/shared/stringee/actions';
@@ -29,16 +29,16 @@ import { loadSystemEnv } from '../system/actions';
 import '../styles/antd-custom.less';
 
 import 'animate.css/animate.min.css';
+import 'fccs-sdk/dist/index.css';
 import 'nprogress/nprogress.css';
 import 'public/app.scss';
-import 'fccs-sdk/dist/index.css';
 import 'tailwindcss/tailwind.css';
 import '../styles/_css_utils.scss';
 import '../styles/_default.scss';
 import '../styles/_nprogress_custom.scss';
 
 export const Notification = dynamic(
-  () => import('components/shared/firebase/notification'),
+  () => import('@components/shared/firebase/notification'),
   { ssr: false },
 );
 export const FccsProvider = dynamic(() => import('fccs-sdk/dist'), {
@@ -51,7 +51,7 @@ const emptyLayout = ({ children }) => {
 
 const TopProgressBar = dynamic(
   () => {
-    return import('components/shared/TopProgressBar');
+    return import('@components/shared/TopProgressBar');
   },
   { ssr: false },
 );

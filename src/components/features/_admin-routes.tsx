@@ -14,140 +14,140 @@ import { profilesManagement } from './profiles/profile-routes';
 import { systemRoutes } from './system/system-routes';
 
 export const UserManagement = dynamic(
-  () => import('components/features/organizations/users'),
+  () => import('@components/features/organizations/users'),
   { ssr: false },
 );
 
 export const OrganizationManagement = dynamic(
-  () => import('components/features/organizations'),
+  () => import('@components/features/organizations'),
   { ssr: false },
 );
 
 export const PositionManagement = dynamic(
-  () => import('components/features/organizations/positions'),
+  () => import('@components/features/organizations/positions'),
   { ssr: false },
 );
 
 export const PermissionManagement = dynamic(
-  () => import('components/features/organizations/permissions'),
+  () => import('@components/features/organizations/permissions'),
   { ssr: false },
 );
 
 export const CategoryManagement = dynamic(
-  () => import('components/features/finance/categories'),
+  () => import('@components/features/finance/categories'),
   { ssr: false },
 );
 
 export const RoleManagement = dynamic(
-  () => import('components/features/organizations/roles'),
+  () => import('@components/features/organizations/roles'),
   { ssr: false },
 );
 export const ContactUsManagement = dynamic(
-  () => import('components/features/recruit/recruit-contact-us'),
+  () => import('@components/features/recruit/recruit-contact-us'),
   { ssr: false },
 );
 export const CvManagement = dynamic(
-  () => import('components/features/recruit/recruit-curriculum-vitae'),
+  () => import('@components/features/recruit/recruit-curriculum-vitae'),
   { ssr: false },
 );
 export const JobsManagement = dynamic(
-  () => import('components/features/recruit/recruit-jobs'),
+  () => import('@components/features/recruit/recruit-jobs'),
   { ssr: false },
 );
 
 export const ConfigurationManagement = dynamic(
-  () => import('components/features/system/configurations'),
+  () => import('@components/features/system/configurations'),
   { ssr: false },
 );
 
 export const ConfigurationPropertiesManagement = dynamic(
-  () => import('components/features/system/configurations-properties'),
+  () => import('@components/features/system/configurations-properties'),
   { ssr: false },
 );
 
 export const Dashboard = dynamic(
-  () => import('components/features/admin/dashboard'),
+  () => import('@components/features/admin/dashboard'),
   { ssr: false },
 );
 
 export const LocationManagement = dynamic(
-  () => import('components/features/organizations/location'),
+  () => import('@components/features/organizations/location'),
   { ssr: false },
 );
 
 export const GroupManagement = dynamic(
-  () => import('components/features/organizations/groups'),
+  () => import('@components/features/organizations/groups'),
   { ssr: false },
 );
 
 export const TaskManagement = dynamic(
-  () => import('components/features/crm/tasks'),
+  () => import('@components/features/crm/tasks'),
   { ssr: false },
 );
 
 export const TaskAssignManagement = dynamic(
-  () => import('components/features/crm/task-assign'),
+  () => import('@components/features/crm/task-assign'),
   { ssr: false },
 );
 
 export const RealEstateTaskManagement = dynamic(
-  () => import('components/features/crm/tasks/real-estate'),
+  () => import('@components/features/crm/tasks/real-estate'),
   { ssr: false },
 );
 
 export const ReasonCloseTask = dynamic(
-  () => import('components/features/crm/tasks/reason-close'),
+  () => import('@components/features/crm/tasks/reason-close'),
   { ssr: false },
 );
 
 export const ImportUsersData = dynamic(
-  () => import('components/features/crm/import-users'),
+  () => import('@components/features/crm/import-users'),
   { ssr: false },
 );
 
 export const MessageTemplate = dynamic(
-  () => import('components/features/template-notification'),
+  () => import('@components/features/template-notification'),
   { ssr: false },
 );
 
 export const StatusManagement = dynamic(
-  () => import('components/features/status'),
+  () => import('@components/features/status'),
   { ssr: false },
 );
 
 export const RequestBackStatusOfTask = dynamic(
-  () => import('components/features/crm/tasks/request-back-status-of-task'),
+  () => import('@components/features/crm/tasks/request-back-status-of-task'),
   { ssr: false },
 );
 
 export const ConfigAutoAssignTask = dynamic(
-  () => import('components/features/crm/tasks/config-auto-assign'),
+  () => import('@components/features/crm/tasks/config-auto-assign'),
   { ssr: false },
 );
 
 export const Otp = dynamic(
-  () => import('components/features/crm/sms-message'),
+  () => import('@components/features/crm/sms-message'),
   { ssr: false },
 );
 
 export const PartnerRegisteredCalculationToolkit = dynamic(
   () =>
-    import('components/features/crm/partner-registered-calculation-toolkit'),
+    import('@components/features/crm/partner-registered-calculation-toolkit'),
   { ssr: false },
 );
 
 export const SendEmailFINAManagement = dynamic(
-  () => import('components/features/crm/email-fina'),
+  () => import('@components/features/crm/email-fina'),
   { ssr: false },
 );
 
 export const CallLogs = dynamic(
-  () => import('components/features/crm/call-logs'),
+  () => import('@components/features/crm/call-logs'),
   { ssr: false },
 );
 
 export const UsersGroupManagement = dynamic(
-  () => import('components/features/organizations/users-group'),
+  () => import('@components/features/organizations/users-group'),
   { ssr: false },
 );
 

@@ -56,7 +56,7 @@ import { RolePermissionDetailSchema } from './role-permissions-schema-form';
 import { UserResultSchema } from './search-result-schema';
 
 const ProfileDocument = dynamic(
-  () => import('components/features/profiles/profile-document'),
+  () => import('@components/features/profiles/profile-document'),
   {
     ssr: false,
   },

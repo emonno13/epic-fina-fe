@@ -1,16 +1,16 @@
+import HCard from '@components/shared/common/h-card';
+import { ConverterUtils } from '@lib/converter';
+import { useHTranslation } from '@lib/i18n';
 import { Drawer, Empty } from 'antd';
-import { isEmpty } from 'underscore';
 import dynamic from 'next/dynamic';
 import { useState } from 'react';
-import HCard from '@components/shared/common/h-card';
-import { useHTranslation } from '@lib/i18n';
 import { ORGANIZATION_TYPES, USER_TYPES } from 'types/organization';
-import { ConverterUtils } from '@lib/converter';
+import { isEmpty } from 'underscore';
 import { FiledViewer } from '../../../../../../shared/common/configuration/field-viewer';
 import { PreViewUser } from '../../../deals-component-common/preview-user';
 
 const RenderCustomerUpdate = dynamic(
-  () => import('components/features/business/customer/render-customer-update'),
+  () => import('@components/features/business/customer/render-customer-update'),
   { ssr: false },
 );
 

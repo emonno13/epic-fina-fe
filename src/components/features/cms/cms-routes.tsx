@@ -1,20 +1,20 @@
 import dynamic from 'next/dynamic';
 
-import { RouteUtils } from '../../shared/layout/router-contaner/utils';
 import { RouteContainer } from '../../shared/layout/router-contaner';
+import { RouteUtils } from '../../shared/layout/router-contaner/utils';
 
 export const NewsCategoryManagement = dynamic(
-  () => import('components/features/cms/categories'),
+  () => import('@components/features/cms/categories'),
   { ssr: false },
 );
 
 export const NewsManagement = dynamic(
-  () => import('components/features/cms/news'),
+  () => import('@components/features/cms/news'),
   { ssr: false },
 );
 
 export const NewsModulesManagement = dynamic(
-  () => import('components/features/cms/modules'),
+  () => import('@components/features/cms/modules'),
   { ssr: false },
 );
 
