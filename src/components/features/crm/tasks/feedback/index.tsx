@@ -1,5 +1,6 @@
 import { EditOutlined } from '@ant-design/icons';
 import { RouteUtils } from '@components/shared/layout/router-contaner/utils';
+import { useCheckRoleFinaStaff } from '@dynamic-configuration/hooks';
 import { endpoints } from '@lib/networks/endpoints';
 import { HFeature, HTable } from '@schema-form/features';
 import {
@@ -13,7 +14,6 @@ import HSearchForm from '@schema-form/features/search-form';
 import { createSchemaItem } from '@schema-form/h-types';
 import { Form, Modal, Select, Spin } from 'antd';
 import { TASK_STATUSES, TASK_STATUSES_ASSIGNED } from 'constants/crm/task';
-import { useCheckRoleFinaStaff } from 'dynamic-configuration/hooks';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import { useHTranslation } from '../../../../../lib/i18n';

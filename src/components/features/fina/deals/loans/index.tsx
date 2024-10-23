@@ -9,6 +9,7 @@ import {
   HButton,
   HButtonProps,
 } from '@components/shared/common-form-elements/h-confirmation-button';
+import { useHaveDownloadPermission } from '@dynamic-configuration/hooks';
 import { CloseIconSvg, FilterIconSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
@@ -35,7 +36,6 @@ import { RelationUtils } from '@schema-form/utils/form-utils';
 import { USER_TYPES } from '@types/organization';
 import { Form, Input, Row, Tabs } from 'antd';
 import cls from 'classnames';
-import { useHaveDownloadPermission } from 'dynamic-configuration/hooks';
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import { memo, useEffect, useState } from 'react';

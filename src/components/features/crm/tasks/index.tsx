@@ -1,6 +1,7 @@
 import { AnyObject } from '@components/shared/atom/type';
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
 import { UpdateUserDrawer } from '@components/shared/update-user-drawer';
+import { useHaveDownloadPermission } from '@dynamic-configuration/hooks';
 import { CloseIconSvg, FilterIconSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { useCurrentUser } from '@lib/providers/auth';
@@ -13,7 +14,6 @@ import { FormUtils, RelationUtils } from '@schema-form/utils/form-utils';
 import { Form, FormInstance, Input, Row, Tabs } from 'antd';
 import classNames from 'classnames';
 import { TASK_TYPES } from 'constants/crm/task';
-import { useHaveDownloadPermission } from 'dynamic-configuration/hooks';
 import pick from 'lodash/pick';
 import React, { memo, useState } from 'react';
 import { AdvanceSearchTaskSchema } from './advance-search-task-schema';

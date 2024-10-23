@@ -1,11 +1,11 @@
+import { DownloadOutlined } from '@ant-design/icons';
 import { isEqual } from 'lodash';
 import { memo } from 'react';
-import { DownloadOutlined } from '@ant-design/icons';
 
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
+import { useHaveDownloadPermission } from '@dynamic-configuration/hooks';
 import { useHTranslation } from '@lib/i18n';
 import { useCurrentUser } from '@lib/providers/auth';
-import { useHaveDownloadPermission } from 'dynamic-configuration/hooks';
 
 const ExportButtonTransactionFund = memo((props: any) => {
   const { t } = useHTranslation('admin');

@@ -8,6 +8,7 @@ import {
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
 import { HSelect } from '@components/shared/common-form-elements/select';
 import { HModal } from '@components/shared/common/h-modal';
+import { useCheckRoleFinaStaff } from '@dynamic-configuration/hooks';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
 import { useAuth, usePermissions } from '@lib/providers/auth';
@@ -23,7 +24,6 @@ import {
   TASK_STATUSES,
   TASK_STATUSES_ASSIGNED,
 } from 'constants/crm/task';
-import { useCheckRoleFinaStaff } from 'dynamic-configuration/hooks';
 import { isNil } from 'lodash';
 import moment from 'moment';
 import { useEffect, useState } from 'react';

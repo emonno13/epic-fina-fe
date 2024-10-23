@@ -1,4 +1,5 @@
 import HSteps from '@components/shared/common/h-step';
+import { useIsRealEstateSeller } from '@dynamic-configuration/hooks';
 import { useHTranslation } from '@lib/i18n';
 import { useDocumentDetail } from '@schema-form/features/hooks';
 import {
@@ -7,7 +8,6 @@ import {
   HFormProps,
 } from '@schema-form/h-types';
 import { Input, Radio, Select, Typography } from 'antd';
-import { useIsRealEstateSeller } from 'dynamic-configuration/hooks';
 import { useEffect, useState } from 'react';
 import { isEmpty } from 'underscore';
 import {
