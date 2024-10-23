@@ -1,4 +1,7 @@
 import { HModal } from '@components/shared/common/h-modal';
+import { useHTranslation } from '@lib/i18n';
+import { endpoints } from '@lib/networks/endpoints';
+import { useCurrentUser } from '@lib/providers/auth';
 import {
   useDocumentDetail,
   useSearchForm,
@@ -8,9 +11,6 @@ import { HForm } from '@schema-form/h-form';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Form } from 'antd';
 import { TASK_STATUSES } from 'constants/crm/task';
-import { useHTranslation } from 'lib/i18n';
-import { endpoints } from 'lib/networks/endpoints';
-import { useCurrentUser } from 'lib/providers/auth';
 import { memo } from 'react';
 
 export const CreateDealModal = ({ isVisible, setIsVisible }) => {

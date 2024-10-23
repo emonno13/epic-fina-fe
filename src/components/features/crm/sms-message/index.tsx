@@ -1,9 +1,9 @@
 import { HSelect } from '@components/shared/common-form-elements/select';
+import { useHTranslation } from '@lib/i18n';
 import { HTable } from '@schema-form/features';
 import HFeature from '@schema-form/features/feature';
 import HSearchForm from '@schema-form/features/search-form';
 import { createSchemaItem } from '@schema-form/h-types';
-import { useHTranslation } from 'lib/i18n';
 import { TYPE_SMS_MESSAGE, TYPE_SMS_MESSAGE_MAPPING } from './constans';
 import { SmsMessageTableSchema } from './sms-message-table-schema';
 

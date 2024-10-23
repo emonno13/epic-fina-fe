@@ -1,6 +1,6 @@
 import { PreViewUser } from '@components/features/fina/deals/deals-component-common/preview-user';
-import { ConverterUtils } from 'lib/converter';
-import { TableUtils } from 'lib/table-utils';
+import { ConverterUtils } from '@lib/converter';
+import { TableUtils } from '@lib/table-utils';
 import { useTranslation } from 'react-i18next';
 import { mappingLabelClaimInsurance } from '../utils';
 

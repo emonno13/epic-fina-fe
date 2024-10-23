@@ -1,8 +1,8 @@
 import { LeftOutlined } from '@ant-design/icons';
 import { PreviewQuestionsFormSchema } from '@components/shared/questions/preview-questions/preview-questions.form.schema';
+import { useHTranslation } from '@lib/i18n';
 import { HForm } from '@schema-form/h-form';
 import { Button, Divider, Form } from 'antd';
-import { useHTranslation } from 'lib/i18n';
 import { Scrollbars } from 'react-custom-scrollbars';
 
 const SurveyTabQuestionGroup = ({ questionGroup, onBack, customer }) => {

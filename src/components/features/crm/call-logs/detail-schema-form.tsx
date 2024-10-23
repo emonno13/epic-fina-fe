@@ -1,8 +1,8 @@
 import { Input } from 'antd';
 
 import { FiledViewer } from '@components/shared/common/configuration/field-viewer';
+import { useHTranslation } from '@lib/i18n';
 import { createSchemaItem } from '@schema-form/h-types';
-import { useHTranslation } from 'lib/i18n';
 import {
   ConverterUtils,
   useGenerateConcealContent,

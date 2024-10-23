@@ -1,12 +1,12 @@
 import { useState } from 'react';
 
 import { HInput } from '@components/shared/common-form-elements/h-input';
+import { useHTranslation } from '@lib/i18n';
 import {
   createSchemaItem,
   HFormItemProps,
   HFormProps,
 } from '@schema-form/h-types';
-import { useHTranslation } from 'lib/i18n';
 import { useDocumentDetail } from '../../../../schema-form/features/hooks';
 import { HSelect } from '../../../shared/common-form-elements/select';
 import { IVR_KEYPRESS_ACTION, IVR_KEYPRESS_ACTION_OPTIONS } from './constant';
