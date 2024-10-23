@@ -1,0 +1,24 @@
+@mixin scrollbarStyle {
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  /*add a shadow to the scrollbar here*/
+  &::-webkit-scrollbar-track {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+  }
+  /*this is the little scrolly dealio in the bar*/
+  &::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #009EC1;
+    height: 3px;
+  }
+  /*nobody needs this little scrollbar corner, I mean really, get rid of it haha*/
+  &::-webkit-scrollbar-corner {
+    display: none;
+    height: 0px;
+    width: 0px;
+  }
+}

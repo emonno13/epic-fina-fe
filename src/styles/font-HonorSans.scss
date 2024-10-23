@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'HonorSans';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('HonorSans'),
+    url('./fonts/HonorSans/HONORSans-Light.ttf') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HonorSans';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local('HonorSans Medium'),
+    url('./fonts/HonorSans/HONORSans-Regular.ttf') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HonorSans';
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local('HonorSans SemiBold'),
+    url('./fonts/HonorSans/HONORSans-Medium.ttf') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HonorSans';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('HonorSans Bold'),
+    url('./fonts/HonorSans/HONORSans-Demibold.ttf') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HonorSans';
+  font-style: normal;
+  font-weight: 800;
+  src:
+    local('HonorSans Heavy'),
+    url('./fonts/HonorSans/HONORSans-ExtraBold.ttf') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HonorSans';
+  font-style: normal;
+  font-weight: 900;
+  src:
+    local('HonorSans Black'),
+    url('./fonts/HonorSans/HONORSans-Bold.ttf') format('woff');
+  font-display: swap;
+}
