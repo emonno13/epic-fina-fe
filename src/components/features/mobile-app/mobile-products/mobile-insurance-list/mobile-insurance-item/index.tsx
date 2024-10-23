@@ -1,9 +1,9 @@
 import { PRODUCT_SOURCE } from '@components/features/fina/products/insurances/constant';
 import { RouteUtils } from '@components/shared/layout/router-contaner/utils';
+import { MESSAGE_TYPE } from '@constants/mobile-app';
 import { useCurrentUser } from '@lib/providers/auth';
 import { MessageUtils } from '@lib/utils/message';
 import { useSetDocumentDetail } from '@schema-form/features/hooks';
-import { MESSAGE_TYPE } from 'constants/mobile-app';
 
 import './mobile-product-item.scss';
 

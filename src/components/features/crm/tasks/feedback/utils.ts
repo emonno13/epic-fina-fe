@@ -1,11 +1,20 @@
-import { RESPONSE_STATUS_SEEN_BY_FINA_STAFF } from 'constants/crm/task';
+import { RESPONSE_STATUS_SEEN_BY_FINA_STAFF } from '@constants/crm/task';
 
 const ROOT_ORG_POSITION = 2;
 
-export const isRecordDisable = (data: { record, orgPathsSelected, selectedRowKeys }) => {
+export const isRecordDisable = (data: {
+  record;
+  orgPathsSelected;
+  selectedRowKeys;
+}) => {
   const { record = {}, orgPathsSelected = [], selectedRowKeys = [] } = data;
-  const orgIidRoots = [...new Set(orgPathsSelected.map(el => el?.split(',')[ROOT_ORG_POSITION] || ''))];
-  let isDisable = record?.responseStatus !== RESPONSE_STATUS_SEEN_BY_FINA_STAFF.RECEIVED;
+  const orgIidRoots = [
+    ...new Set(
+      orgPathsSelected.map((el) => el?.split(',')[ROOT_ORG_POSITION] || ''),
+    ),
+  ];
+  let isDisable =
+    record?.responseStatus !== RESPONSE_STATUS_SEEN_BY_FINA_STAFF.RECEIVED;
   const orgPaths = record?.partner?.orgPaths || '';
   if (isDisable || !selectedRowKeys.length) {
     return isDisable;
@@ -17,7 +26,7 @@ export const isRecordDisable = (data: { record, orgPathsSelected, selectedRowKey
       break;
     }
   }
-  if (selectedRowKeys.map(el => el.id).includes(record.id) && isDisable) {
+  if (selectedRowKeys.map((el) => el.id).includes(record.id) && isDisable) {
     isDisable = false;
   }
 
@@ -28,7 +37,8 @@ export const unCheckedFeedBacksSameOrg = (feedbacks) => {
   const uniqueFeedbackByRootOrg: string[] = [];
   const rootOrgsOfFeedback: string[] = [];
   for (const feedback of feedbacks) {
-    const rootOrg = feedback?.partner?.orgPaths?.split(',')[ROOT_ORG_POSITION] || '';
+    const rootOrg =
+      feedback?.partner?.orgPaths?.split(',')[ROOT_ORG_POSITION] || '';
     if (rootOrgsOfFeedback.includes(rootOrg)) {
       continue;
     }
@@ -37,4 +47,4 @@ export const unCheckedFeedBacksSameOrg = (feedbacks) => {
     uniqueFeedbackByRootOrg.push(feedback);
   }
   return [...new Set(uniqueFeedbackByRootOrg)];
-}; 
+};

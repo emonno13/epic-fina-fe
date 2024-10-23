@@ -1,7 +1,7 @@
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import ClientCalculatingLoanCapacity from '@components/features/client/calculators-toolkit/bank-loan-calculator';
-import { LightlyClientLayout } from 'layouts/admin/lightly/client';
+import { LightlyClientLayout } from '@layouts/admin/lightly/client';
 import { AppUtils } from '@lib/utils/app-utils';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const CalculatingLoanCapacityPage = () => {
   return <ClientCalculatingLoanCapacity />;

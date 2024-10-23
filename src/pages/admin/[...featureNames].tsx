@@ -1,9 +1,9 @@
+import { _adminRoutes } from '@components/features/_admin-routes';
+import { LightlyAdminLayout } from '@layouts/admin/lightly';
+import { MobileUtils } from '@lib/utils/mobile';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { renderRoutes } from 'react-router-config';
 import { BrowserRouter, Switch } from 'react-router-dom';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { _adminRoutes } from '@components/features/_admin-routes';
-import { LightlyAdminLayout } from 'layouts/admin/lightly';
-import { MobileUtils } from '@lib/utils/mobile';
 import { RouteUtils } from '../../components/shared/layout/router-contaner/utils';
 import withAuth from '../../hocs/with-authentication/withAuth';
 

@@ -1,5 +1,6 @@
 import { WarningFilled } from '@ant-design/icons';
 import { HSelect } from '@components/shared/common-form-elements/select';
+import { TASK_STATUSES } from '@constants/crm/task';
 import { useCurrentUser } from '@lib/providers/auth';
 import {
   useDocumentDetail,
@@ -8,7 +9,6 @@ import {
 } from '@schema-form/features/hooks';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Checkbox, Form, Input, notification } from 'antd';
-import { TASK_STATUSES } from 'constants/crm/task';
 import { memo, useMemo, useState } from 'react';
 import { useHTranslation } from '../../../../../../lib/i18n';
 import { endpoints } from '../../../../../../lib/networks/endpoints';

@@ -1,5 +1,5 @@
 import { InformationSurvey } from '@components/features/client/information-survey';
-import { LightlyClientLayout } from 'layouts/admin/lightly/client';
+import { LightlyClientLayout } from '@layouts/admin/lightly/client';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const InformationSurveyPage = (props: any) => {

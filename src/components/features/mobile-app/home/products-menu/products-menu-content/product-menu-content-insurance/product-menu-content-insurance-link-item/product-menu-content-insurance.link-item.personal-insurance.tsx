@@ -1,8 +1,8 @@
 import { EyeOutlined } from '@ant-design/icons';
+import { MESSAGE_TYPE } from '@constants/mobile-app';
 import { useHTranslation } from '@lib/i18n';
 import { MessageUtils } from '@lib/utils/message';
 import { message } from 'antd';
-import { MESSAGE_TYPE } from 'constants/mobile-app';
 import ProductsMenuContentInsuranceLinkItem from './index';
 
 const LinkItemPersonalProduct = ({ data }) => {

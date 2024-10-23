@@ -8,10 +8,10 @@ import {
   TemplatePhones,
 } from '@components/features/fina/deals/loans/detail/edit-deal-loan/edit-loan-schema-form';
 import { commentDetailSchema } from '@components/shared/common-form-elements/h-comment';
+import { TASK_TYPES } from '@constants/crm/task';
 import { useCheckRoleFinaStaff } from '@dynamic-configuration/hooks';
 import { useHTranslation } from '@lib/i18n';
 import { createSchemaItem, HFormProps } from '@schema-form/h-types';
-import { TASK_TYPES } from 'constants/crm/task';
 import { useState } from 'react';
 import { ConverterUtils } from '../../../../../../lib/converter';
 import { useCurrentUser } from '../../../../../../lib/providers/auth';

@@ -1,5 +1,5 @@
 import ClienLoans from '@components/features/client/loans';
-import { LightlyClientLayout } from 'layouts/admin/lightly/client';
+import { LightlyClientLayout } from '@layouts/admin/lightly/client';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 function LoanList() {

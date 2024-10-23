@@ -1,4 +1,4 @@
-import { TASK_TYPES } from 'constants/crm/task';
+import { TASK_TYPES } from '@constants/crm/task';
 import dynamic from 'next/dynamic';
 
 import { RouteContainer } from '../../shared/layout/router-contaner';

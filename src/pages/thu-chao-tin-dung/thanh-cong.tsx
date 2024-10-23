@@ -1,6 +1,6 @@
 import CreditOfferLetterSuccess from '@components/features/client/credit-offer-letter-success';
+import SurveyLayout from '@layouts/survey';
 import { PageUtils } from '@schema-form/utils/page-utils';
-import SurveyLayout from 'layouts/survey';
 
 const CreditOfferLetterSuccessPage = (props) => {
   return <CreditOfferLetterSuccess />;

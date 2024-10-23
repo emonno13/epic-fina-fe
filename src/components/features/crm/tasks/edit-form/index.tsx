@@ -8,6 +8,12 @@ import {
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
 import { HSelect } from '@components/shared/common-form-elements/select';
 import { HModal } from '@components/shared/common/h-modal';
+import {
+  ADMIN_PERMISSIONS,
+  TASK_ACTIVE_KEY_TABS,
+  TASK_STATUSES,
+  TASK_STATUSES_ASSIGNED,
+} from '@constants/crm/task';
 import { useCheckRoleFinaStaff } from '@dynamic-configuration/hooks';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
@@ -18,12 +24,6 @@ import { HDocumentDrawerPanel } from '@schema-form/features/panels';
 import { HForm } from '@schema-form/h-form';
 import { createSchemaItem } from '@schema-form/h-types';
 import { Form, notification, Tabs } from 'antd';
-import {
-  ADMIN_PERMISSIONS,
-  TASK_ACTIVE_KEY_TABS,
-  TASK_STATUSES,
-  TASK_STATUSES_ASSIGNED,
-} from 'constants/crm/task';
 import { isNil } from 'lodash';
 import moment from 'moment';
 import { useEffect, useState } from 'react';

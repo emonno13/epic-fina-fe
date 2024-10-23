@@ -1,10 +1,10 @@
 import { PlusOutlined } from '@ant-design/icons';
+import { ADMIN_PERMISSIONS } from '@constants/crm/task';
 import { useHTranslation } from '@lib/i18n';
 import { useCurrentUser, usePermissions } from '@lib/providers/auth';
 import { useDocumentDetail } from '@schema-form/features/hooks';
 import { USER_TYPES } from '@types/organization';
 import { Tabs } from 'antd';
-import { ADMIN_PERMISSIONS } from 'constants/crm/task';
 import { useEffect, useState } from 'react';
 import { PERMISSION_DEAL } from '../../../utils';
 import { CreateBankWithLoan } from './create-bank-loan';

@@ -1,5 +1,5 @@
+import { ROOT_TASK, TASK_TYPES } from '@constants/crm/task';
 import { Button, Form, notification } from 'antd';
-import { ROOT_TASK, TASK_TYPES } from 'constants/crm/task';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import { TASK_PRODUCT_TYPES } from '@components/features/crm/tasks/utils';

@@ -1,7 +1,7 @@
 import { SystemMenu } from '@components/shared/menu';
+import { getLeftMenu } from '@layouts/admin/common/tools/building-left-menu';
 import { Layout } from 'antd';
 import classNames from 'classnames/bind';
-import { getLeftMenu } from 'layouts/admin/common/tools/building-left-menu';
 import { Scrollbars } from 'react-custom-scrollbars';
 import { useTranslation } from 'react-i18next';
 import { RouteUtils } from '../../../../components/shared/layout/router-contaner/utils';

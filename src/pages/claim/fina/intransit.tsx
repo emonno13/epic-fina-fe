@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import EmptyLayout from 'layouts/empty';
+import EmptyLayout from '@layouts/empty';
+import { useEffect } from 'react';
 
 import './index.module.scss';
 

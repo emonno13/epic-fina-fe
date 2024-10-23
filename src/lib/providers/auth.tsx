@@ -1,6 +1,6 @@
 import { useStringee } from '@components/shared/stringee/utils/hooks';
+import { ADMIN_PERMISSIONS } from '@constants/crm/task';
 import { useMeliSocket } from '@schema-form/ws/hooks';
-import { ADMIN_PERMISSIONS } from 'constants/crm/task';
 import Cookies from 'js-cookie';
 import React, { ReactNode, useEffect, useMemo } from 'react';
 import { RootStateOrAny, useDispatch, useSelector } from 'react-redux';

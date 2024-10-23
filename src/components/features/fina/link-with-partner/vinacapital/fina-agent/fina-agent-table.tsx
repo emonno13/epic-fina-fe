@@ -1,8 +1,8 @@
+import { MAPPING_TRANSACTIONS_PARTNER_LOGS_STATUS } from '@constants/crm/transactions-partner-logs';
 import { ConverterUtils } from '@lib/converter';
 import { useHTranslation } from '@lib/i18n';
 import { TableUtils } from '@lib/table-utils';
 import { Tag } from 'antd';
-import { MAPPING_TRANSACTIONS_PARTNER_LOGS_STATUS } from 'constants/crm/transactions-partner-logs';
 import { TRANSACTION_FUNDS_ACTION_MAPPING } from '../transaction-funds/constans';
 
 export const FinaAgentTableSchema = () => {

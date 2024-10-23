@@ -1,6 +1,6 @@
 import ClientHome from '@components/features/client/home';
 import { ClientHomeUtils } from '@components/features/client/home/utils';
-import { LightlyClientLayout } from 'layouts/admin/lightly/client';
+import { LightlyClientLayout } from '@layouts/admin/lightly/client';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const HouseLoanHomePage = ({ banners = [] }: any) => {

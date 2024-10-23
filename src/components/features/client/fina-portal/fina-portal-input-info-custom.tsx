@@ -1,12 +1,12 @@
 import { TASK_PRODUCT_TYPES } from '@components/features/crm/tasks/utils';
 import { HInput } from '@components/shared/common-form-elements/h-input';
 import { HModal } from '@components/shared/common/h-modal';
+import { ROOT_TASK, TASK_TYPES } from '@constants/crm/task';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
 import { HForm } from '@schema-form/h-form';
 import { createSchemaItem } from '@schema-form/h-types';
 import { Button, Form } from 'antd';
-import { ROOT_TASK, TASK_TYPES } from 'constants/crm/task';
 import { TYPE_FINA_PORTAL, useFinaPortalContext } from './fina-portal-context';
 
 export const FinaPortalInputInfoCustom = () => {

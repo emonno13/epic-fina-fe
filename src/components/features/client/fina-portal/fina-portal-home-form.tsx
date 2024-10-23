@@ -10,11 +10,11 @@ import {
 } from '@components/shared/common-form-elements/h-input';
 import { HSelect } from '@components/shared/common-form-elements/select';
 import { ReferralSchema } from '@components/shared/user/signup/phone-form/phone-form-schema';
+import { ROOT_TASK } from '@constants/crm/task';
 import { useHTranslation } from '@lib/i18n';
 import { HForm } from '@schema-form/h-form';
 import { createSchemaItem, HFormProps } from '@schema-form/h-types';
 import { Button, Form, Input } from 'antd';
-import { ROOT_TASK } from 'constants/crm/task';
 import { TYPE_FINA_PORTAL } from './fina-portal-context';
 
 import './styles.module.scss';

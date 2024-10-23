@@ -1,9 +1,9 @@
+import { TASK_STATUSES, TASK_STATUSES_ASSIGNED } from '@constants/crm/task';
 import { useHTranslation } from '@lib/i18n';
 import HFeature from '@schema-form/features/feature';
 import { useDocumentDetail } from '@schema-form/features/hooks';
 import { HForm } from '@schema-form/h-form';
 import { FormInstance, Modal, notification } from 'antd';
-import { TASK_STATUSES, TASK_STATUSES_ASSIGNED } from 'constants/crm/task';
 import { ShareSchemaForm } from './share-info-schema';
 import { useShareWithBank } from './utils';
 

@@ -2,6 +2,11 @@ import { PreViewUser } from '@components/features/fina/deals/deals-component-com
 import { HSelect } from '@components/shared/common-form-elements/select';
 import { FiledViewer } from '@components/shared/common/configuration/field-viewer';
 import HCard from '@components/shared/common/h-card';
+import {
+  TASK_STATUSES,
+  TASK_STATUSES_COLOR_MAPPING,
+  TASK_TYPES,
+} from '@constants/crm/task';
 import { ConverterUtils } from '@lib/converter';
 import { useHTranslation } from '@lib/i18n';
 import { ValidationMessages } from '@lib/validation-message';
@@ -13,11 +18,6 @@ import {
   HFormProps,
 } from '@schema-form/h-types';
 import { Col, Input, Row, Tag, Typography } from 'antd';
-import {
-  TASK_STATUSES,
-  TASK_STATUSES_COLOR_MAPPING,
-  TASK_TYPES,
-} from 'constants/crm/task';
 import { useEffect, useMemo } from 'react';
 import { isEmpty } from 'underscore';
 import { mappingStatusOfTask } from '../../utils';

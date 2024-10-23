@@ -1,4 +1,4 @@
-import SurveyLayout from 'layouts/survey';
+import SurveyLayout from '@layouts/survey';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import dynamic from 'next/dynamic';
 

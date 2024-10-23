@@ -1,4 +1,10 @@
 import {
+  TASK_RESPONSE_STATUS,
+  TASK_STATUSES,
+  TASK_STATUSES_ASSIGNED,
+  TASK_TYPES,
+} from '@constants/crm/task';
+import {
   AppraisalProgressIcon,
   BankIcon,
   DisbursedIcon,
@@ -8,12 +14,6 @@ import {
   TripartiteBlockadeIcon,
   WaitProcessIcon,
 } from '@icons';
-import {
-  TASK_RESPONSE_STATUS,
-  TASK_STATUSES,
-  TASK_STATUSES_ASSIGNED,
-  TASK_TYPES,
-} from 'constants/crm/task';
 import { TASK_PRODUCT_TYPES } from './utils';
 
 export const USER_TYPES = {

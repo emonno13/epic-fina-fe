@@ -1,10 +1,10 @@
 import { MenuOutlined } from '@ant-design/icons';
 import NotificationsButton from '@components/features/fina/notifications/notifications-button';
 import { Link } from '@components/shared/link';
+import { TopMenuConfigs } from '@layouts/admin/common/top-menu-configs';
 import { Divider } from 'antd';
 import { Header } from 'antd/lib/layout/layout';
 import { DialButton as DialButtonSDK } from 'fccs-sdk/dist';
-import { TopMenuConfigs } from 'layouts/admin/common/top-menu-configs';
 import { useRouter } from 'next/router';
 import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';

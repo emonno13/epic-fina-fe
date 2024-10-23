@@ -1,5 +1,5 @@
 import BorrowingAbilitySurveyResult from '@components/shared/borrowing-ability-survey-result';
-import SurveyLayout from 'layouts/survey';
+import SurveyLayout from '@layouts/survey';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const SurveyLoanAbilityPage = () => {

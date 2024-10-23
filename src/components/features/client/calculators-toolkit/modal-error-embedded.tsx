@@ -1,6 +1,6 @@
 import { HModal } from '@components/shared/common/h-modal';
+import { getFooterFinaAgentData } from '@layouts/fina-agent/constants';
 import { useHTranslation } from '@lib/i18n';
-import { getFooterFinaAgentData } from 'layouts/fina-agent/constants';
 
 import './styles.module.scss';
 

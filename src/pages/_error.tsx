@@ -1,7 +1,7 @@
 import { ExclamationCircleOutlined } from '@ant-design/icons';
+import ClientToppedHeader from '@layouts/admin/lightly/client/topped-header';
 import { useTranslation } from 'next-i18next';
 import PropTypes from 'prop-types';
-import ClientToppedHeader from 'layouts/admin/lightly/client/topped-header';
 
 const Error = (props: any) => {
   const { t } = useTranslation('common');
@@ -9,14 +9,24 @@ const Error = (props: any) => {
     <div>
       <ClientToppedHeader />
       <div
-        style={{ height: '60vh', maxHeight: '600px', minHeight: '300px', alignItems: 'center', justifyContent: 'center' }}
+        style={{
+          height: '60vh',
+          maxHeight: '600px',
+          minHeight: '300px',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
         className="flex"
       >
-        <ExclamationCircleOutlined style={{ fontSize: '100px', color: '#064DD6' }} />
+        <ExclamationCircleOutlined
+          style={{ fontSize: '100px', color: '#064DD6' }}
+        />
         <div style={{ marginLeft: '30px' }}>
-          <p>ERROR: {props.statusCode
-            ? t('error-with-status', { statusCode: props.statusCode })
-            : t('error-without-status')}
+          <p>
+            ERROR:{' '}
+            {props.statusCode
+              ? t('error-with-status', { statusCode: props.statusCode })
+              : t('error-without-status')}
           </p>
           <p>Vui Lòng liên hệ tổng đài để được hỗ trợ</p>
         </div>

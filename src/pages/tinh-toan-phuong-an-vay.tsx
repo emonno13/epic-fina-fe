@@ -1,6 +1,6 @@
+import SurveyLayout from '@layouts/survey';
 import { endpoints } from '@lib/networks/endpoints';
 import { doRequest } from '@lib/networks/http';
-import SurveyLayout from 'layouts/survey';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';

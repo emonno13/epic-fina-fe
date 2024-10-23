@@ -1,8 +1,8 @@
+import { MESSAGE_TYPE } from '@constants/mobile-app';
 import { MessageUtils } from '@lib/utils/message';
 import { MobileUtils } from '@lib/utils/mobile';
 import { Modal } from 'antd';
 import { useForm } from 'antd/lib/form/Form';
-import { MESSAGE_TYPE } from 'constants/mobile-app';
 import { useState } from 'react';
 import { endpoints } from '../../../../../../lib/networks/endpoints';
 import { HForm } from '../../../../../../schema-form/h-form';

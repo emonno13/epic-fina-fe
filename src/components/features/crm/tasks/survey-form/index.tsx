@@ -1,5 +1,6 @@
 import { PreviewQuestionsFormSchema } from '@components/shared/questions/preview-questions/preview-questions.form.schema';
 import { SurveyQuestionUtils } from '@components/shared/questions/utils';
+import { TASK_STATUSES, TASK_STATUSES_ASSIGNED } from '@constants/crm/task';
 import { useCheckRoleFinaStaff } from '@dynamic-configuration/hooks';
 import { useHTranslation } from '@lib/i18n';
 import { useDocumentDetail } from '@schema-form/features/hooks';
@@ -7,7 +8,6 @@ import { HForm } from '@schema-form/h-form';
 import { createSchemaItem } from '@schema-form/h-types';
 import { FormUtils } from '@schema-form/utils/form-utils';
 import { Select } from 'antd';
-import { TASK_STATUSES, TASK_STATUSES_ASSIGNED } from 'constants/crm/task';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { PRODUCT_TYPES_MIGRATION_MAPPING } from '../utils';
 import { ProductInfo } from './product-info';

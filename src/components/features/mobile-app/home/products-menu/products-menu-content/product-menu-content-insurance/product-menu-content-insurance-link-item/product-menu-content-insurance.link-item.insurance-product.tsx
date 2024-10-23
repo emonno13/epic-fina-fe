@@ -1,6 +1,6 @@
 import { PRODUCT_SOURCE } from '@components/features/fina/products/insurances/constant';
 import { RouteUtils } from '@components/shared/layout/router-contaner/utils';
-import { MESSAGE_TYPE } from 'constants/mobile-app';
+import { MESSAGE_TYPE } from '@constants/mobile-app';
 import { useHTranslation } from '@lib/i18n';
 import { useCurrentUser } from '@lib/providers/auth';
 import { MessageUtils } from '@lib/utils/message';

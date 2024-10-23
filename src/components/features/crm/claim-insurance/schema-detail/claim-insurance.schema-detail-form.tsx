@@ -3,6 +3,7 @@ import { HSelect } from '@components/shared/common-form-elements/select';
 import { SelectUtils } from '@components/shared/common-form-elements/select/Utils';
 import { createSchemaLabelItem } from '@components/shared/common/h-label/h-label-title';
 import HSteps from '@components/shared/common/h-step';
+import { TASK_PRIORITY } from '@constants/crm/task';
 import { ConverterUtils } from '@lib/converter';
 import { useHTranslation } from '@lib/i18n';
 import { useCurrentUser } from '@lib/providers/auth';
@@ -13,7 +14,6 @@ import {
   HFormProps,
 } from '@schema-form/h-types';
 import { Input } from 'antd';
-import { TASK_PRIORITY } from 'constants/crm/task';
 import { useEffect, useState } from 'react';
 import { USER_TYPES } from '../../tasks/constans';
 import {

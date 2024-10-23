@@ -1,15 +1,15 @@
 import { HSelect } from '@components/shared/common-form-elements/select';
-import { useHTranslation } from '@lib/i18n';
-import { endpoints } from '@lib/networks/endpoints';
-import { HFeature, HTable } from '@schema-form/features';
-import HSearchForm from '@schema-form/features/search-form';
-import { createSchemaItem } from '@schema-form/h-types';
 import {
   TRANSACTIONS_PARTNER_LOGS_ACTION,
   TRANSACTIONS_PARTNER_LOGS_OPTIONS,
   TRANSACTIONS_PARTNER_LOGS_STATUS,
   TRANSACTIONS_PARTNER_LOGS_TYPE,
-} from 'constants/crm/transactions-partner-logs';
+} from '@constants/crm/transactions-partner-logs';
+import { useHTranslation } from '@lib/i18n';
+import { endpoints } from '@lib/networks/endpoints';
+import { HFeature, HTable } from '@schema-form/features';
+import HSearchForm from '@schema-form/features/search-form';
+import { createSchemaItem } from '@schema-form/h-types';
 import { TRANSACTION_FUNDS_ACTION_MAPPING } from '../transaction-funds/constans';
 import ExportButtonTransactionFund from '../transaction-funds/export-trasaction-fund';
 import { FinaAgentTableSchema } from './fina-agent-table';

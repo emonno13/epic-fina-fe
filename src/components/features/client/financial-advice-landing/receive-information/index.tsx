@@ -1,12 +1,12 @@
 import { TASK_PRODUCT_TYPES } from '@components/features/crm/tasks/utils';
 import { HSelect } from '@components/shared/common-form-elements/select';
+import { ROOT_TASK, TASK_TYPES } from '@constants/crm/task';
 import { ArrowDownSmallIcon } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
 import { HForm } from '@schema-form/h-form';
 import { createSchemaItem } from '@schema-form/h-types';
 import { Button, Col, Form, Input, notification, Row } from 'antd';
-import { ROOT_TASK, TASK_TYPES } from 'constants/crm/task';
 import { useState } from 'react';
 
 import './receive-information.module.scss';

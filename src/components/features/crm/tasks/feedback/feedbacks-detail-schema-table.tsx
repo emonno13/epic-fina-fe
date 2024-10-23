@@ -1,15 +1,15 @@
-import { Tag } from 'antd';
 import { ItemViewer } from '@components/shared/common/configuration/item-viewer';
 import {
   RESPONSE_STATUS_SEEN_BY_FINA_STAFF,
   RESPONSE_STATUS_SEEN_BY_FINA_STAFF_COLOR_MAPPING,
   RESPONSE_STATUS_SEEN_BY_FINA_STAFF_LABEL_MAPPING,
   TASK_RESPONSE_STATUS,
-} from 'constants/crm/task';
+} from '@constants/crm/task';
 import { ConverterUtils } from '@lib/converter';
 import { FormatterUtils } from '@lib/formatter';
 import { useHTranslation } from '@lib/i18n';
 import { TableUtils } from '@lib/table-utils';
+import { Tag } from 'antd';
 
 const FeedbacksDetailSchemaTable = () => {
   const { t } = useHTranslation('admin-common');

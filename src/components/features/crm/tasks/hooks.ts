@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { TASK_TYPES } from 'constants/crm/task';
+import { TASK_TYPES } from '@constants/crm/task';
 import { useContext, useMemo } from 'react';
 
 import { useCurrentUser } from '@lib/providers/auth';

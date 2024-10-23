@@ -1,6 +1,6 @@
 import { TaskManager } from '@components/features/crm/tasks';
 import { UserStaffManagement } from '@components/features/organizations/users';
-import { TASK_TYPES } from 'constants/crm/task';
+import { TASK_TYPES } from '@constants/crm/task';
 import dynamic from 'next/dynamic';
 import { RouteContainer } from '../../components/shared/layout/router-contaner';
 import { RouteUtils } from '../../components/shared/layout/router-contaner/utils';

@@ -1,8 +1,8 @@
 import { TASK_PRODUCT_TYPES } from '@components/features/crm/tasks/utils';
+import { ROOT_TASK, TASK_TYPES } from '@constants/crm/task';
 import { useHTranslation } from '@lib/i18n';
 import { HForm } from '@schema-form/h-form';
 import { Button, Form, Modal } from 'antd';
-import { ROOT_TASK, TASK_TYPES } from 'constants/crm/task';
 import FastRegisterSchema from './fast-register-schema';
 
 import './rate-information.module.scss';

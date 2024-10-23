@@ -1,25 +1,25 @@
-import React, { useMemo, useState } from 'react';
+import NotificationsDrawer from '@components/features/fina/notifications/notifications-drawer';
+import { useDispatchCollapseLeftMenuState, useLayout } from '@layouts/hooks';
+import { MobileUtils } from '@lib/utils/mobile';
 import Layout, { Content } from 'antd/lib/layout/layout';
-import { useTranslation } from 'react-i18next';
 import {
   DialDrawer as DialDrawerSDK,
   PhoneCallContent as PhoneCallContentSDK,
 } from 'fccs-sdk/dist';
-import { useDispatchCollapseLeftMenuState, useLayout } from 'layouts/hooks';
-import { MobileUtils } from '@lib/utils/mobile';
-import NotificationsDrawer from '@components/features/fina/notifications/notifications-drawer';
-import MobileView from './mobile';
+import { useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import PhoneCallContent from '../../../components/features/business/dial/dial-content';
+import DialDrawer from '../../../components/features/business/dial/dial-drawer';
+import { ScreenWithTrackingScrolling } from '../../../components/shared/common/screen-with-tracking-scrolling';
+import { MAIN_ADMIN_SCREEN_ID } from '../_default/view';
+import { getLeftMenu } from '../common/tools/building-left-menu';
+import { LightLyHeader } from './header/view';
 import {
   AdminLeftMenu,
   LEFT_MENU_MAX_WIDTH,
   LEFT_MENU_MIN_WIDTH,
 } from './left-menu';
-import { LightLyHeader } from './header/view';
-import { MAIN_ADMIN_SCREEN_ID } from '../_default/view';
-import { ScreenWithTrackingScrolling } from '../../../components/shared/common/screen-with-tracking-scrolling';
-import DialDrawer from '../../../components/features/business/dial/dial-drawer';
-import PhoneCallContent from '../../../components/features/business/dial/dial-content';
-import { getLeftMenu } from '../common/tools/building-left-menu';
+import MobileView from './mobile';
 
 import './lightly-admin.module.scss';
 

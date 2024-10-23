@@ -1,8 +1,8 @@
 import { Link } from '@components/shared/link';
+import { AlmaRegisterSchema } from '@layouts/admin/lightly/client-alma/form-schemas';
 import { useHTranslation } from '@lib/i18n';
 import { HForm } from '@schema-form/h-form';
 import { Button, Form, Modal } from 'antd';
-import { AlmaRegisterSchema } from 'layouts/admin/lightly/client-alma/form-schemas';
 
 const AlmaRegisterForm = () => {
   const [form] = Form.useForm();

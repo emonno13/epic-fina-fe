@@ -1,7 +1,7 @@
 import { NOTIFICATION_STATUSES } from '@components/features/fina/notifications/constants';
 import { handleLogin } from '@components/shared/user/utils';
+import { MESSAGE_TYPE } from '@constants/mobile-app';
 import { FormUtils } from '@schema-form/utils/form-utils';
-import { MESSAGE_TYPE } from 'constants/mobile-app';
 
 export const MessageUtils = {
   postMessageToWebview: (type, payload = '') => {

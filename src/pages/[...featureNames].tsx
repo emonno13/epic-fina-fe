@@ -1,6 +1,6 @@
 import { _clientRoutes } from '@components/features/_client-routes';
 import { RouteUtils } from '@components/shared/layout/router-contaner/utils';
-import { LightlyClientLayout } from 'layouts/admin/lightly/client';
+import { LightlyClientLayout } from '@layouts/admin/lightly/client';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { renderRoutes } from 'react-router-config';
 import { BrowserRouter, Switch } from 'react-router-dom';

@@ -1,6 +1,6 @@
 import { ClientHomeUtils } from '@components/features/client/home/utils';
 import LoanByProduct from '@components/features/client/loan-by-product';
-import { LightlyClientLayout } from 'layouts/admin/lightly/client';
+import { LightlyClientLayout } from '@layouts/admin/lightly/client';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Page = (data: any) => {

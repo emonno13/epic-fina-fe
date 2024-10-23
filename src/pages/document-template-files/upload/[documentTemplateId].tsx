@@ -1,19 +1,19 @@
-import { useRouter } from 'next/router';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { Empty } from 'antd';
-import dynamic from 'next/dynamic';
-import { AnyObject } from '@components/shared/atom/type';
 import { useGetDealData } from '@components/features/fina/deals/hooks';
-import { useHTranslation } from '@lib/i18n';
-import { LightlyClientLayout } from 'layouts/admin/lightly/client';
 import { PublicDocumentUploadHeader } from '@components/features/fina/deals/loans/detail/edit-deal-loan/customer-upload/public-document-upload-header';
+import { AnyObject } from '@components/shared/atom/type';
+import { LightlyClientLayout } from '@layouts/admin/lightly/client';
+import { useHTranslation } from '@lib/i18n';
+import { Empty } from 'antd';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import dynamic from 'next/dynamic';
+import { useRouter } from 'next/router';
 
 import './document-template-files.module.scss';
 
 const ManagerLoanCustomerUploadDocument = dynamic(
   () =>
     import(
-      'components/features/fina/deals/loans/detail/edit-deal-loan/customer-upload'
+      '@components/features/fina/deals/loans/detail/edit-deal-loan/customer-upload'
     ),
   { ssr: false },
 );

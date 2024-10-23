@@ -1,9 +1,9 @@
 import ClientExpertDetail from '@components/features/client/expert-detail';
 import { getUserIdFromSlug } from '@components/features/client/expert-detail/utils';
+import { LightlyClientLayout } from '@layouts/admin/lightly/client';
 import { endpoints } from '@lib/networks/endpoints';
 import { doRequest } from '@lib/networks/http';
 import { USER_TYPES } from '@types/organization';
-import { LightlyClientLayout } from 'layouts/admin/lightly/client';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const ContactDetailPage = ({ contactDetail }: any) => {

@@ -1,5 +1,5 @@
 import CheckUrbanPlanningMeeymap from '@components/features/client/check-urban-planning/meey-map';
-import { LightlyClientLayout } from 'layouts/admin/lightly/client';
+import { LightlyClientLayout } from '@layouts/admin/lightly/client';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const CheckUrbanPlanningMeeymapPage = () => {

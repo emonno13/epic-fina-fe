@@ -1,8 +1,8 @@
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import BuyInsurance from '@components/features/client/buy-insurance';
-import { LightlyClientLayout } from 'layouts/admin/lightly/client';
+import { LightlyClientLayout } from '@layouts/admin/lightly/client';
 import { endpoints } from '@lib/networks/endpoints';
 import { doRequest } from '@lib/networks/http';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const BuyInsurancePage = ({ data }) => {
   return <BuyInsurance data={data} />;

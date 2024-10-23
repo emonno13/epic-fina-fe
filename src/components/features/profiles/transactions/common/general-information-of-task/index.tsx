@@ -1,11 +1,11 @@
 import { mappingStatusOfTask } from '@components/features/crm/tasks/utils';
 import { FiledViewer } from '@components/shared/common/configuration/field-viewer';
+import { TASK_STATUSES_COLOR_MAPPING } from '@constants/crm/task';
 import { ConverterUtils } from '@lib/converter';
 import { useHTranslation } from '@lib/i18n';
 import { useDocumentDetail } from '@schema-form/features/hooks';
 import { Tag, Typography } from 'antd';
 import classNames from 'classnames';
-import { TASK_STATUSES_COLOR_MAPPING } from 'constants/crm/task';
 import { memo } from 'react';
 
 import './general-information-of-task.module.scss';

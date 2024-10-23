@@ -1,4 +1,4 @@
-import { RESPONSE_STATUS_SEEN_BY_FINA_STAFF } from 'constants/crm/task';
+import { RESPONSE_STATUS_SEEN_BY_FINA_STAFF } from '@constants/crm/task';
 
 export const STATUS_RESPONSE_PARTNER = {
   RECEIVED: RESPONSE_STATUS_SEEN_BY_FINA_STAFF.RECEIVED,

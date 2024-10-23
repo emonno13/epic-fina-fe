@@ -1,5 +1,5 @@
+import RecruitLayout from '@layouts/recruit';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import RecruitLayout from 'layouts/recruit';
 import RecruitJobs from '../../components/features/client/recruit/jobs/jobs';
 
 const RecruitPage = () => {

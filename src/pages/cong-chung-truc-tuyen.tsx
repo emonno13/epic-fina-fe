@@ -1,5 +1,5 @@
 import OnlineNotarization from '@components/features/client/online-notarization';
-import { LightlyClientLayout } from 'layouts/admin/lightly/client';
+import { LightlyClientLayout } from '@layouts/admin/lightly/client';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const CheckUrbanPlanningPage = () => {

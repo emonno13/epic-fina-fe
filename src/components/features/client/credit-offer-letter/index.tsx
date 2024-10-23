@@ -1,7 +1,7 @@
+import ClientHeaderMenuMobileButton from '@layouts/admin/lightly/client/header/header.menu-mobile-button';
 import { useIsMobile } from '@lib/hooks/use-media';
 import { Col, Menu, Row } from 'antd';
 import cls from 'classnames';
-import ClientHeaderMenuMobileButton from 'layouts/admin/lightly/client/header/header.menu-mobile-button';
 import { useEffect, useRef, useState } from 'react';
 import CreditOfferLetterBody from './credit-offer-letter-body';
 import CreditOfferLetterFooterBottom from './credit-offer-letter-footer-bottom';

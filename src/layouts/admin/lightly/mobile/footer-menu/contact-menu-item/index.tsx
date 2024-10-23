@@ -1,7 +1,7 @@
 import { UpCircleOutlined } from '@ant-design/icons';
+import { MESSAGE_TYPE } from '@constants/mobile-app';
 import { MessageUtils } from '@lib/utils/message';
 import { Popover } from 'antd';
-import { MESSAGE_TYPE } from 'constants/mobile-app';
 import { useEffect, useState } from 'react';
 
 import './contact-menu-item.module.scss';

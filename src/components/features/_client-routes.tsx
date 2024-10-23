@@ -27,7 +27,7 @@ export const ClientInsuranceDetail = dynamic(
 export const ClientInsuranceInputInformationDetail = dynamic(
   () =>
     import(
-      'components/shared/client/product-detail/product-detail-insurance/input-information-page'
+      '@components/shared/client/product-detail/product-detail-insurance/input-information-page'
     ),
   { ssr: false },
 );

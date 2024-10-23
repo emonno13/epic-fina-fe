@@ -4,7 +4,7 @@ import { FiledViewer } from '@components/shared/common/configuration/field-viewe
 import HCard from '@components/shared/common/h-card';
 import { Empty, Tag, Timelfrom '@libm 'antd';
 import classnames from 'classnames';
-import { TASK_STATUSES_COLOfrom '@lib } from 'constants/crm/task';
+import { TASK_STATUSES_COLOfrom '@lib } from '@constants/crm/task';
 import { ConverterUtils } from '@lib/converter';
 import { useHTranslation } from '@lib/i18n';
 import { memo } from 'react';

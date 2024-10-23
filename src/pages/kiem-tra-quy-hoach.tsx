@@ -1,5 +1,5 @@
 import CheckUrbanPlanning from '@components/features/client/check-urban-planning';
-import { LightlyClientLayout } from 'layouts/admin/lightly/client';
+import { LightlyClientLayout } from '@layouts/admin/lightly/client';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const CheckUrbanPlanningPage = () => {

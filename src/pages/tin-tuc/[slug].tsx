@@ -1,6 +1,6 @@
 import ClientNewsDetail from '@components/features/client/news-detail';
+import { LightlyClientLayout } from '@layouts/admin/lightly/client';
 import { PageUtils } from '@schema-form/utils/page-utils';
-import { LightlyClientLayout } from 'layouts/admin/lightly/client';
 import { isArray } from 'lodash';
 import { GetServerSidePropsContext } from 'next';
 
