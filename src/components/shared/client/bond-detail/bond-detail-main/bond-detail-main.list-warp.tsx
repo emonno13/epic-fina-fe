@@ -4,7 +4,7 @@ import { useHTranslation } from '@lib/i18n';
 import { HFeature } from '@schema-form/features';
 import { useTableSourceData } from '@schema-form/features/hooks';
 import { HSearchFormHiddenAble } from '@schema-form/features/search-form';
-import { usePublicEnvironment } from 'system/hooks';
+import { usePublicEnvironment } from '@system/hooks';
 import ClientBondTable from '../../bond-list/bond-list-main/bond-table';
 
 import './bond-list-wrapper.scss';

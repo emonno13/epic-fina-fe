@@ -10,10 +10,10 @@ import HSearchForm, {
   HSearchFormHiddenAble,
 } from '@schema-form/features/search-form';
 import { FormUtils } from '@schema-form/utils/form-utils';
+import { usePublicEnvironment } from '@system/hooks';
 import { Form, Tabs } from 'antd';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { usePublicEnvironment } from 'system/hooks';
 import { ProductDetailViewer } from '../loans/tab-applied-banks/detail-viewer';
 import { ProductDetailsTableSchema } from '../loans/tab-applied-banks/search-result-table-schema';
 import { AdvanceSearch } from './advance-search-schema-form';

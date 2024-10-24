@@ -1,5 +1,10 @@
 import { connectAgentCallStatus } from '@components/shared/stringee/actions';
 import {
+  connectMeliSocket,
+  disconnectMeliSocket,
+  SET_MELI_SOCKET,
+} from '@store/actions';
+import {
   SET_DATASOURCE_EVENT,
   SET_DOCUMENT_DETAIL_EVENT,
   SET_PAGINATION_EVENT,
@@ -18,11 +23,6 @@ import {
   takeLatest,
 } from 'redux-saga/effects';
 import { Socket } from 'socket.io-client';
-import {
-  connectMeliSocket,
-  disconnectMeliSocket,
-  SET_MELI_SOCKET,
-} from 'store/actions';
 import {
   createWebSocketConnection,
   getFeatureActionType,

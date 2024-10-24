@@ -7,12 +7,12 @@ import { ArrowDownIconSvg, PrintIconSvg, ResetIconSvg } from '@icons';
 import { useHTranslation } from '@lib/i18n';
 import { endpoints } from '@lib/networks/endpoints';
 import { FormUtils } from '@schema-form/utils/form-utils';
+import { useDebounce } from '@system/hooks';
 import { Col, Input, InputNumber, Radio, Row } from 'antd';
 import { useRouter } from 'next/router';
 import { useEffect, useRef, useState } from 'react';
 import { Line } from 'react-chartjs-2';
 import { useReactToPrint } from 'react-to-print';
-import { useDebounce } from 'system/hooks';
 import CalculatorsToolkitHeader from '../calculators-toolkit-header';
 import {
   contentInfo,

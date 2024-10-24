@@ -6,7 +6,7 @@ import { useHTranslation } from '@lib/i18n';
 import { HFeature } from '@schema-form/features';
 import { useTableSourceData } from '@schema-form/features/hooks';
 import { HSearchFormHiddenAble } from '@schema-form/features/search-form';
-import { usePublicEnvironment } from 'system/hooks';
+import { usePublicEnvironment } from '@system/hooks';
 import HomeProductCarousel from '../home-product-carousel';
 import { HomeRealEstateInvestmentItem } from './home-real-estate-investment-item';
 

@@ -10,7 +10,7 @@ import { useAuth, useCurrentUser } from '@lib/providers/auth';
 import { AuthenticationUtils } from '@lib/utils/authentication-utils';
 import { callApi } from '@schema-form/common/actions';
 import { useMeliSocket } from '@schema-form/ws/hooks';
-import { disconnectMeliSocket, setPermission } from 'store/actions';
+import { disconnectMeliSocket, setPermission } from '@store/actions';
 
 export const useHandleLogout = () => {
   const {

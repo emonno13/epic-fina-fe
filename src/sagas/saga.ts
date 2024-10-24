@@ -2,7 +2,7 @@ import { all, spawn } from 'redux-saga/effects';
 
 import FundCertificateSaga from '@components/features/client/fund-certificate/store/sagas';
 import { StringeeSagas } from '@components/shared/stringee/sagas';
-import { CommonSagas } from 'store/sagas';
+import { CommonSagas } from '@store/sagas';
 import { DealSagas } from '../components/features/fina/deals/sagas';
 import { StatusSagas } from '../components/features/status/sagas';
 import { nodeTemplateDocumentUploaderSaga } from '../components/shared/documents/document-template-files/sagas';

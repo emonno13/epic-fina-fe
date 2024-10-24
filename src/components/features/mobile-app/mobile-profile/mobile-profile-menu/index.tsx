@@ -4,11 +4,11 @@ import { useHTranslation } from '@lib/i18n';
 import { useAuth } from '@lib/providers/auth';
 import { MessageUtils } from '@lib/utils/message';
 import { useMeliSocket } from '@schema-form/ws/hooks';
+import { disconnectMeliSocket, setPermission } from '@store/actions';
 import Cookies from 'js-cookie';
 import moment from 'moment';
 import { useRouter } from 'next/router';
 import { useDispatch } from 'react-redux';
-import { disconnectMeliSocket, setPermission } from 'store/actions';
 import MobileProfileMenuItem from './mobile-profile-menu-item';
 
 import './mobile-profile-menu.scss';

@@ -6,10 +6,10 @@ import {
   useIsAuthenticated,
 } from '@lib/providers/auth';
 import { useMeliSocket } from '@schema-form/ws/hooks';
+import { disconnectMeliSocket, setPermission } from '@store/actions';
 import { Avatar, Dropdown } from 'antd';
 import Cookies from 'js-cookie';
 import { useDispatch } from 'react-redux';
-import { disconnectMeliSocket, setPermission } from 'store/actions';
 import { RouteUtils } from '../layout/router-contaner/utils';
 import { getUserHeaderAvatarOverlayData } from './constants';
 

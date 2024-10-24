@@ -8,10 +8,10 @@ import { useHTranslation } from '@lib/i18n';
 import { HFeature } from '@schema-form/features';
 import { HSearchFormHiddenAble } from '@schema-form/features/search-form';
 import { FormUtils } from '@schema-form/utils/form-utils';
+import { usePublicEnvironment } from '@system/hooks';
 import { Col, Row, Spin } from 'antd';
 import Head from 'next/head';
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { usePublicEnvironment } from 'system/hooks';
 import RealEstateInvestmentDetail from './detail';
 import RealEstateInvestmentDetailRequest from './real-estate-investment-detail-request';
 

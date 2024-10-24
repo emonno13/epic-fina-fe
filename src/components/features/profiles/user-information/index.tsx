@@ -4,6 +4,7 @@ import { endpoints } from '@lib/networks/endpoints';
 import { useAuth, useCurrentUser } from '@lib/providers/auth';
 import { HForm } from '@schema-form/h-form';
 import { FormUtils } from '@schema-form/utils/form-utils';
+import { requestInformationUser } from '@store/actions';
 import { USER_TYPES } from '@types/organization';
 import { Button } from 'antd';
 import { useForm } from 'antd/lib/form/Form';
@@ -11,7 +12,6 @@ import Cookies from 'js-cookie';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
-import { requestInformationUser } from 'store/actions';
 import { UserInformationDetailSchemaForm } from './user-information-schema.-form';
 
 import './user-information.module.scss';

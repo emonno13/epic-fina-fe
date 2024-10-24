@@ -4,11 +4,11 @@ import ClientRequestCounselling, {
 import ClientDetailPageCover from '@components/shared/client/detail-page-cover';
 import ClientLeaveInfoForm from '@components/shared/client/leave-info-form';
 import { useHTranslation } from '@lib/i18n';
+import { scrollToTop } from '@system/hooks';
 import { Col, Row } from 'antd';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import { scrollToTop } from 'system/hooks';
 import { ClientFundCertificateList } from '../client-fund-certificate-list';
 import ClientRelatedProduct from '../client-related-product';
 import { useFetchRelatedProducts } from '../client-related-product/hook';

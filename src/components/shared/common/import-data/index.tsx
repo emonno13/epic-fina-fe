@@ -1,11 +1,11 @@
 import { DownloadOutlined, InboxOutlined } from '@ant-design/icons';
 import { downloadBlobFile } from '@components/shared/utils/download';
 import { useHaveDownloadPermission } from '@dynamic-configuration/hooks';
+import { usePrivateEnvironment } from '@system/hooks';
 import { message, Upload } from 'antd';
 import Cookies from 'js-cookie';
 import { useRouter } from 'next/router';
 import { memo, useEffect, useState } from 'react';
-import { usePrivateEnvironment } from 'system/hooks';
 
 import { HButton } from '@components/shared/common-form-elements/h-confirmation-button';
 import { useHTranslation } from '@lib/i18n';

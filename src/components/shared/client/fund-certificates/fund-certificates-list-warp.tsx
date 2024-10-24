@@ -9,7 +9,7 @@ import { useHTranslation } from '@lib/i18n';
 import { HFeature } from '@schema-form/features';
 import { useTableSourceData } from '@schema-form/features/hooks';
 import { HSearchFormHiddenAble } from '@schema-form/features/search-form';
-import { usePublicEnvironment } from 'system/hooks';
+import { usePublicEnvironment } from '@system/hooks';
 import FundCertificatesTable from './fund-certificates-table';
 
 import './fund-certificates-wrapper.scss';
